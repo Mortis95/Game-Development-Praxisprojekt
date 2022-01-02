@@ -2050,8 +2050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883c5bc7533d48b4b80697b3152ec206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closedInvHeight: 0
-  openInvHeight: 0
+  parent: {fileID: 0}
   player: {fileID: 1577790885}
 --- !u!1001 &107695556
 PrefabInstance:
@@ -2489,12 +2488,12 @@ PrefabInstance:
     - target: {fileID: 2575120621741186582, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.9
+      value: 35.64
       objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186582, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4
+      value: 4.12
       objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186582, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
@@ -28923,8 +28922,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   attackRate: 2
-  healthPoints: 100
-  maxHealth: 100
   meleeAttack: 1
   ArrowPrefabLeft: {fileID: 2971533044720690692, guid: 6d1417f208daafa40acc4e124bea4217,
     type: 3}
@@ -28934,6 +28931,11 @@ MonoBehaviour:
     type: 3}
   ArrowPrefabDown: {fileID: 1341492855286068850, guid: fc836cacef886134aac38fd7f54d2250,
     type: 3}
+  emptySkill: {fileID: 0}
+  currentHealth: 100
+  maxHealth: 100
+  MP: 0
+  MPMax: 100
   atk: 40
   matk: 0
   def: 0
@@ -28941,18 +28943,16 @@ MonoBehaviour:
   str: 0
   dex: 0
   inte: 0
-  MP: 0
-  MPMax: 100
-  elementarPfeil: 0
-  elementarRegen: 0
-  scharfschuss: 0
-  elementarhieb: 0
-  elementarwirbel: 0
-  rage: 0
-  elementarball: 0
-  elementarflaeche: 0
-  sturmkette: 0
-  skillarray: 000000000000000000
+  equippedAbility: 0
+  FeuerpfeilLearned: 0
+  WasserpfeilhagelLearned: 0
+  ScharfschussLearned: 0
+  WasserhiebLearned: 0
+  ElektrowirbelLearned: 0
+  RageLearned: 0
+  FeuerballLearned: 0
+  WasserflaecheLearned: 0
+  SturmketteLearned: 0
   canvasSkilltree: {fileID: 1942896257}
   audioSource: {fileID: 0}
   swordSound: {fileID: 8300000, guid: 5da7b24f7e8524dd18e70029088285aa, type: 3}
