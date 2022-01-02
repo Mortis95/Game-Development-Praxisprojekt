@@ -51,7 +51,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -79,7 +79,25 @@ TextureImporter:
     serializedVersion: 2
     sprites: []
     outline: []
-    physicsShape: []
+    physicsShape:
+    - - {x: 410, y: -254}
+      - {x: 385, y: 143}
+      - {x: -531, y: 270}
+      - {x: -544, y: -233}
+      - {x: -604, y: -244}
+      - {x: -613, y: -200}
+      - {x: -598, y: 298}
+      - {x: -488, y: 328}
+      - {x: -385, y: 374}
+      - {x: -295, y: 422}
+      - {x: -239, y: 493}
+      - {x: -164, y: 491}
+      - {x: -88, y: 410}
+      - {x: 7, y: 363}
+      - {x: 213, y: 291}
+      - {x: 210, y: 225}
+      - {x: 427, y: 152}
+      - {x: 464, y: -256}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
