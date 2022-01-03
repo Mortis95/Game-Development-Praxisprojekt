@@ -75,8 +75,8 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1427443003
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2260757011317647340
@@ -186,17 +186,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalHitColor:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   fireHitColor:
     serializedVersion: 2
-    rgba: 255
+    rgba: 4278190335
   waterHitColor:
     serializedVersion: 2
-    rgba: 16712448
+    rgba: 4294901760
   electricHitColor:
     serializedVersion: 2
-    rgba: 60415
+    rgba: 4278255615
   baseFontSize: 40
   critFontSize: 50
   weakHitFontSize: 30
-  timeToLive: 2
+  secondsToLive: 1

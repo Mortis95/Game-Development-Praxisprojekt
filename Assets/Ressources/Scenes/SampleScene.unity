@@ -436,7 +436,9 @@ MonoBehaviour:
   maxHP: 100
   currentHP: 0
   weaknesses: 
-  resistances: 
+  resistances: 02000000
+  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
+    type: 3}
 --- !u!212 &94549630
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -744,6 +746,8 @@ MonoBehaviour:
   currentHP: 0
   weaknesses: 
   resistances: 
+  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
+    type: 3}
 --- !u!212 &234343475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1343,8 +1347,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   currentHP: 0
-  weaknesses: 
+  weaknesses: 02000000
   resistances: 
+  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
+    type: 3}
 --- !u!212 &379349335
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2333,7 +2339,9 @@ MonoBehaviour:
   maxHP: 100
   currentHP: 0
   weaknesses: 
-  resistances: 
+  resistances: 02000000
+  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
+    type: 3}
 --- !u!212 &574379860
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2611,8 +2619,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   currentHP: 0
-  weaknesses: 
+  weaknesses: 02000000
   resistances: 
+  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
+    type: 3}
 --- !u!212 &687849825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5101,6 +5111,8 @@ MonoBehaviour:
   currentHP: 0
   weaknesses: 
   resistances: 
+  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
+    type: 3}
 --- !u!212 &1114049731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6517,8 +6529,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   currentHP: 0
-  weaknesses: 
+  weaknesses: 02000000
   resistances: 
+  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
+    type: 3}
 --- !u!212 &1299568832
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6619,6 +6633,8 @@ MonoBehaviour:
   currentHP: 0
   weaknesses: 
   resistances: 
+  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
+    type: 3}
 --- !u!212 &1344124494
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8734,7 +8750,9 @@ MonoBehaviour:
   maxHP: 100
   currentHP: 0
   weaknesses: 
-  resistances: 
+  resistances: 02000000
+  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
+    type: 3}
 --- !u!212 &1488543337
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10676,7 +10694,9 @@ MonoBehaviour:
   maxHP: 100
   currentHP: 0
   weaknesses: 
-  resistances: 
+  resistances: 02000000
+  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
+    type: 3}
 --- !u!212 &1612949615
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11734,8 +11754,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   currentHP: 0
-  weaknesses: 
+  weaknesses: 02000000
   resistances: 
+  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
+    type: 3}
 --- !u!212 &1820869243
 SpriteRenderer:
   m_ObjectHideFlags: 0

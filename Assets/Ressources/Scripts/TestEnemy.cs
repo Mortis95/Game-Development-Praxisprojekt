@@ -44,7 +44,9 @@ public class TestEnemy : MonoBehaviour
 
         int damage = (int) (amount * dmgMultiplicator);
         currentHP -= damage;
+        Debug.Log("Gehe ins DamagePopUp Skript");
         DamagePopupController.create(damagePopupPrefab, transform, damage, dmgType, isCrit, isWeak);
+        Debug.Log("Verlasse DamagePopUp Skript");
     }
 
     public void testMethod(){
