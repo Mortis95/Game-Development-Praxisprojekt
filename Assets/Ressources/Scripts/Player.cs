@@ -47,6 +47,8 @@ public class Player : MonoBehaviour
     public GameObject emptySkill;
 
     public GameObject Wasserflaeche;
+    public GameObject WasserPfeil;
+
 
     //Attribute aus Spielmechaniken.pdf
     public int currentHealth=100;
@@ -307,8 +309,7 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.X))
         {   
             
-            Instantiate(Wasserflaeche, attackpointLeft.position, attackpoint.rotation);
-            Debug.Log("Wasserfläche da")   ;
+            Instantiate(WasserPfeil,  GameObject.FindGameObjectWithTag("Player").transform.position , Quaternion.identity);
         }
         //Skilltree aufrufen
         if(Input.GetKeyDown(KeyCode.T))
@@ -350,7 +351,7 @@ public class Player : MonoBehaviour
             } else if (equippedAbility == Ability.Wasserpfeilhagel && MP >= WasserpfeilhagelMPKost){
                 MP -= WasserpfeilhagelMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /*skill.AddComponent<Wasserpfeilhagel>();*/
+                skill.AddComponent<WasserPfeile>();
 
             } else if (equippedAbility == Ability.Scharfschuss && MP >= ScharfschussMPKost){
                 MP -= ScharfschussMPKost;

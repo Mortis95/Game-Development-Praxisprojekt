@@ -2837,6 +2837,8 @@ MonoBehaviour:
   emptySkill: {fileID: 1147858313}
   Wasserflaeche: {fileID: 8575629977640066971, guid: b127d0c2986a9334aadd1259c6036c13,
     type: 3}
+  WasserPfeil: {fileID: 1951592523459642607, guid: ffb031e48b979eb4f9447c43fa678775,
+    type: 3}
   currentHealth: 100
   maxHealth: 100
   MP: 100
@@ -30473,6 +30475,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb4c877020bb7ae40863202b7bf74946, type: 3}
+--- !u!1001 &1951592522186549454
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1951592523459642602, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951592523459642602, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.010443
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951592523459642602, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.787809
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951592523459642602, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.0182543
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951592523459642602, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951592523459642602, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951592523459642602, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951592523459642602, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951592523459642602, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951592523459642602, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951592523459642602, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951592523459642607, guid: ffb031e48b979eb4f9447c43fa678775,
+        type: 3}
+      propertyPath: m_Name
+      value: WasserPfeil
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ffb031e48b979eb4f9447c43fa678775, type: 3}
 --- !u!1001 &2335830819693712937
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -21,7 +21,7 @@ public class fightable : MonoBehaviour
     {
         currentHealth -= dmg;
         //animator.SetTrigger("Hurt");
-
+        Debug.Log("AUA");
         if(currentHealth <=0){
             die();
         }
