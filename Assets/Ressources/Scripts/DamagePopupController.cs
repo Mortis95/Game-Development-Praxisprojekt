@@ -16,9 +16,7 @@ public class DamagePopupController : MonoBehaviour
 
     public static DamagePopupController create(GameObject damagePopupPrefab, Transform position, int dmg, DamageType dmgType, bool isCrit, bool isWeak){
         //Setup the GameObject
-        Debug.Log("Instantiate...");
         GameObject damagePopup = Instantiate(damagePopupPrefab,position);
-        Debug.Log("Ja da is was Instanziiert worden");
         DamagePopupController dpcontrol = damagePopup.GetComponent<DamagePopupController>();
         damagePopup.name = "DamagePopup" + dmgType.ToString() + dmg;
         
