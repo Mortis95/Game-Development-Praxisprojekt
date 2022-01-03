@@ -9,6 +9,7 @@ public class TestEnemy : MonoBehaviour
     public int currentHP;
     public DamageType[] weaknesses;
     public DamageType[] resistances;
+    public GameObject damagePopupPrefab;
 
     private void Awake(){
         currentHP = maxHP;
@@ -26,18 +27,24 @@ public class TestEnemy : MonoBehaviour
     public void takeDamage(DamageType dmgType, int amount){
 
         float dmgMultiplicator = 1;
+        bool isCrit = false;
+        bool isWeak = false;
         foreach (DamageType d in weaknesses) {
             if (d == dmgType){
                 dmgMultiplicator *= 2;
+                isCrit = true;
             }
         }
         foreach (DamageType d in resistances) {
             if (d == dmgType){
                 dmgMultiplicator /= 2;
+                isWeak = true;
             }
         }
 
-        currentHP -= (int)(amount * dmgMultiplicator);
+        int damage = (int) (amount * dmgMultiplicator);
+        currentHP -= damage;
+        DamagePopupController.create(damagePopupPrefab, transform, damage, dmgType, isCrit, isWeak);
     }
 
     public void testMethod(){
