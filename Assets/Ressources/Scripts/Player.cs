@@ -46,6 +46,8 @@ public class Player : MonoBehaviour
     public GameObject JaegerArrowPrefabDown;
     public GameObject emptySkill;
 
+    public GameObject Wasserflaeche;
+
     //Attribute aus Spielmechaniken.pdf
     public int currentHealth=100;
     public int maxHealth=100;
@@ -305,7 +307,8 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.X))
         {   
             
-            
+            Instantiate(Wasserflaeche, attackpointLeft.position, attackpoint.rotation);
+            Debug.Log("Wasserfläche da")   ;
         }
         //Skilltree aufrufen
         if(Input.GetKeyDown(KeyCode.T))
@@ -377,7 +380,7 @@ public class Player : MonoBehaviour
             } else if (equippedAbility == Ability.Wasserflaeche && MP >= WasserflaecheMPKost){
                 MP -= WasserflaecheMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Wasserflaeche>(); */
+                skill.AddComponent<Wasserfläche>();
 
             } else if (equippedAbility == Ability.Sturmkette && MP >= SturmketteMPKost){
                 MP -= SturmketteMPKost;
