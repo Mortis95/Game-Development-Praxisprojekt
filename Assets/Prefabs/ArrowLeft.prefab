@@ -9,6 +9,22 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4457027248074160709, guid: 7bff0384ed312834f8580008647b802b,
         type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457027248074160709, guid: 7bff0384ed312834f8580008647b802b,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457027248074160709, guid: 7bff0384ed312834f8580008647b802b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7558117095036135758, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
+        type: 3}
+    - target: {fileID: 4457027248074160709, guid: 7bff0384ed312834f8580008647b802b,
+        type: 3}
       propertyPath: m_SortingLayer
       value: 2
       objectReference: {fileID: 0}

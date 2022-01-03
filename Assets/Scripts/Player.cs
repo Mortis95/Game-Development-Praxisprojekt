@@ -39,6 +39,11 @@ public class Player : MonoBehaviour
     public GameObject ArrowPrefabRight;    
     public GameObject ArrowPrefabUp;    
     public GameObject ArrowPrefabDown;
+
+    public GameObject JaegerArrowPrefabLeft;   
+    public GameObject JaegerArrowPrefabRight;    
+    public GameObject JaegerArrowPrefabUp;    
+    public GameObject JaegerArrowPrefabDown;
     public GameObject emptySkill;
 
     //Attribute aus Spielmechaniken.pdf
@@ -443,22 +448,46 @@ public class Player : MonoBehaviour
         
     void RangeAttack(Direction direction)
     {
-        if(direction == Direction.Left)
-        {               
-            Instantiate(ArrowPrefabLeft, attackpointLeft.position, attackpoint.rotation);
-        }
-        if(direction == Direction.Right)
+        if(EquipedWeapon != null & EquipedWeapon == BeginnerBogen)
         {
-            Instantiate(ArrowPrefabRight, attackpointRight.position, attackpoint.rotation);
+            if(direction == Direction.Left)
+            {               
+                Instantiate(ArrowPrefabLeft, attackpointLeft.position, attackpoint.rotation);
+            }
+            if(direction == Direction.Right)
+            {
+                Instantiate(ArrowPrefabRight, attackpointRight.position, attackpoint.rotation);
+            }
+            if(direction == Direction.Up)
+            {
+                Instantiate(ArrowPrefabUp, attackpointUp.position, attackpoint.rotation);
+            }
+            if(direction == Direction.Down)
+            {
+                Instantiate(ArrowPrefabDown, attackpointDown.position, attackpoint.rotation);
+            }
         }
-        if(direction == Direction.Up)
+
+        if(EquipedWeapon != null & EquipedWeapon == JägerBogen)
         {
-            Instantiate(ArrowPrefabUp, attackpointUp.position, attackpoint.rotation);
-        }
-        if(direction == Direction.Down)
-        {
-            Instantiate(ArrowPrefabDown, attackpointDown.position, attackpoint.rotation);
-        }             
+            if(direction == Direction.Left)
+            {               
+                Instantiate(JaegerArrowPrefabLeft, attackpointLeft.position, attackpoint.rotation);
+            }
+            if(direction == Direction.Right)
+            {
+                Instantiate(JaegerArrowPrefabRight, attackpointRight.position, attackpoint.rotation);
+            }
+            if(direction == Direction.Up)
+            {
+                Instantiate(JaegerArrowPrefabUp, attackpointUp.position, attackpoint.rotation);
+            }
+            if(direction == Direction.Down)
+            {
+                Instantiate(JaegerArrowPrefabDown, attackpointDown.position, attackpoint.rotation);
+            }
+        }       
+                     
     }
 
     public void addExp(int xp)

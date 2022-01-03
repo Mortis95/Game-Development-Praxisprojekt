@@ -21,6 +21,8 @@ public class ArrowDown : MonoBehaviour
     {
        // rb.velocity = transform.right * speed;
        rb.velocity = new Vector2(0,-1) * speed;
+       transform.Rotate(0, 0, -90);
+
     }
 
     
