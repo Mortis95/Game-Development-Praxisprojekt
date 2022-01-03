@@ -3800,26 +3800,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466bd5deec9c39945bf1c643539b3735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealPotionNormal: {fileID: 0}
-  "HealPotionGro\xDF": {fileID: 0}
-  ManaTrank: {fileID: 0}
-  "ManaTrankGro\xDF": {fileID: 0}
-  MettBrot: {fileID: 0}
-  "Bl\xE4tterwasser": {fileID: 0}
-  "LederR\xFCstung": {fileID: 0}
-  "KettenR\xFCstung": {fileID: 0}
-  "PlattenstahlR\xFCstung": {fileID: 0}
-  HolzSchild: {fileID: 0}
-  EisenSchild: {fileID: 0}
-  StahlSchild: {fileID: 0}
-  BeginnerBogen: {fileID: 21300000, guid: 1281623da8842794292eb210b8e12edf, type: 3}
-  "J\xE4gerBogen": {fileID: 0}
-  Akolythenstab: {fileID: 0}
-  Elementarstab: {fileID: 0}
-  MeisterStab: {fileID: 0}
-  Schwert: {fileID: 21300000, guid: 1281623da8842794292eb210b8e12edf, type: 3}
-  KampfAxt: {fileID: 0}
-  StreitKolben: {fileID: 0}
+  HealPotionNormal: {fileID: 4722162652760028455, guid: b31f02415cd48784f9590e320b3466a2,
+    type: 3}
+  "HealPotionGro\xDF": {fileID: 1176763413020476528, guid: b31f02415cd48784f9590e320b3466a2,
+    type: 3}
+  ManaTrank: {fileID: 6974440335065176982, guid: b31f02415cd48784f9590e320b3466a2,
+    type: 3}
+  "ManaTrankGro\xDF": {fileID: 1107490100364790262, guid: b31f02415cd48784f9590e320b3466a2,
+    type: 3}
+  MettBrot: {fileID: -7346058748877154849, guid: b31f02415cd48784f9590e320b3466a2,
+    type: 3}
+  "Bl\xE4tterwasser": {fileID: 8019502307790570622, guid: b31f02415cd48784f9590e320b3466a2,
+    type: 3}
+  "LederR\xFCstung": {fileID: 6747956554704437834, guid: 038f9a921f6c9bd46970ed8e40fd1f69,
+    type: 3}
+  "KettenR\xFCstung": {fileID: 2362821058583511695, guid: 038f9a921f6c9bd46970ed8e40fd1f69,
+    type: 3}
+  "PlattenstahlR\xFCstung": {fileID: -3493675949233770128, guid: 038f9a921f6c9bd46970ed8e40fd1f69,
+    type: 3}
+  HolzSchild: {fileID: 8365131412407632586, guid: b4dabcb0155fac2429f4c5b28a8b25a9,
+    type: 3}
+  EisenSchild: {fileID: -7613819586688555906, guid: b4dabcb0155fac2429f4c5b28a8b25a9,
+    type: 3}
+  StahlSchild: {fileID: -7020524249410756654, guid: b4dabcb0155fac2429f4c5b28a8b25a9,
+    type: 3}
+  BeginnerBogen: {fileID: -9130162528971625009, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
+    type: 3}
+  "J\xE4gerBogen": {fileID: -2280700204336697653, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
+    type: 3}
+  Akolythenstab: {fileID: 1607558342472781628, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
+    type: 3}
+  Elementarstab: {fileID: -1814968995407570819, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
+    type: 3}
+  MeisterStab: {fileID: -6520764998515306068, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
+    type: 3}
+  Schwert: {fileID: -4277256642555909456, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
+    type: 3}
+  KampfAxt: {fileID: -780161822169406541, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
+    type: 3}
+  StreitKolben: {fileID: 9187883020962582190, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
+    type: 3}
   pfItemWorld: {fileID: 4862978555541367695, guid: 374d9393cd5de1a4486e409ac9262f50,
     type: 3}
 --- !u!4 &841223694
