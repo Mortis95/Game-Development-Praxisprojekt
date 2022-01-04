@@ -14,9 +14,9 @@ public class DamagePopupController : MonoBehaviour
     public int weakHitFontSize;
     public float secondsToLive;
 
-    public static DamagePopupController create(GameObject damagePopupPrefab, Transform position, int dmg, DamageType dmgType, bool isCrit, bool isWeak){
+    public static DamagePopupController create(GameObject damagePopupPrefab, Transform tr, int dmg, DamageType dmgType, bool isCrit, bool isWeak){
         //Setup the GameObject
-        GameObject damagePopup = Instantiate(damagePopupPrefab,position);
+        GameObject damagePopup = Instantiate(damagePopupPrefab,tr.position,tr.rotation);
         DamagePopupController dpcontrol = damagePopup.GetComponent<DamagePopupController>();
         damagePopup.name = "DamagePopup" + dmgType.ToString() + dmg;
         
