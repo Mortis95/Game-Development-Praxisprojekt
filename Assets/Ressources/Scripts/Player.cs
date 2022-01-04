@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
 
     public GameObject Wasserflaeche;
     public GameObject WasserPfeil;
+    public GameObject ElektroWirbel;
 
 
     //Attribute aus Spielmechaniken.pdf
@@ -74,7 +75,7 @@ public class Player : MonoBehaviour
     public bool WasserhiebLearned               = false;
     private int WasserhiebMPKost                = 100;
     public bool ElektrowirbelLearned            = false;
-    private int ElektrowirbelMPKost             = 100;
+    private int ElektrowirbelMPKost             = 20;
     public bool RageLearned                     = false;
     private int RageMPKost                      = 100;
     public bool FeuerballLearned                = false;
@@ -365,8 +366,8 @@ public class Player : MonoBehaviour
 
             } else if (equippedAbility == Ability.Elektrowirbel && MP >= ElektrowirbelMPKost){
                 MP -= ElektrowirbelMPKost;
-                GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Elektrowirbel>(); */
+                GameObject skill = Instantiate(ElektroWirbel, transform.position, transform.rotation);
+                /*Start Wirbel Animation maybe?*/
 
             } else if (equippedAbility == Ability.Rage && MP >= RageMPKost){
                 MP -= RageMPKost;
