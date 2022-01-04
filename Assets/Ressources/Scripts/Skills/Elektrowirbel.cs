@@ -19,7 +19,7 @@ public class Elektrowirbel : MonoBehaviour
         damage = player.str * 2;                //Provisorischer Wert = 2 * STR
         rotateFrameCount = rotateEveryNFrames;
         stuckToPlayer = player.transform;
-        //Destroy(gameObject,liveNSeconds);
+        Destroy(gameObject,liveNSeconds);
     }
 
     // Update is called once per frame
