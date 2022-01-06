@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     public Animator animator;
 
     Vector2 movement;
+    public Direction lastFacedDirection;
 
     //Kampf shit
     public Transform attackpoint;
@@ -241,12 +242,29 @@ public class Player : MonoBehaviour
             audioSource.Stop();
         }
 
-        //Movement        
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        //Movement
+        float moveX = Input.GetAxisRaw("Horizontal"); 
+        float moveY = Input.GetAxisRaw("Vertical"); 
+        movement.x = moveX;
+        movement.y = moveY;
+        movement.Normalize();   //Normalizes the vector to have a magnitude of 1. Heißt im Klartext, unser Spieler läuft Diagonal genauso schnell wie horizontal / vertikal
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        //Remember last faced direction - In edge cases this prioritizes Right over Left and Up over Down.  ¯\_(ツ)_/¯
+        if(moveX > 0){
+            lastFacedDirection = Direction.Right;
+        } else if(moveX < 0){
+            lastFacedDirection = Direction.Left;
+        }
+
+        if(moveY > 0){
+            lastFacedDirection = Direction.Up;
+        } else if(moveY < 0){
+            lastFacedDirection = Direction.Down;
+        }
+
         //Kampf shit
         if(EquipedWeapon!=null){
             if(EquipedWeapon.weaponType == Weapon.WeaponType.Melee)

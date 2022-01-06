@@ -2483,22 +2483,22 @@ PrefabInstance:
     - target: {fileID: 2575120621741186582, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.1787279
+      value: 2.0970256
       objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186582, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 6.342824
+      value: 2.5060496
       objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186582, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.64
+      value: 34.61
       objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186582, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.12
+      value: 3.24
       objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186582, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
@@ -51290,6 +51290,7 @@ MonoBehaviour:
   moveSpeed: 5
   rb: {fileID: 1577790886}
   animator: {fileID: 1577790884}
+  lastFacedDirection: 0
   attackpoint: {fileID: 1737661365}
   attackpointLeft: {fileID: 1315629104}
   attackpointRight: {fileID: 242486346}
@@ -51309,7 +51310,14 @@ MonoBehaviour:
     type: 3}
   ArrowPrefabDown: {fileID: 1341492855286068850, guid: fc836cacef886134aac38fd7f54d2250,
     type: 3}
+  JaegerArrowPrefabLeft: {fileID: 0}
+  JaegerArrowPrefabRight: {fileID: 0}
+  JaegerArrowPrefabUp: {fileID: 0}
+  JaegerArrowPrefabDown: {fileID: 0}
   emptySkill: {fileID: 0}
+  Wasserflaeche: {fileID: 0}
+  WasserPfeil: {fileID: 0}
+  ElektroWirbel: {fileID: 0}
   currentHealth: 100
   maxHealth: 100
   MP: 0
