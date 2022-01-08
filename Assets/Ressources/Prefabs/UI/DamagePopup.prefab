@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1259498151874479494}
   - component: {fileID: 2260757011317647340}
   - component: {fileID: 9061188188183373138}
+  - component: {fileID: 1148438144041634743}
   m_Layer: 5
   m_Name: DamagePopup
   m_TagString: Untagged
@@ -200,3 +201,24 @@ MonoBehaviour:
   critFontSize: 20
   weakHitFontSize: 10
   secondsToLive: 1
+--- !u!50 &1148438144041634743
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246529547350880143}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 3
+  m_AngularDrag: 0
+  m_GravityScale: 10
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

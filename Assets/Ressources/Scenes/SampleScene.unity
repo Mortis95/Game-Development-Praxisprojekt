@@ -3009,9 +3009,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aca385b0935ee4a4fbd4413d864eaf27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 8
   rb: {fileID: 723200762}
   animator: {fileID: 723200766}
+  lastFacedDirection: 0
   attackpoint: {fileID: 882331969}
   attackpointLeft: {fileID: 1371691387}
   attackpointRight: {fileID: 744650598}

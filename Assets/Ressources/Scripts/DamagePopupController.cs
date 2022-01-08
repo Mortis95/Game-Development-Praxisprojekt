@@ -27,19 +27,34 @@ public class DamagePopupController : MonoBehaviour
     }
 
     private TextMeshPro text;
-    private Transform transform;
+    private Rigidbody2D rb;
+    private float baseY;
+    private bool setupFinished;
 
 
+    IEnumerator Start(){
+        while(!setupFinished){
+            yield return new WaitForSeconds(0.05f);
+        }
+        rb.velocity = new Vector2(Random.Range(-10f,10f), 20);
+    }
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + new Vector3(0,0.01f,0);
+        if(transform.position.y < baseY){
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Abs(rb.velocity.y));
+        }
     }
 
     public void setup(int dmg, DamageType dmgType, bool isCrit, bool isWeak){
+        setupFinished = false;
         //Find and setup the TextMeshPro in current object
         text = gameObject.GetComponent<TextMeshPro>();
-        transform = gameObject.GetComponent<Transform>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
+
+        //Remember base height for calculations
+        baseY = transform.position.y;
+
 
         //Setup damage text and Font-Size to display
         string s = dmg.ToString();
@@ -72,5 +87,6 @@ public class DamagePopupController : MonoBehaviour
 
         //Destroy the GameObject after set amount of seconds to live (set in Prefab Inspector)
         Destroy(gameObject, secondsToLive);
+        setupFinished = true;
     }
 }
