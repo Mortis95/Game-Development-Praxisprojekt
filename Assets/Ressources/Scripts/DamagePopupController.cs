@@ -41,7 +41,8 @@ public class DamagePopupController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y < baseY){
+        if(rb.position.y < baseY){
+            rb.position = new Vector2(rb.position.x,baseY);
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Abs(rb.velocity.y));
         }
     }
