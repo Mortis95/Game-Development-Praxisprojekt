@@ -1601,6 +1601,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5089424391606137556, guid: 00b6ef81abc94fa49a65124369277094,
+        type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7044012881586581442, guid: 00b6ef81abc94fa49a65124369277094,
         type: 3}
       propertyPath: m_Name
@@ -3050,6 +3055,7 @@ MonoBehaviour:
     type: 3}
   WasserHieb: {fileID: 1173620058084046320, guid: 47f8c3e679bbfa949bd38955aa93df20,
     type: 3}
+  Rage: {fileID: 1503840621670785522, guid: 29c7c798fa0440d4bbe94ee8fa78903d, type: 3}
   currentHealth: 100
   maxHealth: 100
   MP: 100
@@ -3061,7 +3067,7 @@ MonoBehaviour:
   str: 15
   dex: 15
   inte: 15
-  equippedAbility: 4
+  equippedAbility: 6
   FeuerpfeilLearned: 0
   WasserpfeilhagelLearned: 0
   ScharfschussLearned: 0
@@ -10383,6 +10389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5089424391606137558, guid: 00b6ef81abc94fa49a65124369277094,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1315149659
       objectReference: {fileID: 0}
     - target: {fileID: 7044012881586581442, guid: 00b6ef81abc94fa49a65124369277094,
         type: 3}

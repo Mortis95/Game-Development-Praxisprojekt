@@ -7,7 +7,7 @@ public class Elektrowirbel : MonoBehaviour
     //Publics zum rumprobieren
     public float rotatePerStep;
     public int rotateEveryNFrames;
-    public float liveNSeconds;
+    public float disappearAfterSeconds;
 
     //Privates die sich das Script holen muss
     private int rotateFrameCount;
@@ -19,7 +19,7 @@ public class Elektrowirbel : MonoBehaviour
         damage = player.str * 2;                //Provisorischer Wert = 2 * STR
         rotateFrameCount = rotateEveryNFrames;
         stuckToPlayer = player.transform;
-        Destroy(gameObject,liveNSeconds);
+        Destroy(gameObject,disappearAfterSeconds);
     }
 
     // Update is called once per frame

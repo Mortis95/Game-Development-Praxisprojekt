@@ -51,6 +51,7 @@ public class Player : MonoBehaviour
     public GameObject WasserPfeil;
     public GameObject ElektroWirbel;
     public GameObject WasserHieb;
+    public GameObject Rage;
 
 
     //Attribute aus Spielmechaniken.pdf
@@ -79,7 +80,7 @@ public class Player : MonoBehaviour
     public bool ElektrowirbelLearned            = false;
     private int ElektrowirbelMPKost             = 20;
     public bool RageLearned                     = false;
-    private int RageMPKost                      = 100;
+    private int RageMPKost                      = 10;
     public bool FeuerballLearned                = false;
     private int FeuerballMPKost                 = 100;
     public bool WasserflaecheLearned            = false;
@@ -390,8 +391,8 @@ public class Player : MonoBehaviour
 
             } else if (equippedAbility == Ability.Rage && MP >= RageMPKost){
                 MP -= RageMPKost;
-                GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Rage>(); */
+                GameObject skill = Instantiate(Rage, transform.position, transform.rotation);
+                /*Insert Rage Animation here, falls es so etwas jemals geben sollte lmao - Was eine gute Idee nur einen Artist zu haben*/
 
             } else if (equippedAbility == Ability.Feuerball && MP >= FeuerballMPKost){
                 MP -= FeuerballMPKost;
