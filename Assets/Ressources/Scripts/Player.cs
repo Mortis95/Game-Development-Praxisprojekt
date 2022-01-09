@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
 
     public Animator animator;
 
-    Vector2 movement;
+    public Vector2 movement;
     public Direction lastFacedDirection;
 
     //Kampf shit
@@ -50,6 +50,7 @@ public class Player : MonoBehaviour
     public GameObject Wasserflaeche;
     public GameObject WasserPfeil;
     public GameObject ElektroWirbel;
+    public GameObject WasserHieb;
 
 
     //Attribute aus Spielmechaniken.pdf
@@ -74,7 +75,7 @@ public class Player : MonoBehaviour
     public bool ScharfschussLearned             = false;
     private int ScharfschussMPKost              = 100;
     public bool WasserhiebLearned               = false;
-    private int WasserhiebMPKost                = 100;
+    private int WasserhiebMPKost                = 20;
     public bool ElektrowirbelLearned            = false;
     private int ElektrowirbelMPKost             = 20;
     public bool RageLearned                     = false;
@@ -379,8 +380,8 @@ public class Player : MonoBehaviour
 
             } else if (equippedAbility == Ability.Wasserhieb && MP >= WasserhiebMPKost){
                 MP -=  WasserhiebMPKost;
-                GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Wasserhieb>(); */
+                GameObject skill = Instantiate(WasserHieb, transform.position, transform.rotation);
+                /* Start Slash Animation maybe? */
 
             } else if (equippedAbility == Ability.Elektrowirbel && MP >= ElektrowirbelMPKost){
                 MP -= ElektrowirbelMPKost;
