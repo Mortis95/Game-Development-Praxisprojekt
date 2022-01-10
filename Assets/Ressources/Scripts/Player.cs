@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
     public bool WasserpfeilhagelLearned         = false;
     private int WasserpfeilhagelMPKost          = 100;
     public bool ScharfschussLearned             = false;
-    private int ScharfschussMPKost              = 100;
+    private int ScharfschussMPKost              = 5;
     public bool WasserhiebLearned               = false;
     private int WasserhiebMPKost                = 20;
     public bool ElektrowirbelLearned            = false;
@@ -377,7 +377,7 @@ public class Player : MonoBehaviour
             } else if (equippedAbility == Ability.Scharfschuss && MP >= ScharfschussMPKost){
                 MP -= ScharfschussMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Scharfschuss>(); */
+                skill.AddComponent<ScharfSchuss>();
 
             } else if (equippedAbility == Ability.Wasserhieb && MP >= WasserhiebMPKost){
                 MP -=  WasserhiebMPKost;
