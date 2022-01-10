@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
     //Ability Kram - Bools sehen zwar doof aus, sind aber praktisch und peformancetechnisch gesehen das Beste. 
     public Ability equippedAbility;
     public bool FeuerpfeilLearned               = false;
-    private int FeuerpfeilMPKost                = 100;
+    private int FeuerpfeilMPKost                = 10;
     public bool WasserpfeilhagelLearned         = false;
     private int WasserpfeilhagelMPKost          = 100;
     public bool ScharfschussLearned             = false;
@@ -367,7 +367,7 @@ public class Player : MonoBehaviour
             if (equippedAbility == Ability.Feuerpfeil && MP >= FeuerpfeilMPKost){
                 MP -= FeuerpfeilMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Feuerpfeil>(); */
+                skill.AddComponent<FeuerPfeil>();
 
             } else if (equippedAbility == Ability.Wasserpfeilhagel && MP >= WasserpfeilhagelMPKost){
                 MP -= WasserpfeilhagelMPKost;
