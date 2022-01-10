@@ -356,7 +356,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4437070027693359338}
+  - component: {fileID: 19505015}
   m_Layer: 0
   m_Name: Missing Prefab (Dummy)
   m_TagString: Untagged
@@ -364,6 +364,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!4 &19505015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19505014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &24694256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -542,7 +556,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &57793279
 PrefabInstance:
@@ -797,7 +811,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &97639463
 PrefabInstance:
@@ -34856,7 +34870,7 @@ Transform:
   - {fileID: 1974095934}
   - {fileID: 1054333657}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &219993681
 PrefabInstance:
@@ -35711,7 +35725,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &337140238
 PrefabInstance:
@@ -39630,7 +39644,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028010798}
-  m_RootOrder: 186
+  m_RootOrder: 185
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &619241662
 PrefabInstance:
@@ -41601,10 +41615,9 @@ Transform:
   - {fileID: 838474789}
   - {fileID: 1358212815}
   - {fileID: 6878607998977007654}
-  - {fileID: 2146837584}
-  - {fileID: 795664444741295905}
-  - {fileID: 4437070027693359339}
   - {fileID: 4437070027693359338}
+  - {fileID: 795664444741295905}
+  - {fileID: 2146837584}
   - {fileID: 1517875551}
   - {fileID: 990311037}
   - {fileID: 437371631}
@@ -41906,7 +41919,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028010798}
-  m_RootOrder: 190
+  m_RootOrder: 189
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1048499009
 PrefabInstance:
@@ -47913,7 +47926,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028010798}
-  m_RootOrder: 185
+  m_RootOrder: 184
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1236629758
 PrefabInstance:
@@ -48093,7 +48106,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028010798}
-  m_RootOrder: 188
+  m_RootOrder: 187
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1251733695
 PrefabInstance:
@@ -48198,7 +48211,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1263007600
 PrefabInstance:
@@ -49808,8 +49821,78 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1467800897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1467800898}
+  - component: {fileID: 1467800899}
+  m_Layer: 0
+  m_Name: Soldat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1467800898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467800897}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.8, y: -71.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1513252919}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1467800899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467800897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls: []
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Soldat
+      text: "\u201EYou shall not pass!\u201C \u2026 ist was ich laut Handbuch sagen
+        soll, ich wei\xDF allerdings auch nicht warum."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Soldat
+      text: "Eigentlich darf hier jedermann ein- und austreten, aber\u2026 hmm, vielleicht
+        ist es dein Schicksal, zun\xE4chst etwas anderes zu erledigen?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1001 &1489654131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50035,6 +50118,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1510866345}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1513252918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1513252919}
+  m_Layer: 0
+  m_Name: NPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1513252919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513252918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.34159, y: 20.192978, z: -23.878366}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1467800898}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1517875550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51563,7 +51677,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028010798}
-  m_RootOrder: 184
+  m_RootOrder: 183
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1751749822
 PrefabInstance:
@@ -53393,7 +53507,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028010798}
-  m_RootOrder: 187
+  m_RootOrder: 186
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1911157645
 PrefabInstance:
@@ -53573,7 +53687,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1940166718
 PrefabInstance:
@@ -54693,7 +54807,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1028010798}
-  m_RootOrder: 189
+  m_RootOrder: 188
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2109581596
 PrefabInstance:
@@ -55140,12 +55254,6 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e75a31f8cab17a046a21ac109b63ceb4, type: 3}
 --- !u!4 &4437070027693359338 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9133366839758327554, guid: e75a31f8cab17a046a21ac109b63ceb4,
-    type: 3}
-  m_PrefabInstance: {fileID: 4437070027693359337}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4437070027693359339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9133366839758327554, guid: e75a31f8cab17a046a21ac109b63ceb4,
     type: 3}
