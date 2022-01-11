@@ -17,6 +17,7 @@ public class UI_Inventory : MonoBehaviour
     public Transform parent;
     public Player player;
     
+    
 
     private void Awake()
     {
