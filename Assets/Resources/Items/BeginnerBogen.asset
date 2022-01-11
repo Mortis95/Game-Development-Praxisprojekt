@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7c55381a1f90d49b8d50459df8fe7c, type: 3}
   m_Name: BeginnerBogen
   m_EditorClassIdentifier: 
-  weaponName: Beginner Bogen
-  type: 1
+  itemType: 1
+  itemSprite: {fileID: -9130162528971625009, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
+    type: 3}
+  itemName: Beginner Bogen
   description: "Ein Bogen f\xFCr absolute Anf\xE4nger, ist zum jagen f\xFCr Kleintiere
     sehr gut geeignet."
-  sprite: {fileID: -9130162528971625009, guid: 35cc5df75d29e5e4fa7b7e2a3171997e, type: 3}
+  isStackable: 0
+  maxStackSize: 0
+  weaponType: 0
   projectile: {fileID: -7558117095036135758, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
     type: 3}
-  bonusSTR: 0
-  bonusDEX: 0
-  bonusINT: 0
+  bonusAttack: 0
+  bonusMagicAttack: 0

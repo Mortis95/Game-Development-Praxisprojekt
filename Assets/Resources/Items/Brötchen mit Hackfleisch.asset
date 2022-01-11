@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: "Br\xF6tchen mit Hackfleisch"
   m_EditorClassIdentifier: 
   itemType: 0
+  itemSprite: {fileID: -7346058748877154849, guid: b31f02415cd48784f9590e320b3466a2,
+    type: 3}
   itemName: "Br\xF6tchen mit Hackfleisch"
-  description: 
-  isStackable: 0
-  maxStackSize: 0
-  healHealthPoints: 0
-  healMagicPoints: 0
+  description: "Ein Br\xF6tchen aus frischem Hack mit Zwiebeln, schmeckt definitiv
+    nicht jedem."
+  isStackable: 1
+  maxStackSize: 10
+  healHealthPoints: 40
+  healMagicPoints: 40
   healHealthPointsPercentage: 0
   healMagicPointsPercentage: 0

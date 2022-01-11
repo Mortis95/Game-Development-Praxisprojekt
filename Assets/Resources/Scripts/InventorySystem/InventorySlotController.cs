@@ -21,6 +21,10 @@ public class InventorySlotController : MonoBehaviour{
 
     }
     public void setItem(Item item){
+        if(item == null){
+            clearItem();
+            return;
+        }
         slotDisplay.sprite = item.itemSprite;
         slotDisplay.enabled = true;
         if(item.isStackable){
@@ -36,12 +40,9 @@ public class InventorySlotController : MonoBehaviour{
         stackSizeText.SetText("");
     }
 
-    public void beSelected(){
-        slotBackground.color = Color.red;
+    public void beSelected(bool selected){
+        if(selected){slotBackground.color = Color.red;}
+        else{slotBackground.color = Color.white;}
+        
     }
-
-    public void beUnselected(){
-        slotBackground.color = Color.white;
-    }
-
 }

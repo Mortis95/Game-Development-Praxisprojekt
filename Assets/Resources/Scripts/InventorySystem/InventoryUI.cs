@@ -5,6 +5,7 @@ using TMPro;
 
 public class InventoryUI : MonoBehaviour
 {
+    public GameObject inventoryUIParent;
     public GameObject inventorySlotParent;
     private InventorySlotController[] inventorySlotsUI;
     public GameObject equipmentSlotParent;
@@ -22,10 +23,14 @@ public class InventoryUI : MonoBehaviour
     // Start is called before the first frame update
     IEnumerator Start()
     {
+        //Try to get inventory instance, if it fails wait a second and try again.
+        //The code so far has *never* failed to get inventory instance, but I am worried about Unity running 2 scripts at the same time that have timing dependency on each other, so here's a fix for a hopefully never appearing problem.
         while(inventory == null){
             inventory = Inventory.getInstance();
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1f);
         }
+        //Subscribe our function "UpdateUI" to InventoryChangedEvent, triggering it everytime the Event triggers. 
+        inventory.onInventoryChangedCallback += UpdateUI;
     }
 
     // Update is called once per frame
@@ -36,6 +41,32 @@ public class InventoryUI : MonoBehaviour
     }
     private void switchVisibility(){
         isVisible = !isVisible;
-        gameObject.SetActive(isVisible);
+        inventoryUIParent.SetActive(isVisible);
+        /* if(isVisible){
+            //Put Inventory in the middle of the screen and be visible
+            transform.position = inventoryUIParent.transform.position;
+        } else {
+            //Put it VERY FAR offscreen, like SUPER FAR, even the BIGGEST BROADEST Monitor shouldn't be able to see that thing
+            transform.position = new Vector3(5000,5000,0);
+        } */
+    }
+
+    void UpdateUI(){
+        Item[] items = inventory.getItems();
+        int selectedItemIndex = inventory.getSelectedItemIndex();
+        //Update Border of Slots
+        for (int i = 0; i < inventorySlotsUI.Length; i++){
+            inventorySlotsUI[i].setItem(items[i]);
+            inventorySlotsUI[i].beSelected(i == selectedItemIndex);    
+        }
+        //Update Text
+        Item selectedItem = items[selectedItemIndex];
+        if (selectedItem == null){itemNameText.SetText("");itemDescriptionText.SetText("");}
+        else{itemNameText.SetText(selectedItem.itemName);itemDescriptionText.SetText(selectedItem.description);}
+
+    }
+
+    public bool getVisibility(){
+        return isVisible;
     }
 }
