@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c9ce52d1acfefa459badcdee309a621, type: 3}
-  m_Name: "Br\xF6tchen mit Hackfleisch"
+  m_Name: "Mettbr\xF6tchen"
   m_EditorClassIdentifier: 
-  itemType: 0
+  itemType: 4
   itemSprite: {fileID: -7346058748877154849, guid: b31f02415cd48784f9590e320b3466a2,
     type: 3}
-  itemName: "Br\xF6tchen mit Hackfleisch"
+  itemName: "Mettbr\xF6tchen"
   description: "Ein Br\xF6tchen aus frischem Hack mit Zwiebeln, schmeckt definitiv
     nicht jedem."
   isStackable: 1
   maxStackSize: 10
-  healHealthPoints: 40
-  healMagicPoints: 40
+  amount: 1
+  healHealthPoints: 10
+  healMagicPoints: 0
   healHealthPointsPercentage: 0
   healMagicPointsPercentage: 0

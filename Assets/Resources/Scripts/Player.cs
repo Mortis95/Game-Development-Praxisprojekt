@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     public Vector2 movement;
     public Direction lastFacedDirection;
 
+    public Inventory inventory;
     #region Equipment
     //Kampf Stuff
     public Weapon equippedWeapon;

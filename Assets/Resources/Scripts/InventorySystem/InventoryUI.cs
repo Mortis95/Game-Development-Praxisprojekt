@@ -31,6 +31,10 @@ public class InventoryUI : MonoBehaviour
         }
         //Subscribe our function "UpdateUI" to InventoryChangedEvent, triggering it everytime the Event triggers. 
         inventory.onInventoryChangedCallback += UpdateUI;
+        //First Update is free on the house
+        UpdateUI();
+        //Inventory should start invisible
+        isVisible = false;
     }
 
     // Update is called once per frame
@@ -41,14 +45,14 @@ public class InventoryUI : MonoBehaviour
     }
     private void switchVisibility(){
         isVisible = !isVisible;
-        inventoryUIParent.SetActive(isVisible);
-        /* if(isVisible){
+        //inventoryUIParent.SetActive(isVisible);
+        if(isVisible){
             //Put Inventory in the middle of the screen and be visible
             transform.position = inventoryUIParent.transform.position;
         } else {
             //Put it VERY FAR offscreen, like SUPER FAR, even the BIGGEST BROADEST Monitor shouldn't be able to see that thing
             transform.position = new Vector3(5000,5000,0);
-        } */
+        }
     }
 
     void UpdateUI(){

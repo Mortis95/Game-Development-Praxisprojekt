@@ -40,8 +40,10 @@ public class Inventory : MonoBehaviour
         items = new Item[inventorySpace];
         selectedItemIndex = 0;
         inventoryUI = GetComponentInChildren<InventoryUI>();
-        items[5] = testItem1;
-        items[13] = testItem2;
+        addItem(testItem1);
+        addItem(testItem2);
+        Debug.Log("Comparing Items now!");
+        testItem1.Equals(testItem2);
         }
 
     void Update(){
@@ -60,6 +62,14 @@ public class Inventory : MonoBehaviour
     #endregion
 
     public bool addItem(Item item){
+        if(item.isStackable){
+            int j = FindIndexOfFirstMatchingSlot(item);
+            if(j != -1){
+                items[j].amount += item.amount;
+                if(onInventoryChangedCallback != null){onInventoryChangedCallback.Invoke();}
+                return true;
+            }
+        }
         int i = FindIndexOfFirstFreeSlot();
         if(i == -1){
             Debug.Log("Inventory Full");
@@ -79,6 +89,16 @@ public class Inventory : MonoBehaviour
     private int FindIndexOfFirstFreeSlot(){
         for (int i = 0; i < items.Length; i++){
             if(items[i] == null){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    private int FindIndexOfFirstMatchingSlot(Item item){
+        //TODO: If we ever implement randomized loot we need to Downcast the itemtype here first and implement the needed Equals Methods.
+        for (int i = 0; i < items.Length; i++){
+            if(item.Equals(items[i])){
                 return i;
             }
         }
