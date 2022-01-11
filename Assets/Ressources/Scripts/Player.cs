@@ -82,7 +82,7 @@ public class Player : MonoBehaviour
     public bool RageLearned                     = false;
     private int RageMPKost                      = 10;
     public bool FeuerballLearned                = false;
-    private int FeuerballMPKost                 = 100;
+    private int FeuerballMPKost                 = 20;
     public bool WasserflaecheLearned            = false;
     private int WasserflaecheMPKost             = 100;
     public bool SturmketteLearned               = false;
@@ -397,7 +397,7 @@ public class Player : MonoBehaviour
             } else if (equippedAbility == Ability.Feuerball && MP >= FeuerballMPKost){
                 MP -= FeuerballMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Feuerball>(); */
+                skill.AddComponent<FeuerBall>();
 
             } else if (equippedAbility == Ability.Wasserflaeche && MP >= WasserflaecheMPKost){
                 MP -= WasserflaecheMPKost;

@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScharfSchussScript : MonoBehaviour
+public class FeuerBallScript : MonoBehaviour
 {
     public float End;
-    public float speed = 50f;
+    public float speed = 12f;
+    public float Damage;
+    public float SplashRange = 10;
+
     public Rigidbody2D myRigidbody;
     private void Awake()
     {
@@ -37,16 +40,26 @@ public class ScharfSchussScript : MonoBehaviour
         }
         Destroy(gameObject, End);
     }
-
-    void OnTriggerEnter2D(Collider2D col){
-        Debug.Log("Collision with:" + col.name);
-        GameObject other = col.gameObject;
-        if(other != null && other.tag == "Enemy"){
-            TestEnemy enemyScript = other.GetComponent<TestEnemy>();
-            enemyScript.takeDamage(DamageType.Blitz, 5);
-            Destroy(gameObject);
-
-        }
-    }
     
+
+    void OnTriggerEnter2D(Collider2D col)
+    {   
+        var TestEnemy = col.gameObject;
+        if(TestEnemy.tag == "Enemy")
+        {
+            var hitColliders = Physics2D.OverlapCircleAll(transform.position, SplashRange);
+            foreach(var hitCollider in hitColliders)
+            {
+                var enemy = hitCollider.GetComponent<TestEnemy>();
+                if(enemy)
+                {
+                    var closestPoint = hitCollider.ClosestPoint(transform.position);
+                    var distance = Vector3.Distance(closestPoint, transform.position);
+
+                    var damagePercent = Mathf.InverseLerp(SplashRange, 0, distance);
+                    enemy.takeDamage(DamageType.Feuer, damagePercent * Damage); 
+                    Destroy(gameObject);
+                }
+        }   }       
+    }
 }

@@ -24,7 +24,7 @@ public class TestEnemy : MonoBehaviour
         }
     }
 
-    public void takeDamage(DamageType dmgType, int amount){
+    public void takeDamage(DamageType dmgType, float amount){
 
         float dmgMultiplicator = 1;
         bool isCrit = false;
