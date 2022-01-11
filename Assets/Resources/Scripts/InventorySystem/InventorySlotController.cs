@@ -37,6 +37,7 @@ public class InventorySlotController : MonoBehaviour{
 
     public void clearItem(){
         slotDisplay.sprite = null;
+        slotDisplay.enabled = false;
         stackSizeText.SetText("");
     }
 

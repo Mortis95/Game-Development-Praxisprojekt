@@ -26,13 +26,11 @@ public class Inventory : MonoBehaviour
 
     public InventoryUI inventoryUI;
     private Item[] items;
-    public Weapon testItem1;
-    public Consumable testItem2;
     private int inventorySpace;
     private int slotsPerRow;
     private int slotsPerColumn;
     private int selectedItemIndex;
-
+    public Equipment equipment;
     void Start(){
         inventorySpace = 20; //I'd like to dynamically get these numbers, but I can't be arsed to introduce even more spaghetti. Just keep this consistent with the UI please ty
         slotsPerRow = 5;
@@ -40,10 +38,6 @@ public class Inventory : MonoBehaviour
         items = new Item[inventorySpace];
         selectedItemIndex = 0;
         inventoryUI = GetComponentInChildren<InventoryUI>();
-        addItem(testItem1);
-        addItem(testItem2);
-        Debug.Log("Comparing Items now!");
-        testItem1.Equals(testItem2);
         }
 
     void Update(){
@@ -53,11 +47,13 @@ public class Inventory : MonoBehaviour
     #region PlayerSelectItemInput
     void processInput(){
         bool changed = false;
-        if(Input.GetKeyDown(KeyCode.W)){selectedItemIndex = betterModulo(selectedItemIndex - slotsPerRow, inventorySpace);changed=true;};
-        if(Input.GetKeyDown(KeyCode.S)){selectedItemIndex = betterModulo(selectedItemIndex + slotsPerRow, inventorySpace);changed=true;};
-        if(Input.GetKeyDown(KeyCode.A)){selectedItemIndex = betterModulo(selectedItemIndex - 1, inventorySpace);changed=true;};
-        if(Input.GetKeyDown(KeyCode.D)){selectedItemIndex = betterModulo(selectedItemIndex + 1, inventorySpace);changed=true;};
-        if(changed && onInventoryChangedCallback != null){onInventoryChangedCallback.Invoke();}
+        if(Input.GetKeyDown(KeyCode.E)){items[selectedItemIndex] = equipment.equipItem(items[selectedItemIndex]);           changed=true;}
+        if(Input.GetKeyDown(KeyCode.W)){selectedItemIndex = betterModulo(selectedItemIndex - slotsPerRow, inventorySpace);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.S)){selectedItemIndex = betterModulo(selectedItemIndex + slotsPerRow, inventorySpace);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.A)){selectedItemIndex = betterModulo(selectedItemIndex - 1,           inventorySpace);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.D)){selectedItemIndex = betterModulo(selectedItemIndex + 1,           inventorySpace);  changed=true;}
+
+        if(changed && onInventoryChangedCallback != null) onInventoryChangedCallback.Invoke();
     }
     #endregion
 
