@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public int exp;
     public int attack;
     public GameObject[] droppableItems;
+    public List<DamageType> weaknesses;
 
     GameObject itemDrop;
     int currentHealth;
@@ -27,8 +28,12 @@ public class Enemy : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    public void TakeDmg(int damage)
+    public void TakeDmg(int damage, DamageType type)
     {
+        if (weaknesses != null && weaknesses.Contains(type))
+        {
+            damage += damage * 30 / 100; 
+        }
         currentHealth -= damage;
         healthBar.SetSlider(currentHealth);
         if (currentHealth <= 0)

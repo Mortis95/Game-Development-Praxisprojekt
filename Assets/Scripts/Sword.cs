@@ -11,7 +11,7 @@ public class Sword : MonoBehaviour
         {
             GameObject player = GameObject.FindWithTag("Player");
             var dmg = attackDmg + player.GetComponent<Player>().atk;
-            collision.gameObject.GetComponent<Enemy>().TakeDmg(dmg);
+            collision.gameObject.GetComponent<Enemy>().TakeDmg(dmg, DamageType.Normal);
         }
     }
 }
