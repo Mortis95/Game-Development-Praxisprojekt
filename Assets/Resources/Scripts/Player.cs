@@ -64,9 +64,7 @@ public class Player : MonoBehaviour
     public int currentMagicPoints;
     public int maxMagicPoints;
     public int attack;
-    public int magicAttack;
     public int defense;
-    public int magicDefense;
     public int strength;
     public int dexterity;
     public int intelligence;
