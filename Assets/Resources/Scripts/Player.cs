@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
     public Inventory inventory;
     #region Equipment
     //Kampf Stuff
+    public Equipment equipment;
     public Weapon equippedWeapon;
     public Shield equippedShield;
     public Consumable equippedConsumable;
@@ -129,24 +130,17 @@ public class Player : MonoBehaviour
         audioSource = audioSources[0];
         attackSound = audioSources[1];
 
-    }
+        equipment = Equipment.getInstance();
+        equipment.onEquipmentChangedCallback += UpdateEquipment;
 
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        /* ItemWorld itemworld = collider.GetComponent<ItemWorld>();
-        if(itemworld != null)
-        {
-            if(inventory.inhalt<inventory.capacity)
-            {
-                //Debug.Log("Item berührt");
-                inventory.addItem(itemworld.getItem());
-                //Debug.Log(inventory.getItemList().Count);
-                 itemworld.DestroySelf();
-            }
-           
-        } */
     }
    
+    public void UpdateEquipment(){
+        this.equippedWeapon = equipment.equippedWeapon;
+        this.equippedShield = equipment.shieldInHand;
+        this.equippedConsumable = equipment.consumableInHand;
+        this.equippedArmor = equipment.equippedArmor;
+    }
 
     void Update(){
     processMovement();

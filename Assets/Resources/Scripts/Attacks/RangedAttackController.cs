@@ -7,10 +7,7 @@ public class RangedAttackController : MonoBehaviour
 
     //Images
     public SpriteRenderer spr;
-    public Sprite RangedAttackUp;
-    public Sprite RangedAttackLeft;
-    public Sprite RangedAttackRight;
-    public Sprite RangedAttackDown;
+    public Sprite arrow;
 
     //Settings
     public float disappearAfterSeconds;
@@ -31,25 +28,26 @@ public class RangedAttackController : MonoBehaviour
         damage = pl.dexterity;          //Damage = DEX //Can be changed to whatever is your liking
         
         //Pick correct image to display and correct offset to use for position
+        spr.sprite = pl.equippedWeapon.projectile;
         Vector3 offset;
         switch(pl.lastFacedDirection){
             case Direction.Up:
-                spr.sprite = RangedAttackUp;
+                transform.Rotate(0f,0f,90f);
                 offset = direction = Vector3.up;
                 break;
 
             case Direction.Left:
-                spr.sprite = RangedAttackLeft;
+                transform.Rotate(0f,0f,180f);
                 offset = direction = Vector3.left;
                 break;
 
             case Direction.Right:
-                spr.sprite = RangedAttackRight;
+                //transform.Rotate(0f,0f,0f);   //No need to rotate
                 offset = direction = Vector3.right;
                 break;
 
             default:
-                spr.sprite = RangedAttackDown;
+                transform.Rotate(0f,0f,-90f);
                 offset = direction = Vector3.down;
                 break;
         }

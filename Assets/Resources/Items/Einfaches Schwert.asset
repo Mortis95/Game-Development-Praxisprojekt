@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7c55381a1f90d49b8d50459df8fe7c, type: 3}
+  m_Name: Einfaches Schwert
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemSprite: {fileID: 4819709466233661533, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
+    type: 3}
+  itemName: Einfaches Schwert
+  description: Ein einfaches Schwert, schau es nicht zu lange an, sonst zerbricht
+    es.
+  isStackable: 0
+  maxStackSize: 0
+  amount: 1
+  weaponType: 0
+  projectile: {fileID: 0}
+  bonusAttack: 0
+  bonusMagicAttack: 0
