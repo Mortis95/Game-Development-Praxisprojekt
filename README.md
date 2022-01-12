@@ -1,6 +1,6 @@
 # Game Development Praxisprojekt
 
-## TODO bis zum 11.1 (Bei Ungenauigkeiten bitte editieren)
+## TODO bis zum 18.1 (Bei Ungenauigkeiten bitte editieren)
 ## An alle: 
 - Grafikgruppe Bescheid geben, wenn Grafiken fehlen!
 - Bis dahin erstellt selbst einfache/primitive Testgrafiken, damit man später leichter austauschen kann
