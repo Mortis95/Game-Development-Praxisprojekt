@@ -16,11 +16,15 @@ public class UI_Inventory : MonoBehaviour
     private bool isVisible=false;
     public Transform parent;
     public Player player;
-    
+    public Sprite nonEquippedAbilitySlot;
+    public Sprite equippedAbilitySlot;
+
+    GameObject[] abilities;
     
 
     private void Awake()
     {
+        abilities = GameObject.FindGameObjectsWithTag("Ability");
         itemSlotContainer = transform.Find("itemSlotContainer");
         itemSlotTemplate = itemSlotContainer.Find("itemSlotTemplate");
         UIPos = gameObject.transform;
@@ -95,6 +99,15 @@ public class UI_Inventory : MonoBehaviour
                 y--;
             }
         }
+    }
+
+    public void selectAbility(string name)
+    {
+        for (int i = 0; i < abilities.Length; i++)
+        {
+            abilities[i].GetComponent<Image>().sprite = nonEquippedAbilitySlot;
+        }
+        GameObject.Find(name).GetComponent<Image>().sprite = equippedAbilitySlot;
     }
 
     public void setisDrop()
