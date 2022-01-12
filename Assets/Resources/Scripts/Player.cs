@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static SkillTree;
 
 public class Player : MonoBehaviour
 {
@@ -63,11 +62,19 @@ public class Player : MonoBehaviour
     public int maxHealthPoints;
     public int currentMagicPoints;
     public int maxMagicPoints;
-    public int attack;
-    public int defense;
-    public int strength;
-    public int dexterity;
-    public int intelligence;
+    
+    //Base Stats from the character at that level
+    private int baseAttack;
+    private int baseDefense;
+    private int baseStrength;
+    private int baseDexterity;
+    private int baseIntelligence;
+    //Total Stats for the character, after Equipment Bonus is added.
+    private int totalAttack;
+    private int totalDefense;
+    private int totalStrength;
+    private int totalDexterity;
+    private int totalIntelligence;
 
     #endregion
 
@@ -94,8 +101,7 @@ public class Player : MonoBehaviour
     private int SturmketteMPKost                = 5;
     #endregion
     
-    //canvasSkilltree für skilltree
-    public GameObject canvasSkilltree;
+    
     public AudioSource audioSource;
     public AudioClip swordSound;
     public AudioClip walkingSound;
@@ -184,29 +190,8 @@ public class Player : MonoBehaviour
     public void addMagicPointsPercentage(float percentage){
         addHealthPoints((int)((float) maxHealthPoints * percentage));
     }
-    void checkLevelup()
-    {
-        int temp =0;
-        foreach(int lv in levelStufen)  //Index(Level) wird gesucht, ab dem die exp kleiner sind als im Verzeichnis steht -> level wird zu den exp berechnet
-        {
-            if(lv < exp)
-            {
-                temp++;
-            }
-            else
-            {
-                break;
-            }
-        }
-        if(temp>level) //ist das errechnete Level größer als das aktuelle liegt ein levelup vor
-        {             
-            //Debug.Log(temp-level);
-            skillTree.SkillPoints+=(temp-level);
-            skillTree.LevelupSkillpoints+=(temp-level);
-            level=temp;
-            UIcurrentLevel.text = level.ToString();
-            //Werden mehrere Level auf einmal erreicht(was zu vermeiden ist) funzt das system trotzdem,
-        }
+    void checkLevelup(){
+        //TODO
     }
 
     public void updateUIStatusBar(){
@@ -337,5 +322,14 @@ public class Player : MonoBehaviour
             updateUIStatusBar();
         }
     }
+    #endregion
+
+    #region GetterAndSetter
+    public int getAttack(){return totalAttack;}
+    public int getDefense(){return totalDefense;}
+    public int getStrength(){return totalStrength;}
+    public int getDexterity(){return totalDexterity;}
+    public int getIntelligence(){return totalIntelligence;}
+    public void setStrength(int newValue){totalStrength = newValue;}
     #endregion
 }

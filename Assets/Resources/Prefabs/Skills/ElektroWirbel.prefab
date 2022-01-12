@@ -114,4 +114,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotatePerStep: 5
   rotateEveryNFrames: 1
-  liveNSeconds: 1
+  disappearAfterSeconds: 4

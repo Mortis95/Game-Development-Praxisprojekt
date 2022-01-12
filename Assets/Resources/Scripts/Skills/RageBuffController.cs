@@ -29,7 +29,7 @@ public class RageBuffController : MonoBehaviour
 
         //Do the actual buff
         Player pl = Player.getInstance();
-        pl.strength = (int)((float) pl.strength * 1.4f);       //Konvert zu Float, multiply mit 1.4, konvert back zu int -> 40% STR Buff
+        pl.setStrength((int)((float) pl.getStrength() * 1.4f));       //Konvert zu Float, multiply mit 1.4, konvert back zu int -> 40% STR Buff
 
         //Ein paar wichtige Sachen setzen
         currentAngle = 0;
@@ -40,14 +40,11 @@ public class RageBuffController : MonoBehaviour
     }
     
     //Visual Flame Stuff
-    void FixedUpdate()
-    {
+    void FixedUpdate(){
         currentAngle += rotationSpeed * Time.fixedDeltaTime;                                                            //Calculate current angle
         currentAngle = currentAngle % 360;                                                                              //Loop after 360 (obviously)
         Vector3 newPos = playerTransform.position + Vector3.up;                                                         //Flame Position should be at just upwards of the player, but still needs to rotate
         transform.position = RotatePointAroundPivot(newPos, playerTransform.position, new Vector3(0,0,currentAngle));   //Rotate the point around the Player around the Z-Axis (The one sticking out of your monitor) by currentAngle
-        
-
     }
 
     private void refreshBuff(){

@@ -11,15 +11,15 @@ public class Item : ScriptableObject{
     public string description;
     public bool isStackable;
     public int maxStackSize;
-    [Range(0,100), Tooltip("This value will only be considered if Item is actually stackable.")]
-    public int amount=1;        //Default amount = 1, only gets read and shown if Item isStackable
+    [Range(1,100), Tooltip("This value will only be considered if Item is actually stackable.")]
+    public int amount;
 
     public virtual void Use(){
        Debug.Log("Using Item: " + itemName);
     }
 
     public int getAmount(){
-       return amount;
+        return amount;
     }
 
     //Typical Equals Contract

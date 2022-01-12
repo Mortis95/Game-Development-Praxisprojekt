@@ -7,23 +7,28 @@ public class Kettenblitz : MonoBehaviour
 
     private Player caster;
     private int damage;
-    private int maxTargets = 5;
-    private int range = 20;
+    private int maxTargets;
+    private int range;
     private GameObject[] targets;
     private bool[] targetsHit;
-    private int numOfHits = 0;
+    private int numOfHits;
 
     private int[] targetIndices;
     private LineRenderer lr;
     private bool spellFinished = false;
     private void Awake(){
+        //Setup Stats (can be balanced differently)
+        maxTargets = 5;
+        range = 12;
+        numOfHits = 0;
+
         //Setup damit alles ordentlich funktioniert
-        caster = Player.getInstance();                          //Get Player Instance and get Player-Intelligence
-        damage = caster.intelligence;                                   //Player-Intelligence = Damage (TODO: Set reasonable damage)
-        targets = GameObject.FindGameObjectsWithTag("Enemy");   //Gibt alle Enemies in current Szene
-        targetsHit = new bool[targets.Length];                  //Create an array um zu merken welcher Gegner bereits gehittet wurde
+        caster = Player.getInstance();                              //Get Player Instance and get Player-Intelligence
+        damage = caster.getIntelligence() * 2 - (caster.level - 1); //(TODO: Set reasonable damage)
+        targets = GameObject.FindGameObjectsWithTag("Enemy");       //Gibt alle Enemies in current Szene
+        targetsHit = new bool[targets.Length];                      //Create an array um zu merken welcher Gegner bereits gehittet wurde
         for (int i = 0; i < targetsHit.Length; i++){
-            targetsHit[i] = false;                              //Am Anfang wurde noch niemand gehittet
+            targetsHit[i] = false;                                  //Am Anfang wurde noch niemand gehittet
             Debug.Log("Target: " + targets[i].name + " Distance: " + Vector3.Distance(transform.position,targets[i].transform.position));
         }
 
@@ -47,6 +52,9 @@ public class Kettenblitz : MonoBehaviour
 
         //MainLoop starten
         StartCoroutine(mainLoop());
+        
+        //FÜR DEN FALL dass Arc die Main-Loop in einen Fehler läuft und sich nicht korrekt abbauen kann, wird das gameObject nach 5 Sekunden automatisch gelöscht
+        Destroy(gameObject, 5f);
     }
     
 
@@ -143,6 +151,7 @@ public class Kettenblitz : MonoBehaviour
             }
             //Check if current GameObject is closer than previous closest, if yes, remember new closest.
             GameObject g = targets[i];
+            if(g == null){continue;}
             float currentDistance = Vector3.Distance(transform.position, g.transform.position);
             if (currentDistance < closestDistance && currentDistance < range){
                 closestDistance = currentDistance;
