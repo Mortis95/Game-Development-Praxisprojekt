@@ -29,7 +29,7 @@ Lukas/Moritz
 Teresa
 
 ## Variations of Art Assets (Items)	
-eresa
+Teresa
 
 ## SceneArbeit (important)		
 Teresa
