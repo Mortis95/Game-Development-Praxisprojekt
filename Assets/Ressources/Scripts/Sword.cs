@@ -10,7 +10,7 @@ public class Sword : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             GameObject player = GameObject.FindWithTag("Player");
-            var dmg = attackDmg + player.GetComponent<Player>().atk;
+            var dmg = attackDmg + player.GetComponent<Player>().attack;
             collision.gameObject.GetComponent<Enemy>().TakeDmg(dmg, DamageType.Normal);
         }
     }

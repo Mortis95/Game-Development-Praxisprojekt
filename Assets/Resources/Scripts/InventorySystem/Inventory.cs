@@ -32,9 +32,9 @@ public class Inventory : MonoBehaviour
     private int selectedItemIndex;
     public Equipment equipment;
     void Start(){
-        inventorySpace = 20; //I'd like to dynamically get these numbers, but I can't be arsed to introduce even more spaghetti. Just keep this consistent with the UI please ty
-        slotsPerRow = 5;
+        slotsPerRow = 5;    //I'd like to dynamically get these numbers, but I can't be arsed to introduce even more spaghetti. Just keep this consistent with the UI please ty
         slotsPerColumn = 4;
+        inventorySpace = slotsPerRow * slotsPerColumn; 
         items = new Item[inventorySpace];
         selectedItemIndex = 0;
         inventoryUI = GetComponentInChildren<InventoryUI>();

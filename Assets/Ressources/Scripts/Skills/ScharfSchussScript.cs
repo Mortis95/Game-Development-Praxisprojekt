@@ -13,18 +13,18 @@ public class ScharfSchussScript : MonoBehaviour
         Vector3 offset;
         switch(pl.lastFacedDirection)
         {
-            case Player.Direction.Up:
+            case Direction.Up:
             myRigidbody.velocity = new Vector2(0,1) * speed;
             transform.Rotate(0, 0, 90);
             offset = Vector3.up;
             break;
 
-            case Player.Direction.Left:
+            case Direction.Left:
             myRigidbody.velocity = new Vector2(-1,0) * speed;
             offset = Vector3.left;
             break;
 
-            case Player.Direction.Right:
+            case Direction.Right:
             myRigidbody.velocity = new Vector2(1,0) * speed;
             offset = Vector3.right;
             break;
