@@ -7,6 +7,7 @@ public class InventoryUI : MonoBehaviour
 {
     public GameObject inventoryUIParent;
     public GameObject inventorySlotParent;
+    public Animator animator;
     private InventorySlotController[] inventorySlotsUI;
     public GameObject equipmentSlotParent;
     private InventorySlotController[] equipmentSlotsUI;
@@ -45,14 +46,15 @@ public class InventoryUI : MonoBehaviour
     }
     private void switchVisibility(){
         isVisible = !isVisible;
+        animator.SetBool("isOpen", isVisible);
         //inventoryUIParent.SetActive(isVisible);
-        if(isVisible){
+        /* if(isVisible){
             //Put Inventory in the middle of the screen and be visible
             transform.position = inventoryUIParent.transform.position;
         } else {
             //Put it VERY FAR offscreen, like SUPER FAR, even the BIGGEST BROADEST Monitor shouldn't be able to see that thing
             transform.position = new Vector3(5000,5000,0);
-        }
+        } */
     }
 
     void UpdateUI(){

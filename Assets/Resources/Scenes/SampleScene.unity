@@ -508,7 +508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &214350547
 Transform:
   m_ObjectHideFlags: 0
@@ -538,6 +538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillTreeEffects:
   - name: Learn Scharfschuss
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -555,7 +556,10 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 1
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
   - name: Learn Rage
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -573,7 +577,10 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 1
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
   - name: Learn Kettenblitz
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -591,7 +598,10 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 1
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
   - name: Learn Wasserpfeilhagel
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -609,7 +619,10 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 1
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
   - name: Learn Elektrowirbel
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -627,7 +640,10 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 1
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
   - name: Learn Wasserflaeche
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -645,7 +661,10 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 1
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
   - name: Learn Feuerpfeil
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -663,7 +682,10 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 1
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
   - name: Learn Wasserhieb
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -681,7 +703,10 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 1
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
   - name: Learn Feuerball
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -699,7 +724,10 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 1
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
   - name: Level Ranger Stats
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -717,7 +745,10 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 5
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
   - name: Level Warrior Stats
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -735,7 +766,10 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 5
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
   - name: Level Sorcerer Stats
+    description: 
     toExecute:
       m_PersistentCalls:
         m_Calls:
@@ -753,6 +787,13 @@ MonoBehaviour:
           m_CallState: 1
     currentAmountofTimes: 0
     maxAmountOfTimes: 5
+    minimumLevelRequirement: 0
+    otherSkillRequiredIndices: 
+  selectedSkillTreeEffectIndex: 0
+  skillTreeSlotsPerRow: 0
+  skillTreeSlotsPerColumn: 0
+  skillTreeCount: 0
+  skillTreeUI: {fileID: 0}
 --- !u!1 &234343473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,6 +1049,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &325111226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4684313625584699815, guid: 3e9442c0637c1ae42adcdd6cb719737f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4684313626024858527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &325111230
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325111226}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 465dd02304479d240a5629d678082a72, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &330745149
 GameObject:
   m_ObjectHideFlags: 0
@@ -2464,8 +2530,9 @@ MonoBehaviour:
   WasserHieb: {fileID: 1173620058084046320, guid: 47f8c3e679bbfa949bd38955aa93df20,
     type: 3}
   Rage: {fileID: 1503840621670785522, guid: 29c7c798fa0440d4bbe94ee8fa78903d, type: 3}
-  exp: 0
-  level: 0
+  experiencePoints: 0
+  currentLevel: 0
+  currentSkillpoints: 0
   currentHealthPoints: 100
   maxHealthPoints: 100
   currentMagicPoints: 100
@@ -27281,6 +27348,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4684313625584699813, guid: 3e9442c0637c1ae42adcdd6cb719737f,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 325111230}
+    - target: {fileID: 4684313625584699814, guid: 3e9442c0637c1ae42adcdd6cb719737f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684313625584699814, guid: 3e9442c0637c1ae42adcdd6cb719737f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1500
+      objectReference: {fileID: 0}
     - target: {fileID: 4684313625618922256, guid: 3e9442c0637c1ae42adcdd6cb719737f,
         type: 3}
       propertyPath: m_RootOrder
@@ -27289,17 +27371,17 @@ PrefabInstance:
     - target: {fileID: 4684313625618922256, guid: 3e9442c0637c1ae42adcdd6cb719737f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.155662
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4684313625618922256, guid: 3e9442c0637c1ae42adcdd6cb719737f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 36.637054
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4684313625618922256, guid: 3e9442c0637c1ae42adcdd6cb719737f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4309.7617
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4684313625618922256, guid: 3e9442c0637c1ae42adcdd6cb719737f,
         type: 3}
@@ -27396,6 +27478,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: c2b026c40b5eb13459586cda04a082f9,
         type: 3}
+    - target: {fileID: 4754089660049449981, guid: 6176cdf4cf3d53f45a72695b4ad9204a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4754089660049449981, guid: 6176cdf4cf3d53f45a72695b4ad9204a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -800
+      objectReference: {fileID: 0}
     - target: {fileID: 4754089661396575603, guid: 6176cdf4cf3d53f45a72695b4ad9204a,
         type: 3}
       propertyPath: m_RootOrder
@@ -27469,7 +27561,7 @@ PrefabInstance:
     - target: {fileID: 4754089661639326487, guid: 6176cdf4cf3d53f45a72695b4ad9204a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6176cdf4cf3d53f45a72695b4ad9204a, type: 3}
