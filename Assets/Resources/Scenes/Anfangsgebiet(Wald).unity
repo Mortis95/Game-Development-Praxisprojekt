@@ -152,7 +152,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b00f4548502b24997db91c91de71f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1577790885}
 --- !u!4 &6229136
 Transform:
   m_ObjectHideFlags: 0
@@ -2050,8 +2049,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883c5bc7533d48b4b80697b3152ec206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 0}
-  player: {fileID: 1577790885}
 --- !u!1001 &107695556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3271,7 +3268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163501081}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.42, y: 0.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 581829085}
@@ -33309,16 +33306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d88e17e9e17aeca459af1348367c926e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkillLevels: 
-  SkillCaps: 
-  SkillNames: []
-  SkillDescr: []
-  SkillList: []
-  SkillHolder: {fileID: 351639438}
-  ConnectorList: []
-  ConnectorHolder: {fileID: 545686197}
-  SkillPoints: 0
-  LevelupSkillpoints: 0
 --- !u!1001 &600500445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42132,28 +42119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466bd5deec9c39945bf1c643539b3735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealPotionNormal: {fileID: 0}
-  "HealPotionGro\xDF": {fileID: 0}
-  ManaTrank: {fileID: 0}
-  "ManaTrankGro\xDF": {fileID: 0}
-  MettBrot: {fileID: 0}
-  "Bl\xE4tterwasser": {fileID: 0}
-  "LederR\xFCstung": {fileID: 0}
-  "KettenR\xFCstung": {fileID: 0}
-  "PlattenstahlR\xFCstung": {fileID: 0}
-  HolzSchild: {fileID: 0}
-  EisenSchild: {fileID: 0}
-  StahlSchild: {fileID: 0}
-  BeginnerBogen: {fileID: 21300000, guid: 1281623da8842794292eb210b8e12edf, type: 3}
-  "J\xE4gerBogen": {fileID: 0}
-  Akolythenstab: {fileID: 0}
-  Elementarstab: {fileID: 0}
-  MeisterStab: {fileID: 0}
-  Schwert: {fileID: 21300000, guid: 1281623da8842794292eb210b8e12edf, type: 3}
-  KampfAxt: {fileID: 0}
-  StreitKolben: {fileID: 0}
-  pfItemWorld: {fileID: 4862978555541367695, guid: 374d9393cd5de1a4486e409ac9262f50,
-    type: 3}
 --- !u!1 &1076310828
 GameObject:
   m_ObjectHideFlags: 0
@@ -52093,46 +52058,28 @@ MonoBehaviour:
   animator: {fileID: 1577790884}
   movement: {x: 0, y: 0}
   lastFacedDirection: 0
-  attackpoint: {fileID: 1737661365}
-  attackpointLeft: {fileID: 1315629104}
-  attackpointRight: {fileID: 242486346}
-  attackpointUp: {fileID: 1878911354}
-  attackpointDown: {fileID: 1737661365}
-  attackrange: 1
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 64
-  attackRate: 2
-  meleeAttack: 1
-  ArrowPrefabLeft: {fileID: 2971533044720690692, guid: 6d1417f208daafa40acc4e124bea4217,
-    type: 3}
-  ArrowPrefabRight: {fileID: 6982617031259506923, guid: 9eb9754c7cbee0140942344460661585,
-    type: 3}
-  ArrowPrefabUp: {fileID: 4930204379889953173, guid: 7bff0384ed312834f8580008647b802b,
-    type: 3}
-  ArrowPrefabDown: {fileID: 1341492855286068850, guid: fc836cacef886134aac38fd7f54d2250,
-    type: 3}
-  JaegerArrowPrefabLeft: {fileID: 0}
-  JaegerArrowPrefabRight: {fileID: 0}
-  JaegerArrowPrefabUp: {fileID: 0}
-  JaegerArrowPrefabDown: {fileID: 0}
+  inventory: {fileID: 0}
+  equipment: {fileID: 0}
+  equippedWeapon: {fileID: 0}
+  equippedShield: {fileID: 0}
+  equippedConsumable: {fileID: 0}
+  equippedArmor: {fileID: 0}
+  meleeAttackPrefab: {fileID: 0}
+  rangedAttackPrefab: {fileID: 0}
+  magicAttackPrefab: {fileID: 0}
   emptySkill: {fileID: 0}
   Wasserflaeche: {fileID: 0}
   WasserPfeil: {fileID: 0}
   ElektroWirbel: {fileID: 0}
   WasserHieb: {fileID: 0}
   Rage: {fileID: 0}
-  currentHealth: 100
-  maxHealth: 100
-  MP: 0
-  MPMax: 100
-  atk: 40
-  matk: 0
-  def: 0
-  mdef: 0
-  str: 0
-  dex: 0
-  inte: 0
+  experiencePoints: 0
+  currentLevel: 0
+  currentSkillpoints: 0
+  currentHealthPoints: 0
+  maxHealthPoints: 0
+  currentMagicPoints: 0
+  maxMagicPoints: 0
   equippedAbility: 0
   FeuerpfeilLearned: 0
   WasserpfeilhagelLearned: 0
@@ -52142,36 +52089,10 @@ MonoBehaviour:
   RageLearned: 0
   FeuerballLearned: 0
   WasserflaecheLearned: 0
-  SturmketteLearned: 0
-  canvasSkilltree: {fileID: 1942896257}
+  KettenblitzLearned: 0
   audioSource: {fileID: 0}
   swordSound: {fileID: 8300000, guid: 5da7b24f7e8524dd18e70029088285aa, type: 3}
   walkingSound: {fileID: 8300000, guid: fbfc9b9da35184ef8ad0ce89f6fa0bd5, type: 3}
-  exp: 0
-  ui_Inventory: {fileID: 107334174}
-  canvasInventory: {fileID: 1886645774}
-  position: {x: 0, y: 0}
-  HealPotionNormalEquiped: 0
-  "HealPotionGro\xDFEquiped": 0
-  ManaTrankEquiped: 0
-  "ManaTrankGro\xDFEquiped": 0
-  MettBrotEquiped: 0
-  "Bl\xE4tterwasserEquiped": 0
-  "LederR\xFCstungEquiped": 0
-  "KettenR\xFCstungEquiped": 0
-  "PlattenstahlR\xFCstungEquiped": 0
-  HolzSchildEquiped: 0
-  EisenSchildEquiped: 0
-  StahlSchildEquiped: 0
-  BeginnerBogenEquiped: 0
-  "J\xE4gerBogenEquiped": 0
-  AkolythenstabEquiped: 0
-  ElementarstabEquiped: 0
-  MeisterStabEquiped: 0
-  SchwertEquiped: 0
-  KampfAxtEquiped: 0
-  StreitKolbenEquiped: 0
-  knockbackSpeed: 400
   healthBar: {fileID: 605511029}
   manaBar: {fileID: 844418266}
   UIcurrentLevel: {fileID: 639570279}
