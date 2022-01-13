@@ -56,8 +56,9 @@ public class Player : MonoBehaviour
 
     #region CharacterAttributes
     //Character Attributes
-    public int exp;
-    public int level;
+    public int experiencePoints;
+    public int currentLevel;
+    public int currentSkillpoints;
     public int currentHealthPoints;
     public int maxHealthPoints;
     public int currentMagicPoints;
@@ -97,8 +98,8 @@ public class Player : MonoBehaviour
     private int FeuerballMPKost                 = 100;
     public bool WasserflaecheLearned            = false;
     private int WasserflaecheMPKost             = 100;
-    public bool SturmketteLearned               = false;
-    private int SturmketteMPKost                = 5;
+    public bool KettenblitzLearned              = false;
+    private int KettenblitzMPKost               = 5;
     #endregion
     
     
@@ -144,6 +145,7 @@ public class Player : MonoBehaviour
         this.equippedShield = equipment.shieldInHand;
         this.equippedConsumable = equipment.consumableInHand;
         this.equippedArmor = equipment.equippedArmor;
+        recalculateStats();
     }
 
     void Update(){
@@ -160,7 +162,7 @@ public class Player : MonoBehaviour
 
     public void addExp(int xp)
     {
-        exp+=xp;
+        experiencePoints += xp;
         checkLevelup();
     }
 
@@ -202,12 +204,42 @@ public class Player : MonoBehaviour
         manaBar.setMaxValue(maxMagicPoints);
         manaBar.setValue(currentMagicPoints);
     }
-
+    public void recalculateStats(){
+        int bonusAttack         = 0;
+        int bonusDefense        = 0;
+        int bonusStrength       = 0;
+        int bonusDexterity      = 0;
+        int bonusIntelligence   = 0;
+        if(equippedWeapon != null){
+            bonusAttack += equippedWeapon.bonusAttack;
+            //bonusDefense += equippedWeapon.bonusDefense; //Weapons do not have bonus Defense yet
+            bonusStrength += equippedWeapon.bonusStrength;
+            bonusDexterity += equippedWeapon.bonusDexterity;
+            bonusIntelligence += equippedWeapon.bonusIntelligence;
+        }
+        if(equippedShield != null){
+            //bonusAttack += equippedShield.bonusAttack; //Shields do not have bonusAttack yet
+            bonusDefense += equippedShield.bonusDefense;
+            bonusStrength += equippedShield.bonusStrength;
+            bonusDexterity += equippedShield.bonusDexterity;
+            bonusIntelligence += equippedShield.bonusIntelligence;
+        }
+        if(equippedArmor != null){
+            //bonusAttack += equippedArmor.bonusAttack; //Armors do not have bonusAttack yet
+            bonusDefense += equippedArmor.bonusDefense;
+            bonusStrength += equippedArmor.bonusStrength;
+            bonusDexterity += equippedArmor.bonusDexterity;
+            bonusIntelligence += equippedArmor.bonusIntelligence;
+        }
+        totalAttack = baseAttack + bonusAttack;
+        totalDefense = baseDefense + bonusDefense;
+        totalStrength = baseStrength + bonusStrength;
+        totalIntelligence = baseIntelligence + bonusIntelligence;
+    }
     public void takeDamage(DamageType damageType, int dmg){
         currentHealthPoints -= dmg;
         //DamagePopupController.create();
     }
-
     public void processMovement(){
         //Movement
         float moveX = Input.GetAxisRaw("Horizontal"); 
@@ -240,7 +272,6 @@ public class Player : MonoBehaviour
             lastFacedDirection = Direction.Down;
         }
     }
-
     public void processAttackInput(){
         if(Input.GetKeyDown(KeyCode.Space) && equippedWeapon != null){
             switch(equippedWeapon.weaponType){
@@ -313,8 +344,8 @@ public class Player : MonoBehaviour
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<Wasserfläche>();
 
-            } else if (equippedAbility == Ability.Sturmkette && currentMagicPoints >= SturmketteMPKost){
-                currentMagicPoints -= SturmketteMPKost;
+            } else if (equippedAbility == Ability.Kettenblitz && currentMagicPoints >= KettenblitzMPKost){
+                currentMagicPoints -= KettenblitzMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<Kettenblitz>();
 
@@ -324,12 +355,20 @@ public class Player : MonoBehaviour
     }
     #endregion
 
-    #region GetterAndSetter
+    #region GetterAndSetterAndAdder
     public int getAttack(){return totalAttack;}
     public int getDefense(){return totalDefense;}
     public int getStrength(){return totalStrength;}
     public int getDexterity(){return totalDexterity;}
     public int getIntelligence(){return totalIntelligence;}
     public void setStrength(int newValue){totalStrength = newValue;}
+    public void addPermanentStats(int addAttack, int addDefense, int addStrength, int addDexterity, int addIntelligence){
+        baseAttack       += addAttack;
+        baseDefense      += addDefense;
+        baseStrength     += addStrength;
+        baseDexterity    += addDexterity;
+        baseIntelligence += addIntelligence;
+        recalculateStats();
+    }
     #endregion
 }

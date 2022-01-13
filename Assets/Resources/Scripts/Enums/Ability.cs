@@ -8,5 +8,5 @@ public enum Ability {
     Rage,
     Feuerball,
     Wasserflaeche,
-    Sturmkette
+    Kettenblitz
 }

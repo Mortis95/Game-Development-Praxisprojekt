@@ -16,7 +16,7 @@ public class Elektrowirbel : MonoBehaviour
 
     private void Awake(){
         Player player = Player.getInstance();
-        damage = player.getStrength() * 2 - (player.level - 1);                //Provisorischer Wert = 2 * STR
+        damage = player.getStrength() * 2 - (player.currentLevel - 1);                //Provisorischer Wert = 2 * STR
         rotateFrameCount = rotateEveryNFrames;
         stuckToPlayer = player.transform;
         Destroy(gameObject,disappearAfterSeconds);

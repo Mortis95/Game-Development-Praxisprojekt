@@ -24,7 +24,7 @@ public class Kettenblitz : MonoBehaviour
 
         //Setup damit alles ordentlich funktioniert
         caster = Player.getInstance();                              //Get Player Instance and get Player-Intelligence
-        damage = caster.getIntelligence() * 2 - (caster.level - 1); //(TODO: Set reasonable damage)
+        damage = caster.getIntelligence() * 2 - (caster.currentLevel - 1); //(TODO: Set reasonable damage)
         targets = GameObject.FindGameObjectsWithTag("Enemy");       //Gibt alle Enemies in current Szene
         targetsHit = new bool[targets.Length];                      //Create an array um zu merken welcher Gegner bereits gehittet wurde
         for (int i = 0; i < targetsHit.Length; i++){

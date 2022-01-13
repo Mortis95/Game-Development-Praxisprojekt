@@ -10,7 +10,9 @@ public class Weapon : Item
     public Sprite projectile;
     
     public int bonusAttack;
-    public int bonusMagicAttack;
+    public int bonusStrength;
+    public int bonusDexterity;
+    public int bonusIntelligence;
     
       
 }
