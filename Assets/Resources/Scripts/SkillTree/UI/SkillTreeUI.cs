@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class SkillTreeUI : MonoBehaviour{
     public GameObject skillTreeUIParent;
+    private SkillTreeNodeController[] skillTreeNodesUI;
     public SkillTree skillTree;
     private bool isVisible;
     private void Awake(){
         isVisible = false;
         skillTree.onSkillTreeChangedCallback += updateSkillTreeUI;
+        skillTree.onSkillTreeSelectionChanged += updateSelectionUI;
+        skillTreeNodesUI = gameObject.GetComponentsInChildren<SkillTreeNodeController>();
     }
 
 
@@ -32,6 +35,16 @@ public class SkillTreeUI : MonoBehaviour{
         return isVisible;
     }
     private void updateSkillTreeUI(){
-
+        SkillTreeNode[] nodes = SkillTree.getInstance().getSkillTreeNodes();
+        for(int i = 0; i < nodes.Length; i++){
+            skillTreeNodesUI[i].setNodeUI(nodes[i]);
+        }
+    }
+    
+    private void updateSelectionUI(int selectedIndex){
+        for(int i = 0; i < skillTreeNodesUI.Length; i++){
+            if(i == selectedIndex){skillTreeNodesUI[i].beSelected();}
+            else{skillTreeNodesUI[i].beUnselected();}
+        }
     }
 }

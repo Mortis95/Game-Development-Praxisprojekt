@@ -12,7 +12,7 @@ public class InventorySlotController : MonoBehaviour{
     private void Awake(){
         //Get Text Object (for some reason couldn't be assigned in Unity Inspect)
         stackSizeText = gameObject.GetComponentInChildren<TextMeshProUGUI>();
-        Debug.Log(stackSizeText);
+        //Debug.Log(stackSizeText);
 
         //Make sure to have default look on Awake
         slotBackground.color = Color.white;
