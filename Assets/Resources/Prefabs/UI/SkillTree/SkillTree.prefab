@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8e57bbfd42957429ea3125d63daf15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillTreeUIParent: {fileID: 1310108519674189558}
+  animator: {fileID: 0}
   skillTree: {fileID: 1310108519100298819}
 --- !u!1 &1310108518656762472
 GameObject:
@@ -2085,6 +2085,11 @@ PrefabInstance:
         type: 3}
       propertyPath: nodeHasBottomConnector
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7913999113405197299, guid: f53e6dd2acc8eb44bb6a9f8dcef4cc5c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7913999113405197299, guid: f53e6dd2acc8eb44bb6a9f8dcef4cc5c,
         type: 3}
