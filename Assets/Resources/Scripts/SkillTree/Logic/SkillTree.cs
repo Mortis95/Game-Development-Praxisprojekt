@@ -194,15 +194,15 @@ public class SkillTree : MonoBehaviour{
     #region Unlockables
     //Hardcoded Events, because Unity does not allow for variable assignment or methods with 5 parameters in its event system.
     //Probably not the optimal way to do it, but I can't rework every single system after it's been already implemented. :/
-    public void unlockScharfschuss(){pl.ScharfschussLearned         = true;}
-    public void unlockRage(){pl.RageLearned                         = true;}
-    public void unlockKettenblitz(){pl.KettenblitzLearned           = true;}
-    public void unlockWasserpfeilHagel(){pl.WasserpfeilhagelLearned = true;}
-    public void unlockElektrowirbel(){pl.ElektrowirbelLearned       = true;}
-    public void unlockWasserflaeche(){pl.WasserflaecheLearned       = true;}
-    public void unlockFeuerpfeil(){pl.FeuerpfeilLearned             = true;}
-    public void unlockWasserHieb(){pl.WasserhiebLearned             = true;}
-    public void unlockFeuerball(){pl.FeuerballLearned               = true;}
+    public void unlockScharfschuss(){pl.ScharfschussLearned         = true; pl.addPermanentStats(1,1,0,1,0);}
+    public void unlockRage(){pl.RageLearned                         = true; pl.addPermanentStats(1,1,1,0,0);}
+    public void unlockKettenblitz(){pl.KettenblitzLearned           = true; pl.addPermanentStats(1,1,0,0,1);}
+    public void unlockWasserpfeilHagel(){pl.WasserpfeilhagelLearned = true; pl.addPermanentStats(1,1,0,1,0);}
+    public void unlockElektrowirbel(){pl.ElektrowirbelLearned       = true; pl.addPermanentStats(1,1,1,0,0);}
+    public void unlockWasserflaeche(){pl.WasserflaecheLearned       = true; pl.addPermanentStats(1,1,0,0,1);}
+    public void unlockFeuerpfeil(){pl.FeuerpfeilLearned             = true; pl.addPermanentStats(1,1,0,1,0);}
+    public void unlockWasserHieb(){pl.WasserhiebLearned             = true; pl.addPermanentStats(1,1,1,0,0);}
+    public void unlockFeuerball(){pl.FeuerballLearned               = true; pl.addPermanentStats(1,1,0,0,1);}
     public void levelRangerStats(){pl.addPermanentStats(2,2,0,3,0);}
     public void levelWarriorStats(){pl.addPermanentStats(2,2,3,0,0);}
     public void levelSorcererStats(){pl.addPermanentStats(2,2,0,0,3);}
