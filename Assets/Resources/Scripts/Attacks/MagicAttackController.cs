@@ -7,7 +7,7 @@ public class MagicAttackController : MonoBehaviour
 
     //Images
     public SpriteRenderer spr;
-    public Sprite arrow;
+    public Sprite magicProjectile;
 
     //Settings
     public float disappearAfterSeconds;
@@ -25,7 +25,7 @@ public class MagicAttackController : MonoBehaviour
         Player pl = Player.getInstance();
 
         //Set Damage
-        damage = pl.getAttack() + pl.getDexterity();          //Damage = ATK + DEX
+        damage = pl.getAttack() + pl.getIntelligence();          //Damage = ATK + DEX
         
         //Pick correct image to display and correct offset to use for position
         spr.sprite = pl.equippedWeapon.projectile;

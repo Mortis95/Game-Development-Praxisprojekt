@@ -13,6 +13,7 @@ public class InventoryUI : MonoBehaviour
     private InventorySlotController[] equipmentSlotsUI;
     public TextMeshProUGUI itemNameText;
     public TextMeshProUGUI itemDescriptionText;
+    public TextMeshProUGUI itemStatsText;
 
     private Inventory inventory;
     private bool isVisible;
@@ -67,8 +68,16 @@ public class InventoryUI : MonoBehaviour
         }
         //Update Text
         Item selectedItem = items[selectedItemIndex];
-        if (selectedItem == null){itemNameText.SetText("");itemDescriptionText.SetText("");}
-        else{itemNameText.SetText(selectedItem.itemName);itemDescriptionText.SetText(selectedItem.description);}
+        if (selectedItem == null){
+            itemNameText.SetText("");
+            itemDescriptionText.SetText("");
+            itemStatsText.SetText("");
+        }
+        else{
+            itemNameText.SetText(selectedItem.itemName);
+            itemDescriptionText.SetText(selectedItem.description);
+            itemStatsText.SetText(selectedItem.getStatsAsFormattedString());
+        }
 
     }
 
