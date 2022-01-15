@@ -1982,7 +1982,8 @@ MonoBehaviour:
     type: 3}
   rangedAttackPrefab: {fileID: 1788278415932951469, guid: 11d2dac5a329df44da5e30446065e376,
     type: 3}
-  magicAttackPrefab: {fileID: 0}
+  magicAttackPrefab: {fileID: 913467029813440514, guid: b314cd29edcf8494faa00ef38710edfd,
+    type: 3}
   emptySkill: {fileID: 1147858313}
   Wasserflaeche: {fileID: 8575629977640066971, guid: b127d0c2986a9334aadd1259c6036c13,
     type: 3}
