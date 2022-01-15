@@ -53,7 +53,7 @@ public class RageBuffController : MonoBehaviour
     }
     private void endBuff(){
         instance = null;
-        //Player.getInstance().recalculateStats();        //Make Player recalculate all stats at the end of the Buff, so no wrong Stats are left over.
+        Player.getInstance().recalculateStats();        //Make Player recalculate all stats at the end of the Buff, so no wrong Stats are left over.
         Destroy(gameObject);
     }
 

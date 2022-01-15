@@ -7510,7 +7510,6 @@ GameObject:
   - component: {fileID: 1968042068}
   - component: {fileID: 1968042070}
   - component: {fileID: 1968042069}
-  - component: {fileID: 1968042071}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -25496,18 +25495,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1968042071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968042067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6234a736dafb22249a0f099d3d635256, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2094418485 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1470198662958260939, guid: bb4c877020bb7ae40863202b7bf74946,
