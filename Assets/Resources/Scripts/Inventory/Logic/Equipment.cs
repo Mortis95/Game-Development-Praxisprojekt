@@ -29,6 +29,10 @@ public class Equipment : MonoBehaviour
     public delegate void OnEquipmentChanged();
     public OnEquipmentChanged onEquipmentChangedCallback;
 
+    void Start(){
+        equippedAbility = Ability.NoAbilityEquipped;
+    }
+
 
     //This method will equip the given item in (hopefully) the correct slot for it.
     //Note: The code appears messy, because of how complex the problem is:
@@ -83,6 +87,49 @@ public class Equipment : MonoBehaviour
         }
         //Item can't be equipped, just return it to inventory.
         return item;    
+    }
+
+    //Dirty Enum again, would be better with an Ability-Class, but that would require another rework. 
+    //If we have enough time, sure that's a good idea!
+    public bool equipSkill(Ability toEquip){
+        Player pl = Player.getInstance();
+        bool change = false;
+        switch(toEquip){
+            case Ability.Scharfschuss:
+                if(pl.ScharfschussLearned){change = true;};
+                break;
+            case Ability.Rage:
+                if(pl.RageLearned){change = true;};
+                break;
+            case Ability.Kettenblitz:
+                if(pl.KettenblitzLearned){change = true;};
+                break;
+            case Ability.Wasserpfeilhagel:
+                if(pl.WasserpfeilhagelLearned){change = true;};
+                break;
+            case Ability.Elektrowirbel:
+                if(pl.ElektrowirbelLearned){change = true;};
+                break;
+            case Ability.Wasserflaeche:
+                if(pl.WasserflaecheLearned){change = true;};
+                break;
+            case Ability.Feuerpfeil:
+                if(pl.FeuerpfeilLearned){change = true;};
+                break;
+            case Ability.Wasserhieb:
+                if(pl.WasserhiebLearned){change = true;};
+                break;
+            case Ability.Feuerball:
+                if(pl.FeuerballLearned){change = true;};
+                break;
+        }
+        if(change){
+            equippedAbility = toEquip;
+            invokeCallback(); 
+            return true;
+            }
+        
+        return false;
     }
 
     public void invokeCallback(){

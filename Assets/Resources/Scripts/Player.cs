@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
     public Shield equippedShield;
     public Consumable equippedConsumable;
     public Armor equippedArmor;
+    public Ability equippedAbility;
     #endregion
     
     #region Instantiates
@@ -81,7 +82,6 @@ public class Player : MonoBehaviour
 
     #region AbilityCostAndVariables
     //Ability Kram - Bools sehen zwar doof aus, sind aber praktisch und peformancetechnisch gesehen das Beste. 
-    public Ability equippedAbility;
     public bool FeuerpfeilLearned               = false;
     private int FeuerpfeilMPKost                = 100;
     public bool WasserpfeilhagelLearned         = false;
@@ -145,6 +145,7 @@ public class Player : MonoBehaviour
         this.equippedShield = equipment.shieldInHand;
         this.equippedConsumable = equipment.consumableInHand;
         this.equippedArmor = equipment.equippedArmor;
+        this.equippedAbility = equipment.equippedAbility;
         recalculateStats();
     }
 

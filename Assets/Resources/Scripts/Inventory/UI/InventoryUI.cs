@@ -5,31 +5,51 @@ using TMPro;
 
 public class InventoryUI : MonoBehaviour
 {
-    public GameObject inventoryUIParent;
-    public GameObject inventorySlotParent;
     public Animator animator;
+    public GameObject inventorySlotParent;
     private InventorySlotController[] inventorySlotsUI;
     public GameObject equipmentSlotParent;
     private InventorySlotController[] equipmentSlotsUI;
+    public GameObject skillSlotsParent;
+    private InventorySlotController[] skillSlotsUI;
+    private Sprite[] skillSlotIcons;
     public TextMeshProUGUI itemNameText;
     public TextMeshProUGUI itemDescriptionText;
     public TextMeshProUGUI itemStatsText;
 
     private Inventory inventory;
     private bool isVisible;
+    private bool itemSelectionActive;
     private void Awake(){
         inventorySlotsUI = inventorySlotParent.GetComponentsInChildren<InventorySlotController>();
         equipmentSlotsUI = equipmentSlotParent.GetComponentsInChildren<InventorySlotController>();
+        skillSlotsUI     =    skillSlotsParent.GetComponentsInChildren<InventorySlotController>();
+
+        #region GetAllSkillIconsDueToBadEnumDecisionEarlier
+        //This could be reworked with a SkillClass
+        skillSlotIcons = new Sprite[9];
+        skillSlotIcons[0] = Resources.Load<Sprite>("Sprites/SkillTreeSprites/AimedArrow-bw");
+        skillSlotIcons[1] = Resources.Load<Sprite>("Sprites/SkillTreeSprites/rage");
+        skillSlotIcons[2] = Resources.Load<Sprite>("Sprites/SkillTreeSprites/Chainlightning");
+        skillSlotIcons[3] = Resources.Load<Sprite>("Sprites/SkillTreeSprites/IceArrow");
+        skillSlotIcons[4] = Resources.Load<Sprite>("Sprites/SkillTreeSprites/SwordVortex");
+        skillSlotIcons[5] = Resources.Load<Sprite>("Sprites/SkillTreeSprites/Ice-ground");
+        skillSlotIcons[6] = Resources.Load<Sprite>("Sprites/SkillTreeSprites/FireArrow");
+        skillSlotIcons[7] = Resources.Load<Sprite>("Sprites/SkillTreeSprites/FrozenStrike");
+        skillSlotIcons[8] = Resources.Load<Sprite>("Sprites/SkillTreeSprites/Fireball");
+        Debug.Log("Created Array!");
         
-    }
+        #endregion
+        }
+
     // Start is called before the first frame update
     IEnumerator Start()
     {
-        //Try to get inventory instance, if it fails wait a second and try again.
+        //Try to get inventory instance, if it fails wait half a second and try again.
         //The code so far has *never* failed to get inventory instance, but I am worried about Unity running 2 scripts at the same time that have timing dependency on each other, so here's a fix for a hopefully never appearing problem.
         while(inventory == null){
             inventory = Inventory.getInstance();
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.5f);
         }
         //Subscribe our function "UpdateUI" to InventoryChangedEvent, triggering it everytime the Event triggers. 
         inventory.onInventoryChangedCallback += UpdateUI;
@@ -37,6 +57,7 @@ public class InventoryUI : MonoBehaviour
         UpdateUI();
         //Inventory should start invisible
         isVisible = false;
+        itemSelectionActive = true;
     }
 
     // Update is called once per frame
@@ -44,21 +65,27 @@ public class InventoryUI : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.I)){
             switchVisibility();
         }
+        if(isVisible && Input.GetKeyDown(KeyCode.C)){
+            switchSelectionMode();
+        }
     }
     private void switchVisibility(){
         isVisible = !isVisible;
         animator.SetBool("isOpen", isVisible);
-        //inventoryUIParent.SetActive(isVisible);
-        /* if(isVisible){
-            //Put Inventory in the middle of the screen and be visible
-            transform.position = inventoryUIParent.transform.position;
-        } else {
-            //Put it VERY FAR offscreen, like SUPER FAR, even the BIGGEST BROADEST Monitor shouldn't be able to see that thing
-            transform.position = new Vector3(5000,5000,0);
-        } */
     }
 
+    private void switchSelectionMode(){
+        itemSelectionActive = !itemSelectionActive;
+        animator.SetBool("selectSkills",!itemSelectionActive);
+    }
+
+    #region UpdateUI
     void UpdateUI(){
+        if(itemSelectionActive){UpdateItemSelectionUI();}
+        else{UpdateSkillSelectionUI();}
+    }
+
+    void UpdateItemSelectionUI(){
         Item[] items = inventory.getItems();
         int selectedItemIndex = inventory.getSelectedItemIndex();
         //Update Border of Slots
@@ -78,10 +105,26 @@ public class InventoryUI : MonoBehaviour
             itemDescriptionText.SetText(selectedItem.description);
             itemStatsText.SetText(selectedItem.getStatsAsFormattedString());
         }
-
     }
+
+    void UpdateSkillSelectionUI(){
+        int selectedSkillSlot = inventory.getSelectedSkillSlot();
+        for(int i = 0; i < skillSlotsUI.Length; i++){
+            skillSlotsUI[i].beSelected(selectedSkillSlot == i);
+        }
+    }
+
+    #endregion
 
     public bool getVisibility(){
         return isVisible;
     }
+    public bool getItemSelectionActive(){
+        return itemSelectionActive;
+    }
+
+    public Sprite[] getAbilityIcons(){
+        return skillSlotIcons;
+    }
+    
 }

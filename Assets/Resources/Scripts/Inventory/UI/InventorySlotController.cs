@@ -35,6 +35,11 @@ public class InventorySlotController : MonoBehaviour{
 
     }
 
+    public void setSpriteAndEnable(Sprite spr){
+        this.slotDisplay.sprite = spr;
+        this.slotDisplay.enabled = true;
+    }
+
     public void clearItem(){
         slotDisplay.sprite = null;
         slotDisplay.enabled = false;
@@ -45,5 +50,9 @@ public class InventorySlotController : MonoBehaviour{
         if(selected){slotBackground.color = Color.red;}
         else{slotBackground.color = Color.white;}
         
+    }
+
+    public void setDisplayEnabled(bool enabled){
+        slotDisplay.enabled = enabled;
     }
 }

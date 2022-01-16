@@ -26,32 +26,70 @@ public class Inventory : MonoBehaviour
 
     public InventoryUI inventoryUI;
     private Item[] items;
+    private int itemSlotsPerRow;
+    private int itemSlotsPerColumn;
     private int inventorySpace;
-    private int slotsPerRow;
-    private int slotsPerColumn;
     private int selectedItemIndex;
+    private Ability[] skills;       //Dirty enum array, better handled as a class, but not enough time for another rework.
+    private int skillSlotsPerRow;
+    private int skillSlotsPerColumn;
+    private int skillSlotsTotal;
+    private int selectedSkillSlot;
     public Equipment equipment;
     void Start(){
-        slotsPerRow = 5;    //I'd like to dynamically get these numbers, but I can't be arsed to introduce even more spaghetti. Just keep this consistent with the UI please ty
-        slotsPerColumn = 4;
-        inventorySpace = slotsPerRow * slotsPerColumn; 
-        items = new Item[inventorySpace];
+        //Setup Itemslots Numbers
+        itemSlotsPerRow = 5;    //I'd like to dynamically get these numbers, but I can't be arsed to introduce even more spaghetti. Just keep this consistent with the UI please ty
+        itemSlotsPerColumn = 4;
+        inventorySpace = itemSlotsPerRow * itemSlotsPerColumn;
         selectedItemIndex = 0;
+
+        //Setup SkillSlot Numbers
+        skillSlotsPerRow = 3;
+        skillSlotsPerColumn = 3;
+        skillSlotsTotal = skillSlotsPerRow * skillSlotsPerColumn;
+        selectedSkillSlot = 0;
+
+        //Setup new Inventory
+        items = new Item[inventorySpace];
+
+        //Setup new SkillSlots
+        #region CreatingBigEnumArray
+        skills = new Ability[] {
+            Ability.Scharfschuss,     Ability.Rage,          Ability.Kettenblitz, 
+            Ability.Wasserpfeilhagel, Ability.Elektrowirbel, Ability.Wasserflaeche,
+            Ability.Feuerpfeil,       Ability.Wasserhieb,    Ability.Feuerball
+            };
+        #endregion
+
         inventoryUI = GetComponentInChildren<InventoryUI>();
         }
 
     void Update(){
-        if(inventoryUI.getVisibility()){processInput();}
+        if(inventoryUI.getVisibility()){
+            if(inventoryUI.getItemSelectionActive()){processItemSelectionInput();} 
+            else                                    {processSkillSelectionInput();}
+        }
     }
 
-    #region PlayerSelectItemInput
-    void processInput(){
+    #region PlayerSelectionInput
+    void processItemSelectionInput(){
         bool changed = false;
-        if(Input.GetKeyDown(KeyCode.E)){items[selectedItemIndex] = equipment.equipItem(items[selectedItemIndex]);           changed=true;}
-        if(Input.GetKeyDown(KeyCode.W)){selectedItemIndex = betterModulo(selectedItemIndex - slotsPerRow, inventorySpace);  changed=true;}
-        if(Input.GetKeyDown(KeyCode.S)){selectedItemIndex = betterModulo(selectedItemIndex + slotsPerRow, inventorySpace);  changed=true;}
-        if(Input.GetKeyDown(KeyCode.A)){selectedItemIndex = betterModulo(selectedItemIndex - 1,           inventorySpace);  changed=true;}
-        if(Input.GetKeyDown(KeyCode.D)){selectedItemIndex = betterModulo(selectedItemIndex + 1,           inventorySpace);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.E)){items[selectedItemIndex] = equipment.equipItem(items[selectedItemIndex]);               changed=true;}
+        if(Input.GetKeyDown(KeyCode.W)){selectedItemIndex = betterModulo(selectedItemIndex - itemSlotsPerRow, inventorySpace);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.S)){selectedItemIndex = betterModulo(selectedItemIndex + itemSlotsPerRow, inventorySpace);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.A)){selectedItemIndex = betterModulo(selectedItemIndex - 1,               inventorySpace);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.D)){selectedItemIndex = betterModulo(selectedItemIndex + 1,               inventorySpace);  changed=true;}
+
+        if(changed && onInventoryChangedCallback != null) onInventoryChangedCallback.Invoke();
+    }
+
+    void processSkillSelectionInput(){
+        bool changed = false;
+        if(Input.GetKeyDown(KeyCode.E)){equipment.equipSkill(skills[selectedSkillSlot]);                                          changed=true;}
+        if(Input.GetKeyDown(KeyCode.W)){selectedSkillSlot = betterModulo(selectedSkillSlot - skillSlotsPerRow, skillSlotsTotal);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.S)){selectedSkillSlot = betterModulo(selectedSkillSlot + skillSlotsPerRow, skillSlotsTotal);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.A)){selectedSkillSlot = betterModulo(selectedSkillSlot - 1,                skillSlotsTotal);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.D)){selectedSkillSlot = betterModulo(selectedSkillSlot + 1,                skillSlotsTotal);  changed=true;}
 
         if(changed && onInventoryChangedCallback != null) onInventoryChangedCallback.Invoke();
     }
@@ -106,6 +144,9 @@ public class Inventory : MonoBehaviour
     }
     public int getSelectedItemIndex(){
         return selectedItemIndex;
+    }
+    public int getSelectedSkillSlot(){
+        return selectedSkillSlot;
     }
     private int betterModulo(int dividend, int divisor){
         return (dividend % divisor + divisor) % divisor;   //Weird code, I know, but this makes it so that even when you input a negative number, it wraps back around to being positive. Because that's just what Modulo SHOULD do in my opinion.
