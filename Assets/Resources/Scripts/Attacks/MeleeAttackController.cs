@@ -22,6 +22,7 @@ public class MeleeAttackController : MonoBehaviour
 
     
     private void Awake(){
+        AudioManager.getInstance().Play("SchwertSchlag");
         //Get Player Instance
         Player pl = Player.getInstance();
 

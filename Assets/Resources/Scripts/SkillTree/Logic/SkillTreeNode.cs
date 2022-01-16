@@ -12,6 +12,12 @@ public class SkillTreeNode {
     //The function to be executed when the node is leveled and executeEvent() is called.
     public delegate void skillNodeDelegate();
     public skillNodeDelegate funcToExecute;
+    //Stat changes that leveling this Node will have
+    public int bonusAttack;
+    public int bonusDefense;
+    public int bonusStrength;
+    public int bonusDexterity;
+    public int bonusIntelligence;
 
     //How many times the Event has been executed so far.
     public int currentLevel;
@@ -23,7 +29,7 @@ public class SkillTreeNode {
     public SkillTreeNodeType[] prerequisiteNodes;
 
     //Constructor for creating a new SkillTreeNode
-    public SkillTreeNode(string name, string description, SkillTreeNodeType nodeType, skillNodeDelegate funcToExecute, int maxLevel, int minLevelReq, SkillTreeNodeType[] prereqNodes){
+    public SkillTreeNode(string name, string description, SkillTreeNodeType nodeType, skillNodeDelegate funcToExecute, int maxLevel, int minLevelReq, SkillTreeNodeType[] prereqNodes, int[] bonusStats){
         this.name = name;
         this.description = description;
         this.nodeType = nodeType;
@@ -32,6 +38,11 @@ public class SkillTreeNode {
         this.minimumLevelRequirement = minLevelReq;
         this.prerequisiteNodes = prereqNodes;
         this.currentLevel = 0;
+        this.bonusAttack       = bonusStats[0];
+        this.bonusDefense      = bonusStats[1];
+        this.bonusStrength     = bonusStats[2];
+        this.bonusDexterity    = bonusStats[3];
+        this.bonusIntelligence = bonusStats[4];
     }
     public bool checkAllRequirements(){
         //Wurde diese Node schon zu oft geskillt? Wenn ja, dann return false.
@@ -64,12 +75,19 @@ public class SkillTreeNode {
 
 
     public void levelNode(){
-        if(funcToExecute != null){
-            currentLevel++;
-            Debug.Log("Node: " + name + " is now Level: " + currentLevel);
-            funcToExecute.Invoke();
-        } else {
-            Debug.LogWarning("Empty Delegate found on Node: " + name + " with type " + nodeType.ToString() + "! \r\n This should not happen. The delegate should have been assigned in the SkillTree-Script at Start()!");
-        }
+        currentLevel++;
+        Debug.Log("Node: " + name + " is now Level: " + currentLevel);
+        SkillTree.getInstance().addPermanentPlayerStats(bonusAttack,bonusDefense,bonusStrength,bonusDexterity,bonusIntelligence);
+        if(funcToExecute != null){funcToExecute.Invoke();}
+    }
+
+    public string getStatsAsFormattedString(){
+        string stats = "";
+        if(bonusAttack       != 0){stats += "ATK : " + bonusAttack    + "\r\n";}
+        if(bonusDefense      != 0){stats += "DEF : " + bonusDefense   + "\r\n";}
+        if(bonusStrength     != 0){stats += "STR : " + bonusStrength  + "\r\n";}
+        if(bonusDexterity    != 0){stats += "DEX : " + bonusDexterity + "\r\n";}
+        if(bonusIntelligence != 0){stats += "INT : " + bonusIntelligence;}
+        return stats;
     }
 }

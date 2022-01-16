@@ -378,6 +378,12 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -3.5}
   serializedVersion: 2
   m_Radius: 3
+--- !u!1 &101518359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 21936205988540223, guid: f41ba30179e50df44b5cf15b597f7292,
+    type: 3}
+  m_PrefabInstance: {fileID: 1310108519313771671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &182523612
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,6 +639,12 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -3.5}
   serializedVersion: 2
   m_Radius: 3
+--- !u!1 &236862422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4709146905655694293, guid: f41ba30179e50df44b5cf15b597f7292,
+    type: 3}
+  m_PrefabInstance: {fileID: 1310108519313771671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &265365894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,6 +1889,12 @@ MonoBehaviour:
     pitch: 1
     isLooping: 0
     source: {fileID: 0}
+  - name: SchwertSchlag
+    clip: {fileID: 8300000, guid: 5da7b24f7e8524dd18e70029088285aa, type: 3}
+    volume: 0.2
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
 --- !u!4 &688585086
 Transform:
   m_ObjectHideFlags: 0
@@ -1977,7 +1995,7 @@ MonoBehaviour:
     type: 3}
   Rage: {fileID: 1503840621670785522, guid: 29c7c798fa0440d4bbe94ee8fa78903d, type: 3}
   experiencePoints: 0
-  currentLevel: 0
+  currentLevel: 1
   currentSkillpoints: 0
   currentHealthPoints: 100
   maxHealthPoints: 100
@@ -3315,10 +3333,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
+  maxHP: 200
   currentHP: 0
   weaknesses: 
-  resistances: 
+  resistances: 01000000
   damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
     type: 3}
 --- !u!212 &1114049731
@@ -7339,6 +7357,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30a56b8a335903b4c8cb5e92e162ce52, type: 3}
+--- !u!1 &1742048507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9180471456356595904, guid: f41ba30179e50df44b5cf15b597f7292,
+    type: 3}
+  m_PrefabInstance: {fileID: 1310108519313771671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1820869241
 GameObject:
   m_ObjectHideFlags: 0
@@ -25500,6 +25524,21 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1310108519313771673}
+    - target: {fileID: 1310108518092360778, guid: f41ba30179e50df44b5cf15b597f7292,
+        type: 3}
+      propertyPath: skillPointsLayout
+      value: 
+      objectReference: {fileID: 1742048507}
+    - target: {fileID: 1310108518092360778, guid: f41ba30179e50df44b5cf15b597f7292,
+        type: 3}
+      propertyPath: leftDescriptionLayout
+      value: 
+      objectReference: {fileID: 101518359}
+    - target: {fileID: 1310108518092360778, guid: f41ba30179e50df44b5cf15b597f7292,
+        type: 3}
+      propertyPath: rightDescriptionLayout
+      value: 
+      objectReference: {fileID: 236862422}
     - target: {fileID: 1310108518092360779, guid: f41ba30179e50df44b5cf15b597f7292,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -25578,7 +25617,12 @@ PrefabInstance:
     - target: {fileID: 1310108519674189557, guid: f41ba30179e50df44b5cf15b597f7292,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 900
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550597783645259673, guid: f41ba30179e50df44b5cf15b597f7292,
+        type: 3}
+      propertyPath: m_Name
+      value: SkillNodeStatsTotal
       objectReference: {fileID: 0}
     - target: {fileID: 8495588120107119396, guid: f41ba30179e50df44b5cf15b597f7292,
         type: 3}
