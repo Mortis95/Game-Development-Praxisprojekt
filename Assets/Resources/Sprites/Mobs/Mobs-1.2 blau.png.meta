@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 2ab224319f54b7342af4ed35477f4e8c
+guid: b5701c7c2cdcc2d4b9f487dfe240de47
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6248741079362886434
-    second: Boss_0
+      213: -1758134808180744184
+    second: Mobs-1.2 blau_0
   - first:
-      213: 2287940250583960180
-    second: Boss_1
+      213: -1054773021649900397
+    second: Mobs-1.2 blau_2
   - first:
-      213: 4935984790844978548
-    second: Boss_2
+      213: 8588649684803036697
+    second: Mobs-1.2 blau_3
   - first:
-      213: -1341004319433955295
-    second: Boss_3
-  - first:
-      213: -5999534734459318484
-    second: Boss_4
+      213: 2176072681324462466
+    second: Mobs-1.2 blau_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_0
+      name: Mobs-1.2 blau_0
       rect:
         serializedVersion: 2
-        x: 245
-        y: 202
-        width: 955
-        height: 954
+        x: 560
+        y: 0
+        width: 699
+        height: 1007
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed42f2778130849a0800000000000000
-      internalID: -6248741079362886434
+      spriteID: 800232bf4b9d997e0800000000000000
+      internalID: -1758134808180744184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_1
+      name: Mobs-1.2 blau_2
       rect:
         serializedVersion: 2
-        x: 1581
-        y: 304
-        width: 742
-        height: 830
+        x: 1688
+        y: 0
+        width: 445
+        height: 1007
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47a006f298560cf10800000000000000
-      internalID: 2287940250583960180
+      spriteID: 39c64e57681bc51f0800000000000000
+      internalID: -1054773021649900397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_2
+      name: Mobs-1.2 blau_3
       rect:
         serializedVersion: 2
-        x: 2702
-        y: 304
-        width: 742
-        height: 830
+        x: 2662
+        y: 0
+        width: 444
+        height: 1007
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 475bb0be304208440800000000000000
-      internalID: 4935984790844978548
+      spriteID: 916a4fa3263013770800000000000000
+      internalID: 8588649684803036697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_3
+      name: Mobs-1.2 blau_4
       rect:
         serializedVersion: 2
-        x: 3864
-        y: 375
-        width: 20
-        height: 13
+        x: 3585
+        y: 0
+        width: 637
+        height: 1007
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,29 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128efd92dabc36de0800000000000000
-      internalID: -1341004319433955295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_4
-      rect:
-        serializedVersion: 2
-        x: 3866
-        y: 231
-        width: 608
-        height: 935
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2f4fe622fe5dbca0800000000000000
-      internalID: -5999534734459318484
+      spriteID: 281c6c70396f23e10800000000000000
+      internalID: 2176072681324462466
       vertices: []
       indices: 
       edges: []
