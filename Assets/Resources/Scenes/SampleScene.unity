@@ -313,7 +313,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
     type: 3}
@@ -324,7 +324,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &94549631
@@ -574,7 +574,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
     type: 3}
@@ -585,7 +585,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &234343476
@@ -985,7 +985,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -7671667206652234462, guid: 3e8d121ea01638d47a4eb77d856394aa,
     type: 3}
@@ -1148,7 +1148,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
     type: 3}
@@ -1159,7 +1159,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &379349336
@@ -1547,7 +1547,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
     type: 3}
@@ -1558,7 +1558,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &574379861
@@ -1776,7 +1776,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
     type: 3}
@@ -1787,7 +1787,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &687849826
@@ -2054,7 +2054,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: -4417659372063182771, guid: 212ab1b6cacd27045801ee598647ab8e,
     type: 3}
@@ -2823,12 +2823,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 948924548}
-  - component: {fileID: 948924555}
   - component: {fileID: 948924554}
-  - component: {fileID: 948924553}
   - component: {fileID: 948924552}
   - component: {fileID: 948924551}
   - component: {fileID: 948924550}
+  - component: {fileID: 948924549}
   m_Layer: 6
   m_Name: DialogueTest_NPC
   m_TagString: Untagged
@@ -2850,6 +2849,21 @@ Transform:
   m_Father: {fileID: 750343834}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &948924549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948924547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6805c0b5d021184b90c7a2751598d06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  moveSpeed: 8
+  movement: {x: 0, y: 0}
 --- !u!114 &948924550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2883,208 +2897,80 @@ MonoBehaviour:
         m_CallState: 2
   dialogue:
     textBoxen:
-    - typeOfBox: 1
-      name: 
-      text: 
-      choices:
-      - option: Heal HP by 20
-        reactingName: System
-        reaction: HP + 20
-        reactionEvent:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 723200763}
-              m_TargetAssemblyTypeName: Player, Assembly-CSharp
-              m_MethodName: addHealth
-              m_Mode: 3
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 20
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 1
-      - option: Heal MP by 20
-        reactingName: System
-        reaction: MP + 20
-        reactionEvent:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 723200763}
-              m_TargetAssemblyTypeName: Player, Assembly-CSharp
-              m_MethodName: addMP
-              m_Mode: 3
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 20
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 1
-      - option: Heal Both by 20
-        reactingName: System
-        reaction: HP + 20 --- MP + 20
-        reactionEvent:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 723200763}
-              m_TargetAssemblyTypeName: Player, Assembly-CSharp
-              m_MethodName: addHealth
-              m_Mode: 3
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 20
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 1
-            - m_Target: {fileID: 723200763}
-              m_TargetAssemblyTypeName: Player, Assembly-CSharp
-              m_MethodName: addMP
-              m_Mode: 3
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 20
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
+    - typeOfBox: 0
+      name: Some standing guy
+      text: Wo soll ich hingehen?
+      choices: []
       toExecute:
         m_PersistentCalls:
           m_Calls: []
-    - typeOfBox: 2
-      name: 
-      text: 
+    - typeOfBox: 1
+      name: Some standing guy
+      text: Wo soll ich hingehen?
       choices:
-      - option: Heal HP by 20
-        reactingName: System
-        reaction: HP + 20
+      - option: Left
+        reactingName: Some Walking Guy
+        reaction: Okay
         reactionEvent:
           m_PersistentCalls:
             m_Calls:
-            - m_Target: {fileID: 723200763}
-              m_TargetAssemblyTypeName: Player, Assembly-CSharp
-              m_MethodName: addHealth
-              m_Mode: 3
+            - m_Target: {fileID: 948924549}
+              m_TargetAssemblyTypeName: NPCController, Assembly-CSharp
+              m_MethodName: goHorizontalUnits
+              m_Mode: 4
               m_Arguments:
                 m_ObjectArgument: {fileID: 0}
                 m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 20
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 1
-      - option: Heal MP by 20
-        reactingName: System
-        reaction: MP + 20
-        reactionEvent:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 723200763}
-              m_TargetAssemblyTypeName: Player, Assembly-CSharp
-              m_MethodName: addMP
-              m_Mode: 3
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 20
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 1
-      - option: Heal Both by 20
-        reactingName: System
-        reaction: HP + 20 --- MP + 20
-        reactionEvent:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 723200763}
-              m_TargetAssemblyTypeName: Player, Assembly-CSharp
-              m_MethodName: addHealth
-              m_Mode: 3
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 20
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 1
-            - m_Target: {fileID: 723200763}
-              m_TargetAssemblyTypeName: Player, Assembly-CSharp
-              m_MethodName: addMP
-              m_Mode: 3
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 20
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-            - m_Target: {fileID: 11500000, guid: 898d5c0db8e1cbb4794575d36c07d09f,
-                type: 3}
-              m_TargetAssemblyTypeName: Player, Assembly-CSharp
-              m_MethodName: 
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: 
                 m_IntArgument: 0
-                m_FloatArgument: 0
+                m_FloatArgument: -5
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 1
-      - option: Heal Both by 20
-        reactingName: System
-        reaction: HP + 20 --- MP + 20
+      - option: Right
+        reactingName: Some Walking Guy
+        reaction: Sure, why not
         reactionEvent:
           m_PersistentCalls:
             m_Calls:
-            - m_Target: {fileID: 723200763}
-              m_TargetAssemblyTypeName: Player, Assembly-CSharp
-              m_MethodName: addMP
-              m_Mode: 3
+            - m_Target: {fileID: 948924549}
+              m_TargetAssemblyTypeName: NPCController, Assembly-CSharp
+              m_MethodName: goHorizontalUnits
+              m_Mode: 4
               m_Arguments:
                 m_ObjectArgument: {fileID: 0}
                 m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 20
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-            - m_Target: {fileID: 11500000, guid: 898d5c0db8e1cbb4794575d36c07d09f,
-                type: 3}
-              m_TargetAssemblyTypeName: Player, Assembly-CSharp
-              m_MethodName: 
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: 
                 m_IntArgument: 0
-                m_FloatArgument: 0
+                m_FloatArgument: 5
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 1
+      - option: Up
+        reactingName: Some Up Walking Guy
+        reaction: Pf, whatever
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 948924549}
+              m_TargetAssemblyTypeName: NPCController, Assembly-CSharp
+              m_MethodName: goVerticalUnits
+              m_Mode: 4
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 5
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 1
+      - option: Down
+        reactingName: Some Standing Guy
+        reaction: No! I refuse.
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
       toExecute:
         m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 688585085}
-            m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-            m_MethodName: Play
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: LevelUp
-              m_BoolArgument: 0
-            m_CallState: 2
+          m_Calls: []
 --- !u!50 &948924551
 Rigidbody2D:
   serializedVersion: 4
@@ -3132,32 +3018,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.65, y: 0.94}
   m_EdgeRadius: 0
---- !u!61 &948924553
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 948924547}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.25}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.65, y: 0.94}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.25}
-  m_EdgeRadius: 0
 --- !u!212 &948924554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3196,7 +3056,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -2253218514612763551, guid: 3e8d121ea01638d47a4eb77d856394aa,
     type: 3}
@@ -3210,18 +3070,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &948924555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 948924547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d215173014f10d48a98d8a4ff48f9d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &997005226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3377,7 +3225,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
     type: 3}
@@ -3388,7 +3236,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1114049732
@@ -3705,7 +3553,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
     type: 3}
@@ -3716,7 +3564,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1299568833
@@ -3846,7 +3694,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
     type: 3}
@@ -3857,7 +3705,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1344124495
@@ -5585,7 +5433,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
     type: 3}
@@ -5596,7 +5444,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1488543338
@@ -7094,7 +6942,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
     type: 3}
@@ -7105,7 +6953,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1612949616
@@ -7439,7 +7287,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
     type: 3}
@@ -7450,7 +7298,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1820869244

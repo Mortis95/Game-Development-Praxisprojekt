@@ -9,8 +9,12 @@ public class fightable : MonoBehaviour
     public int maxHealth = 100;
     int currentHealth;
     //LevelSystem Komponente
-    public int expValue=100; //wie viel xp bringt das töten?
+    public int expValue; //wie viel xp bringt das töten?
     [SerializeField] Player player;
+
+    private void Awake(){
+        expValue = 100;
+    }
     
     void Start()
     {
