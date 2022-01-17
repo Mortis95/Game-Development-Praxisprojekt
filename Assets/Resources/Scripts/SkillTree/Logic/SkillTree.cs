@@ -100,64 +100,64 @@ public class SkillTree : MonoBehaviour{
         SkillTreeNodeType[] preReqs;
 
         //Create Node with Index 0  : Scharfschuss
-        description = "";
+        description = "Schiesse einen blitzschnellen Pfeil.";
         preReqs = new SkillTreeNodeType[]{SkillTreeNodeType.WasserPfeilHagel, SkillTreeNodeType.Feuerpfeil, SkillTreeNodeType.RangerStats};
-        skillTreeNodes[0] = new SkillTreeNode("Scharfschuss", description, SkillTreeNodeType.Scharfschuss, unlockScharfschuss, 1, 5, preReqs, new int[]{1,1,0,1,0});
+        skillTreeNodes[0] = new SkillTreeNode("Scharf-Schuss", description, SkillTreeNodeType.Scharfschuss, unlockScharfschuss, 1, 5, preReqs, new int[]{1,1,0,1,0});
         
         //Create Node with Index 1  : Rage
-        description = "";
+        description = "Umgib dich mit der Kraft des Feuers und steigere deine Stärke für kurze Zeit.";
         preReqs = new SkillTreeNodeType[]{SkillTreeNodeType.Elektrowirbel, SkillTreeNodeType.Wasserhieb, SkillTreeNodeType.WarriorStats};
         skillTreeNodes[1] = new SkillTreeNode("Rage", description, SkillTreeNodeType.Rage, unlockRage, 1, 5, preReqs, new int[]{1,1,1,0,0});
         
         //Create Node with Index 2  : Kettenblitz
-        description = "";
+        description = "Schleudere einen Blitz der von Gegner zu Gegner springt!";
         preReqs = new SkillTreeNodeType[]{SkillTreeNodeType.Wasserflaeche, SkillTreeNodeType.Feuerball, SkillTreeNodeType.SorcererStats};
         skillTreeNodes[2] = new SkillTreeNode("Kettenblitz", description, SkillTreeNodeType.Kettenblitz, unlockKettenblitz, 1, 5, preReqs, new int[]{1,1,0,0,1});
 
         //Create Node with Index 3  : WasserPfeilHagel
-        description = "";
+        description = "Entfessele einen einen Hagel aus Wasserpfeilen auf deine Gegner!";
         preReqs = new SkillTreeNodeType[]{SkillTreeNodeType.Feuerpfeil, SkillTreeNodeType.RangerStats};
-        skillTreeNodes[3] = new SkillTreeNode("WasserPfeilHagel",description,SkillTreeNodeType.WasserPfeilHagel,unlockWasserpfeilHagel ,1,4,preReqs, new int[]{1,1,0,1,0});
+        skillTreeNodes[3] = new SkillTreeNode("Wasser-Pfeilhagel",description,SkillTreeNodeType.WasserPfeilHagel,unlockWasserpfeilHagel ,1,4,preReqs, new int[]{1,1,0,1,0});
 
         //Create Node with Index 4  : Elektrowirbel
-        description = "";
+        description = "Schwinge ein elektrisch geledenes Schwert um dich im Kreis";
         preReqs = new SkillTreeNodeType[]{SkillTreeNodeType.Wasserhieb, SkillTreeNodeType.WarriorStats};
-        skillTreeNodes[4] = new SkillTreeNode("Elektrowirbel",description,SkillTreeNodeType.Elektrowirbel,unlockElektrowirbel ,1,4, preReqs, new int[]{1,1,1,0,0});
+        skillTreeNodes[4] = new SkillTreeNode("Elektro-Wirbel",description,SkillTreeNodeType.Elektrowirbel,unlockElektrowirbel ,1,4, preReqs, new int[]{1,1,1,0,0});
 
         //Create Node with Index 5  : Wasserflaeche
-        description = "";
+        description = "Beschwöre eine Flut aus Wasser vor dich die Gegnern schadet!";
         preReqs = new SkillTreeNodeType[]{SkillTreeNodeType.Feuerball,SkillTreeNodeType.SorcererStats};
-        skillTreeNodes[5] = new SkillTreeNode("Wasserflaeche",description,SkillTreeNodeType.Wasserflaeche,unlockWasserflaeche ,1,4,preReqs, new int[]{1,1,0,0,1});
+        skillTreeNodes[5] = new SkillTreeNode("Wasser-Fläche",description,SkillTreeNodeType.Wasserflaeche,unlockWasserflaeche ,1,4,preReqs, new int[]{1,1,0,0,1});
 
         //Create Node with Index 6  : Feuerpfeil
-        description = "";
+        description = "Schiesse einen brennenden Pfeil auf deine Gegner!";
         preReqs = new SkillTreeNodeType[]{SkillTreeNodeType.RangerStats};
         skillTreeNodes[6] = new SkillTreeNode("Feuerpfeil",description,SkillTreeNodeType.Feuerpfeil,unlockFeuerpfeil ,1,3,preReqs, new int[]{1,1,0,1,0});
         
         //Create Node with Index 7  : Wasserhieb
-        description = "";
+        description = "Schlage deine Gegner mit einem in Wasser gehüllten Hieb!";
         preReqs = new SkillTreeNodeType[]{SkillTreeNodeType.WarriorStats};
         skillTreeNodes[7] = new SkillTreeNode("Wasserhieb",description,SkillTreeNodeType.Wasserhieb,unlockWasserHieb, 1, 3, preReqs, new int[]{1,1,1,0,0});
         
         //Create Node with Index 8  : Feuerball
-        description = "";
+        description = "Schleudere einen explodierenden Feuerball auf deine Gegner!";
         preReqs = new SkillTreeNodeType[]{SkillTreeNodeType.SorcererStats};
         skillTreeNodes[8] = new SkillTreeNode("Feuerball",description,SkillTreeNodeType.Feuerball, unlockFeuerball, 1, 3, preReqs, new int[]{1,1,0,0,1});
         
         //Create Node with Index 9  : RangerStats
-        description = "";
+        description = "Meistere den Umgang mit einem Bogen und werde zum Scharfschützen.";
         preReqs = new SkillTreeNodeType[]{};
-        skillTreeNodes[9] = new SkillTreeNode("RangerStats",description,SkillTreeNodeType.RangerStats, null, 5, 2, preReqs, new int[]{2,2,0,3,0});
+        skillTreeNodes[9] = new SkillTreeNode("Macht des Bogen-Meisters",description,SkillTreeNodeType.RangerStats, null, 5, 2, preReqs, new int[]{2,2,0,3,0});
         
         //Create Node with Index 10 : WarriorStats
-        description = "";
+        description = "Meistere den Umgang mit deiner Waffe und werde eins mit ihr.";
         preReqs = new SkillTreeNodeType[]{};
-        skillTreeNodes[10] = new SkillTreeNode("WarriorStats",description,SkillTreeNodeType.WarriorStats, null, 5, 2, preReqs, new int[]{2,2,3,0,0});
+        skillTreeNodes[10] = new SkillTreeNode("Macht des Kriegers",description,SkillTreeNodeType.WarriorStats, null, 5, 2, preReqs, new int[]{2,2,3,0,0});
 
         //Create Node with Index 11 : SorcererStats
-        description = "";
+        description = "Meistere die verborgenen magischen Kräfte in dir und werde zum Großmagier.";
         preReqs = new SkillTreeNodeType[]{};
-        skillTreeNodes[11] = new SkillTreeNode("SorcererStats",description,SkillTreeNodeType.SorcererStats, null, 5, 2, preReqs, new int[]{2,2,0,0,3});
+        skillTreeNodes[11] = new SkillTreeNode("Macht des Magiers",description,SkillTreeNodeType.SorcererStats, null, 5, 2, preReqs, new int[]{2,2,0,0,3});
     
         skillTreeChangedCallback();
     }
