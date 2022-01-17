@@ -26151,7 +26151,7 @@ PrefabInstance:
     - target: {fileID: 1470198661383352647, guid: bb4c877020bb7ae40863202b7bf74946,
         type: 3}
       propertyPath: m_ScreenMatchMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1470198661383352647, guid: bb4c877020bb7ae40863202b7bf74946,
         type: 3}
@@ -26167,6 +26167,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ReferenceResolution.y
       value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1470198661383352647, guid: bb4c877020bb7ae40863202b7bf74946,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1470198661383352649, guid: bb4c877020bb7ae40863202b7bf74946,
         type: 3}
