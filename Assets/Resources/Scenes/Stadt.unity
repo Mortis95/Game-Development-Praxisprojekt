@@ -798,6 +798,87 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 110011873}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &124353759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124353760}
+  - component: {fileID: 124353761}
+  m_Layer: 0
+  m_Name: "Verk\xE4uferin"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &124353760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124353759}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 791846784}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &124353761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124353759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 124353761}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: "Verk\xE4uferin"
+      text: "Hallo, herzlich willkommen! Hier w\xE4re ein Itemshop, wenn die Entwickler
+        mehr Zeit gehabt h\xE4tten. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Alles muss man selbst tun\u2026 dann sammel ich halt die Items alleine."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1001 &139779550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2481,6 +2562,310 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 369027473}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &371660636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371660637}
+  - component: {fileID: 371660638}
+  m_Layer: 0
+  m_Name: Magiermeister
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &371660637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371660636}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 791846784}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &371660638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371660636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 371660638}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Du
+      text: "( \u2026 Sag blo\xDF, die Stadt hei\xDFt Einstein, da ein Stein hier
+        rumliegt.)"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: "Unsere Pfade kreuzen sich endlich. Willkommen in Einstein, ich bin deine
+        Ansprechperson w\xE4hrend deines Aufenthaltes.  "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Ich nehme an, du bist der Magiermeister? Sollte hier nicht auch der
+        B\xFCrgermeister sein?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: Dieser befindet sich direkt vor deinen Augen.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: ...?
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: 'Schnurri, sag hallo zu unserem sehr geehrten Gast und Helden. '
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Schnurri
+      text: Miau!
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "An Kreativit\xE4t fehlt es dieser Stadt ja wohl gar nicht. Ich kann
+        es kaum abwarten, bis ich Mauzi treffe. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: "Ah, du meinst unseren vorherigen B\xFCrgermeister, Mauzi III? Seitdem
+        er seine Position abgegeben hat, verbringt er die meiste Zeit schlafend,
+        aber eventuell l\xE4sst sich ein Treffen vereinbaren."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: 'Vergiss, was ich gesagt habe. Also, was ist meine Aufgabe hier? '
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: "Im Westen befindet sich dein n\xE4chstes Ziel. Es wird nicht einfach
+        sein, den Schl\xFCssel der Macht an dich zu rei\xDFen, da du einige R\xE4tsel
+        l\xF6sen musst."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: "Auch werden sich st\xE4rkere Gegner als zuvor in dem Dungeon befinden.
+        Wie du bereits bemerkt haben solltest, zieht die Magie der Schl\xFCssel einige
+        Monster an und die Schl\xFCssel werden zudem von einem W\xE4chter besch\xFCtzt. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Was so viel hei\xDFt wie \u201ESofern du nicht underleveled in dem Dungeon
+        k\xE4mpfen willst, solltest du zun\xE4chst einige Mobs besiegen, damit du
+        ein paar Level-Ups bekommst\u201C. Ich verstehe schon. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: "Die Zeit dr\xE4ngt, aber es w\xE4re kontraproduktiv, dich in Gefahr
+        zu bringen. Du kannst dich zun\xE4chst im Gasthaus ausruhen."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: 'Falls du weitere Fragen hast, kannst du mich auch jederzeit ansprechen. '
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  - textBoxen:
+    - typeOfBox: 1
+      name: Magiermeister
+      text: 'Wie kann ich dir behilflich sein? '
+      choices:
+      - option: 'Was muss ich nochmal tun? '
+        reactingName: Magiermeister
+        reaction: "Deine Aufgabe ist es, den Schl\xFCssel der Macht im westlichen
+          Dungeon zu finden und zu mir zu bringen. "
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      - option: "Euer B\xFCrgermeister..."
+        reactingName: Magiermeister
+        reaction: 'Schnurri ist die 124. Generation an Katzen, welche unsere Stadt
+          leiten. '
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 0}
+              m_TargetAssemblyTypeName: 
+              m_MethodName: 
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: 
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+      - option: Der Name der Stadt...
+        reactingName: Magiermeister
+        reaction: "Einstein wurde genau hier, wo wir momentan stehen, gegr\xFCndet.
+          Unser Gr\xFCndervater hat den Stein gesehen und das Dorf, welches \xFCber
+          die Jahre zu einer gro\xDFen Stadt wurde, nach diesem benannt. "
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 0}
+              m_TargetAssemblyTypeName: 
+              m_MethodName: 
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: 
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  - textBoxen:
+    - typeOfBox: 0
+      name: Magiermeister
+      text: "Ah, du bist zur\xFCck! Und ohne einen Arm oder ein Bein verloren zu
+        haben, wie sch\xF6n. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: Wie nett...
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: "Nun schau nicht so, ich wusste, dass du es schaffen wirst. Du wurdest
+        immerhin auserw\xE4hlt, nat\xFCrlich kann dir ein lebensgef\xE4hrlicher Dungeon
+        nichts anhaben. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Du scheinst sehr \xFCberzeugt zu sein, wenn man bedenkt, dass ihr einfach
+        so einem Fremden ohne Kampferfahrung ein Schwert in die Hand gedr\xFCckt
+        habt, nur um dann zu sagen \u201EMach\u2018 \u2018mal\u201C. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: "Aber wir hatten recht! Die Prophezeiung war eindeutig, und wir d\xFCrfen
+        die Entscheidungen von dort oben nicht in Frage stellen."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: "Nun, w\xE4rst du so lieb und k\xF6nntest mir den Schl\xFCssel geben?
+        Ich werde sofort zum Tempel eilen, w\xE4hrend du zu deinem n\xE4chsten Ziel
+        eilen solltest. Der Schl\xFCssel des Friedens befindet sich im Dorf \xF6stlich
+        von hier."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Magiermeister
+      text: "Das Dorf hingegen ist\u2026 ach, du wirst schon sehen! "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Auf was lasse ich mich da wieder ein\u2026"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1001 &376672325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3714,6 +4099,172 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 691842864}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &696275508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 696275509}
+  - component: {fileID: 696275510}
+  m_Layer: 0
+  m_Name: arrogante Frau
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &696275509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696275508}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 791846784}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &696275510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696275508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 696275510}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Arrogante Frau
+      text: "Ugh, was f\xFCr ein grottiger Service!"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: (Ich sollte gehen, bevor ich vollgequatscht werde.)
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Arrogante Frau
+      text: Mein Lieblingsprodukt ist nicht mehr vorhanden! So eine schlimme Organisation!
+        Wie kann es sein, dass nicht genug bestellt wird?!
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Verk\xE4uferin"
+      text: "Entschuldigung, aber ich habe bereits erkl\xE4rt, dass ein Kunde vor
+        Ihnen unseren ganzen Vorrat gekauft hat."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Arrogante Frau
+      text: "Und warum haben sie das zugelassen?! Ich komme jede Woche vorbei, Sie
+        h\xE4tten dieses Item f\xFCr mich reservieren sollen!"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Verk\xE4uferin"
+      text: "Wir reservieren Items, wenn Sie diese bei uns bestellen, aber da Sie
+        uns keine Bestellung aufgegeben haben, gilt in diesem Fall das \u201EWer
+        zuerst kommt\u201C Prinzip. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Arrogante Frau
+      text: " Unerh\xF6rt! Ihr Verhalten ist absolut unkaufm\xE4nnisch! Somit machen
+        Sie sich keine Kunden. Ich m\xF6chte sofort mit Ihrem Chef sprechen! "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Verk\xE4uferin"
+      text: "Mein Chef ist im Urlaub\u2026 schon wieder."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Arrogante Frau
+      text: Diese Ausrede hatten Sie auch letzten Monat!
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Verk\xE4uferin"
+      text: " Es ist allerdings die Wahrheit. Ich dachte, es sei Allgemeinwissen,
+        dass Vorgesetzte ihre Angestellten ausbeuten, einen Hungerlohn zahlen und
+        auf diverse Vorschriften verzichten, um mehr Kohle zu bekommen und damit
+        st\xE4ndig Urlaub zu machen. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Arrogante Frau
+      text: Dann geben Sie mir seine Kontaktdaten! SOFORT!
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Verk\xE4uferin"
+      text: "*fl\xFCstert* Ich hasse meinen Job\u2026"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: (Karens gibt es also auch in dieser Welt. Ohje.)
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1001 &697414584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4089,6 +4640,42 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 790782271}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &791846783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 791846784}
+  m_Layer: 0
+  m_Name: NPCs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &791846784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791846783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.2208269, y: 1.2741114, z: -49.1699}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 371660637}
+  - {fileID: 1753361082}
+  - {fileID: 124353760}
+  - {fileID: 696275509}
+  - {fileID: 2129505396}
+  - {fileID: 1562882783}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &799514950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33201,6 +33788,108 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1554617515}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1562882782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1562882783}
+  - component: {fileID: 1562882784}
+  m_Layer: 0
+  m_Name: Generischer NPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1562882783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562882782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 791846784}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1562882784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562882782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1562882784}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 1
+      name: Generischer NPC
+      text: Ah, einen Moment! Bist du unsere letzte Hoffnung?
+      choices:
+      - option: Korrekt, nun knie nieder und zeige mir deinen Respekt vor deinem
+          Meister.
+        reactingName: Generischer NPC
+        reaction: 'Willkommen in Einstein! '
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      - option: Leider ja.
+        reactingName: Generischer NPC
+        reaction: 'Willkommen in Einstein! '
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: Einstein existiert auch in dieser Welt?
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Generischer NPC
+      text: "Nat\xFCrlich gibt es auch Steine in dieser Welt. Unser Namensgeber befindet
+        sich im Zentrum der Stadt. Dort wartet auch der Magiermeister und B\xFCrgermeister
+        auf dich und m\xF6chten mit dir sprechen. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1001 &1563167688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67236,6 +67925,137 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1751259744}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1753361081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1753361082}
+  - component: {fileID: 1753361083}
+  m_Layer: 0
+  m_Name: Schnurri
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1753361082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753361081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 791846784}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1753361083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753361081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1753361083}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 1
+      name: Schnurri
+      text: Miau!
+      choices:
+      - option: (Streicheln)
+        reactingName: Schnurri
+        reaction: '*schnurrt*'
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      - option: "Du bist also der B\xFCrgermeister..."
+        reactingName: Magiermeister
+        reaction: "Bitte sei respektvoll zu Schnurri. Leute, welche vom B\xFCrgermeister
+          gekratzt werden, werden auf Lebenszeit verbannt, zusammen mit ihrer Familie
+          und allen folgenden Generationen. "
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 0}
+              m_TargetAssemblyTypeName: 
+              m_MethodName: 
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: 
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  - textBoxen:
+    - typeOfBox: 1
+      name: Schnurri
+      text: Miau!
+      choices:
+      - option: (Streicheln)
+        reactingName: Schnurri
+        reaction: '*schnurrt*'
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 0}
+              m_TargetAssemblyTypeName: 
+              m_MethodName: 
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: 
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+      - option: Miau miau!
+        reactingName: Schnurri
+        reaction: Miau!
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1001 &1756179060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72669,3 +73489,88 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &2129505395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2129505396}
+  - component: {fileID: 2129505397}
+  m_Layer: 0
+  m_Name: Gasthausangestellter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2129505396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129505395}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 791846784}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2129505397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129505395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2129505397}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 1
+      name: Angestellter
+      text: "Willkommen! M\xF6chtest du dich ausruhen?"
+      choices:
+      - option: Ja, danke.
+        reactingName: Angestellter
+        reaction: "Bittesch\xF6n!"
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      - option: Nein, mir geht es super.
+        reactingName: Angestellter
+        reaction: "Okay, komm jederzeit vorbei, wenn deine Reise dich zu sehr ersch\xF6pft."
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
