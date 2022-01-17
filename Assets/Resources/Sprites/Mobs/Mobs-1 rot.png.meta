@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: 2ab224319f54b7342af4ed35477f4e8c
+guid: 23ca2512fa5963540af54e997da96e02
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6248741079362886434
-    second: Boss_0
+      213: -880776171939163917
+    second: Mobs-1 rot_1
   - first:
-      213: 2287940250583960180
-    second: Boss_1
+      213: -8905423063862010342
+    second: Mobs-1 rot_2
   - first:
-      213: 4935984790844978548
-    second: Boss_2
+      213: 8703458054467233213
+    second: Mobs-1 rot_3
   - first:
-      213: -1341004319433955295
-    second: Boss_3
-  - first:
-      213: -5999534734459318484
-    second: Boss_4
+      213: 7010980780552430356
+    second: Mobs-1 rot_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_0
+      name: Mobs-1 rot_1
       rect:
         serializedVersion: 2
-        x: 245
-        y: 202
-        width: 955
-        height: 954
+        x: 543
+        y: 26
+        width: 840
+        height: 596
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed42f2778130849a0800000000000000
-      internalID: -6248741079362886434
+      spriteID: 3f010f8fcbad6c3f0800000000000000
+      internalID: -880776171939163917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_1
+      name: Mobs-1 rot_2
       rect:
         serializedVersion: 2
-        x: 1581
-        y: 304
-        width: 742
-        height: 830
+        x: 1529
+        y: 6
+        width: 865
+        height: 599
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47a006f298560cf10800000000000000
-      internalID: 2287940250583960180
+      spriteID: a1e1fe708e4996480800000000000000
+      internalID: -8905423063862010342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_2
+      name: Mobs-1 rot_3
       rect:
         serializedVersion: 2
-        x: 2702
-        y: 304
-        width: 742
-        height: 830
+        x: 2537
+        y: 4
+        width: 906
+        height: 601
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 475bb0be304208440800000000000000
-      internalID: 4935984790844978548
+      spriteID: db52806dcf4e8c870800000000000000
+      internalID: 8703458054467233213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_3
+      name: Mobs-1 rot_4
       rect:
         serializedVersion: 2
-        x: 3864
-        y: 375
-        width: 20
-        height: 13
+        x: 3571
+        y: 4
+        width: 820
+        height: 593
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,29 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128efd92dabc36de0800000000000000
-      internalID: -1341004319433955295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Boss_4
-      rect:
-        serializedVersion: 2
-        x: 3866
-        y: 231
-        width: 608
-        height: 935
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2f4fe622fe5dbca0800000000000000
-      internalID: -5999534734459318484
+      spriteID: 4132be7cfd10c4160800000000000000
+      internalID: 7010980780552430356
       vertices: []
       indices: 
       edges: []

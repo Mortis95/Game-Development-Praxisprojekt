@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 2ab224319f54b7342af4ed35477f4e8c
+guid: d68acc4119a5ff0478782d1cf6366add
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6248741079362886434
-    second: Boss_0
+      213: -4277264818476679982
+    second: Boss rot_0
   - first:
-      213: 2287940250583960180
-    second: Boss_1
+      213: 4710462324700818217
+    second: Boss rot_1
   - first:
-      213: 4935984790844978548
-    second: Boss_2
+      213: 3754429540137036934
+    second: Boss rot_2
   - first:
-      213: -1341004319433955295
-    second: Boss_3
+      213: 3368688925163083779
+    second: Boss rot_3
   - first:
-      213: -5999534734459318484
-    second: Boss_4
+      213: -3417117617798284430
+    second: Boss rot_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,7 +142,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_0
+      name: Boss rot_0
       rect:
         serializedVersion: 2
         x: 245
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed42f2778130849a0800000000000000
-      internalID: -6248741079362886434
+      spriteID: 2dcfb6c3f4a14a4c0800000000000000
+      internalID: -4277264818476679982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_1
+      name: Boss rot_1
       rect:
         serializedVersion: 2
         x: 1581
@@ -177,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47a006f298560cf10800000000000000
-      internalID: 2287940250583960180
+      spriteID: 92b27a7f68cee5140800000000000000
+      internalID: 4710462324700818217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_2
+      name: Boss rot_2
       rect:
         serializedVersion: 2
         x: 2702
@@ -198,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 475bb0be304208440800000000000000
-      internalID: 4935984790844978548
+      spriteID: 68ce91266c96a1430800000000000000
+      internalID: 3754429540137036934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_3
+      name: Boss rot_3
       rect:
         serializedVersion: 2
         x: 3864
@@ -219,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128efd92dabc36de0800000000000000
-      internalID: -1341004319433955295
+      spriteID: 3085327babcffbe20800000000000000
+      internalID: 3368688925163083779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Boss_4
+      name: Boss rot_4
       rect:
         serializedVersion: 2
         x: 3866
@@ -240,8 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2f4fe622fe5dbca0800000000000000
-      internalID: -5999534734459318484
+      spriteID: 27b776b91a5f390d0800000000000000
+      internalID: -3417117617798284430
       vertices: []
       indices: 
       edges: []
