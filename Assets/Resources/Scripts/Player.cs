@@ -24,16 +24,17 @@ public class Player : MonoBehaviour
     }
     #endregion
 
+    #region movementAttributes
     //Basic Attributes needed for Movement and Movement Animation
     public float moveSpeed;
     public Rigidbody2D rb;
     public Animator animator;
     public Vector2 movement;
     public Direction lastFacedDirection;
+    #endregion
 
-    public Inventory inventory;
     #region Equipment
-    //Kampf Stuff
+    public Inventory inventory;
     public Equipment equipment;
     public Weapon equippedWeapon;
     public Shield equippedShield;
@@ -59,6 +60,9 @@ public class Player : MonoBehaviour
     //Character Attributes
     public int experiencePoints;
     public int currentLevel;
+    [HideInInspector]
+    public int expToNextLevel;
+    public int skillPointsPerLevel;
     public int currentSkillpoints;
     public int currentHealthPoints;
     public int maxHealthPoints;
@@ -108,15 +112,8 @@ public class Player : MonoBehaviour
     public AudioClip walkingSound;
 
     //Levelsystem
-    //Vorläufige leveleinteilung, enthalten sind die mengen an nötigen xp
-    int[] levelStufen = new int[] { 0,300,700,1200,1800,2400,   
-                                    3100,3900,4700,5600,6600,
-                                    7700,8900,10200,11600,13100,
-                                    14700,16400,1900,2200,23000,
-                                    25000,30000,35000,400000 }; 
-
-    
-    
+    //Vorläufige Leveleinteilung, enthalten sind die nötige Menge an totalen EXP die man benötigt
+    int[] experiencePointThreshholds = new int[] { 0, 10, 30, 70, 150, 310, 630, 1270, 2550, 5110, 10230, 20470, 40950}; 
 
     AudioSource attackSound;
 
@@ -150,9 +147,12 @@ public class Player : MonoBehaviour
     }
 
     void Update(){
-    processMovement();
-    processAttackInput();
-    processSkillInput();         
+        if(Input.GetKeyDown(KeyCode.X)){
+            addExp(5);
+        }
+        processMovement();
+        processAttackInput();
+        processSkillInput();         
     }
 
     void FixedUpdate()
@@ -194,7 +194,27 @@ public class Player : MonoBehaviour
         addHealthPoints((int)((float) maxHealthPoints * percentage));
     }
     void checkLevelup(){
-        //TODO
+        int minimumLevelReached = 1;
+        for(int i = 1; i < experiencePointThreshholds.Length; i++){
+            if(experiencePoints < experiencePointThreshholds[i]){
+                if(minimumLevelReached > currentLevel){
+                    currentLevel = minimumLevelReached;
+                    levelUp();
+                } else {
+                    expToNextLevel = experiencePointThreshholds[i] - experiencePoints;
+                }
+                return;
+            } else {
+                minimumLevelReached += 1;  
+            }
+        }
+    }
+
+    void levelUp(){
+        currentSkillpoints += skillPointsPerLevel;
+        //Show fancy Animation
+        //Play Level Up Sound
+        SkillTree.getInstance().skillTreeChangedCallback(); //Let SkillTree know something changed
     }
 
     public void updateUIStatusBar(){
@@ -287,6 +307,9 @@ public class Player : MonoBehaviour
                     break;
             }
         }
+    }
+    public void standStill(){
+        movement = Vector2.zero;
     }
 
     #region UseSkills

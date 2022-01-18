@@ -28,17 +28,22 @@ public class NPCController : MonoBehaviour
     }
 
     void FixedUpdate(){
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedUnscaledDeltaTime);  //Unscaled, because during Cutscenes/Pauses we will set TimeScale to 0. We want our NPCs to be able to move during cutscenes.
     }
 
-
+    #region NPCsCanControlAudioThroughUnityEvents
     public void playSound(string soundname){
-        AudioManager.getInstance().Play(soundname);
+        AudioManager.getInstance().PlaySound(soundname);
     }
     public void playMusic(string musicname){
-        //TODO
+        AudioManager.getInstance().PlayMusic(musicname);
     }
-
+    public void stopMusic(){
+        AudioManager.getInstance().StopMusic();
+    }
+    #endregion
+    
+    #region NPCsCanMoveThroughUnityEvents
     public void setHorizontalTargetPos(float x){
         goalPosition = new Vector2(x,goalPosition.y);
     }
@@ -55,5 +60,6 @@ public class NPCController : MonoBehaviour
         goalPosition = goalPosition + new Vector2(0f,y);
 
     }
+    #endregion
 
 }

@@ -158,14 +158,14 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray()){
             //Debug.Log("Code is executing here");
-            AudioManager.getInstance().Play("NPCDialog");
+            AudioManager.getInstance().PlaySound("NPCDialog");
             dialogueText.text += letter;
             //Wait for waitTime many seconds
             float waitTime = 0.02f;
             yield return new WaitForSeconds(waitTime);
         }
         //After Text has finished rendering
-        AudioManager.getInstance().Stop("NPCDialog");
+        AudioManager.getInstance().StopSound("NPCDialog");
         
     }
 

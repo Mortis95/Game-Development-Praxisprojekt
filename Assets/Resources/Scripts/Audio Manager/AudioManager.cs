@@ -7,7 +7,9 @@ using UnityEngine.Audio;
 public class AudioManager : MonoBehaviour
 {
     
-    public Sound[] sounds;
+    public Sound[] soundEffects;
+    public Music[] soundTrack;
+    public Music currentlyPlaying;
 
     private static AudioManager instance;
 
@@ -25,28 +27,26 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        foreach (Sound sound in sounds){
+        foreach (Sound sound in soundEffects){
             sound.source = gameObject.AddComponent<AudioSource>();
             sound.source.clip = sound.clip;
             sound.source.volume = sound.volume;
             sound.source.pitch = sound.pitch;
             sound.source.loop = sound.isLooping;
         }
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+        foreach (Music music in soundTrack){
+            music.source = gameObject.AddComponent<AudioSource>();
+            music.source.clip = music.clip;
+            music.source.volume = music.volume;
+            music.source.pitch = music.pitch;
+            music.source.loop = true;       //All music loops by default
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    public void Play(string name){
-        Sound sound = Array.Find(sounds, s => s.name == name);
+    public void PlaySound(string name){
+        Sound sound = Array.Find(soundEffects, s => s.name == name);
         if (sound == null){
             Debug.LogWarning("Sound " + name + " konnte nicht gefunden werden im sound Array und wird deswegen nicht abgespielt. \nTypo? Vergessen den Sound hinzuzufügen? Sonderzeichen?");
             return;
@@ -57,8 +57,8 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void Stop(string name){
-        Sound sound = Array.Find(sounds, s => s.name == name);
+    public void StopSound(string name){
+        Sound sound = Array.Find(soundEffects, s => s.name == name);
         if (sound == null){
             Debug.LogWarning("Sound " + name + " konnte nicht gefunden werden im sound Array und wird deswegen nicht abgespielt. \nTypo? Vergessen den Sound hinzuzufügen? Sonderzeichen?");
             return;
@@ -68,4 +68,29 @@ public class AudioManager : MonoBehaviour
             sound.source.Stop();
         }
     }
+
+    //Very similar to PlaySound, but only one music at a time can and should be played.
+    public void PlayMusic(string name){
+        if(currentlyPlaying != null){currentlyPlaying.source.Stop();}
+        Music track = Array.Find(soundTrack, m => m.name == name);
+        if(track == null){
+            Debug.LogWarning("Musik " + name + " konnte nicht gefunden werden im SoundTrack Array! Tippfehler? Eventuell PlaySound() gemeint statt PlayMusic() ?");
+            return;
+        }
+        if(!track.source.isPlaying){
+            track.source.Play();
+            currentlyPlaying = track;
+        }
+    }
+
+    //Very similar to StopSound, but only one music at a time can and should be played.
+    public void StopMusic(){
+        if(currentlyPlaying != null){
+            currentlyPlaying.source.Stop();
+            currentlyPlaying = null;
+        } else {
+            Debug.LogWarning("No music is currently playing!");
+        }
+    }
 }
+

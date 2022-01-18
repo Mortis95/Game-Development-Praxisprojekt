@@ -1870,30 +1870,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 898d5c0db8e1cbb4794575d36c07d09f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds:
-  - name: NPCDialog
-    clip: {fileID: 8300000, guid: 22793ddae75bbad428b7e3890b85e354, type: 3}
-    volume: 0.4
-    pitch: 1
-    isLooping: 0
-    source: {fileID: 0}
-  - name: Kettenblitz
-    clip: {fileID: 8300000, guid: 806956750ca26e24b908a3cba6558715, type: 3}
-    volume: 0.2
-    pitch: 1
-    isLooping: 0
-    source: {fileID: 0}
-  - name: LevelUp
-    clip: {fileID: 8300000, guid: 20e954227da0b3f4696f17981583fcf5, type: 3}
-    volume: 0.2
-    pitch: 1
-    isLooping: 0
-    source: {fileID: 0}
-  - name: SchwertSchlag
-    clip: {fileID: 8300000, guid: 5da7b24f7e8524dd18e70029088285aa, type: 3}
-    volume: 0.2
-    pitch: 1
-    isLooping: 0
+  soundEffects: []
+  soundTrack: []
+  currentlyPlaying:
+    name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
     source: {fileID: 0}
 --- !u!4 &688585086
 Transform:
@@ -1996,6 +1979,8 @@ MonoBehaviour:
   Rage: {fileID: 1503840621670785522, guid: 29c7c798fa0440d4bbe94ee8fa78903d, type: 3}
   experiencePoints: 0
   currentLevel: 1
+  expToNextLevel: 0
+  skillPointsPerLevel: 2
   currentSkillpoints: 0
   currentHealthPoints: 100
   maxHealthPoints: 100

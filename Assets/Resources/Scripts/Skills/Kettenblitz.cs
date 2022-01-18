@@ -48,7 +48,7 @@ public class Kettenblitz : MonoBehaviour
         lr.material = new Material(Shader.Find("Sprites/Default"));
         
         //Soundeffekt abspielen
-        AudioManager.getInstance().Play("Kettenblitz");
+        AudioManager.getInstance().PlaySound("Kettenblitz");
 
         //MainLoop starten
         StartCoroutine(mainLoop());

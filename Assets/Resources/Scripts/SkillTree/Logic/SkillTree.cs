@@ -52,7 +52,7 @@ public class SkillTree : MonoBehaviour{
     //This delegate will inform all subscribers when a Node changes on  the SkillTree, i.e. when the player levels a SkillTreeNode
     public delegate void OnSkillTreeChanged();
     public OnSkillTreeChanged onSkillTreeChangedCallback;
-    private void skillTreeChangedCallback(){
+    public void skillTreeChangedCallback(){
         if (onSkillTreeChangedCallback != null) {
             onSkillTreeChangedCallback.Invoke();
         }
