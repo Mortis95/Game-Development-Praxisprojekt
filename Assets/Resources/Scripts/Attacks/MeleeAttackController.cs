@@ -67,7 +67,7 @@ public class MeleeAttackController : MonoBehaviour
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
-            enemyScript.takeNormalDamage(damage);
+            enemyScript.takeDamage(DamageType.Normal, damage);
 
         }
     }

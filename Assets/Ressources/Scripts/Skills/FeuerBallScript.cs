@@ -57,7 +57,7 @@ public class FeuerBallScript : MonoBehaviour
                     var distance = Vector3.Distance(closestPoint, transform.position);
 
                     var damagePercent = Mathf.InverseLerp(SplashRange, 0, distance);
-                    enemy.takeSpecialDamage(DamageType.Feuer, (int)(damagePercent * Damage)); 
+                    enemy.takeDamage(DamageType.Feuer, (int)(damagePercent * Damage)); 
                     Destroy(gameObject);
                 }
         }   }       

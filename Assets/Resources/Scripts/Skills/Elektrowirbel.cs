@@ -39,7 +39,7 @@ public class Elektrowirbel : MonoBehaviour
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
-            enemyScript.takeSpecialDamage(DamageType.Blitz, damage);
+            enemyScript.takeDamage(DamageType.Blitz, damage);
 
         }
     }

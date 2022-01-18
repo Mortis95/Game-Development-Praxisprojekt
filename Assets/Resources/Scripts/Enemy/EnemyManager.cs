@@ -25,7 +25,7 @@ public class EnemyManager : MonoBehaviour{
         }
     }
 
-    public void takeSpecialDamage(DamageType dmgType, int amount){
+    public void takeDamage(DamageType dmgType, int amount){
 
         float dmgMultiplicator = 1;
         bool isCrit = false;
@@ -46,6 +46,9 @@ public class EnemyManager : MonoBehaviour{
         //Calculate for Damage Multiplicator if Weakness or Resistance
         int damage = (int) ( ((float) amount) * dmgMultiplicator);
 
+        //If damage is normal then Defense is subtracted
+        if(dmgType.Equals(DamageType.Normal)){damage -= enemyDefense;}
+
         //Don't allow negativ damage. Pick 0 if damage is smaller than 0. Shouldn't happen though in normal gameplay.
         damage = Mathf.Max(0, damage);
 
@@ -53,14 +56,8 @@ public class EnemyManager : MonoBehaviour{
         DamagePopupController.create(transform, damage, dmgType, isCrit, isWeak);
     }
 
-    public void takeNormalDamage(int amount){
-        int damage = amount - enemyDefense;
-        currentHealthPoints -= damage;
-        DamagePopupController.create(transform, damage, DamageType.Normal, false, false);
-    }
-
     public void getKnockback(){
-        enemyBehaviour.getKnockback();
+        enemyBehaviour.getKnockedBack();
     }
 
     public void addResistance(DamageType dt){

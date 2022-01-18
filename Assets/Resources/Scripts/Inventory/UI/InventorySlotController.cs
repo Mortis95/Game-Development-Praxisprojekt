@@ -17,8 +17,10 @@ public class InventorySlotController : MonoBehaviour{
         //Make sure to have default look on Awake
         slotBackground.color = Color.white;
         slotDisplay.enabled = false;
-        stackSizeText.SetText("");
+    }
 
+    void Start(){
+        if(stackSizeText != null){stackSizeText.SetText("");}
     }
     public void setItem(Item item){
         if(item == null){

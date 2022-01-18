@@ -263,9 +263,12 @@ public class Player : MonoBehaviour
         totalDexterity = baseDexterity + bonusDexterity;
         totalIntelligence = baseIntelligence + bonusIntelligence;
     }
-    public void takeDamage(DamageType damageType, int dmg){
+    public void takeDamage(int dmg){
         currentHealthPoints -= dmg;
         //DamagePopupController.create();
+    }
+    public void getKnockedBack(Rigidbody2D source){
+        
     }
     public void processMovement(){
         //Movement

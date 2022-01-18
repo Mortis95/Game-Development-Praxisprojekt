@@ -42,8 +42,8 @@ public class SkillTreeUI : MonoBehaviour{
     }
 
     void Start(){
-        updateSkillTreeUI();
-        updateSelectionUI(10);  //Default selected Node will be bottom middle (RangerStats)
+        //updateSkillTreeUI();
+        //updateSelectionUI(10);  //Default selected Node will be bottom middle (RangerStats)
     }
 
     void Update(){

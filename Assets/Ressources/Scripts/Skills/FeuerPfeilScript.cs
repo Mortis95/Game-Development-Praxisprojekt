@@ -49,7 +49,7 @@ public class FeuerPfeilScript : MonoBehaviour
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
-            enemyScript.takeSpecialDamage(DamageType.Feuer, 20);
+            enemyScript.takeDamage(DamageType.Feuer, 20);
             Destroy(gameObject);
 
         }

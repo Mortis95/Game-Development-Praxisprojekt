@@ -24,7 +24,7 @@ public class Kettenblitz : MonoBehaviour
 
         //Setup damit alles ordentlich funktioniert
         caster = Player.getInstance();                              //Get Player Instance and get Player-Intelligence
-        damage = caster.getIntelligence() * 2 - (caster.currentLevel - 1); //(TODO: Set reasonable damage)
+        damage = (int)((float) caster.getIntelligence() * caster.getSkillDamageMultiplier());
         targets = GameObject.FindGameObjectsWithTag("Enemy");       //Gibt alle Enemies in current Szene
         targetsHit = new bool[targets.Length];                      //Create an array um zu merken welcher Gegner bereits gehittet wurde
         for (int i = 0; i < targetsHit.Length; i++){
@@ -116,7 +116,7 @@ public class Kettenblitz : MonoBehaviour
             Debug.LogWarning("Alle Gegner mit den 'Enemy'-Tag müssen dieses Skript-Komponent haben. Wenn hier ein Fehler auftritt, bitte Moritz kontaktieren! :)");
             return;
         }
-        enemyScript.takeSpecialDamage(DamageType.Blitz, damage);
+        enemyScript.takeDamage(DamageType.Blitz, damage);
         targetsHit[targetIndex] = true;
     }
 

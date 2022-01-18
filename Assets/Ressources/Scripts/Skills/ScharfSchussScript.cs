@@ -43,7 +43,7 @@ public class ScharfSchussScript : MonoBehaviour
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
-            enemyScript.takeSpecialDamage(DamageType.Blitz, 5);
+            enemyScript.takeDamage(DamageType.Blitz, 5);
             Destroy(gameObject);
 
         }

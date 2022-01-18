@@ -533,7 +533,7 @@ MonoBehaviour:
   enemyAttack: 0
   enemyDefense: 3
   weaknesses: 00000000
-  resistances: 
+  resistances: 03000000
 --- !u!212 &234343475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -904,7 +904,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &376584402
 Animator:
   serializedVersion: 3
@@ -1083,6 +1083,7 @@ GameObject:
   - component: {fileID: 379349334}
   - component: {fileID: 379349337}
   - component: {fileID: 379349338}
+  - component: {fileID: 379349339}
   m_Layer: 6
   m_Name: TestEnemy (8)
   m_TagString: Enemy
@@ -1193,7 +1194,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!58 &379349338
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1210,6 +1211,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -3.5}
   serializedVersion: 2
   m_Radius: 3
+--- !u!114 &379349339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379349333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4419055bd4a6e14b8e5b4d2a51eeb9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 8
+  movement: {x: 0, y: 0}
+  target: {fileID: 723200762}
+  rb: {fileID: 379349337}
 --- !u!114 &405956750 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4684313625618922257, guid: 3e9442c0637c1ae42adcdd6cb719737f,
@@ -1242,12 +1259,12 @@ PrefabInstance:
     - target: {fileID: 5089424391090860042, guid: 00b6ef81abc94fa49a65124369277094,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5089424391090860042, guid: 00b6ef81abc94fa49a65124369277094,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5089424391090860042, guid: 00b6ef81abc94fa49a65124369277094,
         type: 3}
@@ -1298,6 +1315,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Golem (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044012881586581442, guid: 00b6ef81abc94fa49a65124369277094,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7044012881586581468, guid: 00b6ef81abc94fa49a65124369277094,
         type: 3}
@@ -6688,12 +6710,12 @@ PrefabInstance:
     - target: {fileID: 5089424391090860042, guid: 00b6ef81abc94fa49a65124369277094,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5089424391090860042, guid: 00b6ef81abc94fa49a65124369277094,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5089424391606137553, guid: 00b6ef81abc94fa49a65124369277094,
         type: 3}
@@ -6709,6 +6731,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Golem
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044012881586581442, guid: 00b6ef81abc94fa49a65124369277094,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7044012881586581468, guid: 00b6ef81abc94fa49a65124369277094,
         type: 3}

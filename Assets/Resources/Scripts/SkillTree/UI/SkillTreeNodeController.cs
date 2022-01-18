@@ -77,7 +77,6 @@ public class SkillTreeNodeController : MonoBehaviour{
                 fullyLearned = Resources.Load<Sprite>("Sprites/SkillTreeSprites/5");
                 break;
         }
-        Debug.Log("NodeSlotNotSkilled:" + nodeSlotNotSkilled);
         nodeSlotNotSkilled = notLearned;
         nodeSlotPartiallySkilled = partiallyLearned;
         nodeSlotFullySkilled = fullyLearned;
