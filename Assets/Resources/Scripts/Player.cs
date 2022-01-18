@@ -265,6 +265,7 @@ public class Player : MonoBehaviour
     }
     public void takeDamage(int dmg){
         currentHealthPoints -= dmg;
+        updateUIStatusBar();
         //DamagePopupController.create();
     }
     public void getKnockedBack(Rigidbody2D source){

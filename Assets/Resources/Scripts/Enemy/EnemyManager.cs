@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour{
     private int currentHealthPoints;
-    public int maxHealthPoints;
+    public int enemyMaxHealthPoints;
     public int enemyAttack;
     public int enemyDefense;
-    public List<DamageType> weaknesses;
-    public List<DamageType> resistances;
+    public int enemyExpWorth;
+    public List<DamageType> enemyWeaknesses;
+    public List<DamageType> enemyResistances;
     public EnemyBehaviour enemyBehaviour;
 
 
     private void Awake(){
-        currentHealthPoints = maxHealthPoints;
+        currentHealthPoints = enemyMaxHealthPoints;
     }
 
     // Update is called once per frame
@@ -21,6 +22,7 @@ public class EnemyManager : MonoBehaviour{
     {
         if(currentHealthPoints <= 0){
             Debug.Log("F in chat");
+            Player.getInstance().addExp(enemyExpWorth);
             Destroy(gameObject);
         }
     }
@@ -30,13 +32,13 @@ public class EnemyManager : MonoBehaviour{
         float dmgMultiplicator = 1;
         bool isCrit = false;
         bool isWeak = false;
-        foreach (DamageType d in weaknesses) {
+        foreach (DamageType d in enemyWeaknesses) {
             if (d.Equals(dmgType)){
                 dmgMultiplicator *= 2;
                 isCrit = true;
             }
         }
-        foreach (DamageType d in resistances) {
+        foreach (DamageType d in enemyResistances) {
             if (d.Equals(dmgType)){
                 dmgMultiplicator /= 2;
                 isWeak = true;
@@ -61,10 +63,10 @@ public class EnemyManager : MonoBehaviour{
     }
 
     public void addResistance(DamageType dt){
-        resistances.Add(dt);
+        enemyResistances.Add(dt);
     }
 
     public void addWeakness(DamageType dt){
-        weaknesses.Add(dt);
+        enemyWeaknesses.Add(dt);
     }
 }
