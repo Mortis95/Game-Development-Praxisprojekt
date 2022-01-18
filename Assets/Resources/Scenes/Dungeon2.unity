@@ -2773,6 +2773,130 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 736315001}
   m_CullTransparentMesh: 1
+--- !u!1 &887003684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 887003685}
+  - component: {fileID: 887003686}
+  m_Layer: 0
+  m_Name: Organisationsmitglied
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &887003685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887003684}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1234310333}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &887003686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887003684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 887003686}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: ???
+      text: "\u2026 Es sieht so aus, als sei ich zu sp\xE4t. Ich nehme an, du hast
+        bereits den Schl\xFCssel des Friedens?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: Und du bist ein Mitglied der Organisation.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: ???
+      text: "Das stimmt. K\xF6nnte ich dich dazu \xFCberreden, mir den Schl\xFCssel
+        zu \xFCberreichen? Anders als mein impulsiver Kollege empfinde ich kein Verlangen
+        nach einem Kampf."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Sorry, aber da ich die Welt retten muss, wird das nicht m\xF6glich sein."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: ???
+      text: "\u201EDie Welt retten\u201C? Hah, ist das, was Lucie dir erz\xE4hlt
+        hat? Es tut mir leid, dass du es so erfahren musst, aber du wurdest get\xE4uscht.
+        Lucie m\xF6chte alles andere, als die Welt zu retten. Ganz im Gegenteil,
+        wir m\xFCssen die Welt vor ihr retten."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Was f\xFCr ein origineller Plot Twist."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: ???
+      text: "Komm zu unserem Camp im S\xFCden des Dorfes. Unser Boss wird dir alles
+        Weitere erkl\xE4ren. Ich verstehe, dass es schwer ist, uns sofort zu vertrauen,
+        also kannst du deine Waffe behalten, falls es dich sicherer f\xFChlen l\xE4sst
+        im Territorium \u201Edes Feindes\u201C."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1 &889864674
 GameObject:
   m_ObjectHideFlags: 0
@@ -25823,6 +25947,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212425527}
   m_CullTransparentMesh: 1
+--- !u!1 &1234310332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1234310333}
+  m_Layer: 0
+  m_Name: NPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1234310333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234310332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.4379425, y: 8.079064, z: -112.133385}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 887003685}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1523118459
 GameObject:
   m_ObjectHideFlags: 0

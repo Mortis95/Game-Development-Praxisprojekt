@@ -2364,6 +2364,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 776246087}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &193786539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 193786540}
+  - component: {fileID: 193786541}
+  m_Layer: 0
+  m_Name: Skelett
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &193786540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193786539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.4, y: -6.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1837291862}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &193786541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193786539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 193786541}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Du
+      text: "(Ein Skelett. Es ist gr\xF6\xDFer als das eines Menschen, und einige
+        Knochen fehlen.)"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!4 &193928079 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5775552010090681238, guid: b9f221517588c9f4d9e4f72f3ddfbeb0,
@@ -6793,12 +6867,249 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1860307882}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &328052930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 328052931}
+  - component: {fileID: 328052932}
+  m_Layer: 0
+  m_Name: Schild
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &328052931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328052930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -52.1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1837291862}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &328052932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328052930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 328052932}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Schild
+      text: "\u201EWillkommen in unserem bescheidenen Dorf! Wir haben nicht viel
+        zu bieten, aber hoffen, dass Sie dennoch unsere gr\xFCne Szenerie genie\xDFen
+        werden.  P.S. Bitte seien Sie respektvoll gegen\xFCber allen Bewohnern. Wir
+        sind alle friedlich.\u201C "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "(Das Schild ist nur schwer zu lesen. Es sieht aus, als w\xFCrde es jeden
+        Moment auseinander fallen.) "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "(Dieses Dorf schien stolz auf seine Szenerie gewesen zu sein, aber es
+        hat sich seit Jahren keiner mehr darum gek\xFCmmert.) "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "(Ich frage mich, was passiert ist\u2026)"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!224 &330713177 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 193592881594589398, guid: d65e49153f3cac0438439811094097ef,
     type: 3}
   m_PrefabInstance: {fileID: 934664860}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &345900521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 345900522}
+  - component: {fileID: 345900523}
+  m_Layer: 0
+  m_Name: Buch 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &345900522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345900521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.1, y: 21.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1837291862}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &345900523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345900521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 345900523}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Dokument
+      text: "\u201ENahrung und Wasser werden knapp. Unsere Versorgungsrouten wurden
+        von den Menschen unterbrochen. Friedliche Verhandlungen werden abgelehnt.\u201C"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Dokument
+      text: "\u201EDies sollte der letzte Ausweg sein, aber wenn wir uns nicht bald
+        wehren, werden die Fischmenschen bereits diese Woche austrocknen.\u201C"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Dokument
+      text: "\u201EDie Feen haben unser Dorf bereits verlassen. Ich habe seitdem
+        nichts mehr von ihnen geh\xF6rt. Hoffentlich wurden sie nicht gefangen.\u201C "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Dokument
+      text: "\u201EFeenfl\xFCgel sind eine sehr beliebte Zutat unter Alchemisten,
+        und die Gier der Menschen kennt kein Ende\u2026\u201C"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "(Dies ist ein \xE4lterer Eintrag. Ich sollte zum aktuellsten vorbl\xE4ttern.)"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Dokument
+      text: "\u201EWir haben verloren. Es gibt keine Hoffnung mehr. Ich habe den
+        Einwohnern gesagt, sie sollen fliehen und hoffe, dass sie noch entkommen
+        k\xF6nnen.\u201C"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Dokument
+      text: "\u201EDies ist mein Ende. Ich werde als einziger hier verbleiben und
+        zusammen mit diesem Dorf untergehen.\u201C"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Dokument
+      text: "\u201EBitte, lass meine Freunde und Familie \xFCberleben und eine Zukunft
+        sehen, in welcher wir akzeptiert werden, trotz Differenzen im Aussehen und
+        unserer Herkunft.\u201C"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: (...)
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1001 &346523739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17181,6 +17492,8 @@ MonoBehaviour:
   Rage: {fileID: 0}
   experiencePoints: 0
   currentLevel: 0
+  expToNextLevel: 0
+  skillPointsPerLevel: 0
   currentSkillpoints: 0
   currentHealthPoints: 0
   maxHealthPoints: 0
@@ -19249,6 +19562,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 870678951}
   m_CullTransparentMesh: 1
+--- !u!1 &876690504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 876690505}
+  - component: {fileID: 876690506}
+  m_Layer: 0
+  m_Name: Entering Scene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &876690505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876690504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -60.4, y: -5.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1837291862}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &876690506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876690504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 876690506}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Du
+      text: (...)
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "(Niemand ist hier. Sieht so aus, als m\xFCsse ich den n\xE4chsten Dungeon
+        selbst finden. Vielleicht finde ich hier allerdings auch Hinweise, wenn ich
+        mich etwas umgucke.) "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1001 &880963536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24382,6 +24777,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e2939d939698e439a4bd3c384e6d6c, type: 3}
+--- !u!1 &1348503100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1348503101}
+  - component: {fileID: 1348503102}
+  m_Layer: 0
+  m_Name: Wegversperrung
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1348503101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348503100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.3, y: -62.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1837291862}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1348503102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348503100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1348503102}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Du
+      text: "(Ich k\xF6nnte zwar Magie verwenden, um die Baumst\xE4mme zu zerst\xF6ren
+        und den Weg zu passieren, aber die Entwickler des Spiels lassen mich nicht.
+        Ich muss zun\xE4chst etwas tun, damit dieser Weg frei wird.)"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!4 &1353233784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2243406257578486524, guid: 6bc85565e9355e847ad6836ddf1d3436,
@@ -24864,6 +25334,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c881d15e78c65b4f8913363a0c2ded3, type: 3}
+--- !u!1 &1381629362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1381629363}
+  - component: {fileID: 1381629364}
+  m_Layer: 0
+  m_Name: Buch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1381629363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381629362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 48.8, y: -2.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1837291862}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1381629364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381629362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1381629364}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Tagebuch
+      text: "\u201EMama sagt, dass ich das Haus nicht mehr verlassen darf. Ich vermisse
+        Papa, und Mama weint jeden Tag. Drau\xDFen ist es laut, ich habe Angst\u2026\u201C"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "(Die Seiten sind gelb und br\xFCchig. Dies ist der letzte Eintrag.)"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1 &1382287275
 GameObject:
   m_ObjectHideFlags: 0
@@ -65865,6 +66416,121 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e2939d939698e439a4bd3c384e6d6c, type: 3}
+--- !u!1 &1761837979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1761837980}
+  - component: {fileID: 1761837981}
+  m_Layer: 0
+  m_Name: Rucksack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1761837980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761837979}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 72.7, y: -4.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1837291862}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1761837981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761837979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1761837981}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Du
+      text: "(Die Tasche sieht einigerma\xDFen neu aus. Es d\xFCrfte nicht schaden,
+        einen Blick reinzuwerfen.)"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Notizbuch
+      text: "\u201EVor 100 Jahren wurde dieses Dorf zerst\xF6rt. Es lebten haupts\xE4chlich
+        magische Wesen und Hybride hier.\u201C"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Notizbuch
+      text: "\u201EVon denen, die geflohen sind, haben nur zwei St\xE4mme \xFCberlebt.
+        Sollte ich herausfinden k\xF6nnen, wohin sie geflohen sind, k\xF6nnte ich
+        dies f\xFCr meine Abschlussarbeit verwenden.\u201C"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Notizbuch
+      text: "\u201EAlles deutet darauf hin, dass das Skelett im Dorf dem ehemaligen
+        Anf\xFChrer des Dorfes geh\xF6rt. Ich habe ein paar Knochen mitgenommen,
+        und werde sie in der Akademie untersuchen.\u201C "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Notizbuch
+      text: "\u201EVielleicht befindet sich in dieser H\xF6hle noch etwas. Meine
+        Recherche sollte nicht mehr so lange dauern.\u201C"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "(Der Besitzer ist nie wieder aus dieser H\xF6hle herausgekommen.)"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!4 &1762363926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8548436224806340305, guid: 2a13181cfd599b94bae2a0123b6490dc,
@@ -66459,6 +67125,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1363763148}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1816044429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816044430}
+  - component: {fileID: 1816044431}
+  m_Layer: 0
+  m_Name: Schwert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1816044430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816044429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.1, y: -4.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1837291862}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1816044431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816044429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1816044431}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Du
+      text: "(Das Schwert geh\xF6rt vermutlich zum Skelett. Es ist verrostet, wer
+        wei\xDF wie alt es bereits ist\u2026) "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!4 &1818676008 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5584339333462978153, guid: 4280e47e8b2c128469cc3c57f870750f,
@@ -66695,6 +67435,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 591353583}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1837291861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1837291862}
+  m_Layer: 0
+  m_Name: NPCs & Objects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1837291862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837291861}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.687945, y: 81.03457, z: -90.69848}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 876690505}
+  - {fileID: 328052931}
+  - {fileID: 1381629363}
+  - {fileID: 345900522}
+  - {fileID: 1761837980}
+  - {fileID: 193786540}
+  - {fileID: 1816044430}
+  - {fileID: 1348503101}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1840826455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8039280157144499285, guid: baa93d4f1e1c8bb4aaadcb7eafd99a59,
