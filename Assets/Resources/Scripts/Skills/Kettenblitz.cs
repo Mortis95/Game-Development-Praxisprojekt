@@ -110,13 +110,13 @@ public class Kettenblitz : MonoBehaviour
     }
     void hitEnemy(int targetIndex){
         GameObject enemy = targets[targetIndex];
-        TestEnemy enemyScript = enemy.GetComponent<TestEnemy>();
+        EnemyManager enemyScript = enemy.GetComponent<EnemyManager>();
         if(enemyScript == null){
             Debug.LogWarning("Kettenblitz hat einen Gegner gefunden, der nicht das erforderliche richtige Skript hat!");
             Debug.LogWarning("Alle Gegner mit den 'Enemy'-Tag müssen dieses Skript-Komponent haben. Wenn hier ein Fehler auftritt, bitte Moritz kontaktieren! :)");
             return;
         }
-        enemyScript.takeDamage(DamageType.Blitz, damage);
+        enemyScript.takeSpecialDamage(DamageType.Blitz, damage);
         targetsHit[targetIndex] = true;
     }
 

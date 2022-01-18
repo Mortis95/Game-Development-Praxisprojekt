@@ -48,8 +48,8 @@ public class FeuerPfeilScript : MonoBehaviour
         Debug.Log("Collision with:" + col.name);
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
-            TestEnemy enemyScript = other.GetComponent<TestEnemy>();
-            enemyScript.takeDamage(DamageType.Feuer, 20);
+            EnemyManager enemyScript = other.GetComponent<EnemyManager>();
+            enemyScript.takeSpecialDamage(DamageType.Feuer, 20);
             Destroy(gameObject);
 
         }

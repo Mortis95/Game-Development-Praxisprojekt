@@ -269,12 +269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
-  weaknesses: 
-  resistances: 02000000
-  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
-    type: 3}
+  maxHealthPoints: 200
+  enemyAttack: 0
+  enemyDefense: 3
+  weaknesses: 03000000
+  resistances: 0200000001000000
 --- !u!212 &94549630
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -315,7 +314,7 @@ SpriteRenderer:
   m_SortingLayerID: 929875741
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
+  m_Sprite: {fileID: 7024561329299943108, guid: 79e6c84f9eb25e04c992f7a69afe0382,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -324,7 +323,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &94549631
@@ -530,12 +529,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
-  weaknesses: 
+  maxHealthPoints: 200
+  enemyAttack: 0
+  enemyDefense: 3
+  weaknesses: 00000000
   resistances: 
-  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
-    type: 3}
 --- !u!212 &234343475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -576,7 +574,7 @@ SpriteRenderer:
   m_SortingLayerID: 929875741
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
+  m_Sprite: {fileID: 7024561329299943108, guid: 79e6c84f9eb25e04c992f7a69afe0382,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -585,7 +583,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &234343476
@@ -1104,12 +1102,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
+  maxHealthPoints: 200
+  enemyAttack: 0
+  enemyDefense: 3
   weaknesses: 02000000
   resistances: 
-  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
-    type: 3}
 --- !u!212 &379349335
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1150,7 +1147,7 @@ SpriteRenderer:
   m_SortingLayerID: 929875741
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
+  m_Sprite: {fileID: 7024561329299943108, guid: 79e6c84f9eb25e04c992f7a69afe0382,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1159,7 +1156,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &379349336
@@ -1503,12 +1500,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
+  maxHealthPoints: 200
+  enemyAttack: 0
+  enemyDefense: 3
   weaknesses: 
-  resistances: 02000000
-  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
-    type: 3}
+  resistances: 0200000001000000
 --- !u!212 &574379860
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1549,7 +1545,7 @@ SpriteRenderer:
   m_SortingLayerID: 929875741
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
+  m_Sprite: {fileID: 7024561329299943108, guid: 79e6c84f9eb25e04c992f7a69afe0382,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1558,7 +1554,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &574379861
@@ -1732,12 +1728,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
-  weaknesses: 02000000
+  maxHealthPoints: 200
+  enemyAttack: 0
+  enemyDefense: 3
+  weaknesses: 0200000001000000
   resistances: 
-  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
-    type: 3}
 --- !u!212 &687849825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1778,7 +1773,7 @@ SpriteRenderer:
   m_SortingLayerID: 929875741
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
+  m_Sprite: {fileID: 7024561329299943108, guid: 79e6c84f9eb25e04c992f7a69afe0382,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1787,7 +1782,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &687849826
@@ -3166,12 +3161,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 200
-  currentHP: 0
-  weaknesses: 
-  resistances: 01000000
-  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
-    type: 3}
+  maxHealthPoints: 200
+  enemyAttack: 0
+  enemyDefense: 3
+  weaknesses: 03000000
+  resistances: 0200000001000000
 --- !u!212 &1114049731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3212,7 +3206,7 @@ SpriteRenderer:
   m_SortingLayerID: 929875741
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
+  m_Sprite: {fileID: 7024561329299943108, guid: 79e6c84f9eb25e04c992f7a69afe0382,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3221,7 +3215,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1114049732
@@ -3494,12 +3488,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
+  maxHealthPoints: 200
+  enemyAttack: 0
+  enemyDefense: 3
   weaknesses: 02000000
   resistances: 
-  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
-    type: 3}
 --- !u!212 &1299568832
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3540,7 +3533,7 @@ SpriteRenderer:
   m_SortingLayerID: 929875741
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
+  m_Sprite: {fileID: 7024561329299943108, guid: 79e6c84f9eb25e04c992f7a69afe0382,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3549,7 +3542,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1299568833
@@ -3635,12 +3628,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
-  weaknesses: 
+  maxHealthPoints: 200
+  enemyAttack: 0
+  enemyDefense: 3
+  weaknesses: 0200000001000000
   resistances: 
-  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
-    type: 3}
 --- !u!212 &1344124494
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3681,7 +3673,7 @@ SpriteRenderer:
   m_SortingLayerID: 929875741
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
+  m_Sprite: {fileID: 7024561329299943108, guid: 79e6c84f9eb25e04c992f7a69afe0382,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3690,7 +3682,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1344124495
@@ -5374,12 +5366,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
+  maxHealthPoints: 200
+  enemyAttack: 0
+  enemyDefense: 3
   weaknesses: 
-  resistances: 02000000
-  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
-    type: 3}
+  resistances: 0200000001000000
 --- !u!212 &1488543337
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5420,7 +5411,7 @@ SpriteRenderer:
   m_SortingLayerID: 929875741
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
+  m_Sprite: {fileID: 7024561329299943108, guid: 79e6c84f9eb25e04c992f7a69afe0382,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5429,7 +5420,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1488543338
@@ -6883,12 +6874,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
-  weaknesses: 
-  resistances: 02000000
-  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
-    type: 3}
+  maxHealthPoints: 200
+  enemyAttack: 0
+  enemyDefense: 3
+  weaknesses: 03000000
+  resistances: 0200000001000000
 --- !u!212 &1612949615
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6929,7 +6919,7 @@ SpriteRenderer:
   m_SortingLayerID: 929875741
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
+  m_Sprite: {fileID: 7024561329299943108, guid: 79e6c84f9eb25e04c992f7a69afe0382,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6938,7 +6928,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1612949616
@@ -7228,12 +7218,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 0
-  weaknesses: 02000000
+  maxHealthPoints: 200
+  enemyAttack: 0
+  enemyDefense: 3
+  weaknesses: 0200000001000000
   resistances: 
-  damagePopupPrefab: {fileID: 1246529547350880143, guid: 1c173d06782995c4ab01fa1fbdeba502,
-    type: 3}
 --- !u!212 &1820869243
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7274,7 +7263,7 @@ SpriteRenderer:
   m_SortingLayerID: 929875741
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7024561329299943108, guid: 7a7ed0018d15d4b58ae460c13952e787,
+  m_Sprite: {fileID: 7024561329299943108, guid: 79e6c84f9eb25e04c992f7a69afe0382,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7283,7 +7272,7 @@ SpriteRenderer:
   m_Size: {x: 8.5199995, y: 11.639999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1820869244

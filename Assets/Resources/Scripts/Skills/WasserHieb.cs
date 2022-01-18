@@ -65,8 +65,8 @@ public class WasserHieb : MonoBehaviour
         Debug.Log("Collision with:" + col.name);
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
-            TestEnemy enemyScript = other.GetComponent<TestEnemy>();
-            enemyScript.takeDamage(DamageType.Wasser, damage);
+            EnemyManager enemyScript = other.GetComponent<EnemyManager>();
+            enemyScript.takeSpecialDamage(DamageType.Wasser, damage);
 
         }
     }
