@@ -69,8 +69,8 @@ public class MagicAttackController : MonoBehaviour
         Debug.Log("Collision with:" + col.name);
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
-            TestEnemy enemyScript = other.GetComponent<TestEnemy>();
-            enemyScript.takeDamage(DamageType.Normal, damage);
+            EnemyManager enemyScript = other.GetComponent<EnemyManager>();
+            enemyScript.takeNormalDamage(damage);
         }
         Destroy(gameObject);
     }

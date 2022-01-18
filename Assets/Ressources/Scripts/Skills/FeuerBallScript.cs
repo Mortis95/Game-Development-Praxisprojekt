@@ -50,14 +50,14 @@ public class FeuerBallScript : MonoBehaviour
             var hitColliders = Physics2D.OverlapCircleAll(transform.position, SplashRange);
             foreach(var hitCollider in hitColliders)
             {
-                var enemy = hitCollider.GetComponent<TestEnemy>();
+                var enemy = hitCollider.GetComponent<EnemyManager>();
                 if(enemy)
                 {
                     var closestPoint = hitCollider.ClosestPoint(transform.position);
                     var distance = Vector3.Distance(closestPoint, transform.position);
 
                     var damagePercent = Mathf.InverseLerp(SplashRange, 0, distance);
-                    enemy.takeDamage(DamageType.Feuer, damagePercent * Damage); 
+                    enemy.takeSpecialDamage(DamageType.Feuer, (int)(damagePercent * Damage)); 
                     Destroy(gameObject);
                 }
         }   }       

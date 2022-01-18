@@ -81,7 +81,7 @@ public class Player : MonoBehaviour
     private int totalStrength;
     private int totalDexterity;
     private int totalIntelligence;
-
+ 
     #endregion
 
     #region AbilityCostAndVariables
@@ -135,6 +135,13 @@ public class Player : MonoBehaviour
         equipment = Equipment.getInstance();
         equipment.onEquipmentChangedCallback += UpdateEquipment;
 
+        baseAttack = 1;
+        baseDefense = 1;
+        baseStrength = 1;
+        baseDexterity = 1;
+        baseIntelligence = 1;
+        recalculateStats();
+
     }
    
     public void UpdateEquipment(){
@@ -147,9 +154,6 @@ public class Player : MonoBehaviour
     }
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.X)){
-            addExp(5);
-        }
         processMovement();
         processAttackInput();
         processSkillInput();         
@@ -198,8 +202,9 @@ public class Player : MonoBehaviour
         for(int i = 1; i < experiencePointThreshholds.Length; i++){
             if(experiencePoints < experiencePointThreshholds[i]){
                 if(minimumLevelReached > currentLevel){
+                    int numOfLevelUps = minimumLevelReached - currentLevel;     //How many LevelUps did happen?
+                    for(int n = 0; n < numOfLevelUps; n++){levelUp();}          //Level up this many times. (usually this should be 1.)
                     currentLevel = minimumLevelReached;
-                    levelUp();
                 } else {
                     expToNextLevel = experiencePointThreshholds[i] - experiencePoints;
                 }
@@ -255,6 +260,7 @@ public class Player : MonoBehaviour
         totalAttack = baseAttack + bonusAttack;
         totalDefense = baseDefense + bonusDefense;
         totalStrength = baseStrength + bonusStrength;
+        totalDexterity = baseDexterity + bonusDexterity;
         totalIntelligence = baseIntelligence + bonusIntelligence;
     }
     public void takeDamage(DamageType damageType, int dmg){
@@ -393,6 +399,16 @@ public class Player : MonoBehaviour
         baseDexterity    += addDexterity;
         baseIntelligence += addIntelligence;
         recalculateStats();
+    }
+    
+    //Skill-Damage Multiplier. This is calculated by: Lerp(1,2, currentLevel / maxLevel)
+    // -> In other words, the higher the player level, the closer the Skill-Damage Multiplier gets to 2.
+    // -> So at first Level, Skills do 1 * Attribute = Damage
+    // -> So at last  Level, Skills do 2 * Attribute = Damage
+    // --> Goal: Make Level-Ups feel like an Upgrade.
+    public float getSkillDamageMultiplier(){
+        float levelProgression = (float) currentLevel / (float) experiencePointThreshholds.Length;
+        return Mathf.Lerp(1f,2f, levelProgression);
     }
     #endregion
 }
