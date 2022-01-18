@@ -87,11 +87,11 @@ public class Player : MonoBehaviour
     #region AbilityCostAndVariables
     //Ability Kram - Bools sehen zwar doof aus, sind aber praktisch und peformancetechnisch gesehen das Beste. 
     public bool FeuerpfeilLearned               = false;
-    private int FeuerpfeilMPKost                = 100;
+    private int FeuerpfeilMPKost                = 10;
     public bool WasserpfeilhagelLearned         = false;
     private int WasserpfeilhagelMPKost          = 100;
     public bool ScharfschussLearned             = false;
-    private int ScharfschussMPKost              = 100;
+    private int ScharfschussMPKost              = 5;
     public bool WasserhiebLearned               = false;
     private int WasserhiebMPKost                = 20;
     public bool ElektrowirbelLearned            = false;
@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
     public bool RageLearned                     = false;
     private int RageMPKost                      = 10;
     public bool FeuerballLearned                = false;
-    private int FeuerballMPKost                 = 100;
+    private int FeuerballMPKost                 = 20;
     public bool WasserflaecheLearned            = false;
     private int WasserflaecheMPKost             = 100;
     public bool KettenblitzLearned              = false;
@@ -337,7 +337,7 @@ public class Player : MonoBehaviour
             if (equippedAbility == Ability.Feuerpfeil && currentMagicPoints >= FeuerpfeilMPKost){
                 currentMagicPoints -= FeuerpfeilMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Feuerpfeil>(); */
+                skill.AddComponent<FeuerPfeil>();
 
             } else if (equippedAbility == Ability.Wasserpfeilhagel && currentMagicPoints >= WasserpfeilhagelMPKost){
                 currentMagicPoints -= WasserpfeilhagelMPKost;
@@ -347,7 +347,7 @@ public class Player : MonoBehaviour
             } else if (equippedAbility == Ability.Scharfschuss && currentMagicPoints >= ScharfschussMPKost){
                 currentMagicPoints -= ScharfschussMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Scharfschuss>(); */
+                skill.AddComponent<ScharfSchuss>();
 
             } else if (equippedAbility == Ability.Wasserhieb && currentMagicPoints >= WasserhiebMPKost){
                 currentMagicPoints -=  WasserhiebMPKost;
@@ -367,7 +367,7 @@ public class Player : MonoBehaviour
             } else if (equippedAbility == Ability.Feuerball && currentMagicPoints >= FeuerballMPKost){
                 currentMagicPoints -= FeuerballMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Feuerball>(); */
+                skill.AddComponent<FeuerBall>();
 
             } else if (equippedAbility == Ability.Wasserflaeche && currentMagicPoints >= WasserflaecheMPKost){
                 currentMagicPoints -= WasserflaecheMPKost;
