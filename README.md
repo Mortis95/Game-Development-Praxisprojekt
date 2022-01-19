@@ -1,50 +1,59 @@
 # Game Development Praxisprojekt
 
-## TODO bis zum 18.1 (Bei Ungenauigkeiten bitte editieren)
+## TODO bis zum 25.1 (Bei Ungenauigkeiten bitte editieren)
 ## An alle: 
 - Grafikgruppe Bescheid geben, wenn Grafiken fehlen!
 - Bis dahin erstellt selbst einfache/primitive Testgrafiken, damit man später leichter austauschen kann
 - Bei Rückfragen/Unklarheiten pingt die @Programmierer Rolle in Discord an! Wenn etwas geklärt werden muss ist es immer besser auf sich aufmerksam zu machen!
 
 
-## Skills debuggen			
--> Jeder über seinen eigenen
-
-## Main Menu				
-Oscar
+## Skills Grafiken einfügen		
+-> Jeder seine eigenen
 
 ## Animator Experte			
-(Open)
+-> Teresa , Oscar
 
-## Audio Source at runtime coden 	
-Lukas
+## Alle Sounds *importieren*
+-> Alex
 
-## Unity Tests				 
-Lukas
+## Dungeon fertigstellen
+-> Alex
 
-## Unity Stop Time (for Pause)		
-Lukas/Moritz
+## Szenenübergang verbessern (vorher auf GameManager.pause() warten)
+-> Alex
 
-## Variations of Art Assets (Enemies)	
-Teresa
+## Skill-Icons im SkillSelectModus for Inventory anzeigen
+-> Moritz
 
-## Variations of Art Assets (Items)	
-Teresa
+## Inventar ändert Titel wenn SkillSelectModus
+-> Moritz
 
-## SceneArbeit (important)		
-Teresa
+## Unity Game Manager (for Pause)		
+-> Moritz
 
-## SceneArbeit (important)
-Oscar
+## Sprites adequate Pixels per Unity setzen
+-> Teresa
 
-## Enemies
-Moritz
+## Sprites Änderungsarbeit (Buttons für Alex)
+-> Teresa
 
-## ~~Skilltree Rework~~
-Moritz
+## SceneArbeit	
+-> Teresa
 
-## ~~NPCController~~ & Prefab	
-Moritz
+## SceneArbeit
+-> Oscar
+
+## Enemie Rework
+-> Moritz
 
 ## Lootables
-Oscar
+-> Oscar
+
+## Speichern / Laden
+-> Lukas
+
+## ControllerInput
+-> (open)
+
+## Bosse
+-> (open)
