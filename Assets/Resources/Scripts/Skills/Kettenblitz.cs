@@ -31,7 +31,7 @@ public class Kettenblitz : MonoBehaviour
         targetsHit = new bool[targets.Length];                      //Create an array um zu merken welcher Gegner bereits gehittet wurde
         for (int i = 0; i < targetsHit.Length; i++){
             targetsHit[i] = false;                                  //Am Anfang wurde noch niemand gehittet
-            Debug.Log("Target: " + targets[i].name + " Distance: " + Vector3.Distance(transform.position,targets[i].transform.position));
+            //Debug.Log("Target: " + targets[i].name + " Distance: " + Vector3.Distance(transform.position,targets[i].transform.position));
         }
 
         //Setup Array that keeps track of Indices hit in order, to help with smoother animation
@@ -185,8 +185,8 @@ public class Kettenblitz : MonoBehaviour
         while(true){
             if(Time.fixedTime - lastAnimationChange > animationSpeedSeconds){
                 lastAnimationChange = Time.fixedTime;
-                if(!spellFinished){animationStep = (animationStep+1) % textures.Length;}
-                else if(animationStep > 0){animationStep--;}        //This is just to help smoothen out the animation in case Arc stops prematurely
+                if(!spellFinished || animationStep >= 6){animationStep = (animationStep+1) % textures.Length;}
+                else if(animationStep < 6 && animationStep > 0){animationStep--;}        //Dumb looking code explanation: animationStep 6 is exactly the middle, when the lightning is the thickest. In case our spell finishes early, we want to 'fizzle' it out asap, meaning take animationStep somehow to the edges of the Array (either 9 or 0). Therefore the magic numbers in if.
                 lr.material.SetTexture("_MainTex",textures[animationStep]);
             }
             yield return new WaitForFixedUpdate();
