@@ -15,6 +15,8 @@ public class Kettenblitz : MonoBehaviour
 
     private int[] targetIndices;
     private LineRenderer lr;
+    private Texture[] textures;
+    public float animationSpeedSeconds;
     private bool spellFinished = false;
     private void Awake(){
         //Setup Stats (can be balanced differently)
@@ -37,21 +39,36 @@ public class Kettenblitz : MonoBehaviour
 
         //Setup Line-Renderer, damit man auch visuell was sieht
         lr = gameObject.AddComponent<LineRenderer>();
-        lr.startColor = lr.endColor = Color.cyan;
+        lr.startColor = lr.endColor = Color.white;
         lr.alignment = LineAlignment.View;
-        lr.startWidth = lr.endWidth = 0.3f;
+        lr.startWidth = lr.endWidth = 2f;
         lr.positionCount = 1;
-        lr.numCapVertices = 3;
-        lr.numCornerVertices = 3;
+        lr.numCapVertices = 0;
+        lr.numCornerVertices = 0;
         lr.SetPosition(0, transform.position);  //Start at Cast Origin
         lr.sortingLayerName = "on floor";
-        lr.material = new Material(Shader.Find("Sprites/Default"));
+        lr.material = Resources.Load<Material>("Sprites/SkillAnimations/ArcLineRendererMaterial");
+        lr.textureMode = LineTextureMode.RepeatPerSegment;
+
+        //Load all textures (Dirty code, please make sure Textures are called this in project.)
+        int textureCount = 10;
+        animationSpeedSeconds = 0.08f;
+        textures = new Texture[10];
+        for(int i = 1; i <= textureCount; i++){
+            Texture2D t = Resources.Load<Texture2D>("Sprites/SkillAnimations/Arc"+i);
+            Debug.Log(t);
+            textures[i-1] = t;
+        }
+
+        lr.material.SetTexture("_MainTex",textures[0]);
+
         
         //Soundeffekt abspielen
         AudioManager.getInstance().PlaySound("Kettenblitz");
 
         //MainLoop starten
         StartCoroutine(mainLoop());
+        StartCoroutine(animationLoop());
         
         //FÜR DEN FALL dass Arc die Main-Loop in einen Fehler läuft und sich nicht korrekt abbauen kann, wird das gameObject nach 5 Sekunden automatisch gelöscht
         Destroy(gameObject, 5f);
@@ -160,6 +177,20 @@ public class Kettenblitz : MonoBehaviour
         }
         return closestIndex;
 
+    }
+
+    IEnumerator animationLoop(){
+        float lastAnimationChange = Time.fixedTime;
+        int animationStep = 0;
+        while(true){
+            if(Time.fixedTime - lastAnimationChange > animationSpeedSeconds){
+                lastAnimationChange = Time.fixedTime;
+                if(!spellFinished){animationStep = (animationStep+1) % textures.Length;}
+                else if(animationStep > 0){animationStep--;}        //This is just to help smoothen out the animation in case Arc stops prematurely
+                lr.material.SetTexture("_MainTex",textures[animationStep]);
+            }
+            yield return new WaitForFixedUpdate();
+        }
     }
 
 }
