@@ -272,7 +272,7 @@ MonoBehaviour:
   enemyMaxHealthPoints: 50
   enemyAttack: 0
   enemyDefense: 3
-  enemyExpWorth: 0
+  enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
 --- !u!212 &94549630
@@ -533,7 +533,7 @@ MonoBehaviour:
   enemyMaxHealthPoints: 50
   enemyAttack: 0
   enemyDefense: 3
-  enemyExpWorth: 0
+  enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
 --- !u!212 &234343475
@@ -1105,10 +1105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMaxHealthPoints: 50
+  enemyMaxHealthPoints: 400
   enemyAttack: 15
   enemyDefense: 3
-  enemyExpWorth: 0
+  enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
 --- !u!212 &379349335
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379349333}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4419055bd4a6e14b8e5b4d2a51eeb9d, type: 3}
   m_Name: 
@@ -1526,7 +1526,7 @@ MonoBehaviour:
   enemyMaxHealthPoints: 50
   enemyAttack: 0
   enemyDefense: 3
-  enemyExpWorth: 0
+  enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
 --- !u!212 &574379860
@@ -1755,7 +1755,7 @@ MonoBehaviour:
   enemyMaxHealthPoints: 50
   enemyAttack: 0
   enemyDefense: 3
-  enemyExpWorth: 0
+  enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
 --- !u!212 &687849825
@@ -3189,7 +3189,7 @@ MonoBehaviour:
   enemyMaxHealthPoints: 50
   enemyAttack: 0
   enemyDefense: 3
-  enemyExpWorth: 0
+  enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
 --- !u!212 &1114049731
@@ -3517,7 +3517,7 @@ MonoBehaviour:
   enemyMaxHealthPoints: 50
   enemyAttack: 0
   enemyDefense: 3
-  enemyExpWorth: 0
+  enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
 --- !u!212 &1299568832
@@ -3658,7 +3658,7 @@ MonoBehaviour:
   enemyMaxHealthPoints: 50
   enemyAttack: 0
   enemyDefense: 3
-  enemyExpWorth: 0
+  enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
 --- !u!212 &1344124494
@@ -5397,7 +5397,7 @@ MonoBehaviour:
   enemyMaxHealthPoints: 50
   enemyAttack: 0
   enemyDefense: 3
-  enemyExpWorth: 0
+  enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
 --- !u!212 &1488543337
@@ -6911,7 +6911,7 @@ MonoBehaviour:
   enemyMaxHealthPoints: 50
   enemyAttack: 0
   enemyDefense: 3
-  enemyExpWorth: 0
+  enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
 --- !u!212 &1612949615
@@ -7256,7 +7256,7 @@ MonoBehaviour:
   enemyMaxHealthPoints: 50
   enemyAttack: 0
   enemyDefense: 3
-  enemyExpWorth: 0
+  enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
 --- !u!212 &1820869243

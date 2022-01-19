@@ -155,6 +155,7 @@ public class Player : MonoBehaviour
 
     void Update(){
         processMovement();
+        processUseConsumableInput();
         processAttackInput();
         processSkillInput();         
     }
@@ -168,6 +169,7 @@ public class Player : MonoBehaviour
     public void addExp(int xp)
     {
         experiencePoints += xp;
+        //TextPopup.createPlayerNotificationPopup(transform, "+ " + xp + " EXP", Color.white); //A little bit TOO obnoxious to have a floating Popup for every defeated enemy.
         checkLevelup();
     }
 
@@ -178,6 +180,7 @@ public class Player : MonoBehaviour
             currentHealthPoints += amount;
         }
 
+        TextPopup.createPlayerHealPopup(transform, amount);
         updateUIStatusBar();
     }
 
@@ -192,6 +195,7 @@ public class Player : MonoBehaviour
             currentMagicPoints += amount;
         }
 
+        TextPopup.createPlayerNotificationPopup(transform,amount.ToString(),Color.blue);
         updateUIStatusBar();
     }
     public void addMagicPointsPercentage(float percentage){
@@ -217,7 +221,7 @@ public class Player : MonoBehaviour
 
     void levelUp(){
         currentSkillpoints += skillPointsPerLevel;
-        //Show fancy Animation
+        TextPopup.createPlayerNotificationPopup(transform, "Level Up!", Color.white);
         //Play Level Up Sound
         SkillTree.getInstance().skillTreeChangedCallback(); //Let SkillTree know something changed
     }
@@ -266,7 +270,7 @@ public class Player : MonoBehaviour
     public void takeDamage(int dmg){
         currentHealthPoints -= dmg;
         updateUIStatusBar();
-        //DamagePopupController.create();
+        TextPopup.createPlayerDamagePopup(transform, dmg);
     }
     public void getKnockedBack(Rigidbody2D source){
         
@@ -301,6 +305,14 @@ public class Player : MonoBehaviour
             lastFacedDirection = Direction.Up;
         } else if(moveY < 0){
             lastFacedDirection = Direction.Down;
+        }
+    }
+    public void processUseConsumableInput(){
+        if(Input.GetKeyDown(KeyCode.F)){
+            if(equippedConsumable != null){
+                equippedConsumable.Use();
+                equipment.invokeCallback();
+            }
         }
     }
     public void processAttackInput(){

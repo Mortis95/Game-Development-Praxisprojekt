@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9061188188183373138}
   - component: {fileID: 1148438144041634743}
   m_Layer: 5
-  m_Name: DamagePopup
+  m_Name: Popuptext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1427443003
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2260757011317647340
@@ -190,7 +190,7 @@ MonoBehaviour:
     rgba: 4294967295
   fireHitColor:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4278221567
   waterHitColor:
     serializedVersion: 2
     rgba: 4294967040
