@@ -55,6 +55,7 @@ public class EnemyManager : MonoBehaviour{
         damage = Mathf.Max(0, damage);
 
         currentHealthPoints -= damage;
+        /*enemyBehaviour.findTarget();*/
         TextPopup.createEnemyDamagePopup(transform, damage, dmgType, isCrit, isWeak);
     }
 

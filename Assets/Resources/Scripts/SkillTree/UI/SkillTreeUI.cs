@@ -109,7 +109,7 @@ public class SkillTreeUI : MonoBehaviour{
         int playerSkillpoints = Player.getInstance().currentSkillpoints;
         int spentSkillpoints = skillTree.getSpentSkillPoints();
 
-        skillPointsText.SetText("Skillpoints:\r\n" + playerSkillpoints + "/" + (playerSkillpoints + spentSkillpoints));
+        skillPointsText.SetText("Skillpoints:\r\n" + playerSkillpoints);
     
         //Set Total Bonus Attributes
         totalBonusStatsText.SetText(skillTree.getTotalBonusStats());
