@@ -17,6 +17,10 @@ public class EnemyManager : MonoBehaviour{
         currentHealthPoints = enemyMaxHealthPoints;
     }
 
+    void Start(){
+        enemyBehaviour = gameObject.GetComponent<EnemyBehaviour>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -55,7 +59,7 @@ public class EnemyManager : MonoBehaviour{
         damage = Mathf.Max(0, damage);
 
         currentHealthPoints -= damage;
-        /*enemyBehaviour.findTarget();*/
+        enemyBehaviour.findTarget();
         TextPopup.createEnemyDamagePopup(transform, damage, dmgType, isCrit, isWeak);
     }
 

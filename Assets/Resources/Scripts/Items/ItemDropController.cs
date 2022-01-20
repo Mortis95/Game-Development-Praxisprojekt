@@ -20,8 +20,9 @@ public class ItemDropController : MonoBehaviour{
     }
 
     public void OnTriggerEnter2D(Collider2D col){
-        if(col.gameObject != null && col.tag == "Player"){
+        if(col.gameObject != null && col.tag == "Player" && col.gameObject.name.Equals("Player")){
             Player pl = col.gameObject.GetComponent<Player>();
+            Debug.Log("Player:" + pl + " Inventory:" + pl.inventory + " Item:" + item);
             bool itemWasPickedUp = pl.inventory.addItem(Instantiate(item));
             if (itemWasPickedUp){
                 Destroy(gameObject);

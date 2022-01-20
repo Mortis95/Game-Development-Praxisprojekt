@@ -20,7 +20,6 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     [Tooltip("The time the enemy will pause walking when it reaches a point in its patrolRoute.")]
     public float patrolPauseTimeSeconds;
     [Tooltip("How many seconds should pass inbetween each update of movement. No delay may result in less performance if a lot of enemies exist on screen.")]
-    public float updateMovementTimerSeconds;
     
 
     //Private Variables we should get and calculate ourselves
@@ -36,17 +35,22 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     private int currentPatrolPoint;
     private Vector2 startPos;
     private float lastUpdateMovementTime;
+    private float updateMovementTimerSeconds;
     private float lastPatrolPointTime;
+    private float[] anglesToCheck;
+    private float lastWorkingAngle;
 
     //Primitive Variables can be assigned as soon as Game Object awakes without Issue
     private void Awake(){
         targetFound = false;
         movement = Vector2.zero;
         lastAttackTime = 0;
-        lastUpdateMovementTime = Random.Range(0f,updateMovementTimerSeconds);
+        lastUpdateMovementTime = Random.Range(0f,updateMovementTimerSeconds);   //Load balancing, don't let all enemy instances be synchronized
         currentMoveSpeed = moveSpeed;
         currentPatrolPoint = 0;
         lastPatrolPointTime = 0;
+        updateMovementTimerSeconds = 0.5f;
+        lastWorkingAngle = 0f;
     }
 
     //Some Unity-specific variables should only be assigned on Start() of script, to ensure other GameObjects finished loading.
@@ -56,7 +60,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         rb = gameObject.GetComponent<Rigidbody2D>();
         target = Player.getInstance().GetComponent<Rigidbody2D>();
         startPos = rb.position;
-        
+        anglesToCheck = new float[] {10f, -10f, 20f, -20f, 30f, -30.0f};    //Static angles, because a high ViewDetectionAngle might break the Raycast otherwise
     }
 
     void Update(){
@@ -72,18 +76,80 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         if(!targetFound){checkForTarget();}
     }
 
-    void checkPatrolPoints(){
-        //Check if patrol point needs to be updated
-        //We consider a patrol point reached if it's closer than 0.5 world units away
-        if(Vector2.Distance(rb.position, patrolRoute[currentPatrolPoint] + startPos) < 0.5f){
-            currentPatrolPoint++;
-            //Patrol Route wraps back to Point 0
-            currentPatrolPoint = currentPatrolPoint % patrolRoute.Length;
-            //Update time variable
-            lastPatrolPointTime = Time.time;
+
+    #region ProcessMovement
+    void processUnalertedMovement(){
+        //Set movement towards next patrol point
+        //But only if a patrol route actually exists.
+        if(patrolRoute != null && patrolRoute.Length > 0){
+            Vector2 headedTo = patrolRoute[currentPatrolPoint] + startPos;
+            setMoveTowardsPoint(headedTo); 
+        }
+    }
+    
+    void processAlertedMovement(){
+        if(checkDirectApproach()){
+            setMoveTowardsPoint(target.position);
+        } else {
+            float workingAngle = calculateWorkingAngle(anglesToCheck, target.position);
+            Vector2 targetPoint = RotatePointAroundPivot(target.position, rb.position, new Vector3(0,0,workingAngle));
+            setMoveTowardsPoint(targetPoint);
         }
     }
 
+    //This method returns true if the direct approach is possible, i.e. if the raycast didn't hit an obstacle or hit the player directly.
+    bool checkDirectApproach(){
+        Vector2 direction = target.position - rb.position;
+        RaycastHit2D hit = Physics2D.CircleCast(rb.position, 1f, direction, detectionRange, layerMask);
+        return (!hit || hit.collider.tag == "Player");
+    }
+
+    float calculateWorkingAngle(float[] angles, Vector2 pos){
+        //Initialize help variables with 0
+        float totalOfAnglesThatWork = 0f;
+        int amountOfAnglesThatWork = 0;
+
+        //Iterate over every angle and try a raycast.
+        for(int i = 0; i < angles.Length; i++){
+            float angle = angles[i];
+            Vector2 direction = ((Vector2) RotatePointAroundPivot(pos, rb.position, new Vector3(0,0,angle))) - rb.position;
+            RaycastHit2D hit = Physics2D.CircleCast(rb.position, 1f, direction, detectionRange, layerMask);
+            
+            //Wenn etwas getroffen, dass nicht der Player ist, dann kann das mit der layerMask nurnoch Kollision oder ein NPC sein.
+            //Ist also blockierend und sollte ignoriert werden.
+            if(hit && hit.collider.tag != "Player"){
+                Debug.DrawRay(rb.position, direction, Color.red, 0.1f);
+            //Anosonsten kann der Winkel miteinbezogen werden.
+            } else {
+                Debug.DrawRay(rb.position, direction, Color.green, 0.1f);
+                totalOfAnglesThatWork += angle;
+                amountOfAnglesThatWork++;
+            }
+        }
+        
+        //Wenn kein Winkel funktioniert steht man vor einer Wand. Entweder links oder rechts laufen nach bestem Ermessen
+        if(amountOfAnglesThatWork == 0){
+            if(lastWorkingAngle > 0){
+                return 90f;
+            } else {
+                return -90f;
+            }
+        } 
+
+        //Durchschnittswinkel von allen die funktionieren berechnen.
+        float finalAngle = totalOfAnglesThatWork / amountOfAnglesThatWork;
+        lastWorkingAngle = finalAngle;
+        
+        return finalAngle;
+    }
+
+    //Everything that should happen once the Player is found
+    public void findTarget(){
+        targetFound = true;
+        currentMoveSpeed = runSpeed;
+        //TODO: Maybe play some enemy sound? Gotta wait for someone to actually be Audio smart in that case... 
+
+    }
     void checkForTarget(){
         //Check for target in range
         if(Vector2.Distance(rb.position, target.position) < detectionRange){
@@ -100,38 +166,28 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         }
     }
 
-    #region ProcessMovement
-    void processUnalertedMovement(){
-        //Set movement towards next patrol point
-        //But only if a patrol route actually exists.
-        if(patrolRoute != null && patrolRoute.Length > 0){
-            Vector2 headedTo = patrolRoute[currentPatrolPoint] + startPos;
-            movement = headedTo - rb.position;
-            movement.Normalize();
-            lastMovement = movement;  
+    void checkPatrolPoints(){
+        //Check if patrol point needs to be updated
+        //We consider a patrol point reached if it's closer than 0.5 world units away
+        if(Vector2.Distance(rb.position, patrolRoute[currentPatrolPoint] + startPos) < 0.5f){
+            currentPatrolPoint++;
+            //Patrol Route wraps back to Point 0
+            currentPatrolPoint = currentPatrolPoint % patrolRoute.Length;
+            //Update time variable
+            lastPatrolPointTime = Time.time;
         }
-    }
-    
-    void processAlertedMovement(){
-        movement = target.position - rb.position;
-        movement.Normalize();
-        lastMovement = movement;
-        //Check direct approach
-    }
-
-    //Everything that should happen once the Player is found
-    public void findTarget(){
-        targetFound = true;
-        currentMoveSpeed = runSpeed;
-        //TODO: Maybe play some enemy sound? Gotta wait for someone to actually be Audio smart in that case... 
-
     }
 
     float getTimeSinceLastMovementUpdate(){
         return Time.time - lastUpdateMovementTime;
     }
     
-    
+    void setMoveTowardsPoint(Vector2 target){
+        Vector2 direction = target - rb.position;
+        direction.Normalize();
+        movement = direction;
+        lastMovement = direction;
+    }
     
     #endregion
 
