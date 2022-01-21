@@ -51,10 +51,7 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Sound " + name + " konnte nicht gefunden werden im sound Array und wird deswegen nicht abgespielt. \nTypo? Vergessen den Sound hinzuzufügen? Sonderzeichen?");
             return;
         }
-        if (!sound.source.isPlaying){
-            /* Debug.Log("Playing Sound:" + sound.name); */
-            sound.source.Play();
-        }
+        sound.source.PlayOneShot(sound.clip, sound.volume);
     }
 
     public void StopSound(string name){

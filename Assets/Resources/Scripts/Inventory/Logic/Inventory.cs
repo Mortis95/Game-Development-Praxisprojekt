@@ -74,22 +74,22 @@ public class Inventory : MonoBehaviour
     #region PlayerSelectionInput
     void processItemSelectionInput(){
         bool changed = false;
-        if(Input.GetKeyDown(KeyCode.E)){items[selectedItemIndex] = equipment.equipItem(items[selectedItemIndex]);               changed=true;}
-        if(Input.GetKeyDown(KeyCode.W)){selectedItemIndex = betterModulo(selectedItemIndex - itemSlotsPerRow, inventorySpace);  changed=true;}
-        if(Input.GetKeyDown(KeyCode.S)){selectedItemIndex = betterModulo(selectedItemIndex + itemSlotsPerRow, inventorySpace);  changed=true;}
-        if(Input.GetKeyDown(KeyCode.A)){selectedItemIndex = betterModulo(selectedItemIndex - 1,               inventorySpace);  changed=true;}
-        if(Input.GetKeyDown(KeyCode.D)){selectedItemIndex = betterModulo(selectedItemIndex + 1,               inventorySpace);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.E)){items[selectedItemIndex] = equipment.equipItem(items[selectedItemIndex]);               changed=true; AudioManager.getInstance().PlaySound("UILockIn");}
+        if(Input.GetKeyDown(KeyCode.W)){selectedItemIndex = betterModulo(selectedItemIndex - itemSlotsPerRow, inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
+        if(Input.GetKeyDown(KeyCode.S)){selectedItemIndex = betterModulo(selectedItemIndex + itemSlotsPerRow, inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
+        if(Input.GetKeyDown(KeyCode.A)){selectedItemIndex = betterModulo(selectedItemIndex - 1,               inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
+        if(Input.GetKeyDown(KeyCode.D)){selectedItemIndex = betterModulo(selectedItemIndex + 1,               inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
 
         if(changed && onInventoryChangedCallback != null) onInventoryChangedCallback.Invoke();
     }
 
     void processSkillSelectionInput(){
         bool changed = false;
-        if(Input.GetKeyDown(KeyCode.E)){equipment.equipSkill(skills[selectedSkillSlot]);                                          changed=true;}
-        if(Input.GetKeyDown(KeyCode.W)){selectedSkillSlot = betterModulo(selectedSkillSlot - skillSlotsPerRow, skillSlotsTotal);  changed=true;}
-        if(Input.GetKeyDown(KeyCode.S)){selectedSkillSlot = betterModulo(selectedSkillSlot + skillSlotsPerRow, skillSlotsTotal);  changed=true;}
-        if(Input.GetKeyDown(KeyCode.A)){selectedSkillSlot = betterModulo(selectedSkillSlot - 1,                skillSlotsTotal);  changed=true;}
-        if(Input.GetKeyDown(KeyCode.D)){selectedSkillSlot = betterModulo(selectedSkillSlot + 1,                skillSlotsTotal);  changed=true;}
+        if(Input.GetKeyDown(KeyCode.E)){equipment.equipSkill(skills[selectedSkillSlot]);                                          changed=true; AudioManager.getInstance().PlaySound("UILockIn");}
+        if(Input.GetKeyDown(KeyCode.W)){selectedSkillSlot = betterModulo(selectedSkillSlot - skillSlotsPerRow, skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
+        if(Input.GetKeyDown(KeyCode.S)){selectedSkillSlot = betterModulo(selectedSkillSlot + skillSlotsPerRow, skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
+        if(Input.GetKeyDown(KeyCode.A)){selectedSkillSlot = betterModulo(selectedSkillSlot - 1,                skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
+        if(Input.GetKeyDown(KeyCode.D)){selectedSkillSlot = betterModulo(selectedSkillSlot + 1,                skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
 
         if(changed && onInventoryChangedCallback != null) onInventoryChangedCallback.Invoke();
     }

@@ -22,7 +22,7 @@ public class MeleeAttackController : MonoBehaviour
 
     
     private void Awake(){
-        AudioManager.getInstance().PlaySound("SchwertSchlag");
+        //AudioManager.getInstance().PlaySound("GameOver");   //For Debug Purposes
         //Get Player Instance
         Player pl = Player.getInstance();
 
