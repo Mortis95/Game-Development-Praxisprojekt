@@ -11,6 +11,12 @@ public class LoadLevel : MonoBehaviour
     public int y;           //ypos im neuen level
     public Animator transition;
     public float transitiontime=3f;
+    public GameObject canvas;
+
+    void Start()
+    {
+        canvas.SetActive(true);
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {

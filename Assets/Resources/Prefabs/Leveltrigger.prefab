@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &493103894607601020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -311,6 +311,7 @@ MonoBehaviour:
   y: 0
   transition: {fileID: 305266109057359661}
   transitiontime: 1
+  canvas: {fileID: 685123179937216246}
 --- !u!61 &2575120621741186579
 BoxCollider2D:
   m_ObjectHideFlags: 0
