@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ScharfSchussScript : MonoBehaviour
 {
+    public int EnemyHit = 0;
     public float End;
     public float speed = 50f;
     public Rigidbody2D myRigidbody;
@@ -44,7 +45,10 @@ public class ScharfSchussScript : MonoBehaviour
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
             enemyScript.takeDamage(DamageType.Blitz, 5);
-            Destroy(gameObject);
+            EnemyHit = EnemyHit + 1;
+            if(EnemyHit >= 3){
+                Destroy(gameObject);
+            }
 
         }
     }
