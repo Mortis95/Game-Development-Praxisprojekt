@@ -336,7 +336,7 @@ Transform:
   m_GameObject: {fileID: 94549628}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 39.2126, y: -25.456291, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 750343834}
   m_RootOrder: 9
@@ -375,9 +375,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.5}
+  m_Offset: {x: 0, y: -1}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 0.5
 --- !u!1 &101518359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 21936205988540223, guid: f41ba30179e50df44b5cf15b597f7292,
@@ -597,7 +597,7 @@ Transform:
   m_GameObject: {fileID: 234343473}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 44.2126, y: -20.456291, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 750343834}
   m_RootOrder: 13
@@ -636,9 +636,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.5}
+  m_Offset: {x: 0, y: -1}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 0.5
 --- !u!1 &236862422 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4709146905655694293, guid: f41ba30179e50df44b5cf15b597f7292,
@@ -1165,7 +1165,7 @@ Transform:
   m_GameObject: {fileID: 379349333}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 81.54, y: -49.57, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 750343834}
   m_RootOrder: 12
@@ -1204,9 +1204,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.5}
+  m_Offset: {x: 0, y: -1}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 0.5
 --- !u!114 &379349339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1589,7 +1589,7 @@ Transform:
   m_GameObject: {fileID: 574379858}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 29.2126, y: -25.456291, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 750343834}
   m_RootOrder: 8
@@ -1628,9 +1628,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.5}
+  m_Offset: {x: 0, y: -1}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 0.5
 --- !u!224 &590715323 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1470198661383352645, guid: bb4c877020bb7ae40863202b7bf74946,
@@ -1819,7 +1819,7 @@ Transform:
   m_GameObject: {fileID: 687849823}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 59.2126, y: -25.456291, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 750343834}
   m_RootOrder: 11
@@ -1858,9 +1858,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.5}
+  m_Offset: {x: 0, y: -1}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 0.5
 --- !u!114 &687849829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3408,7 +3408,7 @@ Transform:
   m_GameObject: {fileID: 1114049729}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 39.2126, y: -15.456293, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 750343834}
   m_RootOrder: 6
@@ -3447,9 +3447,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.5}
+  m_Offset: {x: 0, y: -1}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 0.5
 --- !u!850595691 &1118649067
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -3736,7 +3736,7 @@ Transform:
   m_GameObject: {fileID: 1344124492}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 49.2126, y: -25.456291, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 750343834}
   m_RootOrder: 10
@@ -3775,9 +3775,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.5}
+  m_Offset: {x: 0, y: -1}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 0.5
 --- !u!114 &1399514172 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1470198662194597058, guid: bb4c877020bb7ae40863202b7bf74946,
@@ -5568,7 +5568,7 @@ Transform:
   m_GameObject: {fileID: 1488543335}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 29.2126, y: -15.456293, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 750343834}
   m_RootOrder: 5
@@ -5607,9 +5607,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.5}
+  m_Offset: {x: 0, y: -1}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 0.5
 --- !u!1 &1488615240
 GameObject:
   m_ObjectHideFlags: 0
@@ -7646,7 +7646,7 @@ Transform:
   m_GameObject: {fileID: 1612949613}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 34.2126, y: -20.456291, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 750343834}
   m_RootOrder: 14
@@ -7685,9 +7685,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.5}
+  m_Offset: {x: 0, y: -1}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 0.5
 --- !u!1 &1619084540
 GameObject:
   m_ObjectHideFlags: 0
@@ -7907,7 +7907,7 @@ Transform:
   m_GameObject: {fileID: 1820869241}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 49.2126, y: -15.456293, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 750343834}
   m_RootOrder: 7
@@ -7946,9 +7946,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -3.5}
+  m_Offset: {x: 0, y: -1}
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 0.5
 --- !u!1001 &1858170627
 PrefabInstance:
   m_ObjectHideFlags: 0
