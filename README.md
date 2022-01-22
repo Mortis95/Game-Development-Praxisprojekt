@@ -28,7 +28,7 @@
 ## ~~Inventar ändert Titel wenn SkillSelectModus~~
 -> Moritz
 
-## Unity Game Manager (for Pause)		
+## ~~Unity Game Manager (for Pause)~~		
 -> Moritz
 
 ## Sprites adequate Pixels per Unity setzen
