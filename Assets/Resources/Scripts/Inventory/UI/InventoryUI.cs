@@ -82,8 +82,16 @@ public class InventoryUI : MonoBehaviour
         }
     }
     private void switchVisibility(){
-        isVisible = !isVisible;
-        animator.SetBool("isOpen", isVisible);
+        //If Inventory is not currently open and GameManager allows us to open it, we open the Inventory
+        if(!isVisible && GameManager.getInstance().openInventory()){
+            isVisible = true;
+            animator.SetBool("isOpen", true);
+        //Else we can safely assume, we are not supposed to show the Inventory and will close it.
+        } else {
+            isVisible = false;
+            animator.SetBool("isOpen", false);
+            GameManager.getInstance().closeInventory();
+        }
     }
 
     private void switchSelectionMode(){

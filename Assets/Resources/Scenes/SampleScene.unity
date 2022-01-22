@@ -2695,6 +2695,13 @@ MonoBehaviour:
       toExecute:
         m_PersistentCalls:
           m_Calls: []
+    - typeOfBox: 0
+      name: Some Walking Guy
+      text: Ich laufe dann mal
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
 --- !u!50 &948924551
 Rigidbody2D:
   serializedVersion: 4
@@ -7696,6 +7703,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 981393b1e9997a047abb9c5ef3d9c110, type: 3}
+--- !u!1 &1920170335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1920170337}
+  - component: {fileID: 1920170336}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1920170336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920170335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6471e74c2444554db6fd36507f30c2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1920170337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920170335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1968042067
 GameObject:
   m_ObjectHideFlags: 0
@@ -26320,7 +26370,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d68ce1b6d974a16418172c5ccf14ac97, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -26710,6 +26760,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 723200765}
     m_Modifications:
+    - target: {fileID: 325111230, guid: 3e9442c0637c1ae42adcdd6cb719737f, type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 899680691711203649, guid: 3e9442c0637c1ae42adcdd6cb719737f,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -27769,6 +27823,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4754089660049449978, guid: 6176cdf4cf3d53f45a72695b4ad9204a,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4754089660049449980, guid: 6176cdf4cf3d53f45a72695b4ad9204a,
         type: 3}
       propertyPath: m_Type

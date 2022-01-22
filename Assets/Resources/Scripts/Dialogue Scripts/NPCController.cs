@@ -15,20 +15,16 @@ public class NPCController : MonoBehaviour
         goalPosition = transform.position;
     }
 
-
     void Update(){
-        movement = goalPosition - new Vector2(transform.position.x,transform.position.y);
-        if(movement.magnitude > 1){
-            movement.Normalize();
-        } else {
+        movement = goalPosition - (Vector2)transform.position;
+        movement.Normalize();
+
+        if(Vector2.Distance(transform.position, goalPosition) < 1f){
             movement = Vector2.zero;
-            goalPosition = rb.position;
+            goalPosition = transform.position;
         }
         
-    }
-
-    void FixedUpdate(){
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedUnscaledDeltaTime);  //Unscaled, because during Cutscenes/Pauses we will set TimeScale to 0. We want our NPCs to be able to move during cutscenes.
+        transform.position = (Vector2) transform.position + movement * moveSpeed * Time.unscaledDeltaTime;  //Unscaled, because during Cutscenes/Pauses we will set TimeScale to 0. We want our NPCs to be able to move during cutscenes.
     }
 
     #region NPCsCanControlAudioThroughUnityEvents
@@ -53,7 +49,10 @@ public class NPCController : MonoBehaviour
     }
 
     public void goHorizontalUnits(float x){
+        Debug.Log("Meine alte GoalPos:" + goalPosition);
+        Debug.Log("Ich addiere den Vektor:" + new Vector2(x,0f));
         goalPosition = goalPosition + new Vector2(x,0f);
+        Debug.Log("Meine neue GoalPos:" + goalPosition);
     }
 
     public void goVerticalUnits(float y){

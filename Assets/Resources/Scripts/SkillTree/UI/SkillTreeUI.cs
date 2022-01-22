@@ -53,8 +53,17 @@ public class SkillTreeUI : MonoBehaviour{
     }
 
     private void switchVisibility(){
-        isVisible = !isVisible;
-        animator.SetBool("isVisible",isVisible);
+        //If SkillTree is not currently visible and GameManager tells us we are allowed to open, then open.
+        if(!isVisible && GameManager.getInstance().openSkillTree()){
+            isVisible = true;
+            animator.SetBool("isVisible",true);
+            return;
+        //Else we can safely assume we are meant to not show the SkillTree
+        } else {
+            isVisible = false;
+            animator.SetBool("isVisible",false);
+            GameManager.getInstance().closeSkillTree();
+        }
     }
     public bool getVisibility(){
         return isVisible;
