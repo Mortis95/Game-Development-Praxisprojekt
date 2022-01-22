@@ -6,6 +6,7 @@ public class ItemDropController : MonoBehaviour{
     public SpriteRenderer spr;
     public Item item;
 
+
     public static void createItemDropWithOffset(Transform tr, Item item, float offsetLength){
         GameObject itemDropPrefab = Resources.Load<GameObject>("Prefabs/ItemDrop");
         ItemDropController itemControl = itemDropPrefab.GetComponent<ItemDropController>();
@@ -34,6 +35,23 @@ public class ItemDropController : MonoBehaviour{
         } else {
             spr.sprite = item.itemSprite;
             spr.color = Color.white;
+        }   
+    }
+
+    void Start(){
+        StartCoroutine(floatAnimation());
+    }
+
+
+    IEnumerator floatAnimation(){
+        float angleHelp = 0;
+        float baseX = transform.position.x;
+        float baseY = transform.position.y;
+        while(true){
+            angleHelp += 2 *  Time.fixedDeltaTime;
+            angleHelp = angleHelp % 360;
+            transform.position = new Vector3(baseX, baseY + Mathf.Sin(angleHelp), 0);
+            yield return new WaitForFixedUpdate();
         }
     }
 
