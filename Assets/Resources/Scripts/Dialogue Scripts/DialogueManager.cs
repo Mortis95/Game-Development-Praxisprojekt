@@ -98,6 +98,11 @@ public class DialogueManager : MonoBehaviour
 
     //Start Dialogue Methode, wird aus anderem Skript gerufen
     public void StartDialogue(Dialogue dialogue){
+        //Wenn aktuell kein Dialog existiert, und der GameManager uns es nicht erlaubt den Dialog zu starten, sofort abbrechen.
+        if(!activeDialogue && !GameManager.getInstance().startDialogue()){
+            return;
+        }
+        //Ansonsten darf man reden.
         animator.SetBool("IsVisible", true);
         activeDialogue = true;
         textBoxes.Clear();
@@ -158,22 +163,22 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray()){
             //Debug.Log("Code is executing here");
-            AudioManager.getInstance().Play("NPCDialog");
+            AudioManager.getInstance().PlaySound("NPCDialog");
             dialogueText.text += letter;
             //Wait for waitTime many seconds
             float waitTime = 0.02f;
-            yield return new WaitForSeconds(waitTime);
+            yield return new WaitForSecondsRealtime(waitTime);
         }
         //After Text has finished rendering
-        AudioManager.getInstance().Stop("NPCDialog");
+        AudioManager.getInstance().StopSound("NPCDialog");
         
     }
 
     //End Dialogue and make sure the animator gets the notice
     void EndDialogue(){
+        GameManager.getInstance().endDialogue();
         activeDialogue = false;
         animator.SetBool("IsVisible", false);
-        Debug.Log("End of Dialogue");
     }
 
 }

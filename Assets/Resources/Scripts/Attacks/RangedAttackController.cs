@@ -25,7 +25,7 @@ public class RangedAttackController : MonoBehaviour
         Player pl = Player.getInstance();
 
         //Set Damage
-        damage = pl.dexterity;          //Damage = DEX //Can be changed to whatever is your liking
+        damage = pl.getAttack() + pl.getDexterity();          //Damage = ATK + DEX
         
         //Pick correct image to display and correct offset to use for position
         spr.sprite = pl.equippedWeapon.projectile;
@@ -69,7 +69,7 @@ public class RangedAttackController : MonoBehaviour
         Debug.Log("Collision with:" + col.name);
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
-            TestEnemy enemyScript = other.GetComponent<TestEnemy>();
+            EnemyManager enemyScript = other.GetComponent<EnemyManager>();
             enemyScript.takeDamage(DamageType.Normal, damage);
         }
         Destroy(gameObject);

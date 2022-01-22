@@ -9,6 +9,14 @@ public class LoadLevel : MonoBehaviour
     public string lvToLoad; //Name von dem nächsten level  
     public int x;           //xpos im neuen level
     public int y;           //ypos im neuen level
+    public Animator transition;
+    public float transitiontime=3f;
+    public GameObject canvas;
+
+    void Start()
+    {
+        canvas.SetActive(true);
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,13 +24,20 @@ public class LoadLevel : MonoBehaviour
 
         if(collisionObject.tag =="Player")  //nur wenn en spieler und kein mob hereinläuft funzt es
         {
-                loadScene();
-                collisionObject.transform.position=new Vector3(x,y,0);
+                
+                StartCoroutine(Load(lvToLoad, collisionObject));
+                
         }
     }
 
-    public void loadScene() //extra funktion, falls mal animation und co dazukommen
+
+    IEnumerator Load(string name, GameObject go)
     {
-        SceneManager.LoadScene(lvToLoad);
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitiontime);
+
+         SceneManager.LoadScene(name);
+
     }
 }

@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using static SkillTree;
 
 public class Player : MonoBehaviour
 {
@@ -38,21 +37,23 @@ public class Player : MonoBehaviour
     }
     #endregion
 
+    #region movementAttributes
     //Basic Attributes needed for Movement and Movement Animation
     public float moveSpeed;
     public Rigidbody2D rb;
     public Animator animator;
     public Vector2 movement;
     public Direction lastFacedDirection;
+    #endregion
 
-    public Inventory inventory;
     #region Equipment
-    //Kampf Stuff
+    public Inventory inventory;
     public Equipment equipment;
     public Weapon equippedWeapon;
     public Shield equippedShield;
     public Consumable equippedConsumable;
     public Armor equippedArmor;
+    public Ability equippedAbility;
     #endregion
     
     #region Instantiates
@@ -70,29 +71,40 @@ public class Player : MonoBehaviour
 
     #region CharacterAttributes
     //Character Attributes
-    public int exp;
-    public int level;
+    public int experiencePoints;
+    public int currentLevel;
+    [HideInInspector]
+    public int expToNextLevel;
+    public int skillPointsPerLevel;
+    public int currentSkillpoints;
     public int currentHealthPoints;
     public int maxHealthPoints;
     public int currentMagicPoints;
     public int maxMagicPoints;
-    public int attack;
-    public int defense;
-    public int strength;
-    public int dexterity;
-    public int intelligence;
-
+    
+    //Base Stats from the character at that level
+    private int baseAttack;
+    private int baseDefense;
+    private int baseStrength;
+    private int baseDexterity;
+    private int baseIntelligence;
+    //Total Stats for the character, after Equipment Bonus is added.
+    private int totalAttack;
+    private int totalDefense;
+    private int totalStrength;
+    private int totalDexterity;
+    private int totalIntelligence;
+ 
     #endregion
 
     #region AbilityCostAndVariables
     //Ability Kram - Bools sehen zwar doof aus, sind aber praktisch und peformancetechnisch gesehen das Beste. 
-    public Ability equippedAbility;
     public bool FeuerpfeilLearned               = false;
-    private int FeuerpfeilMPKost                = 100;
+    private int FeuerpfeilMPKost                = 10;
     public bool WasserpfeilhagelLearned         = false;
     private int WasserpfeilhagelMPKost          = 100;
     public bool ScharfschussLearned             = false;
-    private int ScharfschussMPKost              = 100;
+    private int ScharfschussMPKost              = 5;
     public bool WasserhiebLearned               = false;
     private int WasserhiebMPKost                = 20;
     public bool ElektrowirbelLearned            = false;
@@ -100,29 +112,21 @@ public class Player : MonoBehaviour
     public bool RageLearned                     = false;
     private int RageMPKost                      = 10;
     public bool FeuerballLearned                = false;
-    private int FeuerballMPKost                 = 100;
+    private int FeuerballMPKost                 = 20;
     public bool WasserflaecheLearned            = false;
     private int WasserflaecheMPKost             = 100;
-    public bool SturmketteLearned               = false;
-    private int SturmketteMPKost                = 5;
+    public bool KettenblitzLearned              = false;
+    private int KettenblitzMPKost               = 5;
     #endregion
     
-    //canvasSkilltree für skilltree
-    public GameObject canvasSkilltree;
+    
     public AudioSource audioSource;
     public AudioClip swordSound;
     public AudioClip walkingSound;
 
     //Levelsystem
-    //Vorläufige leveleinteilung, enthalten sind die mengen an nötigen xp
-    int[] levelStufen = new int[] { 0,300,700,1200,1800,2400,   
-                                    3100,3900,4700,5600,6600,
-                                    7700,8900,10200,11600,13100,
-                                    14700,16400,1900,2200,23000,
-                                    25000,30000,35000,400000 }; 
-
-    
-    
+    //Vorläufige Leveleinteilung, enthalten sind die nötige Menge an totalen EXP die man benötigt
+    int[] experiencePointThreshholds = new int[] { 0, 10, 30, 70, 150, 310, 630, 1270, 2550, 5110, 10230, 20470, 40950}; 
 
     AudioSource attackSound;
 
@@ -144,6 +148,13 @@ public class Player : MonoBehaviour
         equipment = Equipment.getInstance();
         equipment.onEquipmentChangedCallback += UpdateEquipment;
 
+        baseAttack = 1;
+        baseDefense = 1;
+        baseStrength = 1;
+        baseDexterity = 1;
+        baseIntelligence = 1;
+        recalculateStats();
+
     }
    
     public void UpdateEquipment(){
@@ -151,12 +162,15 @@ public class Player : MonoBehaviour
         this.equippedShield = equipment.shieldInHand;
         this.equippedConsumable = equipment.consumableInHand;
         this.equippedArmor = equipment.equippedArmor;
+        this.equippedAbility = equipment.equippedAbility;
+        recalculateStats();
     }
 
     void Update(){
-    processMovement();
-    processAttackInput();
-    processSkillInput();         
+        processMovement();
+        processUseConsumableInput();
+        processAttackInput();
+        processSkillInput();         
     }
 
     void FixedUpdate()
@@ -167,7 +181,8 @@ public class Player : MonoBehaviour
 
     public void addExp(int xp)
     {
-        exp+=xp;
+        experiencePoints += xp;
+        //TextPopup.createPlayerNotificationPopup(transform, "+ " + xp + " EXP", Color.white); //A little bit TOO obnoxious to have a floating Popup for every defeated enemy.
         checkLevelup();
     }
 
@@ -178,6 +193,7 @@ public class Player : MonoBehaviour
             currentHealthPoints += amount;
         }
 
+        TextPopup.createPlayerHealPopup(transform, amount);
         updateUIStatusBar();
     }
 
@@ -192,34 +208,35 @@ public class Player : MonoBehaviour
             currentMagicPoints += amount;
         }
 
+        TextPopup.createPlayerNotificationPopup(transform,amount.ToString(),Color.blue);
         updateUIStatusBar();
     }
     public void addMagicPointsPercentage(float percentage){
         addHealthPoints((int)((float) maxHealthPoints * percentage));
     }
-    void checkLevelup()
-    {
-        int temp =0;
-        foreach(int lv in levelStufen)  //Index(Level) wird gesucht, ab dem die exp kleiner sind als im Verzeichnis steht -> level wird zu den exp berechnet
-        {
-            if(lv < exp)
-            {
-                temp++;
-            }
-            else
-            {
-                break;
+    void checkLevelup(){
+        int minimumLevelReached = 1;
+        for(int i = 1; i < experiencePointThreshholds.Length; i++){
+            if(experiencePoints < experiencePointThreshholds[i]){
+                if(minimumLevelReached > currentLevel){
+                    int numOfLevelUps = minimumLevelReached - currentLevel;     //How many LevelUps did happen?
+                    for(int n = 0; n < numOfLevelUps; n++){levelUp();}          //Level up this many times. (usually this should be 1.)
+                    currentLevel = minimumLevelReached;
+                } else {
+                    expToNextLevel = experiencePointThreshholds[i] - experiencePoints;
+                }
+                return;
+            } else {
+                minimumLevelReached += 1;  
             }
         }
-        if(temp>level) //ist das errechnete Level größer als das aktuelle liegt ein levelup vor
-        {             
-            //Debug.Log(temp-level);
-            skillTree.SkillPoints+=(temp-level);
-            skillTree.LevelupSkillpoints+=(temp-level);
-            level=temp;
-            UIcurrentLevel.text = level.ToString();
-            //Werden mehrere Level auf einmal erreicht(was zu vermeiden ist) funzt das system trotzdem,
-        }
+    }
+
+    void levelUp(){
+        currentSkillpoints += skillPointsPerLevel;
+        TextPopup.createPlayerNotificationPopup(transform, "Level Up!", Color.white);
+        //Play Level Up Sound
+        SkillTree.getInstance().skillTreeChangedCallback(); //Let SkillTree know something changed
     }
 
     public void updateUIStatusBar(){
@@ -230,12 +247,47 @@ public class Player : MonoBehaviour
         manaBar.setMaxValue(maxMagicPoints);
         manaBar.setValue(currentMagicPoints);
     }
-
-    public void takeDamage(DamageType damageType, int dmg){
-        currentHealthPoints -= dmg;
-        //DamagePopupController.create();
+    public void recalculateStats(){
+        int bonusAttack         = 0;
+        int bonusDefense        = 0;
+        int bonusStrength       = 0;
+        int bonusDexterity      = 0;
+        int bonusIntelligence   = 0;
+        if(equippedWeapon != null){
+            bonusAttack += equippedWeapon.bonusAttack;
+            //bonusDefense += equippedWeapon.bonusDefense; //Weapons do not have bonus Defense yet
+            bonusStrength += equippedWeapon.bonusStrength;
+            bonusDexterity += equippedWeapon.bonusDexterity;
+            bonusIntelligence += equippedWeapon.bonusIntelligence;
+        }
+        if(equippedShield != null){
+            //bonusAttack += equippedShield.bonusAttack; //Shields do not have bonusAttack yet
+            bonusDefense += equippedShield.bonusDefense;
+            bonusStrength += equippedShield.bonusStrength;
+            bonusDexterity += equippedShield.bonusDexterity;
+            bonusIntelligence += equippedShield.bonusIntelligence;
+        }
+        if(equippedArmor != null){
+            //bonusAttack += equippedArmor.bonusAttack; //Armors do not have bonusAttack yet
+            bonusDefense += equippedArmor.bonusDefense;
+            bonusStrength += equippedArmor.bonusStrength;
+            bonusDexterity += equippedArmor.bonusDexterity;
+            bonusIntelligence += equippedArmor.bonusIntelligence;
+        }
+        totalAttack = baseAttack + bonusAttack;
+        totalDefense = baseDefense + bonusDefense;
+        totalStrength = baseStrength + bonusStrength;
+        totalDexterity = baseDexterity + bonusDexterity;
+        totalIntelligence = baseIntelligence + bonusIntelligence;
     }
-
+    public void takeDamage(int dmg){
+        currentHealthPoints -= dmg;
+        updateUIStatusBar();
+        TextPopup.createPlayerDamagePopup(transform, dmg);
+    }
+    public void getKnockedBack(Rigidbody2D source){
+        
+    }
     public void processMovement(){
         //Movement
         float moveX = Input.GetAxisRaw("Horizontal"); 
@@ -271,7 +323,14 @@ public class Player : MonoBehaviour
             lastFacedDirection = Direction.Down;
         }
     }
-
+    public void processUseConsumableInput(){
+        if(Input.GetKeyDown(KeyCode.F)){
+            if(equippedConsumable != null){
+                equippedConsumable.Use();
+                equipment.invokeCallback();
+            }
+        }
+    }
     public void processAttackInput(){
         if(Input.GetKeyDown(KeyCode.Space) && equippedWeapon != null){
             switch(equippedWeapon.weaponType){
@@ -286,6 +345,9 @@ public class Player : MonoBehaviour
                     break;
             }
         }
+    }
+    public void standStill(){
+        movement = Vector2.zero;
     }
 
     #region UseSkills
@@ -307,7 +369,7 @@ public class Player : MonoBehaviour
             if (equippedAbility == Ability.Feuerpfeil && currentMagicPoints >= FeuerpfeilMPKost){
                 currentMagicPoints -= FeuerpfeilMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Feuerpfeil>(); */
+                skill.AddComponent<FeuerPfeil>();
 
 } else if (equippedAbility == Ability.Wasserpfeilhagel && currentMagicPoints >= WasserpfeilhagelMPKost){
                 currentMagicPoints -= WasserpfeilhagelMPKost;
@@ -317,7 +379,7 @@ public class Player : MonoBehaviour
             } else if (equippedAbility == Ability.Scharfschuss && currentMagicPoints >= ScharfschussMPKost){
                 currentMagicPoints -= ScharfschussMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Scharfschuss>(); */
+                skill.AddComponent<ScharfSchuss>();
 
             } else if (equippedAbility == Ability.Wasserhieb && currentMagicPoints >= WasserhiebMPKost){
                 currentMagicPoints -=  WasserhiebMPKost;
@@ -337,21 +399,48 @@ public class Player : MonoBehaviour
             } else if (equippedAbility == Ability.Feuerball && currentMagicPoints >= FeuerballMPKost){
                 currentMagicPoints -= FeuerballMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
-                /* skill.AddComponent<Feuerball>(); */
+                skill.AddComponent<FeuerBall>();
 
             } else if (equippedAbility == Ability.Wasserflaeche && currentMagicPoints >= WasserflaecheMPKost){
                 currentMagicPoints -= WasserflaecheMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<Wasserfläche>();
 
-            } else if (equippedAbility == Ability.Sturmkette && currentMagicPoints >= SturmketteMPKost){
-                currentMagicPoints -= SturmketteMPKost;
+            } else if (equippedAbility == Ability.Kettenblitz && currentMagicPoints >= KettenblitzMPKost){
+                currentMagicPoints -= KettenblitzMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<Kettenblitz>();
 
             }
             updateUIStatusBar();
         }
+    }
+    #endregion
+
+    #region GetterAndSetterAndAdder
+    public int getAttack(){return totalAttack;}
+    public int getDefense(){return totalDefense;}
+    public int getStrength(){return totalStrength;}
+    public int getDexterity(){return totalDexterity;}
+    public int getIntelligence(){return totalIntelligence;}
+    public void setStrength(int newValue){totalStrength = newValue;}
+    public void addPermanentStats(int addAttack, int addDefense, int addStrength, int addDexterity, int addIntelligence){
+        baseAttack       += addAttack;
+        baseDefense      += addDefense;
+        baseStrength     += addStrength;
+        baseDexterity    += addDexterity;
+        baseIntelligence += addIntelligence;
+        recalculateStats();
+    }
+    
+    //Skill-Damage Multiplier. This is calculated by: Lerp(1,2, currentLevel / maxLevel)
+    // -> In other words, the higher the player level, the closer the Skill-Damage Multiplier gets to 2.
+    // -> So at first Level, Skills do 1 * Attribute = Damage
+    // -> So at last  Level, Skills do 2 * Attribute = Damage
+    // --> Goal: Make Level-Ups feel like an Upgrade.
+    public float getSkillDamageMultiplier(){
+        float levelProgression = (float) currentLevel / (float) experiencePointThreshholds.Length;
+        return Mathf.Lerp(1f,2f, levelProgression);
     }
     #endregion
 }

@@ -16,7 +16,7 @@ public class Elektrowirbel : MonoBehaviour
 
     private void Awake(){
         Player player = Player.getInstance();
-        damage = player.strength * 2;                //Provisorischer Wert = 2 * STR
+        damage = player.getStrength() * 2 - (player.currentLevel - 1);                //Provisorischer Wert = 2 * STR
         rotateFrameCount = rotateEveryNFrames;
         stuckToPlayer = player.transform;
         Destroy(gameObject,disappearAfterSeconds);
@@ -38,7 +38,7 @@ public class Elektrowirbel : MonoBehaviour
         Debug.Log("Collision with:" + col.name);
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
-            TestEnemy enemyScript = other.GetComponent<TestEnemy>();
+            EnemyManager enemyScript = other.GetComponent<EnemyManager>();
             enemyScript.takeDamage(DamageType.Blitz, damage);
 
         }

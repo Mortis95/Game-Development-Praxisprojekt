@@ -22,11 +22,12 @@ public class MeleeAttackController : MonoBehaviour
 
     
     private void Awake(){
+        //AudioManager.getInstance().PlaySound("GameOver");   //For Debug Purposes
         //Get Player Instance
         Player pl = Player.getInstance();
 
         //Set Damage
-        damage = pl.strength;          //Damage = STR //Can be changed to whatever is your liking
+        damage = pl.getStrength() + pl.getAttack();          //Damage = STR //Can be changed to whatever is your liking
         
         //Pick correct image to display and correct offset to use for position
         Vector3 offset;
@@ -65,7 +66,7 @@ public class MeleeAttackController : MonoBehaviour
         Debug.Log("Collision with:" + col.name);
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
-            TestEnemy enemyScript = other.GetComponent<TestEnemy>();
+            EnemyManager enemyScript = other.GetComponent<EnemyManager>();
             enemyScript.takeDamage(DamageType.Normal, damage);
 
         }

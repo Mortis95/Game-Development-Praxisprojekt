@@ -26,7 +26,7 @@ public class WasserHieb : MonoBehaviour
         Player pl = Player.getInstance();
 
         //Set Damage
-        damage = pl.strength * 2;          //Damage = 2 * STR //Can be changed to whatever is your liking
+        damage = pl.getStrength() * 2 - (pl.currentLevel - 1);          //Damage = 2 * STR //Can be changed to whatever is your liking
         
         //Pick correct image to display and correct offset to use for position
         Vector3 offset;
@@ -65,7 +65,7 @@ public class WasserHieb : MonoBehaviour
         Debug.Log("Collision with:" + col.name);
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
-            TestEnemy enemyScript = other.GetComponent<TestEnemy>();
+            EnemyManager enemyScript = other.GetComponent<EnemyManager>();
             enemyScript.takeDamage(DamageType.Wasser, damage);
 
         }

@@ -7,24 +7,31 @@ public class Kettenblitz : MonoBehaviour
 
     private Player caster;
     private int damage;
-    private int maxTargets = 5;
-    private int range = 20;
+    private int maxTargets;
+    private int range;
     private GameObject[] targets;
     private bool[] targetsHit;
-    private int numOfHits = 0;
+    private int numOfHits;
 
     private int[] targetIndices;
     private LineRenderer lr;
+    private Texture[] textures;
+    public float animationSpeedSeconds;
     private bool spellFinished = false;
     private void Awake(){
+        //Setup Stats (can be balanced differently)
+        maxTargets = 5;
+        range = 12;
+        numOfHits = 0;
+
         //Setup damit alles ordentlich funktioniert
-        caster = Player.getInstance();                          //Get Player Instance and get Player-Intelligence
-        damage = caster.intelligence;                                   //Player-Intelligence = Damage (TODO: Set reasonable damage)
-        targets = GameObject.FindGameObjectsWithTag("Enemy");   //Gibt alle Enemies in current Szene
-        targetsHit = new bool[targets.Length];                  //Create an array um zu merken welcher Gegner bereits gehittet wurde
+        caster = Player.getInstance();                              //Get Player Instance and get Player-Intelligence
+        damage = (int)((float) caster.getIntelligence() * caster.getSkillDamageMultiplier());
+        targets = GameObject.FindGameObjectsWithTag("Enemy");       //Gibt alle Enemies in current Szene
+        targetsHit = new bool[targets.Length];                      //Create an array um zu merken welcher Gegner bereits gehittet wurde
         for (int i = 0; i < targetsHit.Length; i++){
-            targetsHit[i] = false;                              //Am Anfang wurde noch niemand gehittet
-            Debug.Log("Target: " + targets[i].name + " Distance: " + Vector3.Distance(transform.position,targets[i].transform.position));
+            targetsHit[i] = false;                                  //Am Anfang wurde noch niemand gehittet
+            //Debug.Log("Target: " + targets[i].name + " Distance: " + Vector3.Distance(transform.position,targets[i].transform.position));
         }
 
         //Setup Array that keeps track of Indices hit in order, to help with smoother animation
@@ -32,21 +39,39 @@ public class Kettenblitz : MonoBehaviour
 
         //Setup Line-Renderer, damit man auch visuell was sieht
         lr = gameObject.AddComponent<LineRenderer>();
-        lr.startColor = lr.endColor = Color.cyan;
+        lr.startColor = lr.endColor = Color.white;
         lr.alignment = LineAlignment.View;
-        lr.startWidth = lr.endWidth = 0.3f;
+        lr.startWidth = lr.endWidth = 2f;
         lr.positionCount = 1;
-        lr.numCapVertices = 3;
-        lr.numCornerVertices = 3;
+        lr.numCapVertices = 0;
+        lr.numCornerVertices = 0;
         lr.SetPosition(0, transform.position);  //Start at Cast Origin
         lr.sortingLayerName = "on floor";
-        lr.material = new Material(Shader.Find("Sprites/Default"));
+        lr.material = Resources.Load<Material>("Sprites/SkillAnimations/ArcLineRendererMaterial");
+        lr.textureMode = LineTextureMode.RepeatPerSegment;
+
+        //Load all textures (Dirty code, please make sure Textures are called this in project.)
+        int textureCount = 10;
+        animationSpeedSeconds = 0.08f;
+        textures = new Texture[10];
+        for(int i = 1; i <= textureCount; i++){
+            Texture2D t = Resources.Load<Texture2D>("Sprites/SkillAnimations/Arc"+i);
+            Debug.Log(t);
+            textures[i-1] = t;
+        }
+
+        lr.material.SetTexture("_MainTex",textures[0]);
+
         
         //Soundeffekt abspielen
-        AudioManager.getInstance().Play("Kettenblitz");
+        AudioManager.getInstance().PlaySound("Kettenblitz");
 
         //MainLoop starten
         StartCoroutine(mainLoop());
+        StartCoroutine(animationLoop());
+        
+        //FÜR DEN FALL dass Arc die Main-Loop in einen Fehler läuft und sich nicht korrekt abbauen kann, wird das gameObject nach 5 Sekunden automatisch gelöscht
+        Destroy(gameObject, 5f);
     }
     
 
@@ -102,7 +127,7 @@ public class Kettenblitz : MonoBehaviour
     }
     void hitEnemy(int targetIndex){
         GameObject enemy = targets[targetIndex];
-        TestEnemy enemyScript = enemy.GetComponent<TestEnemy>();
+        EnemyManager enemyScript = enemy.GetComponent<EnemyManager>();
         if(enemyScript == null){
             Debug.LogWarning("Kettenblitz hat einen Gegner gefunden, der nicht das erforderliche richtige Skript hat!");
             Debug.LogWarning("Alle Gegner mit den 'Enemy'-Tag müssen dieses Skript-Komponent haben. Wenn hier ein Fehler auftritt, bitte Moritz kontaktieren! :)");
@@ -143,6 +168,7 @@ public class Kettenblitz : MonoBehaviour
             }
             //Check if current GameObject is closer than previous closest, if yes, remember new closest.
             GameObject g = targets[i];
+            if(g == null){continue;}
             float currentDistance = Vector3.Distance(transform.position, g.transform.position);
             if (currentDistance < closestDistance && currentDistance < range){
                 closestDistance = currentDistance;
@@ -151,6 +177,20 @@ public class Kettenblitz : MonoBehaviour
         }
         return closestIndex;
 
+    }
+
+    IEnumerator animationLoop(){
+        float lastAnimationChange = Time.fixedTime;
+        int animationStep = 0;
+        while(true){
+            if(Time.fixedTime - lastAnimationChange > animationSpeedSeconds){
+                lastAnimationChange = Time.fixedTime;
+                if(!spellFinished || animationStep >= 6){animationStep = (animationStep+1) % textures.Length;}
+                else if(animationStep < 6 && animationStep > 0){animationStep--;}        //Dumb looking code explanation: animationStep 6 is exactly the middle, when the lightning is the thickest. In case our spell finishes early, we want to 'fizzle' it out asap, meaning take animationStep somehow to the edges of the Array (either 9 or 0). Therefore the magic numbers in if.
+                lr.material.SetTexture("_MainTex",textures[animationStep]);
+            }
+            yield return new WaitForFixedUpdate();
+        }
     }
 
 }

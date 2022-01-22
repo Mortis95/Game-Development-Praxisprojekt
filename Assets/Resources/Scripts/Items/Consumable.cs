@@ -15,11 +15,16 @@ public class Consumable : Item{
     public override void Use(){
         base.Use();
         Player pl = Player.getInstance();
-        pl.addHealthPoints(healHealthPoints);
-        pl.addMagicPoints(healMagicPoints);
-        pl.addHealthPointsPercentage(healHealthPointsPercentage);
-        pl.addMagicPointsPercentage(healMagicPointsPercentage);
+        if(healHealthPoints != 0)pl.addHealthPoints(healHealthPoints);
+        if(healMagicPoints != 0)pl.addMagicPoints(healMagicPoints);
+        if(healHealthPointsPercentage != 0)pl.addHealthPointsPercentage(healHealthPointsPercentage);
+        if(healMagicPointsPercentage != 0)pl.addMagicPointsPercentage(healMagicPointsPercentage);
+        amount -= 1;
+        if (amount <= 0){
+            Destroy(this);
+        }
     }
+    
 
     public override bool Equals(object other){
         if(!base.Equals(other)){return false;}

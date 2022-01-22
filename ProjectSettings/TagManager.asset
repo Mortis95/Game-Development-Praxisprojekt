@@ -11,6 +11,7 @@ TagManager:
   - Puzzle4
   - Puzzle3
   - Puzzle2
+  - Ability
   layers:
   - Default
   - TransparentFX
@@ -53,6 +54,9 @@ TagManager:
     locked: 0
   - name: on floor
     uniqueID: 1315149659
+    locked: 0
+  - name: Black
+    uniqueID: 4195060505
     locked: 0
   - name: Actor
     uniqueID: 929875741

@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spr: {fileID: 1788278415932951471}
   arrow: {fileID: 0}
-  disappearAfterSeconds: 10
+  disappearAfterSeconds: 5
   speed: 20
   direction: {x: 0, y: 0, z: 0}
   damage: 0

@@ -24,5 +24,7 @@ MonoBehaviour:
   weaponType: 1
   projectile: {fileID: -7558117095036135758, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
     type: 3}
-  bonusAttack: 0
-  bonusMagicAttack: 0
+  bonusAttack: 1
+  bonusStrength: -1
+  bonusDexterity: 2
+  bonusIntelligence: 0
