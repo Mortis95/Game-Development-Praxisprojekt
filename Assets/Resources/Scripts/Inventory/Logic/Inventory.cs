@@ -118,7 +118,7 @@ public class Inventory : MonoBehaviour
     }
 
     public void removeItem(int index){
-        ItemDropController.createItemDrop(transform, items[index]);
+        ItemDropController.createItemDropWithOffset(transform, items[index], 5f);
         items[index] = null;
         if(onInventoryChangedCallback != null){onInventoryChangedCallback.Invoke();}
     }
