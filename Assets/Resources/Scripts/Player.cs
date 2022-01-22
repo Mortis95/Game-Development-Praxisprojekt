@@ -6,6 +6,19 @@ using static SkillTree;
 
 public class Player : MonoBehaviour
 {
+
+    /*
+     * important information to save:
+     * 
+     * inventory
+     * skillpoints
+     * map
+     * story
+     */
+
+
+
+
     #region Singleton
     //Singleton-Pattern
     private static Player instance;
@@ -230,12 +243,15 @@ public class Player : MonoBehaviour
         movement.x = moveX;
         movement.y = moveY;
         movement.Normalize();   //Normalizes the vector to have a magnitude of 1. Heißt im Klartext, unser Spieler läuft Diagonal genauso schnell wie horizontal / vertikal
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        animator.SetBool("moveRight", moveX > 0);
+        animator.SetBool("moveUp", moveY > 0);
+        animator.SetBool("moveLeft", moveX < 0);
+        animator.SetBool("moveDown", moveY < 0);
+
 
         //Movement sound
-        if(moveX != 0 || moveY != 0){
+        if (moveX != 0 || moveY != 0){
             audioSource.volume = 0.04f;
             if(!audioSource.isPlaying){audioSource.Play();}
         } else{
@@ -293,7 +309,7 @@ public class Player : MonoBehaviour
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 /* skill.AddComponent<Feuerpfeil>(); */
 
-            } else if (equippedAbility == Ability.Wasserpfeilhagel && currentMagicPoints >= WasserpfeilhagelMPKost){
+} else if (equippedAbility == Ability.Wasserpfeilhagel && currentMagicPoints >= WasserpfeilhagelMPKost){
                 currentMagicPoints -= WasserpfeilhagelMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<WasserPfeile>();
