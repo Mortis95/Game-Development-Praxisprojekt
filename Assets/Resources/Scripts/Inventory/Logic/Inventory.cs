@@ -79,6 +79,8 @@ public class Inventory : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.S)){selectedItemIndex = betterModulo(selectedItemIndex + itemSlotsPerRow, inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
         if(Input.GetKeyDown(KeyCode.A)){selectedItemIndex = betterModulo(selectedItemIndex - 1,               inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
         if(Input.GetKeyDown(KeyCode.D)){selectedItemIndex = betterModulo(selectedItemIndex + 1,               inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
+        if(Input.GetKeyDown(KeyCode.C)){removeItem(selectedItemIndex);                                                          changed=true;}
+        if(Input.GetKeyDown(KeyCode.X)){unequipAll();                                                                           changed=true;}
 
         if(changed && onInventoryChangedCallback != null) onInventoryChangedCallback.Invoke();
     }
@@ -116,8 +118,22 @@ public class Inventory : MonoBehaviour
     }
 
     public void removeItem(int index){
+        ItemDropController.createItemDrop(transform, items[index]);
         items[index] = null;
         if(onInventoryChangedCallback != null){onInventoryChangedCallback.Invoke();}
+    }
+    
+    //Unequip every Slot if a free Slot can be found
+    public void unequipAll(){
+        int freeIndex;
+        freeIndex = FindIndexOfFirstFreeSlot();
+        if (freeIndex != -1){items[freeIndex] = equipment.unequipItem(ItemType.Weapon);}
+        freeIndex = FindIndexOfFirstFreeSlot();
+        if (freeIndex != -1){items[freeIndex] = equipment.unequipItem(ItemType.Shield);}
+        freeIndex = FindIndexOfFirstFreeSlot();
+        if (freeIndex != -1){items[freeIndex] = equipment.unequipItem(ItemType.Consumable);}
+        freeIndex = FindIndexOfFirstFreeSlot();
+        if (freeIndex != -1){items[freeIndex] = equipment.unequipItem(ItemType.Armor);}
     } 
 
     private int FindIndexOfFirstFreeSlot(){

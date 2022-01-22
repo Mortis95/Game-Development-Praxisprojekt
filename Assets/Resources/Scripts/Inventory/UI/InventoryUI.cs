@@ -6,6 +6,7 @@ using TMPro;
 public class InventoryUI : MonoBehaviour
 {
     public Animator animator;
+    public TextMeshProUGUI inventoryTitle;
     public GameObject inventorySlotParent;
     private InventorySlotController[] inventorySlotsUI;
     public GameObject equipmentSlotParent;
@@ -16,6 +17,10 @@ public class InventoryUI : MonoBehaviour
     public TextMeshProUGUI itemNameText;
     public TextMeshProUGUI itemDescriptionText;
     public TextMeshProUGUI itemStatsText;
+    public GameObject bottomBar;
+    private TextMeshProUGUI unequipAllText;
+    private TextMeshProUGUI dropItemText;
+    private TextMeshProUGUI switchToSkillsText;
 
     private Inventory inventory;
     private bool isVisible;
@@ -24,6 +29,11 @@ public class InventoryUI : MonoBehaviour
         inventorySlotsUI = inventorySlotParent.GetComponentsInChildren<InventorySlotController>();
         equipmentSlotsUI = equipmentSlotParent.GetComponentsInChildren<InventorySlotController>();
         skillSlotsUI     =    skillSlotsParent.GetComponentsInChildren<InventorySlotController>();
+        
+        TextMeshProUGUI[] infoTextsUI = bottomBar.GetComponentsInChildren<TextMeshProUGUI>();
+        unequipAllText                = infoTextsUI[0];
+        dropItemText                  = infoTextsUI[1];
+        switchToSkillsText            = infoTextsUI[2];
 
         #region GetAllSkillIconsDueToBadEnumDecisionEarlier
         //This could be reworked with a SkillClass
@@ -65,7 +75,7 @@ public class InventoryUI : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.I)){
             switchVisibility();
         }
-        if(isVisible && Input.GetKeyDown(KeyCode.C)){
+        if(isVisible && Input.GetKeyDown(KeyCode.V)){
             switchSelectionMode();
         }
     }
@@ -76,6 +86,18 @@ public class InventoryUI : MonoBehaviour
 
     private void switchSelectionMode(){
         itemSelectionActive = !itemSelectionActive;
+        if(itemSelectionActive){
+            inventoryTitle.SetText("Inventar");
+            unequipAllText.SetText("[X] Unequip All");
+            dropItemText.SetText("[C] Drop Item");
+            switchToSkillsText.SetText("[V] Switch to Skills");
+            }
+        else{
+            inventoryTitle.SetText("Skills");
+            unequipAllText.SetText("");
+            dropItemText.SetText("");
+            switchToSkillsText.SetText("[V] Switch to Inventory");
+            }
         animator.SetBool("selectSkills",!itemSelectionActive);
     }
 

@@ -92,7 +92,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
             setMoveTowardsPoint(target.position);
         } else {
             float workingAngle = calculateWorkingAngle(anglesToCheck, target.position);
-            Vector2 targetPoint = RotatePointAroundPivot(target.position, rb.position, new Vector3(0,0,workingAngle));
+            Vector2 targetPoint = Vector3Extension.RotatePointAroundPivot(target.position, rb.position, new Vector3(0,0,workingAngle));
             setMoveTowardsPoint(targetPoint);
         }
     }
@@ -112,7 +112,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         //Iterate over every angle and try a raycast.
         for(int i = 0; i < angles.Length; i++){
             float angle = angles[i];
-            Vector2 direction = ((Vector2) RotatePointAroundPivot(pos, rb.position, new Vector3(0,0,angle))) - rb.position;
+            Vector2 direction = ((Vector2) Vector3Extension.RotatePointAroundPivot(pos, rb.position, new Vector3(0,0,angle))) - rb.position;
             RaycastHit2D hit = Physics2D.CircleCast(rb.position, 1f, direction, detectionRange, layerMask);
             
             //Wenn etwas getroffen, dass nicht der Player ist, dann kann das mit der layerMask nurnoch Kollision oder ein NPC sein.
@@ -280,26 +280,20 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
 
     void drawGizmoViewAngleDefault(){
         Gizmos.color = Color.yellow;
-        Vector3 pointUp = RotatePointAroundPivot(transform.position + Vector3.up, transform.position, new Vector3(0f, 0f, detectionViewAngle / 2));
-        Vector3 pointDown = RotatePointAroundPivot(transform.position + Vector3.up, transform.position, new Vector3(0f, 0f, -detectionViewAngle / 2));
+        Vector3 pointUp = Vector3Extension.RotatePointAroundPivot(transform.position + Vector3.up, transform.position, new Vector3(0f, 0f, detectionViewAngle / 2));
+        Vector3 pointDown = Vector3Extension.RotatePointAroundPivot(transform.position + Vector3.up, transform.position, new Vector3(0f, 0f, -detectionViewAngle / 2));
         Gizmos.DrawRay(transform.position, (pointUp - transform.position) * detectionRange);
         Gizmos.DrawRay(transform.position, (pointDown - transform.position) * detectionRange);
     }
 
     void drawGizmoViewAnglePlaying(){
         Gizmos.color = Color.yellow;
-        Vector3 pointUp = RotatePointAroundPivot(transform.position + (Vector3) lastMovement, transform.position, new Vector3(0f, 0f, detectionViewAngle / 2));
-        Vector3 pointDown = RotatePointAroundPivot(transform.position + (Vector3) lastMovement, transform.position, new Vector3(0f, 0f, -detectionViewAngle / 2));
+        Vector3 pointUp = Vector3Extension.RotatePointAroundPivot(transform.position + (Vector3) lastMovement, transform.position, new Vector3(0f, 0f, detectionViewAngle / 2));
+        Vector3 pointDown = Vector3Extension.RotatePointAroundPivot(transform.position + (Vector3) lastMovement, transform.position, new Vector3(0f, 0f, -detectionViewAngle / 2));
         Gizmos.DrawRay(transform.position, (pointUp - transform.position) * detectionRange);
         Gizmos.DrawRay(transform.position, (pointDown - transform.position) * detectionRange);
     }
 
     #endregion
 
-    public Vector3 RotatePointAroundPivot(Vector3 point, Vector3 pivot, Vector3 angles) {
-        Vector3 dir = point - pivot; // get point direction relative to pivot
-        dir = Quaternion.Euler(angles) * dir; // rotate it
-        point = dir + pivot; // calculate rotated point
-    return point; // return it
- }
 }

@@ -6,6 +6,16 @@ public class ItemDropController : MonoBehaviour{
     public SpriteRenderer spr;
     public Item item;
 
+    public static void createItemDrop(Transform tr, Item item){
+        GameObject itemDropPrefab = Resources.Load<GameObject>("Prefabs/ItemDrop");
+        ItemDropController itemControl = itemDropPrefab.GetComponent<ItemDropController>();
+        itemControl.item = item;
+        Vector3 offset = Vector3.right * 5f;
+        offset = Vector3Extension.RotatePointAroundPivot(offset, Vector3.zero, new Vector3(0f,0f, Random.Range(0f,360f)));
+        itemDropPrefab.transform.position = tr.position + offset;
+        Instantiate(itemDropPrefab);
+    }
+
     private void Awake(){
         if(spr == null){
             spr = gameObject.GetComponent<SpriteRenderer>();

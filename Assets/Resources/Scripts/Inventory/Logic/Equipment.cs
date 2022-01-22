@@ -88,6 +88,46 @@ public class Equipment : MonoBehaviour
         //Item can't be equipped, just return it to inventory.
         return item;    
     }
+    public Item unequipItem(ItemType type){
+        switch(type){
+            case ItemType.Weapon:
+                Weapon oldWeapon = equippedWeapon;
+                equippedWeapon = null;
+                invokeCallback();
+                return oldWeapon;
+            case ItemType.Shield:
+                if(shieldInHand != null){
+                    Shield oldShield = shieldInHand;
+                    shieldInHand = null;
+                    invokeCallback();
+                    return oldShield;
+                } else {
+                    Consumable oldConsumable = consumableInHand;
+                    consumableInHand = null;
+                    invokeCallback();
+                    return oldConsumable;
+                }
+            case ItemType.Consumable:
+                if(consumableInHand != null){
+                    Consumable oldConsumable = consumableInHand;
+                    consumableInHand = null;
+                    invokeCallback();
+                    return oldConsumable;
+                } else {
+                    Shield oldShield = shieldInHand;
+                    shieldInHand = null;
+                    invokeCallback();
+                    return oldShield;
+                }
+            case ItemType.Armor:
+                Armor oldArmor = equippedArmor;
+                equippedArmor = null;
+                invokeCallback();
+                return oldArmor;
+        }
+        Debug.LogWarning("Unequipping went wrong! Given Itemtype matches no equipment Items!");
+        return null;
+    }
 
     //Dirty Enum again, would be better with an Ability-Class, but that would require another rework. 
     //If we have enough time, sure that's a good idea!
