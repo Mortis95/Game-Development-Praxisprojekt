@@ -7,6 +7,8 @@ public class ItemDropController : MonoBehaviour{
     public Item item;
 
 
+    //Creates Item Drop at given location + a given offset.
+    //The Item will spawn at a random position in a circle around the given spot, with radius r = offsetLength
     public static void createItemDropWithOffset(Transform tr, Item item, float offsetLength){
         GameObject itemDropPrefab = Resources.Load<GameObject>("Prefabs/ItemDrop");
         ItemDropController itemControl = itemDropPrefab.GetComponent<ItemDropController>();
@@ -17,6 +19,7 @@ public class ItemDropController : MonoBehaviour{
         Instantiate(itemDropPrefab);
     }
 
+    //Creates Item Drop at given location
     public static void createItemDrop(Transform tr, Item item){
         GameObject itemDropPrefab = Resources.Load<GameObject>("Prefabs/ItemDrop");
         ItemDropController itemControl = itemDropPrefab.GetComponent<ItemDropController>();

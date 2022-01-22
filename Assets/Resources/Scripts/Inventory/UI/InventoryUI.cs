@@ -63,6 +63,8 @@ public class InventoryUI : MonoBehaviour
         }
         //Subscribe our function "UpdateUI" to InventoryChangedEvent, triggering it everytime the Event triggers. 
         inventory.onInventoryChangedCallback += UpdateUI;
+        //Subscribe our function "UpdateSkillSelectionUI" to SkillTreeChanged
+        SkillTree.getInstance().onSkillTreeChangedCallback += UpdateSkillsUnlockedUI;
         //First Update is free on the house
         UpdateUI();
         //Inventory should start invisible
@@ -134,6 +136,19 @@ public class InventoryUI : MonoBehaviour
         for(int i = 0; i < skillSlotsUI.Length; i++){
             skillSlotsUI[i].beSelected(selectedSkillSlot == i);
         }
+    }
+
+    void UpdateSkillsUnlockedUI(){
+        Player pl = Player.getInstance();
+        if(pl.ScharfschussLearned)      {skillSlotsUI[0].setSpriteAndEnable(skillSlotIcons[0]);}
+        if(pl.RageLearned)              {skillSlotsUI[1].setSpriteAndEnable(skillSlotIcons[1]);}
+        if(pl.KettenblitzLearned)       {skillSlotsUI[2].setSpriteAndEnable(skillSlotIcons[2]);}
+        if(pl.WasserpfeilhagelLearned)  {skillSlotsUI[3].setSpriteAndEnable(skillSlotIcons[3]);}
+        if(pl.ElektrowirbelLearned)     {skillSlotsUI[4].setSpriteAndEnable(skillSlotIcons[4]);}
+        if(pl.WasserflaecheLearned)     {skillSlotsUI[5].setSpriteAndEnable(skillSlotIcons[5]);}
+        if(pl.FeuerpfeilLearned)        {skillSlotsUI[6].setSpriteAndEnable(skillSlotIcons[6]);}
+        if(pl.WasserhiebLearned)        {skillSlotsUI[7].setSpriteAndEnable(skillSlotIcons[7]);}
+        if(pl.FeuerballLearned)         {skillSlotsUI[8].setSpriteAndEnable(skillSlotIcons[8]);}
     }
 
     #endregion
