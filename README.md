@@ -22,10 +22,10 @@
 ## Szenenübergang verbessern (vorher auf GameManager.pause() warten)
 -> Alex
 
-## Skill-Icons im SkillSelectModus for Inventory anzeigen
+## ~~Skill-Icons im SkillSelectModus for Inventory anzeigen~~
 -> Moritz
 
-## Inventar ändert Titel wenn SkillSelectModus
+## ~~Inventar ändert Titel wenn SkillSelectModus~~
 -> Moritz
 
 ## Unity Game Manager (for Pause)		
