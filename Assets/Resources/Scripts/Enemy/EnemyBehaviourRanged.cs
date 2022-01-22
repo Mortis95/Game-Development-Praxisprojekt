@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
+//A LOT of this class is copypasted from EnemyBehaviourMelee, with various Adjustments
+//This is due to Unity not properly allowing classes to derive their Update or Awake() Method from their parent-classes
+//Generally, having one class extend another is a frickly situation in Unity.
+public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
 
     //Public Variables other people can manipulate from the Inspector
     [Tooltip("The speed at which the enemy moves when not alerted by the player. Set to 0 for stationary enemy.")]
@@ -18,7 +21,11 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     [Tooltip("The route in relative units that the enemy will walk along with moveSpeed as long as it didn't spot the player.")]
     public Vector2[] patrolRoute;
     [Tooltip("The time the enemy will pause walking when it reaches a point in its patrolRoute.")]
-    public float patrolPauseTimeSeconds;    
+    public float patrolPauseTimeSeconds;
+    [Tooltip("The range at which the enemy can shoot at the player.")]
+    public float attackRange;
+    [Tooltip("The speed of the shot that is shot at the player")]
+    public float shotSpeed;
 
     //Protected Variables we should get and calculate ourselves
     protected Vector2 movement;
@@ -37,6 +44,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     protected float lastPatrolPointTime;
     protected float[] anglesToCheck;
     protected float lastWorkingAngle;
+    private GameObject rangedAttackPrefab;
 
     //Primitive Variables can be assigned as soon as Game Object awakes without Issue
     protected void Awake(){
@@ -49,6 +57,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         lastPatrolPointTime = 0;
         updateMovementTimerSeconds = 0.5f;
         lastWorkingAngle = 0f;
+        rangedAttackPrefab = Resources.Load<GameObject>("Prefabs/EnemyRangedAttackPrefab");
     }
 
     //Some Unity-specific variables should only be assigned on Start() of script, to ensure other GameObjects finished loading.
@@ -85,14 +94,31 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         }
     }
     
-    protected void processAlertedMovement(){
+    void processAlertedMovement(){
         if(checkDirectApproach()){
-            setMoveTowardsPoint(target.position);
+            //Is Player in range AND Attack Ready? If yes, stand still and attack.
+            if(Vector2.Distance(target.position, transform.position) < attackRange && getTimeSinceLastAttack() > attackDelaySeconds){
+                attackWithRangedAttack();
+                lastAttackTime = Time.fixedTime;
+                movement = Vector2.zero;
+            //Else is Player in range (but Attack not ready)? If yes, stand still and wait for attack.
+            } else if(Vector2.Distance(target.position, transform.position) < attackRange){
+                movement = Vector2.zero;
+            //Else Player must be out of range. Move in closer.
+            } else {
+                setMoveTowardsPoint(target.position);
+            }
         } else {
             float workingAngle = calculateWorkingAngle(anglesToCheck, target.position);
             Vector2 targetPoint = Vector3Extension.RotatePointAroundPivot(target.position, rb.position, new Vector3(0,0,workingAngle));
             setMoveTowardsPoint(targetPoint);
         }
+    }
+
+    void attackWithRangedAttack(){
+        EnemyRangedAttackController erac = rangedAttackPrefab.GetComponent<EnemyRangedAttackController>();
+        erac.setParameters((target.position - rb.position).normalized, shotSpeed, 5f, enemyManager.enemyAttack);
+        Instantiate(rangedAttackPrefab, transform.position, transform.rotation);
     }
 
     //This method returns true if the direct approach is possible, i.e. if the raycast didn't hit an obstacle or hit the player directly.
@@ -206,14 +232,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     }
 
     protected void OnCollisionStay2D(Collision2D col){
-        if(col.gameObject.tag == "Player" && getTimeSinceLastAttack() > attackDelaySeconds){
-            lastAttackTime = Time.fixedTime;
-            Player pl = col.gameObject.GetComponent<Player>();
-            if(pl != null){
-                pl.takeDamage(enemyManager.enemyAttack);
-                pl.getKnockedBack(rb);
-            }
-        }
+        return; //A ranged enemy has no melee attack
     }
 
     #region GizmoDebugStuffForInternalUseOnly
@@ -274,6 +293,9 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         //Display the Range of enemy (green)
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
+        //Display the Shooting Range of enemy (magenta)
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 
     protected void drawGizmoViewAngleDefault(){
