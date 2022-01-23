@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class DialogueManager : MonoBehaviour
@@ -9,8 +10,8 @@ public class DialogueManager : MonoBehaviour
 
     public Queue<TextBox> textBoxes;
     public KeyCode interactionKey;
-    public Text nameText;
-    public Text dialogueText;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI dialogueText;
     public Animator animator;
 
     //Wieviel Frames pro Textbox gewartet werden müssen bevor man skippen kann
@@ -70,7 +71,7 @@ public class DialogueManager : MonoBehaviour
             //If yes, display the corresponding selection
             if (input != 0 && input <= maxAcceptableAnswer){
                 Choice answer = currentBox.choices[input-1];
-                nameText.text = answer.reactingName;
+                nameText.SetText(answer.reactingName);
 
                 //Type out the corresponding reaction
                 StopAllCoroutines();
@@ -131,7 +132,7 @@ public class DialogueManager : MonoBehaviour
         switch (currentBoxType){
             //Bei einer SentenceBox kann die nächste Box einfach getyped werden
             case TextBoxType.SentenceBox:
-                nameText.text = box.name;
+                nameText.SetText(box.name);
                 StopAllCoroutines();
                 StartCoroutine(TypeSentence(box.text));
                 break;
@@ -160,11 +161,13 @@ public class DialogueManager : MonoBehaviour
 
     //Render each letter by itself and not all at once
     IEnumerator TypeSentence(string sentence){
-        dialogueText.text = "";
+        string totalText = "";
+        dialogueText.SetText(totalText);
         foreach (char letter in sentence.ToCharArray()){
             //Debug.Log("Code is executing here");
             AudioManager.getInstance().PlaySound("NPCDialog");
-            dialogueText.text += letter;
+            totalText += letter;
+            dialogueText.SetText(totalText);
             //Wait for waitTime many seconds
             float waitTime = 0.02f;
             yield return new WaitForSecondsRealtime(waitTime);
