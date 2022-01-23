@@ -44,8 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d567d843b436f468ebc156f5e80456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  disappearAfterSeconds: 5
+  disappearAfterSeconds: 10
   rotationSpeed: 180
+  sprites:
+  - {fileID: 21300000, guid: 88d2a6d61c7b97846b50d9c0cec5a053, type: 3}
+  - {fileID: 21300000, guid: 5971634e2313252459de0a701c258dd6, type: 3}
+  - {fileID: 21300000, guid: a8c926e8d76a54348afe323135c7f175, type: 3}
 --- !u!212 &1503840621670785520
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -84,9 +88,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 304234753
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 39baaed5559e02b4098081160db980e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88d2a6d61c7b97846b50d9c0cec5a053, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

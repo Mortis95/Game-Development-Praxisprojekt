@@ -11,10 +11,13 @@ public class RageBuffController : MonoBehaviour
     //Public Stuff
     public float disappearAfterSeconds;
     public float rotationSpeed;
+    public Sprite[] sprites;
     
     //Private Stuff, kann Skript sich schon selbst holen
     private float currentAngle;
     private Transform playerTransform;
+    private SpriteRenderer spr;
+    private float animatonSpeedSeconds;
     
     
     private void Awake(){
@@ -27,6 +30,9 @@ public class RageBuffController : MonoBehaviour
             RageBuffController.instance = this;
         }
 
+        //Get SpriteRenderer
+        spr = gameObject.GetComponent<SpriteRenderer>();
+
         //Do the actual buff
         Player pl = Player.getInstance();
         pl.setStrength((int)((float) pl.getStrength() * 1.4f));       //Konvert zu Float, multiply mit 1.4, konvert back zu int -> 40% STR Buff
@@ -34,6 +40,10 @@ public class RageBuffController : MonoBehaviour
         //Ein paar wichtige Sachen setzen
         currentAngle = 0;
         playerTransform = pl.transform;
+        animatonSpeedSeconds = 0.15f;
+
+        //Start Animation Loop
+        StartCoroutine(animationLoop());
 
         //Invoke EndBuff after Seconds
         Invoke("endBuff", disappearAfterSeconds);
@@ -62,5 +72,15 @@ public class RageBuffController : MonoBehaviour
         dir = Quaternion.Euler(angles) * dir; // rotate it
         point = dir + pivot; // calculate rotated point
         return point; // return it
+    }
+
+    IEnumerator animationLoop(){
+        int currentIndex = 0;
+        while(true){
+            spr.sprite = sprites[currentIndex];
+            currentIndex++;
+            currentIndex = currentIndex % sprites.Length;
+            yield return new WaitForSeconds(animatonSpeedSeconds);
+        }
     }
 }
