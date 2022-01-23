@@ -43,7 +43,7 @@ public class DialogueManager : MonoBehaviour
     //Etwas crappy, dass ich das hier rufe. Besser wäre wenn das interactable Script sofort den Interact-Button mitgibt, sodass wir keine 2 seperaten InteractKeys haben maybe? Not sure.
     void Update(){
 
-        if (currentBoxType == TextBoxType.SentenceBox || currentBoxType == TextBoxType.HiddenBox){
+        if (activeDialogue && (currentBoxType == TextBoxType.SentenceBox || currentBoxType == TextBoxType.HiddenBox)){
             if (dialogueDelay <= 0 && Input.GetKeyDown(interactionKey)){
                 DisplayNextBox();
             }

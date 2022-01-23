@@ -63,8 +63,8 @@ public class EnemyManager : MonoBehaviour{
         if(enemyBehaviour != null){enemyBehaviour.findTarget();}
     }
 
-    public void getKnockback(){
-        enemyBehaviour.getKnockedBack();
+    public void getKnockback(Vector2 origin, float knockBackForce){
+        if(enemyBehaviour != null){enemyBehaviour.getKnockedBack(origin, knockBackForce);}
     }
 
     public void addResistance(DamageType dt){
