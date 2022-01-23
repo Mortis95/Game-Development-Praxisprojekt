@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class NPCController : MonoBehaviour
+public class NPCCutsceneController : MonoBehaviour
 {
     private Vector2 goalPosition;
     private Vector2[] walkPoints;   //Noch nicht implementiert, später vielleicht.
@@ -60,5 +60,10 @@ public class NPCController : MonoBehaviour
 
     }
     #endregion
+
+    //Calling this method will disable this script.
+    public void disableCutsceneController(){
+        gameObject.GetComponent<NPCCutsceneController>().enabled = false;
+    }
 
 }
