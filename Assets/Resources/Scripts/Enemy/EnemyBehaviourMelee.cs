@@ -22,7 +22,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     [Tooltip("The force of Knockack the Player will receive. Set to 0 for no Knockback."), Range(0f, 20f)]
     public float knockBackForce;    
 
-    //Protected Variables we should get and calculate ourselves
+    //Private Variables we should get and calculate ourselves
     private Vector2 movement;
     private Vector2 lastMovement;
     private float currentMoveSpeed;
@@ -251,6 +251,9 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         drawGizmoRange();
         drawGizmoViewAngleDefault();
 
+        if(patrolRoute == null){return;}
+        if(patrolRoute.Length <= 0){return;}
+
         //Get own position to calculate relative path
         Vector2 offset = transform.position;
 
@@ -272,6 +275,10 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
 
         drawGizmoRange();
         drawGizmoViewAnglePlaying();
+
+        //If no patrol Route exists, there is none to draw.
+        if(patrolRoute == null){return;}
+        if(patrolRoute.Length <= 0){return;}
 
         //Get own position to calculate relative path
         Vector2 offset = startPos;

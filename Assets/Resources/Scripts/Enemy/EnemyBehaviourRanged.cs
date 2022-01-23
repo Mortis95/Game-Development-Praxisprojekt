@@ -267,6 +267,10 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
         drawGizmoRange();
         drawGizmoViewAngleDefault();
 
+        //If no patrol Route exists, there is none to draw.
+        if(patrolRoute == null){return;}
+        if(patrolRoute.Length <= 0){return;}
+
         //Get own position to calculate relative path
         Vector2 offset = transform.position;
 
@@ -288,6 +292,9 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
 
         drawGizmoRange();
         drawGizmoViewAnglePlaying();
+
+        if(patrolRoute == null){return;}
+        if(patrolRoute.Length <= 0){return;}
 
         //Get own position to calculate relative path
         Vector2 offset = startPos;
