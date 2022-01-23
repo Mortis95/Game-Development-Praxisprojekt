@@ -656,6 +656,38 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &147989704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 147989705}
+  m_Layer: 0
+  m_Name: NPCs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &147989705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147989704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.12995, y: -1.1982191, z: -134.19743}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1059465874}
+  - {fileID: 810796559}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &150819924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4741,6 +4773,185 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799077154}
   m_CullTransparentMesh: 1
+--- !u!1 &810796558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 810796559}
+  - component: {fileID: 810796560}
+  m_Layer: 0
+  m_Name: "Kr\xFCger"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &810796559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810796558}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 147989705}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &810796560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810796558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 810796560}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: "Kr\xFCger"
+      text: Das ist genug.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: Du kannst nicht einfach aufgeben!
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: 
+      text: "(Lucie despawnt pl\xF6tzlich)"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Herr Kr\xFCger, was\u2026?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Kr\xFCger"
+      text: Keine Sorge, sind nur Pixel. Nun, der Grund warum ich hier bin.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Kr\xFCger"
+      text: "Sie befinden sich in einer virtuellen Welt. Mithilfe von Technologie,
+        welche zwar noch nicht existiert und vor allem nicht an der Universit\xE4t
+        auffindbar sein sollte, wir allerdings im Rahmen dieser Erkl\xE4rung so tun
+        sollten, als ob es diese g\xE4be, haben wir Ihr Bewusstsein in ein von meinen
+        Studierenden erstelltes 2D RPG geschickt."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Kr\xFCger"
+      text: "Selbstverst\xE4ndlich haben Sie zuvor eine Einwilligungserkl\xE4rung
+        unterschrieben und wurden \xFCber dieses Verfahren aufgekl\xE4rt. Die Ethikkommission
+        w\xFCrde mir ansonsten den Hals umdrehen."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Kr\xFCger"
+      text: "In dieser virtuellen Welt haben Sie per Tastendruck gek\xE4mpft, in
+        Wahrheit hat Ihr Gehirn in der realen Welt allerdings Programmieraufgaben
+        l\xF6sen m\xFCssen, um mit diesem Spiel fortschreiten zu k\xF6nnen."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Hei\xDFt das, ich habe GPT bestanden?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Kr\xFCger"
+      text: "Was? Nat\xFCrlich nicht. Das Pr\xFCfungsamt l\xE4sst sowas nicht durch,
+        ich erwarte Sie p\xFCnktlich am Klausurtag. F\xFCr Ihre Teilnahme an diesem
+        Projekt bekommen sie allerdings eine VPN und eine S\xFC\xDFigkeit Ihrer Wahl
+        aus der S\xFC\xDFigkeitendose."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Der ganze Aufwand scheint sich ja gelohnt zu haben\u2026 nicht. Vermutlich
+        hatte ich ein besseres Spiel erwartet, bevor ich mich hierf\xFCr angemeldet
+        habe."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Kr\xFCger"
+      text: "Sie wachen in wenigen Minuten im LE-335 auf. Weitere Anweisungen erhalten
+        Sie dann vom Versuchsdurchf\xFChrer \u2014 und erinnern Sie ihn daran, den
+        Raum zweimal abzuschlie\xDFen!"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Ah\u2026 okay."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "(Was f\xFCr ein bizarres Adventure\u2026)"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1001 &816994713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17976,6 +18187,127 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 904246390}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1059465873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1059465874}
+  - component: {fileID: 1059465875}
+  m_Layer: 0
+  m_Name: Lucie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1059465874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059465873}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 147989705}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1059465875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059465873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1059465875}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Lucie
+      text: "Du h\xE4ttest wegrennen k\xF6nnen."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "H\xE4tte ich, mach\u2018 ich aber nicht. Dann zeig \u2018mal, was dein
+        Gott so kann."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  - textBoxen:
+    - typeOfBox: 0
+      name: Lucie
+      text: "Nein\u2026 unm\xF6glich\u2026! Die Prophezeiung besagt, dass du diesen
+        Kampf verlieren solltest!"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Das n\xE4chste Mal solltest du eine Fee ohne Rechts-Links-Schw\xE4che
+        mit solchen Aufgaben beauftragen."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Fey, du unn\xFCtzes\u2026! ICH GEBE NICHT AUF!"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: 
+      text: "Lucie sagt etwas, aber die W\xF6rter kommen Dir nicht bekannt vor. Es
+        scheint eine andere Sprache zu sein."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Ha, ha! Es ist noch nicht vorbei! Ich habe die gr\xF6\xDFte interdimensionale
+        Kraft herbeigerufen, das ist dein Ende! LOS, KR\xDCGER!"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!4 &1067352589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5083494080964618302, guid: be90f861e83b9de4fb7ce325f67db7c8,
