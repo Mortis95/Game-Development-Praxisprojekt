@@ -40,6 +40,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     private float[] anglesToCheck;
     private float lastWorkingAngle;
     private bool receivingKnockback;
+    private bool isDying;
 
     //Primitive Variables can be assigned as soon as Game Object awakes without Issue
     private void Awake(){
@@ -53,6 +54,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         updateMovementTimerSeconds = 0.5f;
         lastWorkingAngle = 0f;
         receivingKnockback = false;
+        isDying = false;
     }
 
     //Some Unity-specific variables should only be assigned on Start() of script, to ensure other GameObjects finished loading.
@@ -66,6 +68,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     }
 
     private void Update(){
+        if(isDying){return;}
         if(getTimeSinceLastPatrolPointReached() < patrolPauseTimeSeconds){
             movement = Vector2.zero;
         }
@@ -234,6 +237,11 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
                 if(knockBackForce > 0f){pl.getKnockedBack(transform.position, knockBackForce);}
             }
         }
+    }
+
+    public void onDeath(){
+        isDying = true;
+        movement = Vector2.zero;
     }
 
     #region GizmoDebugStuffForInternalUseOnly

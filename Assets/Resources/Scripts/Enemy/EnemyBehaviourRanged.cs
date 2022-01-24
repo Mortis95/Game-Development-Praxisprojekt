@@ -5,6 +5,7 @@ using UnityEngine;
 //A LOT of this class is copypasted from EnemyBehaviourMelee, with various Adjustments
 //This is due to Unity not properly allowing classes to derive their Update or Awake() Method from their parent-classes
 //Generally, having one class extend another is a frickly situation in Unity.
+//And who knows, maybe we event want to completely differ EnemyBehaviourRanged from EnemyBehaviourMelee
 public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
 
     //Public Variables other people can manipulate from the Inspector
@@ -46,6 +47,7 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
     private float lastWorkingAngle;
     private GameObject rangedAttackPrefab;
     private bool receivingKnockback;
+    private bool isDying;
 
     //Primitive Variables can be assigned as soon as Game Object awakes without Issue
     private void Awake(){
@@ -59,6 +61,7 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
         updateMovementTimerSeconds = 0.5f;
         lastWorkingAngle = 0f;
         receivingKnockback = false;
+        isDying = false;
         rangedAttackPrefab = Resources.Load<GameObject>("Prefabs/EnemyRangedAttackPrefab");
     }
 
@@ -73,6 +76,7 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
     }
 
     private void Update(){
+        if(isDying){return;}
         if(getTimeSinceLastPatrolPointReached() < patrolPauseTimeSeconds){
             movement = Vector2.zero;
         }
@@ -250,6 +254,11 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
 
     private void OnCollisionStay2D(Collision2D col){
         return; //A ranged enemy has no melee attack
+    }
+
+    public void onDeath(){
+        isDying = true;
+        movement = Vector2.zero;       
     }
 
     #region GizmoDebugStuffForInternalUseOnly

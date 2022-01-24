@@ -4,4 +4,5 @@ using UnityEngine;
 public interface EnemyBehaviour {
     void getKnockedBack(Vector2 origin, float knockBackForce);
     void findTarget();
+    void onDeath();
 }
