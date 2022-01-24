@@ -24,7 +24,7 @@ public class LoadLevel : MonoBehaviour
 
         if(collisionObject.tag =="Player")  //nur wenn en spieler und kein mob hereinläuft funzt es
         {
-                
+                GameManager.getInstance().pauseGame();
                 StartCoroutine(Load(lvToLoad, collisionObject));
                 
         }
@@ -35,9 +35,10 @@ public class LoadLevel : MonoBehaviour
     {
         transition.SetTrigger("Start");
 
-        yield return new WaitForSeconds(transitiontime);
+        yield return new WaitForSecondsRealtime(transitiontime);
 
          SceneManager.LoadScene(name);
+         GameManager.getInstance().unpauseGame();
 
     }
 }
