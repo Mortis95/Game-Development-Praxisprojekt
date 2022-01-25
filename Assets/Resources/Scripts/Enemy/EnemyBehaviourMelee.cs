@@ -18,28 +18,32 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     [Tooltip("The route in relative units that the enemy will walk along with moveSpeed as long as it didn't spot the player.")]
     public Vector2[] patrolRoute;
     [Tooltip("The time the enemy will pause walking when it reaches a point in its patrolRoute.")]
-    public float patrolPauseTimeSeconds;    
+    public float patrolPauseTimeSeconds;
+    [Tooltip("The force of Knockack the Player will receive. Set to 0 for no Knockback."), Range(0f, 20f)]
+    public float knockBackForce;    
 
-    //Protected Variables we should get and calculate ourselves
-    protected Vector2 movement;
-    protected Vector2 lastMovement;
-    protected float currentMoveSpeed;
-    protected float lastAttackTime;
-    protected Rigidbody2D target;
-    protected bool targetFound;
-    protected Rigidbody2D rb;
-    protected EnemyManager enemyManager;
-    protected LayerMask layerMask;
-    protected int currentPatrolPoint;
-    protected Vector2 startPos;
-    protected float lastUpdateMovementTime;
-    protected float updateMovementTimerSeconds;
-    protected float lastPatrolPointTime;
-    protected float[] anglesToCheck;
-    protected float lastWorkingAngle;
+    //Private Variables we should get and calculate ourselves
+    private Vector2 movement;
+    private Vector2 lastMovement;
+    private float currentMoveSpeed;
+    private float lastAttackTime;
+    private Rigidbody2D target;
+    private bool targetFound;
+    private Rigidbody2D rb;
+    private EnemyManager enemyManager;
+    private LayerMask layerMask;
+    private int currentPatrolPoint;
+    private Vector2 startPos;
+    private float lastUpdateMovementTime;
+    private float updateMovementTimerSeconds;
+    private float lastPatrolPointTime;
+    private float[] anglesToCheck;
+    private float lastWorkingAngle;
+    private bool receivingKnockback;
+    private bool isDying;
 
     //Primitive Variables can be assigned as soon as Game Object awakes without Issue
-    protected void Awake(){
+    private void Awake(){
         targetFound = false;
         movement = Vector2.zero;
         lastAttackTime = 0;
@@ -49,10 +53,12 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         lastPatrolPointTime = 0;
         updateMovementTimerSeconds = 0.5f;
         lastWorkingAngle = 0f;
+        receivingKnockback = false;
+        isDying = false;
     }
 
     //Some Unity-specific variables should only be assigned on Start() of script, to ensure other GameObjects finished loading.
-    protected void Start(){
+    private void Start(){
         layerMask = LayerMask.GetMask("Blocking","npcLayer");
         enemyManager = gameObject.GetComponent<EnemyManager>();
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -61,7 +67,8 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         anglesToCheck = new float[] {10f, -10f, 20f, -20f, 30f, -30.0f};    //Static angles, because a high ViewDetectionAngle might break the Raycast otherwise
     }
 
-    protected void Update(){
+    private void Update(){
+        if(isDying){return;}
         if(getTimeSinceLastPatrolPointReached() < patrolPauseTimeSeconds){
             movement = Vector2.zero;
         }
@@ -76,7 +83,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
 
 
     #region ProcessMovement
-    protected void processUnalertedMovement(){
+    private void processUnalertedMovement(){
         //Set movement towards next patrol point
         //But only if a patrol route actually exists.
         if(patrolRoute != null && patrolRoute.Length > 0){
@@ -85,7 +92,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         }
     }
     
-    protected void processAlertedMovement(){
+    private void processAlertedMovement(){
         if(checkDirectApproach()){
             setMoveTowardsPoint(target.position);
         } else {
@@ -96,13 +103,13 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     }
 
     //This method returns true if the direct approach is possible, i.e. if the raycast didn't hit an obstacle or hit the player directly.
-    protected bool checkDirectApproach(){
+    private bool checkDirectApproach(){
         Vector2 direction = target.position - rb.position;
         RaycastHit2D hit = Physics2D.CircleCast(rb.position, 1f, direction, detectionRange, layerMask);
         return (!hit || hit.collider.tag == "Player");
     }
 
-    protected float calculateWorkingAngle(float[] angles, Vector2 pos){
+    private float calculateWorkingAngle(float[] angles, Vector2 pos){
         //Initialize help variables with 0
         float totalOfAnglesThatWork = 0f;
         int amountOfAnglesThatWork = 0;
@@ -148,7 +155,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         //TODO: Maybe play some enemy sound? Gotta wait for someone to actually be Audio smart in that case... 
 
     }
-    protected void checkForTarget(){
+    private void checkForTarget(){
         //Check for target in range
         if(Vector2.Distance(rb.position, target.position) < detectionRange){
             Vector2 targetDirection = target.position - rb.position;
@@ -164,7 +171,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         }
     }
 
-    protected void checkPatrolPoints(){
+    private void checkPatrolPoints(){
         //Check if patrol point needs to be updated
         //We consider a patrol point reached if it's closer than 0.5 world units away
         if(Vector2.Distance(rb.position, patrolRoute[currentPatrolPoint] + startPos) < 0.5f){
@@ -176,11 +183,11 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         }
     }
 
-    protected float getTimeSinceLastMovementUpdate(){
+    private float getTimeSinceLastMovementUpdate(){
         return Time.time - lastUpdateMovementTime;
     }
     
-    protected void setMoveTowardsPoint(Vector2 target){
+    private void setMoveTowardsPoint(Vector2 target){
         Vector2 direction = target - rb.position;
         direction.Normalize();
         movement = direction;
@@ -189,35 +196,56 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     
     #endregion
 
-    protected void FixedUpdate(){
-        rb.MovePosition(rb.position + movement * currentMoveSpeed * Time.fixedDeltaTime);
+    private void FixedUpdate(){
+
+        if(!receivingKnockback){rb.MovePosition(rb.position + movement * currentMoveSpeed * Time.fixedDeltaTime);}
     }
 
-    public void getKnockedBack(){
-        return;
+    public void getKnockedBack(Vector2 origin, float knockBackForce){
+        StartCoroutine(knockBackLoop(origin, knockBackForce));
     }
 
-    protected float getTimeSinceLastAttack(){
+    IEnumerator knockBackLoop(Vector2 origin, float knockBackForce){
+        receivingKnockback = true;
+        float startTime = Time.time;
+        float knockBackTimeSeconds = 0.25f;
+        float actualKnockBackForce = Mathf.Max(knockBackForce - enemyManager.enemyDefense, 0f); //Reduce Knockback force by Enemy Defense. But don't allow negative Knockback
+        Vector2 direction = rb.position - origin;
+        direction.Normalize();
+        while (Time.time - startTime < knockBackTimeSeconds){
+            rb.MovePosition(rb.position + direction * knockBackForce * Time.fixedDeltaTime);
+            yield return new WaitForFixedUpdate();
+        }
+        receivingKnockback = false;
+
+    }
+
+    private float getTimeSinceLastAttack(){
         return Time.fixedTime - lastAttackTime;
     }
 
-    protected float getTimeSinceLastPatrolPointReached(){
+    private float getTimeSinceLastPatrolPointReached(){
         return Time.time - lastPatrolPointTime;
     }
 
-    protected void OnCollisionStay2D(Collision2D col){
+    private void OnCollisionStay2D(Collision2D col){
         if(col.gameObject.tag == "Player" && getTimeSinceLastAttack() > attackDelaySeconds){
             lastAttackTime = Time.fixedTime;
             Player pl = col.gameObject.GetComponent<Player>();
             if(pl != null){
                 pl.takeDamage(enemyManager.enemyAttack);
-                pl.getKnockedBack(rb);
+                if(knockBackForce > 0f){pl.getKnockedBack(transform.position, knockBackForce);}
             }
         }
     }
 
+    public void onDeath(){
+        isDying = true;
+        movement = Vector2.zero;
+    }
+
     #region GizmoDebugStuffForInternalUseOnly
-    protected void OnDrawGizmosSelected(){
+    private void OnDrawGizmosSelected(){
         if(Application.isPlaying){
             drawGizmoPlaying();
         } else {
@@ -226,10 +254,13 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
 
     }
 
-    protected void drawGizmoDefault(){
+    private void drawGizmoDefault(){
         
         drawGizmoRange();
         drawGizmoViewAngleDefault();
+
+        if(patrolRoute == null){return;}
+        if(patrolRoute.Length <= 0){return;}
 
         //Get own position to calculate relative path
         Vector2 offset = transform.position;
@@ -248,10 +279,14 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         }
     }
 
-    protected void drawGizmoPlaying(){
+    private void drawGizmoPlaying(){
 
         drawGizmoRange();
         drawGizmoViewAnglePlaying();
+
+        //If no patrol Route exists, there is none to draw.
+        if(patrolRoute == null){return;}
+        if(patrolRoute.Length <= 0){return;}
 
         //Get own position to calculate relative path
         Vector2 offset = startPos;
@@ -270,13 +305,13 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         }
     }
 
-    protected void drawGizmoRange(){
+    private void drawGizmoRange(){
         //Display the Range of enemy (green)
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 
-    protected void drawGizmoViewAngleDefault(){
+    private void drawGizmoViewAngleDefault(){
         Gizmos.color = Color.yellow;
         Vector3 pointUp = Vector3Extension.RotatePointAroundPivot(transform.position + Vector3.up, transform.position, new Vector3(0f, 0f, detectionViewAngle / 2));
         Vector3 pointDown = Vector3Extension.RotatePointAroundPivot(transform.position + Vector3.up, transform.position, new Vector3(0f, 0f, -detectionViewAngle / 2));
@@ -284,7 +319,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         Gizmos.DrawRay(transform.position, (pointDown - transform.position) * detectionRange);
     }
 
-    protected void drawGizmoViewAnglePlaying(){
+    private void drawGizmoViewAnglePlaying(){
         Gizmos.color = Color.yellow;
         Vector3 pointUp = Vector3Extension.RotatePointAroundPivot(transform.position + (Vector3) lastMovement, transform.position, new Vector3(0f, 0f, detectionViewAngle / 2));
         Vector3 pointDown = Vector3Extension.RotatePointAroundPivot(transform.position + (Vector3) lastMovement, transform.position, new Vector3(0f, 0f, -detectionViewAngle / 2));

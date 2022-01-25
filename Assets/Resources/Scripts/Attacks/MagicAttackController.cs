@@ -17,6 +17,7 @@ public class MagicAttackController : MonoBehaviour
 
     [SerializeField]
     private int damage;
+    private float knockBackForce;
     
 
     
@@ -24,8 +25,11 @@ public class MagicAttackController : MonoBehaviour
         //Get Player Instance
         Player pl = Player.getInstance();
 
-        //Set Damage
-        damage = pl.getAttack() + pl.getIntelligence();          //Damage = ATK + DEX
+        //Set Damage and Knockback
+        int attack = pl.getAttack();
+        int intelligence = pl.getIntelligence();
+        damage = attack + intelligence;
+        knockBackForce = intelligence / 2;
         
         //Pick correct image to display and correct offset to use for position
         spr.sprite = pl.equippedWeapon.projectile;
@@ -70,7 +74,9 @@ public class MagicAttackController : MonoBehaviour
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
-            enemyScript.takeDamage(DamageType.Normal,damage);
+            //Need to check for enemyScript several times, in case the enemy dies in the meantime.
+            if(enemyScript != null){enemyScript.takeDamage(DamageType.Normal,damage);}
+            if(enemyScript != null){enemyScript.getKnockback(transform.position, knockBackForce);}
         }
         Destroy(gameObject);
     }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7451989002762257085}
   - component: {fileID: 7451989002762257086}
   - component: {fileID: 7451989002762257087}
+  - component: {fileID: 2180745374615935775}
   m_Layer: 6
   m_Name: MeleeEnemyPrefab
   m_TagString: Enemy
@@ -99,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMaxHealthPoints: 400
+  enemyMaxHealthPoints: 50
   enemyAttack: 15
   enemyDefense: 3
   enemyExpWorth: 5
@@ -161,3 +162,17 @@ MonoBehaviour:
   detectionViewAngle: 90
   patrolRoute: []
   patrolPauseTimeSeconds: 0
+  knockBackForce: 0
+--- !u!114 &2180745374615935775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7451989002762257073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23a51d301678454891fa053380caeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropTable: []

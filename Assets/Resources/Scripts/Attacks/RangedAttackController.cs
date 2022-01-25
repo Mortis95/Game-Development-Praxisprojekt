@@ -17,6 +17,7 @@ public class RangedAttackController : MonoBehaviour
 
     [SerializeField]
     private int damage;
+    private float knockBackForce;
     
 
     
@@ -24,8 +25,11 @@ public class RangedAttackController : MonoBehaviour
         //Get Player Instance
         Player pl = Player.getInstance();
 
-        //Set Damage
-        damage = pl.getAttack() + pl.getDexterity();          //Damage = ATK + DEX
+        //Set Damage and Knockback
+        int attack = pl.getAttack();
+        int dexterity = pl.getDexterity();
+        damage = attack + dexterity;
+        knockBackForce = dexterity / 2;
         
         //Pick correct image to display and correct offset to use for position
         spr.sprite = pl.equippedWeapon.projectile;
@@ -70,7 +74,9 @@ public class RangedAttackController : MonoBehaviour
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
-            enemyScript.takeDamage(DamageType.Normal, damage);
+            //Need to check for enemyScript several times, in case the enemy dies in the meantime.
+            if(enemyScript != null){enemyScript.takeDamage(DamageType.Normal, damage);}
+            if(enemyScript != null){enemyScript.getKnockback(transform.position, knockBackForce);}
         }
         Destroy(gameObject);
     }

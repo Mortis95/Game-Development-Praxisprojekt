@@ -18,6 +18,7 @@ public class MeleeAttackController : MonoBehaviour
 
     [SerializeField]
     private int damage;
+    private float knockBackForce;
     
 
     
@@ -26,9 +27,12 @@ public class MeleeAttackController : MonoBehaviour
         //Get Player Instance
         Player pl = Player.getInstance();
 
-        //Set Damage
-        damage = pl.getStrength() + pl.getAttack();          //Damage = STR //Can be changed to whatever is your liking
-        
+        //Set Damage and Knockback
+        int str = pl.getStrength();
+        int atk = pl.getAttack();
+        damage = str + atk;          //Damage = STR //Can be changed to whatever is your liking
+        knockBackForce = str;
+
         //Pick correct image to display and correct offset to use for position
         Vector3 offset;
         switch(pl.lastFacedDirection){
@@ -54,7 +58,7 @@ public class MeleeAttackController : MonoBehaviour
         }
 
         //Set Location of Object
-        transform.position = pl.transform.position + offset * 2;
+        transform.position = pl.transform.position + offset * 1.5f;
 
 
         //Destroy Sprite after seconds
@@ -67,7 +71,9 @@ public class MeleeAttackController : MonoBehaviour
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
-            enemyScript.takeDamage(DamageType.Normal, damage);
+            //Need to check for enemyScript several times, in case the enemy dies in the meantime.
+            if(enemyScript != null){enemyScript.takeDamage(DamageType.Normal, damage);}
+            if(enemyScript != null){enemyScript.getKnockback(transform.position, knockBackForce);}
 
         }
     }

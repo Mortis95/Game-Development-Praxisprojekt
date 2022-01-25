@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1158638958757282955}
   - component: {fileID: 1158638958757282952}
   - component: {fileID: 1158638958757282953}
+  - component: {fileID: 1158638958757282956}
+  - component: {fileID: 1268163283937602310}
   - component: {fileID: 1158638958757282954}
   - component: {fileID: 1158638958757282957}
-  - component: {fileID: 1158638958757282956}
   m_Layer: 6
   m_Name: RangedEnemyPrefab
   m_TagString: Enemy
@@ -105,6 +106,40 @@ MonoBehaviour:
   enemyExpWorth: 5
   enemyWeaknesses: 
   enemyResistances: 
+--- !u!114 &1158638958757282956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158638958757282998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a97de201270d0c4baee5e0aa8155073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  runSpeed: 5
+  attackDelaySeconds: 3
+  detectionRange: 10
+  detectionViewAngle: 90
+  patrolRoute: []
+  patrolPauseTimeSeconds: 0
+  attackRange: 8
+  shotSpeed: 6
+--- !u!114 &1268163283937602310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158638958757282998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23a51d301678454891fa053380caeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropTable: []
 --- !u!50 &1158638958757282954
 Rigidbody2D:
   serializedVersion: 4
@@ -142,24 +177,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -1}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &1158638958757282956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158638958757282998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82107e6f87fb12f4e957882f57c5dd4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 4
-  runSpeed: 6
-  attackDelaySeconds: 3
-  detectionRange: 20
-  detectionViewAngle: 90
-  patrolRoute: []
-  patrolPauseTimeSeconds: 0
-  attackRange: 15
-  shotSpeed: 8

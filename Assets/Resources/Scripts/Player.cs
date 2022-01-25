@@ -44,6 +44,9 @@ public class Player : MonoBehaviour
     public Animator animator;
     public Vector2 movement;
     public Direction lastFacedDirection;
+    private float lastActionTime;
+    private float currentActionDelaySeconds;
+    private bool receivingKnockback;
     #endregion
 
     #region Equipment
@@ -155,6 +158,10 @@ public class Player : MonoBehaviour
         baseIntelligence = 1;
         recalculateStats();
 
+        lastActionTime = 0;
+        currentActionDelaySeconds = 0;
+        receivingKnockback = false;
+
     }
    
     public void UpdateEquipment(){
@@ -167,16 +174,20 @@ public class Player : MonoBehaviour
     }
 
     void Update(){
-        processMovement();
-        processUseConsumableInput();
-        processAttackInput();
-        processSkillInput();         
+        if(isAllowedToTakeAction()){
+            processMovement();
+            processUseConsumableInput();
+            processAttackInput();
+            processSkillInput();
+        } else {
+            standStill();
+        }
     }
 
     void FixedUpdate()
     {
         //Movement
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        if(!receivingKnockback){rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);}
     }
 
     public void addExp(int xp)
@@ -281,12 +292,33 @@ public class Player : MonoBehaviour
         totalIntelligence = baseIntelligence + bonusIntelligence;
     }
     public void takeDamage(int dmg){
-        currentHealthPoints -= dmg;
+        int actualDmg = Mathf.Max((dmg - getDefense()), 0);
+        currentHealthPoints -= actualDmg;
         updateUIStatusBar();
-        TextPopup.createPlayerDamagePopup(transform, dmg);
+        TextPopup.createPlayerDamagePopup(transform, actualDmg);
+    }    
+    public void getKnockedBack(Vector2 origin, float knockBackForce){
+        StartCoroutine(knockBackLoop(origin, knockBackForce));
     }
-    public void getKnockedBack(Rigidbody2D source){
-        
+
+    IEnumerator knockBackLoop(Vector2 origin, float knockBackForce){
+        receivingKnockback = true;
+        float startTime = Time.time;
+        float knockBackTimeSeconds = 0.25f;
+        Debug.Log("" + knockBackForce + " " +  getDefense() + " " + (knockBackForce - getDefense()));
+        float actualKnockBackForce = Mathf.Max(knockBackForce - getDefense(), 0f); //Reduce Knockback force by Defense. But don't allow negative Knockback
+        if((int)actualKnockBackForce == 0){
+            receivingKnockback = false;
+        } else {
+            Vector2 direction = rb.position - origin;
+            direction.Normalize();
+            while (Time.time - startTime < knockBackTimeSeconds){
+                rb.MovePosition(rb.position + direction * knockBackForce * Time.fixedDeltaTime);
+                yield return new WaitForFixedUpdate();
+            }
+            receivingKnockback = false;
+        }
+
     }
     public void processMovement(){
         //Movement
@@ -336,12 +368,15 @@ public class Player : MonoBehaviour
             switch(equippedWeapon.weaponType){
                 case WeaponType.Melee:
                     Instantiate(meleeAttackPrefab, transform.position, transform.rotation);
+                    setActionDelaySeconds(0.5f);
                     break;
                 case WeaponType.Range:
                     Instantiate(rangedAttackPrefab, transform.position, transform.rotation);
+                    setActionDelaySeconds(0.55f);
                     break;
                 case WeaponType.Magic:
                     Instantiate(magicAttackPrefab, transform.position, transform.rotation);
+                    setActionDelaySeconds(0.55f);
                     break;
             }
         }
@@ -370,46 +405,54 @@ public class Player : MonoBehaviour
                 currentMagicPoints -= FeuerpfeilMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<FeuerPfeil>();
+                setActionDelaySeconds(0.5f);
 
 } else if (equippedAbility == Ability.Wasserpfeilhagel && currentMagicPoints >= WasserpfeilhagelMPKost){
                 currentMagicPoints -= WasserpfeilhagelMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<WasserPfeile>();
+                setActionDelaySeconds(0.5f);
 
             } else if (equippedAbility == Ability.Scharfschuss && currentMagicPoints >= ScharfschussMPKost){
                 currentMagicPoints -= ScharfschussMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<ScharfSchuss>();
+                setActionDelaySeconds(0.5f);
 
             } else if (equippedAbility == Ability.Wasserhieb && currentMagicPoints >= WasserhiebMPKost){
                 currentMagicPoints -=  WasserhiebMPKost;
                 GameObject skill = Instantiate(WasserHieb, transform.position, transform.rotation);
-                /* Start Slash Animation maybe? */
+                setActionDelaySeconds(0.5f);
 
             } else if (equippedAbility == Ability.Elektrowirbel && currentMagicPoints >= ElektrowirbelMPKost){
                 currentMagicPoints -= ElektrowirbelMPKost;
                 GameObject skill = Instantiate(ElektroWirbel, transform.position, transform.rotation);
+                setActionDelaySeconds(0.5f);
                 /*Start Wirbel Animation maybe?*/
 
             } else if (equippedAbility == Ability.Rage && currentMagicPoints >= RageMPKost){
                 currentMagicPoints -= RageMPKost;
                 GameObject skill = Instantiate(Rage, transform.position, transform.rotation);
-                /*Insert Rage Animation here, falls es so etwas jemals geben sollte lmao - Was eine gute Idee nur einen Artist zu haben*/
+                setActionDelaySeconds(0.5f);
+                /*Insert Rage Animation*/
 
             } else if (equippedAbility == Ability.Feuerball && currentMagicPoints >= FeuerballMPKost){
                 currentMagicPoints -= FeuerballMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<FeuerBall>();
+                setActionDelaySeconds(0.5f);
 
             } else if (equippedAbility == Ability.Wasserflaeche && currentMagicPoints >= WasserflaecheMPKost){
                 currentMagicPoints -= WasserflaecheMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<Wasserfläche>();
+                setActionDelaySeconds(0.5f);
 
             } else if (equippedAbility == Ability.Kettenblitz && currentMagicPoints >= KettenblitzMPKost){
                 currentMagicPoints -= KettenblitzMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<Kettenblitz>();
+                setActionDelaySeconds(0.5f);
 
             }
             updateUIStatusBar();
@@ -441,6 +484,15 @@ public class Player : MonoBehaviour
     public float getSkillDamageMultiplier(){
         float levelProgression = (float) currentLevel / (float) experiencePointThreshholds.Length;
         return Mathf.Lerp(1f,2f, levelProgression);
+    }
+
+    public void setActionDelaySeconds(float seconds){
+        lastActionTime = Time.fixedTime;
+        currentActionDelaySeconds = seconds;
+    }
+
+    public bool isAllowedToTakeAction(){
+        return (Time.fixedTime - lastActionTime > currentActionDelaySeconds);
     }
     #endregion
 }

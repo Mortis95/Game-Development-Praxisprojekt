@@ -121,6 +121,7 @@ public class Inventory : MonoBehaviour
         ItemDropController.createItemDropWithOffset(transform, items[index], 5f);
         items[index] = null;
         if(onInventoryChangedCallback != null){onInventoryChangedCallback.Invoke();}
+    
     }
     
     //Unequip every Slot if a free Slot can be found

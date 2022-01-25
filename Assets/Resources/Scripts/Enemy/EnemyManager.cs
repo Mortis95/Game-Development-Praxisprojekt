@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour{
+
+    #region PublicVariables
+    //Public Variables that people can set through the Editor
     private int currentHealthPoints;
     public int enemyMaxHealthPoints;
     public int enemyAttack;
@@ -10,25 +13,60 @@ public class EnemyManager : MonoBehaviour{
     public int enemyExpWorth;
     public List<DamageType> enemyWeaknesses;
     public List<DamageType> enemyResistances;
-    public EnemyBehaviour enemyBehaviour;
+    #endregion
+
+    #region PrivateVariables
+    //Private Variables we should get ourselves
+    private EnemyBehaviour enemyBehaviour;
+    private DropTable enemyDropTable;
+    private bool isAlive;
+    #endregion
 
 
     private void Awake(){
         currentHealthPoints = enemyMaxHealthPoints;
+        isAlive = true;
     }
 
     void Start(){
-        enemyBehaviour = gameObject.GetComponent<EnemyBehaviour>();
+        if(enemyBehaviour == null){enemyBehaviour = gameObject.GetComponent<EnemyBehaviour>();}
+        if(enemyDropTable == null){enemyDropTable = gameObject.GetComponent<DropTable>();}
+
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if(currentHealthPoints <= 0){
-            Debug.Log("F in chat");
-            Player.getInstance().addExp(enemyExpWorth);
-            Destroy(gameObject);
+    void Update(){
+        if(currentHealthPoints <= 0 && isAlive){
+            onDeath();
         }
+    }
+
+    void onDeath(){
+        //Update isAlive so this method only plays once
+        isAlive = false;
+
+        //Give Player EXP
+        Player.getInstance().addExp(enemyExpWorth);
+
+        //Let EnemyBehaviour know we just died (F in chat)
+        if(enemyBehaviour != null){enemyBehaviour.onDeath();}
+
+        //Destroy important GameObject-Components, so that the Enemy will stop dealing damage.
+        Collider2D col = gameObject.GetComponent<Collider2D>();
+        if(col != null){Destroy(col);}
+
+        //Generate ItemDrops if there are any
+        if(enemyDropTable != null){
+            List<Item> drops = enemyDropTable.getDrops();
+            foreach (Item drop in drops){
+                ItemDropController.createItemDropWithOffset(transform, drop, 1f);
+            }
+        }
+
+        //Play Death Sound maybe?
+
+        //Destroy GameObject after small delay
+        Destroy(gameObject, 1f);
     }
 
     public void takeDamage(DamageType dmgType, int amount){
@@ -63,8 +101,8 @@ public class EnemyManager : MonoBehaviour{
         if(enemyBehaviour != null){enemyBehaviour.findTarget();}
     }
 
-    public void getKnockback(){
-        enemyBehaviour.getKnockedBack();
+    public void getKnockback(Vector2 origin, float knockBackForce){
+        if(enemyBehaviour != null){enemyBehaviour.getKnockedBack(origin, knockBackForce);}
     }
 
     public void addResistance(DamageType dt){
