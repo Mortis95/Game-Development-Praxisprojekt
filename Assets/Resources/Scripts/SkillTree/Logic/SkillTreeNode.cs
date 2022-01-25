@@ -90,4 +90,24 @@ public class SkillTreeNode {
         if(bonusIntelligence != 0){stats += "INT : " + bonusIntelligence;}
         return stats;
     }
+
+    public int getCurrentBonusAttack(){
+        return currentLevel * bonusAttack;
+    } 
+
+    public int getCurrentBonusDefense(){
+        return currentLevel * bonusDefense;
+    }
+
+    public int getCurrentBonusStrength(){
+        return currentLevel * bonusStrength;
+    }
+
+    public int getCurrentBonusDexterity(){
+        return currentLevel * bonusDexterity;
+    }
+
+    public int getCurrentBonusIntelligence(){
+        return currentLevel * bonusIntelligence;
+    }
 }

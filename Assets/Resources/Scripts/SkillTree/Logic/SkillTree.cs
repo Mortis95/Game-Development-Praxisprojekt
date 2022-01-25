@@ -166,11 +166,24 @@ public class SkillTree : MonoBehaviour{
     }
     #endregion
     private void initializeBonusStats(){
-        bonusAttack = 0;
-        bonusDefense = 0;
-        bonusStrength = 0;
-        bonusDexterity = 0;
+        bonusAttack       = 0;
+        bonusDefense      = 0;
+        bonusStrength     = 0;
+        bonusDexterity    = 0;
         bonusIntelligence = 0;
+    }
+
+    private void recalculateBonusStats(){
+        initializeBonusStats();
+
+        foreach (SkillTreeNode node in skillTreeNodes){
+            bonusAttack       += node.getCurrentBonusAttack();
+            bonusDefense      += node.getCurrentBonusDefense();
+            bonusStrength     += node.getCurrentBonusStrength();
+            bonusDexterity    += node.getCurrentBonusDexterity();
+            bonusIntelligence += node.getCurrentBonusIntelligence();
+        }
+
     }
 
     private void countPermanentStats(int atk, int def, int str, int dex, int bruh){
@@ -246,7 +259,9 @@ public class SkillTree : MonoBehaviour{
 
     public void setSkillTreeNodes(SkillTreeNode[] stn){
         skillTreeNodes = stn;
+        recalculateBonusStats();
         skillTreeChangedCallback();
+        pl.recalculateStats();
     }
     public void addPlayerStats(int atk, int def, int str, int dex, int bruh){
         countPermanentStats(atk,def,str,dex,bruh);
