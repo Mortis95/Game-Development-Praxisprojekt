@@ -109,16 +109,11 @@ public class Player : MonoBehaviour
     private int KettenblitzMPKost               = 5;
     #endregion
     
-    
-    public AudioSource audioSource;
-    public AudioClip swordSound;
-    public AudioClip walkingSound;
 
     //Levelsystem
     //Vorläufige Leveleinteilung, enthalten sind die nötige Menge an totalen EXP die man benötigt
     int[] experiencePointThreshholds = new int[] { 0, 10, 30, 70, 150, 310, 630, 1270, 2550, 5110, 10230, 20470, 40950}; 
 
-    AudioSource attackSound;
 
     //UI Status Bar
     public StatusBar healthBar;
@@ -128,13 +123,6 @@ public class Player : MonoBehaviour
 
     void Start()
     {        	
-        
-        AudioSource[] audioSources = GetComponents<AudioSource>();
-        audioSources[0].clip = walkingSound;
-        audioSources[1].clip = swordSound;
-        audioSource = audioSources[0];
-        attackSound = audioSources[1];
-
         equipment = Equipment.getInstance();
         equipment.onEquipmentChangedCallback += UpdateEquipment;
 
@@ -272,10 +260,19 @@ public class Player : MonoBehaviour
             bonusDexterity += equippedArmor.bonusDexterity;
             bonusIntelligence += equippedArmor.bonusIntelligence;
         }
-        totalAttack = baseAttack + bonusAttack;
-        totalDefense = baseDefense + bonusDefense;
-        totalStrength = baseStrength + bonusStrength;
-        totalDexterity = baseDexterity + bonusDexterity;
+        
+        SkillTree st = SkillTree.getInstance();
+        
+        bonusAttack       += st.getBonusAttack();
+        bonusDefense      += st.getBonusDefense();
+        bonusStrength     += st.getBonusStrength();
+        bonusDexterity    += st.getBonusDexterity();
+        bonusIntelligence += st.getBonusIntelligence();
+
+        totalAttack       = baseAttack       + bonusAttack;
+        totalDefense      = baseDefense      + bonusDefense;
+        totalStrength     = baseStrength     + bonusStrength;
+        totalDexterity    = baseDexterity    + bonusDexterity;
         totalIntelligence = baseIntelligence + bonusIntelligence;
     }
     public void takeDamage(int dmg){
@@ -319,12 +316,7 @@ public class Player : MonoBehaviour
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
         //Movement sound
-        if(moveX != 0 || moveY != 0){
-            audioSource.volume = 0.04f;
-            if(!audioSource.isPlaying){audioSource.Play();}
-        } else{
-            audioSource.Stop();
-        }
+        //if(movement.magnitude > 0){AudioManager.getInstance().PlaySound("PlayerWalking");}
 
         //Remember last faced direction - In edge cases this prioritizes Right over Left and Up over Down.  ¯\_(ツ)_/¯
         if(moveX > 0){

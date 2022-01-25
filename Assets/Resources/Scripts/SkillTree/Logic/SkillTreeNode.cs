@@ -77,7 +77,7 @@ public class SkillTreeNode {
     public void levelNode(){
         currentLevel++;
         Debug.Log("Node: " + name + " is now Level: " + currentLevel);
-        SkillTree.getInstance().addPermanentPlayerStats(bonusAttack,bonusDefense,bonusStrength,bonusDexterity,bonusIntelligence);
+        SkillTree.getInstance().addPlayerStats(bonusAttack,bonusDefense,bonusStrength,bonusDexterity,bonusIntelligence);
         if(funcToExecute != null){funcToExecute.Invoke();}
     }
 
