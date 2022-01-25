@@ -1,0 +1,2832 @@
+fileFormatVersion: 2
+guid: 457dbaf3ec9556b4eb0ec0289ac81094
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2892009085188675391
+    second: Fey-mit-Stab_RS_0
+  - first:
+      213: -4307313539538916737
+    second: Fey-mit-Stab_RS_1
+  - first:
+      213: 1968925657586421494
+    second: Fey-mit-Stab_RS_2
+  - first:
+      213: 1099536815160526581
+    second: Fey-mit-Stab_RS_3
+  - first:
+      213: 884434745589356497
+    second: Fey-mit-Stab_RS_4
+  - first:
+      213: 9094367389684766710
+    second: Fey-mit-Stab_RS_5
+  - first:
+      213: -9155456615285057708
+    second: Fey-mit-Stab_RS_6
+  - first:
+      213: 8732831772256849279
+    second: Fey-mit-Stab_RS_7
+  - first:
+      213: -7925147072982128035
+    second: Fey-mit-Stab_RS_8
+  - first:
+      213: -1593872144219853061
+    second: Fey-mit-Stab_RS_9
+  - first:
+      213: -4181617900774725266
+    second: Fey-mit-Stab_RS_10
+  - first:
+      213: 8953264106421737876
+    second: Fey-mit-Stab_RS_11
+  - first:
+      213: 8575462052689160413
+    second: Fey-mit-Stab_RS_12
+  - first:
+      213: 4860066931266914968
+    second: Fey-mit-Stab_RS_13
+  - first:
+      213: 4258014437965486009
+    second: Fey-mit-Stab_RS_14
+  - first:
+      213: -8922921197589396015
+    second: Fey-mit-Stab_RS_15
+  - first:
+      213: 6924337250177493293
+    second: Fey-mit-Stab_RS_16
+  - first:
+      213: 7005170695893965060
+    second: Fey-mit-Stab_RS_17
+  - first:
+      213: 2220238712753325585
+    second: Fey-mit-Stab_RS_18
+  - first:
+      213: 636491398325002703
+    second: Fey-mit-Stab_RS_19
+  - first:
+      213: 2517389171564899734
+    second: Fey-mit-Stab_RS_20
+  - first:
+      213: 2880305208288557260
+    second: Fey-mit-Stab_RS_21
+  - first:
+      213: -6421365872901790790
+    second: Fey-mit-Stab_RS_22
+  - first:
+      213: 7798836722829815462
+    second: Fey-mit-Stab_RS_23
+  - first:
+      213: 6624879081712609323
+    second: Fey-mit-Stab_RS_24
+  - first:
+      213: -8644188759732228657
+    second: Fey-mit-Stab_RS_25
+  - first:
+      213: 8671724796610628879
+    second: Fey-mit-Stab_RS_26
+  - first:
+      213: 6259890211503948470
+    second: Fey-mit-Stab_RS_27
+  - first:
+      213: 3020263038311778087
+    second: Fey-mit-Stab_RS_28
+  - first:
+      213: 7811460574388067894
+    second: Fey-mit-Stab_RS_29
+  - first:
+      213: 8457048990441135978
+    second: Fey-mit-Stab_RS_30
+  - first:
+      213: 5213339624325222085
+    second: Fey-mit-Stab_RS_31
+  - first:
+      213: -8144929870586848256
+    second: Fey-mit-Stab_RS_32
+  - first:
+      213: -7383412320008789340
+    second: Fey-mit-Stab_RS_33
+  - first:
+      213: 8466594353602583685
+    second: Fey-mit-Stab_RS_34
+  - first:
+      213: -9107655653512140209
+    second: Fey-mit-Stab_RS_35
+  - first:
+      213: 6500592080633573274
+    second: Fey-mit-Stab_RS_36
+  - first:
+      213: 5163408382266935586
+    second: Fey-mit-Stab_RS_37
+  - first:
+      213: -1743717430657489410
+    second: Fey-mit-Stab_RS_38
+  - first:
+      213: -3580125964621165942
+    second: Fey-mit-Stab_RS_39
+  - first:
+      213: 5134820358622707992
+    second: Fey-mit-Stab_RS_40
+  - first:
+      213: 3650487950294834945
+    second: Fey-mit-Stab_RS_41
+  - first:
+      213: -1029280759455110461
+    second: Fey-mit-Stab_RS_42
+  - first:
+      213: -8790353959670750842
+    second: Fey-mit-Stab_RS_43
+  - first:
+      213: -453805852229639801
+    second: Fey-mit-Stab_RS_44
+  - first:
+      213: 5012349232859055655
+    second: Fey-mit-Stab_RS_45
+  - first:
+      213: -1903807127480259183
+    second: Fey-mit-Stab_RS_46
+  - first:
+      213: -355961322260952748
+    second: Fey-mit-Stab_RS_47
+  - first:
+      213: 5973856198606908451
+    second: Fey-mit-Stab_RS_48
+  - first:
+      213: 5288147000677693125
+    second: Fey-mit-Stab_RS_49
+  - first:
+      213: -5738112600833271055
+    second: Fey-mit-Stab_RS_50
+  - first:
+      213: -338733920587655394
+    second: Fey-mit-Stab_RS_51
+  - first:
+      213: 6911443877744587467
+    second: Fey-mit-Stab_RS_52
+  - first:
+      213: -4189618450148984450
+    second: Fey-mit-Stab_RS_53
+  - first:
+      213: 4824234479552183810
+    second: Fey-mit-Stab_RS_54
+  - first:
+      213: -5177481052708425062
+    second: Fey-mit-Stab_RS_55
+  - first:
+      213: 4569150542036932111
+    second: Fey-mit-Stab_RS_56
+  - first:
+      213: -1831521107247629116
+    second: Fey-mit-Stab_RS_57
+  - first:
+      213: 5868096738774166430
+    second: Fey-mit-Stab_RS_58
+  - first:
+      213: 921143740490517509
+    second: Fey-mit-Stab_RS_59
+  - first:
+      213: 7397885225992319028
+    second: Fey-mit-Stab_RS_60
+  - first:
+      213: -818393185694320646
+    second: Fey-mit-Stab_RS_61
+  - first:
+      213: -489821642302758175
+    second: Fey-mit-Stab_RS_62
+  - first:
+      213: 1551804859565385197
+    second: Fey-mit-Stab_RS_63
+  - first:
+      213: 75294305888391607
+    second: Fey-mit-Stab_RS_64
+  - first:
+      213: -1594639737468327492
+    second: Fey-mit-Stab_RS_65
+  - first:
+      213: 3470187775500126851
+    second: Fey-mit-Stab_RS_66
+  - first:
+      213: -3815997472233014823
+    second: Fey-mit-Stab_RS_67
+  - first:
+      213: -8009746573642499191
+    second: Fey-mit-Stab_RS_68
+  - first:
+      213: -7849497821574013484
+    second: Fey-mit-Stab_RS_69
+  - first:
+      213: -5298269801883827385
+    second: Fey-mit-Stab_RS_70
+  - first:
+      213: 2246472732419710105
+    second: Fey-mit-Stab_RS_71
+  - first:
+      213: -5217323612892433868
+    second: Fey-mit-Stab_RS_72
+  - first:
+      213: -3946223910701938767
+    second: Fey-mit-Stab_RS_73
+  - first:
+      213: -8879608379846586234
+    second: Fey-mit-Stab_RS_74
+  - first:
+      213: -4607339214765093030
+    second: Fey-mit-Stab_RS_75
+  - first:
+      213: 4062421442439025549
+    second: Fey-mit-Stab_RS_76
+  - first:
+      213: 5503597284455420440
+    second: Fey-mit-Stab_RS_77
+  - first:
+      213: 8776007509056784942
+    second: Fey-mit-Stab_RS_78
+  - first:
+      213: 4748883285222404456
+    second: Fey-mit-Stab_RS_79
+  - first:
+      213: -6976752807497169004
+    second: Fey-mit-Stab_RS_80
+  - first:
+      213: 3263240799948720956
+    second: Fey-mit-Stab_RS_81
+  - first:
+      213: 2609445286020980276
+    second: Fey-mit-Stab_RS_82
+  - first:
+      213: 957925250107790275
+    second: Fey-mit-Stab_RS_83
+  - first:
+      213: 8603078924592203796
+    second: Fey-mit-Stab_RS_84
+  - first:
+      213: 6157516844905193998
+    second: Fey-mit-Stab_RS_85
+  - first:
+      213: -2439138816046932350
+    second: Fey-mit-Stab_RS_86
+  - first:
+      213: 9079719665845507032
+    second: Fey-mit-Stab_RS_87
+  - first:
+      213: -3689460141092149471
+    second: Fey-mit-Stab_RS_88
+  - first:
+      213: 9170600292697471513
+    second: Fey-mit-Stab_RS_89
+  - first:
+      213: 2575439221176729909
+    second: Fey-mit-Stab_RS_90
+  - first:
+      213: 9152157422543263143
+    second: Fey-mit-Stab_RS_91
+  - first:
+      213: -2187146077231313785
+    second: Fey-mit-Stab_RS_92
+  - first:
+      213: 8162005183830154411
+    second: Fey-mit-Stab_RS_93
+  - first:
+      213: 5022412044783860831
+    second: Fey-mit-Stab_RS_94
+  - first:
+      213: 102976236232041821
+    second: Fey-mit-Stab_RS_95
+  - first:
+      213: 3503957643351504544
+    second: Fey-mit-Stab_RS_96
+  - first:
+      213: -3949875256923459356
+    second: Fey-mit-Stab_RS_97
+  - first:
+      213: 7649896673278336749
+    second: Fey-mit-Stab_RS_98
+  - first:
+      213: 3734351419916354512
+    second: Fey-mit-Stab_RS_99
+  - first:
+      213: -2066834106304273926
+    second: Fey-mit-Stab_RS_100
+  - first:
+      213: 7208232274796715160
+    second: Fey-mit-Stab_RS_101
+  - first:
+      213: 5735257448326579979
+    second: Fey-mit-Stab_RS_102
+  - first:
+      213: -1291210987716789190
+    second: Fey-mit-Stab_RS_103
+  - first:
+      213: 3613938390201425277
+    second: Fey-mit-Stab_RS_104
+  - first:
+      213: -7831326115214066419
+    second: Fey-mit-Stab_RS_105
+  - first:
+      213: -318754614038824385
+    second: Fey-mit-Stab_RS_106
+  - first:
+      213: -439356956263375102
+    second: Fey-mit-Stab_RS_107
+  - first:
+      213: -2893968676918507029
+    second: Fey-mit-Stab_RS_108
+  - first:
+      213: 115988697446307479
+    second: Fey-mit-Stab_RS_109
+  - first:
+      213: -6551446031681187724
+    second: Fey-mit-Stab_RS_110
+  - first:
+      213: -8163062895255929454
+    second: Fey-mit-Stab_RS_111
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_0
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 2674
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f379fd1c0fa722820800000000000000
+      internalID: 2892009085188675391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2060
+        width: 587
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a6d8b28295934c0800000000000000
+      internalID: -4307313539538916737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_2
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 2060
+        width: 592
+        height: 596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe47992477035b10800000000000000
+      internalID: 1968925657586421494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_3
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 2533
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f68b1568e6524f00800000000000000
+      internalID: 1099536815160526581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_4
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 2061
+        width: 571
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7ddd517b4264c00800000000000000
+      internalID: 884434745589356497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_5
+      rect:
+        serializedVersion: 2
+        x: 2013
+        y: 2415
+        width: 10
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f79e07f4fea53e70800000000000000
+      internalID: 9094367389684766710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_6
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 2327
+        width: 19
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4571f6157b841f080800000000000000
+      internalID: -9155456615285057708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_7
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 2253
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d4d947a30413970800000000000000
+      internalID: 8732831772256849279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_8
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 2231
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a6c22f9b8340290800000000000000
+      internalID: -7925147072982128035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_9
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 2224
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfea262cabd61e9e0800000000000000
+      internalID: -1593872144219853061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_10
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 2049
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6968e5aca8e7f5c0800000000000000
+      internalID: -4181617900774725266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_11
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 2035
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499d583b442604c70800000000000000
+      internalID: 8953264106421737876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_12
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 2028
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8216b5d49220770800000000000000
+      internalID: 8575462052689160413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_13
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 2011
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a89cecf1d627340800000000000000
+      internalID: 4860066931266914968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_14
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 2015
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7da674291871b30800000000000000
+      internalID: 4258014437965486009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_15
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 2027
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d581ea427a6b2480800000000000000
+      internalID: -8922921197589396015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_16
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 2011
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29a5d5da00381060800000000000000
+      internalID: 6924337250177493293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_17
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 1379
+        width: 720
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4095cb702ad573160800000000000000
+      internalID: 7005170695893965060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_18
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1383
+        width: 721
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1168b3e885fdfce10800000000000000
+      internalID: 2220238712753325585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_19
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1980
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1e0c3fd8545d800800000000000000
+      internalID: 636491398325002703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_20
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 1377
+        width: 720
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d6a842d109fe220800000000000000
+      internalID: 2517389171564899734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_21
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 1378
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc83fb09356e8f720800000000000000
+      internalID: 2880305208288557260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_22
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 1376
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab36fdca2c9b2e6a0800000000000000
+      internalID: -6421365872901790790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_23
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 1383
+        width: 20
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeea8deda80b3c60800000000000000
+      internalID: 7798836722829815462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_24
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1379
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b286569bc6c40fb50800000000000000
+      internalID: 6624879081712609323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_25
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1368
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd6cb43f1ca90880800000000000000
+      internalID: -8644188759732228657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_26
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1371
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d4cebf1c7285870800000000000000
+      internalID: 8671724796610628879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_27
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1372
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b243a52bf89fd650800000000000000
+      internalID: 6259890211503948470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_28
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 1337
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727c0d63b312ae920800000000000000
+      internalID: 3020263038311778087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_29
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1329
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e9e596102e76c60800000000000000
+      internalID: 7811460574388067894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_30
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1329
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fd15bdf397d5570800000000000000
+      internalID: 8457048990441135978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_31
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1326
+        width: 36
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce8f5154c0895840800000000000000
+      internalID: 5213339624325222085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_32
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1319
+        width: 38
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cd337bf6567fe80800000000000000
+      internalID: -8144929870586848256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_33
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1319
+        width: 37
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a222ab2d99d88990800000000000000
+      internalID: -7383412320008789340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_34
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 688
+        width: 589
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c5fc7e4b26f7570800000000000000
+      internalID: 8466594353602583685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_35
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1307
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4aa4d3007b1b9180800000000000000
+      internalID: -9107655653512140209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_36
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1228
+        width: 111
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fa1e34e0eb63a50800000000000000
+      internalID: 6500592080633573274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_37
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 688
+        width: 602
+        height: 628
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2298b47119c18a740800000000000000
+      internalID: 5163408382266935586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_38
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 692
+        width: 601
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5e0054c321dc7e0800000000000000
+      internalID: -1743717430657489410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_39
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1294
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a4a9b4766d05ec0800000000000000
+      internalID: -3580125964621165942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_40
+      rect:
+        serializedVersion: 2
+        x: 2186
+        y: 1201
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811862529eb824740800000000000000
+      internalID: 5134820358622707992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_41
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 1188
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fda2e137329a230800000000000000
+      internalID: 3650487950294834945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_42
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1146
+        width: 12
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3caa8864a9247b1f0800000000000000
+      internalID: -1029280759455110461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_43
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1130
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68160ef95a3620680800000000000000
+      internalID: -8790353959670750842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_44
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1137
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781ebd45bf1c3b9f0800000000000000
+      internalID: -453805852229639801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_45
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 1154
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72604ca12117f8540800000000000000
+      internalID: 5012349232859055655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_46
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 1129
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19daead11815495e0800000000000000
+      internalID: -1903807127480259183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_47
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1129
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4598bd8301f5f0bf0800000000000000
+      internalID: -355961322260952748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_48
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 1136
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cea31df8667e250800000000000000
+      internalID: 5973856198606908451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_49
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1117
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6f077eda5436940800000000000000
+      internalID: 5288147000677693125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_50
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 1113
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fad32acdf02e50b0800000000000000
+      internalID: -5738112600833271055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_51
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1105
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e175ffd3b439c4bf0800000000000000
+      internalID: -338733920587655394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_52
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1113
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2b302a6916aef50800000000000000
+      internalID: 6911443877744587467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_53
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1105
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e797276973c7bd5c0800000000000000
+      internalID: -4189618450148984450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_54
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 1121
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e36e203bf13f240800000000000000
+      internalID: 4824234479552183810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_55
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 1114
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92bffdf964e528b0800000000000000
+      internalID: -5177481052708425062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_56
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 1098
+        width: 5
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f061567a532e86f30800000000000000
+      internalID: 4569150542036932111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_57
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 1076
+        width: 8
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ccffdbb1412596e0800000000000000
+      internalID: -1831521107247629116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_58
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1080
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b2346b4eaaf6150800000000000000
+      internalID: 5868096738774166430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_59
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1095
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c030ff95f88cc00800000000000000
+      internalID: 921143740490517509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_60
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1076
+        width: 5
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430f168da619aa660800000000000000
+      internalID: 7397885225992319028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_61
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1066
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7f610dbbb74a4f0800000000000000
+      internalID: -818393185694320646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_62
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 1014
+        width: 9
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2ee3fbfcdc339f0800000000000000
+      internalID: -489821642302758175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_63
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 912
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5ae174c4e198510800000000000000
+      internalID: 1551804859565385197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_64
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 921
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b15614b5cf7b0100800000000000000
+      internalID: 75294305888391607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_65
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 909
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb96a778b93bed9e0800000000000000
+      internalID: -1594639737468327492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_66
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 905
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a869e5565982030800000000000000
+      internalID: 3470187775500126851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_67
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 886
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d933cb548ada0bc0800000000000000
+      internalID: -3815997472233014823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_68
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 862
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bf221cde9a7d090800000000000000
+      internalID: -8009746573642499191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_69
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 772
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddd0e7d15bf01390800000000000000
+      internalID: -7849497821574013484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_70
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 754
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7430986cfa3c876b0800000000000000
+      internalID: -5298269801883827385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_71
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 729
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c5a7d3c031d2f10800000000000000
+      internalID: 2246472732419710105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_72
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 700
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432f94f01d75897b0800000000000000
+      internalID: -5217323612892433868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_73
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 692
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7457ed2423c39c0800000000000000
+      internalID: -3946223910701938767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_74
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 688
+        width: 15
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68099a6893b45c480800000000000000
+      internalID: -8879608379846586234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_75
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 688
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f033815617f00c0800000000000000
+      internalID: -4607339214765093030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_76
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 680
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83128c37ce906830800000000000000
+      internalID: 4062421442439025549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_77
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 673
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81215c62294b06c40800000000000000
+      internalID: 5503597284455420440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_78
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 680
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a8d7b0554aac970800000000000000
+      internalID: 8776007509056784942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_79
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 673
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861b87fef2c67e140800000000000000
+      internalID: 4748883285222404456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_80
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 677
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4970c6739489d2f90800000000000000
+      internalID: -6976752807497169004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_81
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 669
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b4189d73c594d20800000000000000
+      internalID: 3263240799948720956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_82
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 669
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e191689ac963420800000000000000
+      internalID: 2609445286020980276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_83
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 648
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c35d0e80fb3b4d00800000000000000
+      internalID: 957925250107790275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_84
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 647
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418c7fa63b6446770800000000000000
+      internalID: 8603078924592203796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_85
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 660
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02ee0f42f4e37550800000000000000
+      internalID: 6157516844905193998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_86
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 650
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ed7af7b20762ed0800000000000000
+      internalID: -2439138816046932350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_87
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 652
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d399defde4a10e70800000000000000
+      internalID: 9079719665845507032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_88
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 651
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1276d3d9c876cccc0800000000000000
+      internalID: -3689460141092149471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_89
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 639
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a7357d064844f70800000000000000
+      internalID: 9170600292697471513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_90
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 648
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53109de835ccdb320800000000000000
+      internalID: 2575439221176729909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_91
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 26
+        width: 634
+        height: 618
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a555238faef20f70800000000000000
+      internalID: 9152157422543263143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_92
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 11
+        width: 650
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c0db21b32b5a1e0800000000000000
+      internalID: -2187146077231313785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_93
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 640
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacd7157874454170800000000000000
+      internalID: 8162005183830154411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_94
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 11
+        width: 613
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c3cf4152133b540800000000000000
+      internalID: 5022412044783860831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_95
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 636
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55eaec5758dd6100800000000000000
+      internalID: 102976236232041821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_96
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 623
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a63bff69ee80a030800000000000000
+      internalID: 3503957643351504544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_97
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 629
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0f8f391693f29c0800000000000000
+      internalID: -3949875256923459356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_98
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 554
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee92335e74e92a60800000000000000
+      internalID: 7649896673278336749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_99
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 545
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3079ab4d413d330800000000000000
+      internalID: 3734351419916354512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_100
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 527
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af16214b4512153e0800000000000000
+      internalID: -2066834106304273926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_101
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 547
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c93c52019c80460800000000000000
+      internalID: 7208232274796715160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_102
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 537
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b074be6334ab79f40800000000000000
+      internalID: 5735257448326579979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_103
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 520
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c3f03a272b41ee0800000000000000
+      internalID: -1291210987716789190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_104
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 501
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d5a1481d9472230800000000000000
+      internalID: 3613938390201425277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_105
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 484
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0dfc6ee36a815390800000000000000
+      internalID: -7831326115214066419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_106
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 461
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3af2bb0e5e839bf0800000000000000
+      internalID: -318754614038824385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_107
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 413
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f13541d2717e9f0800000000000000
+      internalID: -439356956263375102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_108
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 106
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be94a2d32de86d7d0800000000000000
+      internalID: -2893968676918507029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_109
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 21
+        width: 18
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7965f351b131c9100800000000000000
+      internalID: 115988697446307479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_110
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 21
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47010849b869415a0800000000000000
+      internalID: -6551446031681187724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fey-mit-Stab_RS_111
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 9
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d3919eb89f6be80800000000000000
+      internalID: -8163062895255929454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
