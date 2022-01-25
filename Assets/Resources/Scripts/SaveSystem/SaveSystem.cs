@@ -66,4 +66,59 @@ public static class SaveSystem
             return null;
         }
     }
+
+    public static void SavePlayerItems(Item[] items)
+    {
+        int itemCount = items.Length;
+
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/itemCount.b";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        formatter.Serialize(stream, itemCount);
+        stream.Close();
+
+        for (int i = 0; i < itemCount; i++)
+        {
+            BinaryFormatter itemFormatter = new BinaryFormatter();
+            string itemPath = Application.persistentDataPath + "/item" + i.ToString() + ".b";
+            FileStream itemStream = new FileStream(path, FileMode.Create);
+
+            formatter.Serialize(stream, new ItemData(items[i]));
+            stream.Close();
+        }
+    }
+
+    public static List<ItemData> LoadPlayerItems()
+    {
+        string path = Application.persistentDataPath + "/itemCount.b";
+        if (File.Exists(path))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            int data = (int)formatter.Deserialize(stream);
+            stream.Close();
+
+            int itemCount = data;
+            List<ItemData> items = new List<ItemData>();
+            if (itemCount != 0)
+            {
+                for (int i = 0; i < itemCount; i++)
+                {
+                    BinaryFormatter itemFormatter = new BinaryFormatter();
+                    string itemPath = Application.persistentDataPath + "/item" + i.ToString() + ".b";
+                    FileStream itemStream = new FileStream(itemPath, FileMode.Open);
+                    ItemData itemData = itemFormatter.Deserialize(itemStream) as ItemData;
+                    items.Add(itemData);
+                }
+            }
+            return items;
+        }
+        else
+        {
+            Debug.LogError("Items save file doesn't exists!");
+            return null;
+        }
+    }
 }

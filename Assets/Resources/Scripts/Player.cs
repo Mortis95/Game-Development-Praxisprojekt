@@ -6,15 +6,6 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
 
-    /*
-     * important information to save:
-     * 
-     * inventory
-     * skillpoints
-     * map
-     * story
-     */
-
 
 
 

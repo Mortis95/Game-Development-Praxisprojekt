@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 
 
-public abstract class Item : ScriptableObject{
+public class Item : ScriptableObject{
     public ItemType itemType;
     public Sprite itemSprite;
     public string itemName;
