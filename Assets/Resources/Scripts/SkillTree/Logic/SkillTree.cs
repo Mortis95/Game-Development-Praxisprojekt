@@ -92,6 +92,9 @@ public class SkillTree : MonoBehaviour{
     //Since the Unity-Inspector can sometimes mess up when creating many data objects, it is preferable to create all Nodes from Code instead. 
     //Here no progress gets lost in this admittedly tedious task.
     void Start(){
+        //Grab Player
+        pl = Player.getInstance();
+
         //Set up empty array
         skillTreeNodes = new SkillTreeNode[skillTreeCount];
 
