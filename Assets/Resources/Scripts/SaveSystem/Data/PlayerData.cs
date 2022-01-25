@@ -20,17 +20,17 @@ public class PlayerData
 
     public PlayerData(Player player)
     {
-        exp = player.exp;
-        level = player.level;
+        exp = player.experiencePoints;
+        level = player.currentLevel;
         currentHealthPoints = player.currentHealthPoints;
         maxHealthPoints = player.maxHealthPoints;
         currentHealthPoints = player.currentHealthPoints;
         maxMagicPoints = player.maxMagicPoints;
-        attack = player.attack;
-        defense = player.defense;
-        strength = player.strength;
-        dexterity = player.dexterity;
-        intelligence = player.intelligence;
+        attack = player.getAttack();
+        defense = player.getDefense();
+        strength = player.getStrength();
+        dexterity = player.getDexterity();
+        intelligence = player.getIntelligence();
 
         position = new float[]{ player.transform.position.x, player.transform.position.y, player.transform.position.x, player.transform.position.z };
 
