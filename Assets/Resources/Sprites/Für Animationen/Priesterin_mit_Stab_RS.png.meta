@@ -1,0 +1,525 @@
+fileFormatVersion: 2
+guid: 71d871221f5a8d342b5ec6d50818e591
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 192601155169414575
+    second: Priesterin_mit_Stab_RS_0
+  - first:
+      213: -1893413201174958051
+    second: Priesterin_mit_Stab_RS_1
+  - first:
+      213: -4063405317448622799
+    second: Priesterin_mit_Stab_RS_3
+  - first:
+      213: -8400566698832371983
+    second: Priesterin_mit_Stab_RS_12
+  - first:
+      213: -6453646704873382450
+    second: Priesterin_mit_Stab_RS_13
+  - first:
+      213: -8973372772174150044
+    second: Priesterin_mit_Stab_RS_15
+  - first:
+      213: 8437946877667179844
+    second: Priesterin_mit_Stab_RS_17
+  - first:
+      213: 1640280799861636
+    second: Priesterin_mit_Stab_RS_18
+  - first:
+      213: -4377108194763096822
+    second: Priesterin_mit_Stab_RS_19
+  - first:
+      213: 562394123658252174
+    second: Priesterin_mit_Stab_RS_20
+  - first:
+      213: 3774986931945564638
+    second: Priesterin_mit_Stab_RS_21
+  - first:
+      213: -6304929816942800628
+    second: Priesterin_mit_Stab_RS_22
+  - first:
+      213: -6273211495569412269
+    second: Priesterin_mit_Stab_RS_23
+  - first:
+      213: 1262470025648351480
+    second: Priesterin_mit_Stab_RS_24
+  - first:
+      213: -5056628705533727547
+    second: Priesterin_mit_Stab_RS_25
+  - first:
+      213: 5596768304440344639
+    second: Priesterin_mit_Stab_RS_26
+  - first:
+      213: 4959719641509507824
+    second: Priesterin_mit_Stab_RS_27
+  - first:
+      213: -2488570721017882908
+    second: Priesterin_mit_Stab_RS_29
+  - first:
+      213: -7762659729825779941
+    second: Priesterin_mit_Stab_RS_31
+  - first:
+      213: 4189585291383586548
+    second: Priesterin_mit_Stab_RS_32
+  - first:
+      213: -1587807954524280568
+    second: Priesterin_mit_Stab_RS_36
+  - first:
+      213: 444362352874763957
+    second: Priesterin_mit_Stab_RS_37
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_0
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 2528
+        width: 414
+        height: 725
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fade33deab14ca200800000000000000
+      internalID: 192601155169414575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_1
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 2514
+        width: 449
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d107eeaa9be39b5e0800000000000000
+      internalID: -1893413201174958051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_3
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 2496
+        width: 452
+        height: 772
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d9a038462eb97c0800000000000000
+      internalID: -4063405317448622799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_12
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1680
+        width: 603
+        height: 828
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fede1478113b6b80800000000000000
+      internalID: -8400566698832371983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_13
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 2491
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdd62ac38a0076a0800000000000000
+      internalID: -6453646704873382450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_15
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1675
+        width: 628
+        height: 817
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466c565b10d287380800000000000000
+      internalID: -8973372772174150044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_17
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 1714
+        width: 624
+        height: 780
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44df7f4aafb991570800000000000000
+      internalID: 8437946877667179844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_18
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 917
+        width: 510
+        height: 788
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b5862a3d3d50000800000000000000
+      internalID: 1640280799861636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_20
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 839
+        width: 519
+        height: 781
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fca6cc9760ec700800000000000000
+      internalID: 562394123658252174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_21
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 920
+        width: 525
+        height: 743
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed96b562d92736430800000000000000
+      internalID: 3774986931945564638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_22
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 1432
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c011b578cb36088a0800000000000000
+      internalID: -6304929816942800628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_23
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 1423
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f20b5b16311f8a0800000000000000
+      internalID: -6273211495569412269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_29
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 46
+        width: 683
+        height: 761
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e69a4f3d12d67dd0800000000000000
+      internalID: -2488570721017882908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_31
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 117
+        width: 642
+        height: 773
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f2183aa1e754490800000000000000
+      internalID: -7762659729825779941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Priesterin_mit_Stab_RS_32
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 0
+        width: 607
+        height: 862
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4febe1900a5642a30800000000000000
+      internalID: 4189585291383586548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
