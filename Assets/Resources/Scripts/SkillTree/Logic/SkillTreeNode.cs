@@ -77,7 +77,7 @@ public class SkillTreeNode {
     public void levelNode(){
         currentLevel++;
         Debug.Log("Node: " + name + " is now Level: " + currentLevel);
-        SkillTree.getInstance().addPermanentPlayerStats(bonusAttack,bonusDefense,bonusStrength,bonusDexterity,bonusIntelligence);
+        SkillTree.getInstance().addPlayerStats(bonusAttack,bonusDefense,bonusStrength,bonusDexterity,bonusIntelligence);
         if(funcToExecute != null){funcToExecute.Invoke();}
     }
 
@@ -89,5 +89,25 @@ public class SkillTreeNode {
         if(bonusDexterity    != 0){stats += "DEX : " + bonusDexterity + "\r\n";}
         if(bonusIntelligence != 0){stats += "INT : " + bonusIntelligence;}
         return stats;
+    }
+
+    public int getCurrentBonusAttack(){
+        return currentLevel * bonusAttack;
+    } 
+
+    public int getCurrentBonusDefense(){
+        return currentLevel * bonusDefense;
+    }
+
+    public int getCurrentBonusStrength(){
+        return currentLevel * bonusStrength;
+    }
+
+    public int getCurrentBonusDexterity(){
+        return currentLevel * bonusDexterity;
+    }
+
+    public int getCurrentBonusIntelligence(){
+        return currentLevel * bonusIntelligence;
     }
 }

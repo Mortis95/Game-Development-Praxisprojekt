@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: bb0bf4e7c1391d146b78e0d541b81f8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1809325460488951695
+    second: Itemshop-Besitzerin_RS_0
+  - first:
+      213: 3135375941037504998
+    second: Itemshop-Besitzerin_RS_1
+  - first:
+      213: -7689500088433409482
+    second: Itemshop-Besitzerin_RS_3
+  - first:
+      213: 2969552879166409783
+    second: Itemshop-Besitzerin_RS_4
+  - first:
+      213: 6726499895486372858
+    second: Itemshop-Besitzerin_RS_6
+  - first:
+      213: 2880204106484522015
+    second: Itemshop-Besitzerin_RS_7
+  - first:
+      213: -3607578490807593922
+    second: Itemshop-Besitzerin_RS_8
+  - first:
+      213: 7159777264406937104
+    second: Itemshop-Besitzerin_RS_9
+  - first:
+      213: -2946228614573489098
+    second: Itemshop-Besitzerin_RS_12
+  - first:
+      213: -4150258248958651277
+    second: Itemshop-Besitzerin_RS_13
+  - first:
+      213: -8856071067601183983
+    second: Itemshop-Besitzerin_RS_14
+  - first:
+      213: 3281893471851841640
+    second: Itemshop-Besitzerin_RS_17
+  - first:
+      213: -5581357301050791031
+    second: Itemshop-Besitzerin_RS_18
+  - first:
+      213: 804609947643267238
+    second: Itemshop-Besitzerin_RS_20
+  - first:
+      213: 5203860794426787245
+    second: Itemshop-Besitzerin_RS_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_0
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 2723
+        width: 452
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87938b8be30c1910800000000000000
+      internalID: 1809325460488951695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_1
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 2721
+        width: 453
+        height: 749
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9b8d27ec7138b20800000000000000
+      internalID: 3135375941037504998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_3
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 2723
+        width: 452
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63287980968694590800000000000000
+      internalID: -7689500088433409482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1834
+        width: 580
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cc3783c98f53920800000000000000
+      internalID: 2969552879166409783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_6
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1841
+        width: 582
+        height: 798
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbda243404595d50800000000000000
+      internalID: 6726499895486372858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_7
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 2294
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c91a7ff5a88f720800000000000000
+      internalID: 2880204106484522015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_8
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 1834
+        width: 580
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34d214f97e4fedc0800000000000000
+      internalID: -3607578490807593922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_9
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 2296
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01eb4e3ec73ac5360800000000000000
+      internalID: 7159777264406937104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 947
+        width: 575
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63481415fa4ec17d0800000000000000
+      internalID: -2946228614573489098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_13
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 946
+        width: 452
+        height: 749
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3745fa09c125766c0800000000000000
+      internalID: -4150258248958651277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_14
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 949
+        width: 646
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b5406194ae81580800000000000000
+      internalID: -8856071067601183983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_17
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 65
+        width: 575
+        height: 821
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868076479b0ab8d20800000000000000
+      internalID: 3281893471851841640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_18
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 70
+        width: 583
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ba5522b190b82b0800000000000000
+      internalID: -5581357301050791031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_20
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 67
+        width: 594
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8c5000c7c8a2b00800000000000000
+      internalID: 804609947643267238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Itemshop-Besitzerin_RS_28
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 54
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5046042d3d73840800000000000000
+      internalID: 5203860794426787245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

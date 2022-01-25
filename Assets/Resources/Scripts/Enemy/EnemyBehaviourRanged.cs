@@ -27,6 +27,8 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
     public float attackRange;
     [Tooltip("The speed of the shot that is shot at the player")]
     public float shotSpeed;
+    [Tooltip("The Sprite the projectile will use.")]
+    public Sprite projectileSprite;
 
     //Protected Variables we should get and calculate ourselves
     private Vector2 movement;
@@ -72,6 +74,7 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
         rb = gameObject.GetComponent<Rigidbody2D>();
         target = Player.getInstance().GetComponent<Rigidbody2D>();
         startPos = rb.position;
+        lastMovement = Vector2.up;
         anglesToCheck = new float[] {10f, -10f, 20f, -20f, 30f, -30.0f};    //Static angles, because a high ViewDetectionAngle might break the Raycast otherwise
     }
 
@@ -123,7 +126,7 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
 
     void attackWithRangedAttack(){
         EnemyRangedAttackController erac = rangedAttackPrefab.GetComponent<EnemyRangedAttackController>();
-        erac.setParameters((target.position - rb.position).normalized, shotSpeed, 5f, enemyManager.enemyAttack);
+        erac.setParameters(projectileSprite, (target.position - rb.position).normalized, shotSpeed, 5f, enemyManager.enemyAttack);
         Instantiate(rangedAttackPrefab, transform.position, transform.rotation);
     }
 

@@ -1,0 +1,1056 @@
+fileFormatVersion: 2
+guid: f30f5360bd0f5a248b4e059b8e59080e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7490496435538708888
+    second: Generischer-NPC_RS_0
+  - first:
+      213: -378986399433367145
+    second: Generischer-NPC_RS_3
+  - first:
+      213: 4733932316623883026
+    second: Generischer-NPC_RS_4
+  - first:
+      213: 5036072589441467869
+    second: Generischer-NPC_RS_5
+  - first:
+      213: 3072918351218026631
+    second: Generischer-NPC_RS_6
+  - first:
+      213: -4948566704271539825
+    second: Generischer-NPC_RS_7
+  - first:
+      213: 5907774088072337815
+    second: Generischer-NPC_RS_8
+  - first:
+      213: -4891405407447787580
+    second: Generischer-NPC_RS_9
+  - first:
+      213: -8674578338311082375
+    second: Generischer-NPC_RS_10
+  - first:
+      213: -2654791915833923932
+    second: Generischer-NPC_RS_11
+  - first:
+      213: 3464220777898524810
+    second: Generischer-NPC_RS_12
+  - first:
+      213: -6938886059480995367
+    second: Generischer-NPC_RS_13
+  - first:
+      213: 4901159086684742484
+    second: Generischer-NPC_RS_14
+  - first:
+      213: 2843357883621427367
+    second: Generischer-NPC_RS_15
+  - first:
+      213: -5622488170482689860
+    second: Generischer-NPC_RS_16
+  - first:
+      213: -1194474502665509251
+    second: Generischer-NPC_RS_17
+  - first:
+      213: -2576895068867539728
+    second: Generischer-NPC_RS_22
+  - first:
+      213: -3923366759372791910
+    second: Generischer-NPC_RS_24
+  - first:
+      213: -6247552304640957006
+    second: Generischer-NPC_RS_26
+  - first:
+      213: -391043116432860006
+    second: Generischer-NPC_RS_29
+  - first:
+      213: -6791864082175093515
+    second: Generischer-NPC_RS_34
+  - first:
+      213: -2026530577883336597
+    second: Generischer-NPC_RS_37
+  - first:
+      213: -6887970345984299470
+    second: Generischer-NPC_RS_39
+  - first:
+      213: -980399123625466164
+    second: Generischer-NPC_RS_40
+  - first:
+      213: 861690765375160146
+    second: Generischer-NPC_RS_42
+  - first:
+      213: 3668205179440550266
+    second: Generischer-NPC_RS_45
+  - first:
+      213: 6201234018577308488
+    second: Generischer-NPC_RS_86
+  - first:
+      213: 6978031091959132793
+    second: Generischer-NPC_RS_88
+  - first:
+      213: -5036344158353321948
+    second: Generischer-NPC_RS_90
+  - first:
+      213: -3651525453880074131
+    second: Generischer-NPC_RS_95
+  - first:
+      213: -9050031680915014234
+    second: Generischer-NPC_RS_97
+  - first:
+      213: -7620118292872115378
+    second: Generischer-NPC_RS_113
+  - first:
+      213: 7133140408064830127
+    second: Generischer-NPC_RS_115
+  - first:
+      213: -7986473049630141269
+    second: Generischer-NPC_RS_117
+  - first:
+      213: 6419600227223110673
+    second: Generischer-NPC_RS_129
+  - first:
+      213: 8765880879047044984
+    second: Generischer-NPC_RS_130
+  - first:
+      213: -6063524269216591894
+    second: Generischer-NPC_RS_137
+  - first:
+      213: -5449239571122855917
+    second: Generischer-NPC_RS_152
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_0
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 4591
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8994d9f52d693f760800000000000000
+      internalID: 7490496435538708888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_3
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 4553
+        width: 73
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791e11fa0e19dbaf0800000000000000
+      internalID: -378986399433367145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_4
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 4589
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bcb1b4c5e42b140800000000000000
+      internalID: 4733932316623883026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_5
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 3795
+        width: 479
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd58dbc7659b3e540800000000000000
+      internalID: 5036072589441467869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_6
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 4537
+        width: 77
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788212c95f235aa20800000000000000
+      internalID: 3072918351218026631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_7
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 3800
+        width: 480
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f81c1941dc8235bb0800000000000000
+      internalID: -4948566704271539825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_8
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 3807
+        width: 480
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7991fcc7b31acf150800000000000000
+      internalID: 5907774088072337815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_9
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 4473
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c756ac92bc3e1cb0800000000000000
+      internalID: -4891405407447787580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_10
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 4478
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e6ba016f4bd9780800000000000000
+      internalID: -8674578338311082375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_11
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 4485
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6e32871d8482bd0800000000000000
+      internalID: -2654791915833923932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_12
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 4373
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a804b2a7172631030800000000000000
+      internalID: 3464220777898524810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_13
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4380
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9a9b784ef14bf90800000000000000
+      internalID: -6938886059480995367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_14
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 4387
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453a58dc83a640440800000000000000
+      internalID: 4901159086684742484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_15
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 4282
+        width: 7
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8cf8e2ee2a57720800000000000000
+      internalID: 2843357883621427367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_16
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 4289
+        width: 4
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb81b845cc8e8f1b0800000000000000
+      internalID: -5622488170482689860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_17
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 4296
+        width: 4
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d766c57b4cf5c6fe0800000000000000
+      internalID: -1194474502665509251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_22
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 3766
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcc1bc76970d3cd0800000000000000
+      internalID: -2576895068867539728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_24
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 3745
+        width: 36
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f520028b66d89c0800000000000000
+      internalID: -3923366759372791910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_26
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 2916
+        width: 523
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5e336a74c3c49a0800000000000000
+      internalID: -6247552304640957006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_29
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 2922
+        width: 558
+        height: 783
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c58218b5cb29af0800000000000000
+      internalID: -391043116432860006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_34
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 3684
+        width: 49
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f418332a937eb1a0800000000000000
+      internalID: -6791864082175093515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_37
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 2893
+        width: 531
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60fbca2d2150e3e0800000000000000
+      internalID: -2026530577883336597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_39
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 3384
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e6e20e6730960a0800000000000000
+      internalID: -6887970345984299470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_40
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 3384
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc62332013ce462f0800000000000000
+      internalID: -980399123625466164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_42
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 3290
+        width: 4
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fbb688f2755fb00800000000000000
+      internalID: 861690765375160146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_45
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 3281
+        width: 4
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a715dcbfc2518e230800000000000000
+      internalID: 3668205179440550266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_86
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 2024
+        width: 480
+        height: 780
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b5e5efb753f0650800000000000000
+      internalID: 6201234018577308488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_88
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 2027
+        width: 481
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972fad39e42f6d060800000000000000
+      internalID: 6978031091959132793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_90
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 2032
+        width: 479
+        height: 775
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4209cb2fbaf4b1ab0800000000000000
+      internalID: -5036344158353321948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_95
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 2511
+        width: 6
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d606e2142fc235dc0800000000000000
+      internalID: -3651525453880074131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_97
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 2520
+        width: 5
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad7705a224d76280800000000000000
+      internalID: -9050031680915014234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_113
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1150
+        width: 512
+        height: 780
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bc6e629c6ef3690800000000000000
+      internalID: -7620118292872115378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_115
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1150
+        width: 534
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa60bb78610ef260800000000000000
+      internalID: 7133140408064830127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_117
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 1145
+        width: 513
+        height: 772
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4909453195a2190800000000000000
+      internalID: -7986473049630141269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_129
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 160
+        width: 525
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11486a7e460071950800000000000000
+      internalID: 6419600227223110673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_130
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 100
+        width: 553
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fecf2473aa6a970800000000000000
+      internalID: 8765880879047044984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_137
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 110
+        width: 637
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef82669dc80adba0800000000000000
+      internalID: -6063524269216591894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Generischer-NPC_RS_152
+      rect:
+        serializedVersion: 2
+        x: 2487
+        y: 467
+        width: 13
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310683b3b796064b0800000000000000
+      internalID: -5449239571122855917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

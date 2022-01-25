@@ -92,6 +92,9 @@ public class SkillTree : MonoBehaviour{
     //Since the Unity-Inspector can sometimes mess up when creating many data objects, it is preferable to create all Nodes from Code instead. 
     //Here no progress gets lost in this admittedly tedious task.
     void Start(){
+        //Grab Player
+        pl = Player.getInstance();
+
         //Set up empty array
         skillTreeNodes = new SkillTreeNode[skillTreeCount];
 
@@ -163,11 +166,24 @@ public class SkillTree : MonoBehaviour{
     }
     #endregion
     private void initializeBonusStats(){
-        bonusAttack = 0;
-        bonusDefense = 0;
-        bonusStrength = 0;
-        bonusDexterity = 0;
+        bonusAttack       = 0;
+        bonusDefense      = 0;
+        bonusStrength     = 0;
+        bonusDexterity    = 0;
         bonusIntelligence = 0;
+    }
+
+    private void recalculateBonusStats(){
+        initializeBonusStats();
+
+        foreach (SkillTreeNode node in skillTreeNodes){
+            bonusAttack       += node.getCurrentBonusAttack();
+            bonusDefense      += node.getCurrentBonusDefense();
+            bonusStrength     += node.getCurrentBonusStrength();
+            bonusDexterity    += node.getCurrentBonusDexterity();
+            bonusIntelligence += node.getCurrentBonusIntelligence();
+        }
+
     }
 
     private void countPermanentStats(int atk, int def, int str, int dex, int bruh){
@@ -240,9 +256,16 @@ public class SkillTree : MonoBehaviour{
     public SkillTreeNode[] getSkillTreeNodes(){
         return skillTreeNodes;
     }
-    public void addPermanentPlayerStats(int atk, int def, int str, int dex, int bruh){
+
+    public void setSkillTreeNodes(SkillTreeNode[] stn){
+        skillTreeNodes = stn;
+        recalculateBonusStats();
+        skillTreeChangedCallback();
+        pl.recalculateStats();
+    }
+    public void addPlayerStats(int atk, int def, int str, int dex, int bruh){
         countPermanentStats(atk,def,str,dex,bruh);
-        pl.addPermanentStats(atk,def,str,dex,bruh);
+        pl.recalculateStats();
     }
 
     public int getSpentSkillPoints(){
@@ -258,4 +281,25 @@ public class SkillTree : MonoBehaviour{
         if(bonusIntelligence != 0){stats += "INT : " + bonusIntelligence;}
         return stats;
     }
+
+    public int getBonusAttack(){
+        return bonusAttack;
+    }
+
+    public int getBonusDefense(){
+        return bonusDefense;
+    }
+
+    public int getBonusStrength(){
+        return bonusStrength;
+    }
+
+    public int getBonusDexterity(){
+        return bonusDexterity;
+    }
+
+    public int getBonusIntelligence(){
+        return bonusIntelligence;
+    }
+    
 }

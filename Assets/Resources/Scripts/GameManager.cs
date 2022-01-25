@@ -57,8 +57,11 @@ public class GameManager : MonoBehaviour
     }
 
     public void closeInventory(){
-        inventoryOpen = false;
-        unpauseGame();
+        //Check if the inventory even IS open before unpausing.
+        if(inventoryOpen){
+            inventoryOpen = false;
+            unpauseGame();
+        }
     }
 
     public bool openSkillTree(){
@@ -71,8 +74,11 @@ public class GameManager : MonoBehaviour
     }
 
     public void closeSkillTree(){
-        skillTreeOpen = false;
-        unpauseGame();
+        //Check if SkillTree even IS open before unpausing.
+        if(skillTreeOpen){
+            skillTreeOpen = false;
+            unpauseGame();
+        }
     }
 
     public bool startDialogue(){
@@ -85,8 +91,11 @@ public class GameManager : MonoBehaviour
     }
 
     public void endDialogue(){
-        dialogueActive = false;
-        unpauseGame();
+        //Check if Dialogue even IS active before closing it
+        if(dialogueActive){
+            dialogueActive = false;
+            unpauseGame();
+        }
     }
 
 }

@@ -30,17 +30,19 @@ public class EnemyRangedAttackController : MonoBehaviour{
         Destroy(gameObject, timeToLiveSeconds);
     }
 
+    void Start(){
+        transform.up = new Vector3(direction.x,direction.y,0);
+    }
+
     void FixedUpdate(){
         transform.position += (Vector3) direction * shotSpeed * Time.fixedDeltaTime;
     }
 
     void OnTriggerEnter2D(Collider2D col){
         GameObject other = col.gameObject;
+        Debug.Log("Collision with:" + col.name);
         if(other != null && other.tag == "Player"){
-            Player playerScript = other.GetComponent<Player>();
-            if(playerScript == null){
-                return; //Ignore Hits where you cannot get PlayerScript (due to hitting the layersorter...)
-                }
+            Player playerScript = Player.getInstance();
             playerScript.takeDamage(damage);
         }
         if(other != null && other.tag == "Enemy"){
