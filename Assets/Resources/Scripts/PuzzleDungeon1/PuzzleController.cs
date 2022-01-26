@@ -9,16 +9,15 @@ public class PuzzleController : MonoBehaviour
     public bool p3 = false;
     public bool p4 = false;
 
-    public GameObject trigger;
     public GameObject blockade;
+    Progress script;
 
-    public int id=0;    
-    
+    public int id;        
     void Start()
     {
-        trigger.SetActive(false);
+        var player = GameObject.FindGameObjectWithTag("Player");
+        script = player.GetComponent<Progress>();
     }
-    
     void Update()
     {
         if(id == 1)
@@ -27,11 +26,13 @@ public class PuzzleController : MonoBehaviour
             {
                 Debug.Log("Puzzlegeschafft");
                 //SzenenÜbergang instantiieren
-                trigger.SetActive(true);
+                
                 blockade.SetActive(false);
                 //Animation
-                //Sound
+                //Sound     
+                script.dungeon01Puzzle01=true;           
                 Destroy(this);
+                
 
             }
         }
@@ -41,11 +42,12 @@ public class PuzzleController : MonoBehaviour
             {
                 Debug.Log("Puzzlegeschafft");
                 //SzenenÜbergang instantiieren
-                trigger.SetActive(true);
+           
                 blockade.SetActive(false);
                 //Animation
                 //Sound
-                //truhe öffnen
+                //truhe öffnen   
+                script.dungeon01Puzzle02=true;             
                 Destroy(this);
             }
         }
@@ -54,12 +56,15 @@ public class PuzzleController : MonoBehaviour
             if(p1 & p2 & p3 & p4)
             {
                 Debug.Log("Puzzlegeschafft");
-                trigger.SetActive(true);
+               
                 blockade.SetActive(false);
                 //Animation
                 //Sound
-                //Truhe öffnen
+                //Truhe öffnen 
+                script.dungeon01Puzzle03=true;               
                 Destroy(this);
+                //ProgressScript
+                
 
             }
         }

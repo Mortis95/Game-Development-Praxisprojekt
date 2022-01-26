@@ -170,8 +170,7 @@ MonoBehaviour:
   p2: 0
   p3: 0
   p4: 0
-  trigger: {fileID: 0}
-  blockade: {fileID: 0}
+  blockade: {fileID: 415781738}
   id: 1
 --- !u!114 &29282114 stripped
 MonoBehaviour:
@@ -2428,7 +2427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381021882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.101109, y: 0.27264738, z: 0}
+  m_LocalPosition: {x: 77.2, y: 0.27264738, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 566448133}
@@ -57350,7 +57349,6 @@ MonoBehaviour:
   p2: 0
   p3: 0
   p4: 0
-  trigger: {fileID: 0}
   blockade: {fileID: 2004676836}
   id: 2
 --- !u!1001 &962009952
@@ -83898,7 +83896,6 @@ MonoBehaviour:
   p2: 0
   p3: 0
   p4: 0
-  trigger: {fileID: 0}
   blockade: {fileID: 381021882}
   id: 3
 --- !u!1 &1163252605
@@ -93397,8 +93394,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004676836}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.101109, y: 0.27264738, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 14.7, y: 29.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1855055744}
@@ -93406,7 +93403,7 @@ Transform:
   - {fileID: 2128373497}
   m_Father: {fileID: 1530456397}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &2031983315
 GameObject:
   m_ObjectHideFlags: 0
@@ -93718,9 +93715,6 @@ MonoBehaviour:
   FeuerballLearned: 0
   WasserflaecheLearned: 0
   KettenblitzLearned: 0
-  audioSource: {fileID: 0}
-  swordSound: {fileID: 8300000, guid: 5da7b24f7e8524dd18e70029088285aa, type: 3}
-  walkingSound: {fileID: 8300000, guid: fbfc9b9da35184ef8ad0ce89f6fa0bd5, type: 3}
   healthBar: {fileID: 1535218254}
   manaBar: {fileID: 29282114}
   UIcurrentLevel: {fileID: 1270827192}
@@ -96188,7 +96182,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1315149659
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: aef2fb6c2b7feb249813f5911fa9dd99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
