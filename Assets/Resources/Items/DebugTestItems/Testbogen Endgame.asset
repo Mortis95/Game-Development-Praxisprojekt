@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7c55381a1f90d49b8d50459df8fe7c, type: 3}
+  m_Name: Testbogen Endgame
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemSprite: {fileID: 74234015406980803, guid: d0356a16ac1832446ad28a46656698ff,
+    type: 3}
+  itemName: Blauer Endgame Testbogen
+  description: "M\xE4chtige Testwaffe f\xFCr die m\xE4chtigsten Testgegner."
+  isStackable: 0
+  maxStackSize: 0
+  amount: 0
+  weaponType: 1
+  projectile: {fileID: -3835933595767899827, guid: d0356a16ac1832446ad28a46656698ff,
+    type: 3}
+  bonusAttack: 15
+  bonusStrength: -1
+  bonusDexterity: 10
+  bonusIntelligence: 0
