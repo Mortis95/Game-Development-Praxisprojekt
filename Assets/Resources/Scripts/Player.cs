@@ -149,6 +149,9 @@ public class Player : MonoBehaviour
     public StatusBar manaBar;
     public Text UIcurrentLevel;
     public bool isDead;
+
+    //Game Manager
+    private GameManager gm;
                                                                 
 
     void Start()
@@ -171,6 +174,8 @@ public class Player : MonoBehaviour
         currentAnimationState = AnimationState.PlayerStandDown;
         isDead = false;
 
+        gm = GameManager.getInstance();
+
     }
    
     public void UpdateEquipment(){
@@ -183,7 +188,7 @@ public class Player : MonoBehaviour
     }
 
     void Update(){
-        if(isDead){return;}
+        if(isDead || gm.getGameIsPaused()){return;}
         if(isAllowedToTakeAction()){
             processMovement();
             processUseConsumableInput();
@@ -356,7 +361,7 @@ public class Player : MonoBehaviour
         movement.Normalize();   //Normalizes the vector to have a magnitude of 1. Heißt im Klartext, unser Spieler läuft Diagonal genauso schnell wie horizontal / vertikal
 
         //Movement sound
-        //if(movement.magnitude > 0){AudioManager.getInstance().PlaySound("PlayerWalking");}
+        if(movement.magnitude > 0){AudioManager.getInstance().PlaySoundNotOverlapping("SpielerGehenLangsam");}
 
         //Wenn moveX und moveY == 0 dann liegt kein Movement vor und wir müssen die dazugehörige Steh-Animation spielen
         if(moveX == 0 && moveY == 0){

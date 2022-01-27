@@ -11,6 +11,8 @@ public class Consumable : Item{
     public float healHealthPointsPercentage;
     [Range(-1f,1f), Tooltip("Negative values result in damaging the Player when consumed!")]
     public float healMagicPointsPercentage;
+    [Tooltip("The Sound this consumable will call when it is used. Leave blank for no sound.")]
+    public string interactionSound;
 
     public override void Use(){
         base.Use();
@@ -23,6 +25,7 @@ public class Consumable : Item{
         if (amount <= 0){
             Destroy(this);
         }
+        if(!interactionSound.Equals("")){AudioManager.getInstance().PlaySound(interactionSound);}
     }
     
 

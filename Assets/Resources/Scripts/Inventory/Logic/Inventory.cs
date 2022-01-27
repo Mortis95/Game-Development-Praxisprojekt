@@ -87,11 +87,11 @@ public class Inventory : MonoBehaviour
 
     void processSkillSelectionInput(){
         bool changed = false;
-        if(Input.GetKeyDown(KeyCode.E)){equipment.equipSkill(skills[selectedSkillSlot]);                                          changed=true; AudioManager.getInstance().PlaySound("UILockIn");}
-        if(Input.GetKeyDown(KeyCode.W)){selectedSkillSlot = betterModulo(selectedSkillSlot - skillSlotsPerRow, skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
-        if(Input.GetKeyDown(KeyCode.S)){selectedSkillSlot = betterModulo(selectedSkillSlot + skillSlotsPerRow, skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
-        if(Input.GetKeyDown(KeyCode.A)){selectedSkillSlot = betterModulo(selectedSkillSlot - 1,                skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
-        if(Input.GetKeyDown(KeyCode.D)){selectedSkillSlot = betterModulo(selectedSkillSlot + 1,                skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
+        if(Input.GetKeyDown(KeyCode.E)){equipment.equipSkill(skills[selectedSkillSlot]);                                          changed=true; AudioManager.getInstance().PlaySound("UIEingeloggt");}
+        if(Input.GetKeyDown(KeyCode.W)){selectedSkillSlot = betterModulo(selectedSkillSlot - skillSlotsPerRow, skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
+        if(Input.GetKeyDown(KeyCode.S)){selectedSkillSlot = betterModulo(selectedSkillSlot + skillSlotsPerRow, skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
+        if(Input.GetKeyDown(KeyCode.A)){selectedSkillSlot = betterModulo(selectedSkillSlot - 1,                skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
+        if(Input.GetKeyDown(KeyCode.D)){selectedSkillSlot = betterModulo(selectedSkillSlot + 1,                skillSlotsTotal);  changed=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
 
         if(changed && onInventoryChangedCallback != null) onInventoryChangedCallback.Invoke();
     }

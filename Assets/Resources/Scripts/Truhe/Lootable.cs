@@ -20,6 +20,7 @@ public class Lootable : MonoBehaviour
                 Instantiate(OpenPrefab, transform.position, Quaternion.identity);*/
                 isOpen = true;
                 spr.sprite = openedSprite;
+                AudioManager.getInstance().PlaySound("SpielerInteraktionTruhe");
         }
     }    
 }

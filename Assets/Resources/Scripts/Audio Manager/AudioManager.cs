@@ -54,6 +54,16 @@ public class AudioManager : MonoBehaviour
         sound.source.PlayOneShot(sound.clip, sound.volume);
     }
 
+    public void PlaySoundNotOverlapping(string name){
+        Sound sound = Array.Find(soundEffects, s => s.name == name);
+        if (sound == null){
+            Debug.LogWarning("Sound " + name + " konnte nicht gefunden werden im sound Array und wird deswegen nicht abgespielt. \nTypo? Vergessen den Sound hinzuzufügen? Sonderzeichen?");
+            return;
+        }
+        if(sound.source.isPlaying){return;} //Don't allow overlapping or cancelling old activations
+        sound.source.Play();
+    }
+
     public void StopSound(string name){
         Sound sound = Array.Find(soundEffects, s => s.name == name);
         if (sound == null){
