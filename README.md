@@ -1,59 +1,28 @@
 # Game Development Praxisprojekt
 
-## TODO bis zum 25.1 (Bei Ungenauigkeiten bitte editieren)
+## TODO bis zum 1.2 (Bei Ungenauigkeiten bitte editieren)
 ## An alle: 
 - Grafikgruppe Bescheid geben, wenn Grafiken fehlen!
 - Bis dahin erstellt selbst einfache/primitive Testgrafiken, damit man später leichter austauschen kann
 - Bei Rückfragen/Unklarheiten pingt die @Programmierer Rolle in Discord an! Wenn etwas geklärt werden muss ist es immer besser auf sich aufmerksam zu machen!
 
+## Skills debuggen
+-> Oscar
 
-## Skills Grafiken einfügen		
--> Jeder seine eigenen
-
-## Animator Experte			
+## Animationen implementieren!			
 -> Teresa , Oscar
 
-## Alle Sounds *importieren*
--> Alex
-
-## Dungeon fertigstellen
--> Alex
-
-## Szenenübergang verbessern (vorher auf GameManager.pause() warten)
--> Alex
-
-## ~~Skill-Icons im SkillSelectModus for Inventory anzeigen~~
+## Animationen per Code entscheiden!
 -> Moritz
 
-## ~~Inventar ändert Titel wenn SkillSelectModus~~
+## Alle Sounds implementieren und per Code abspielen
 -> Moritz
 
-## ~~Unity Game Manager (for Pause)~~		
--> Moritz
-
-## Sprites adequate Pixels per Unity setzen
--> Teresa
-
-## Sprites Änderungsarbeit (Buttons für Alex)
--> Teresa
-
-## SceneArbeit	
--> Teresa
-
-## SceneArbeit
--> Oscar
-
-## ~~Enemie Rework~~
--> Moritz
-
-## Lootables
--> Oscar
-
-## Speichern / Laden
+## Speichern / Laden finishen, bei Rückfragen Moritz fragen
 -> Lukas
 
 ## ControllerInput
 -> Lukas
 
-## Bosse
--> (open)
+## Kleine Trigger coden, Progress Script optimisieren, globale Referenz erlauben (durch Singleton)
+-> Alex
