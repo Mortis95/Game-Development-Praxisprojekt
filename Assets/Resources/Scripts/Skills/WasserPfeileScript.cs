@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WasserPfeileScript : MonoBehaviour
 {
-    fightable EnemyVar;
+    EnemyManager EnemyVar;
     List<EnemyMovement> enemies = new List<EnemyMovement>();
     // Start is called before the first frame update
     
@@ -37,12 +37,12 @@ public class WasserPfeileScript : MonoBehaviour
         GameObject collisionObject = other.gameObject;
         if(collisionObject!=null)
         {
-            if(collisionObject.tag == "Enemy")  
+            if(other != null && collisionObject.tag == "Enemy")  
             {         
                 if(rdy)
                 {
-                EnemyVar = collisionObject.GetComponent<fightable>(); 
-                EnemyVar.TakeDMG(10);
+                EnemyVar = collisionObject.GetComponent<EnemyManager>(); 
+                EnemyVar.takeDamage(DamageType.Wasser, 10);
                 rdy = false;
                 }                                
             }
