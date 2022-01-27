@@ -15,7 +15,10 @@ public class WalkingNPC : MonoBehaviour{
     public float patrolPauseTimeSeconds;
 
     //Private Variables we should get and calculate ourselves
+    private Animator animator;
+    private AnimationState currentState;
     private Vector2 movement;
+    private Vector2 lastMovement;
     private Rigidbody2D rb;
     private int currentPatrolPoint;
     private Vector2 startPos;
@@ -24,11 +27,17 @@ public class WalkingNPC : MonoBehaviour{
     #region AwakeAndStart
     private void Awake(){
         movement = Vector2.zero;
+        lastMovement = Vector2.down;
         currentPatrolPoint = 0;
         lastPatrolPointTime = 0;
+        if(marginOfError <= 0){
+            marginOfError = 0.1f;
+        }
     }
 
     private void Start(){
+        animator = gameObject.GetComponent<Animator>();
+        animator.speed = 0;
         rb = gameObject.GetComponent<Rigidbody2D>();
         startPos = rb.position;
     }
@@ -38,8 +47,10 @@ public class WalkingNPC : MonoBehaviour{
     private void Update(){
         if(getTimeSinceLastPatrolPointReached() < patrolPauseTimeSeconds){
             movement = Vector2.zero;
+            setIdleAnimation();
         } else {
             processMovement();
+            setMovementAnimation();
         }
         if(patrolRoute != null && patrolRoute.Length > 0){checkPatrolPoints();}
     }
@@ -67,6 +78,7 @@ public class WalkingNPC : MonoBehaviour{
         Vector2 direction = targetPos - rb.position;
         direction.Normalize();
         movement = direction;
+        lastMovement = direction;
     }
 
     private void checkPatrolPoints(){
@@ -82,6 +94,42 @@ public class WalkingNPC : MonoBehaviour{
     }
     #endregion
 
+    #region SetAnimations
+    private enum AnimationState{
+        NPCWalkUp,
+        NPCWalkDown,
+        NPCWalkLeft,
+        NPCWalkRight
+    }
+    void setMovementAnimation(){
+        animator.speed = 1;
+        if(Vector2.Angle(Vector2.up, movement) <= 45){
+            changeAnimationState(AnimationState.NPCWalkUp);
+        } else if(Vector2.Angle(Vector2.down, movement) <= 45 ){
+            changeAnimationState(AnimationState.NPCWalkDown);
+        } else if(Vector2.Angle(Vector2.left, movement) < 45 ){
+            changeAnimationState(AnimationState.NPCWalkLeft);
+        } else if(Vector2.Angle(Vector2.right, movement) < 45 ){
+            changeAnimationState(AnimationState.NPCWalkRight);
+        }
+    }
+
+    void setIdleAnimation(){
+        animator.speed = 0;
+    }
+
+    private void changeAnimationState(AnimationState state){
+        //If current animation is already playing, do not start it again.
+        //Otherwise an animation would start every frame and never properly play out.
+        if(state.Equals(currentState)){
+            return;
+        }
+        animator.Play(state.ToString());
+        currentState = state;
+    }
+    
+    #endregion
+    
     #region GizmoDrawMethods
     private void OnDrawGizmosSelected(){
 

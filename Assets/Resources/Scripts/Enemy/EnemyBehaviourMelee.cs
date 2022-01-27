@@ -41,6 +41,8 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     private float lastWorkingAngle;
     private bool receivingKnockback;
     private bool isDying;
+    private Animator animator;
+    private AnimationState currentState;
 
     //Primitive Variables can be assigned as soon as Game Object awakes without Issue
     private void Awake(){
@@ -72,11 +74,18 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         if(isDying){return;}
         if(getTimeSinceLastPatrolPointReached() < patrolPauseTimeSeconds){
             movement = Vector2.zero;
+            setIdleAnimation();
         }
         else if(getTimeSinceLastMovementUpdate() > updateMovementTimerSeconds){
             lastUpdateMovementTime = Time.time;
-            if(!targetFound){processUnalertedMovement();}
-            else {processAlertedMovement();}
+            if(!targetFound){
+                processUnalertedMovement();
+            }
+            else{
+                processAlertedMovement();
+            }
+            setMovementAnimation();
+            
         }
         if(patrolRoute != null && patrolRoute.Length > 0){checkPatrolPoints();}
         if(!targetFound){checkForTarget();}
@@ -196,7 +205,44 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     }
     
     #endregion
+    #region SetAnimations
+    private enum AnimationState{
+        EnemyWalkUp,
+        EnemyWalkDown,
+        EnemyWalkLeft,
+        EnemyWalkRight
+    }
 
+    private void changeAnimationState(AnimationState state){
+        //Only change state if a new state is given
+        if(currentState.Equals(state)){return;}
+
+        //Change state
+        animator.Play(state.ToString());
+
+        //Update currentState
+        currentState = state;
+    }
+
+    private void setIdleAnimation(){
+        animator.speed = 0;
+    }
+
+    private void setMovementAnimation(){
+        animator.speed = 1;
+        if(Vector2.Angle(Vector2.up, movement) <= 45){
+            changeAnimationState(AnimationState.EnemyWalkUp);
+        } else if(Vector2.Angle(Vector2.down, movement) <= 45 ){
+            changeAnimationState(AnimationState.EnemyWalkDown);
+        } else if(Vector2.Angle(Vector2.left, movement) < 45 ){
+            changeAnimationState(AnimationState.EnemyWalkLeft);
+        } else if(Vector2.Angle(Vector2.right, movement) < 45 ){
+            changeAnimationState(AnimationState.EnemyWalkRight);
+        }
+    }
+
+
+    #endregion
     private void FixedUpdate(){
 
         if(!receivingKnockback){rb.MovePosition(rb.position + movement * currentMoveSpeed * Time.fixedDeltaTime);}

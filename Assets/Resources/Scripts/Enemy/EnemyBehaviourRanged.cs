@@ -5,7 +5,7 @@ using UnityEngine;
 //A LOT of this class is copypasted from EnemyBehaviourMelee, with various Adjustments
 //This is due to Unity not properly allowing classes to derive their Update or Awake() Method from their parent-classes
 //Generally, having one class extend another is a frickly situation in Unity.
-//And who knows, maybe we event want to completely differ EnemyBehaviourRanged from EnemyBehaviourMelee
+//And who knows, maybe we eventually want to completely differ EnemyBehaviourRanged from EnemyBehaviourMelee
 public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
 
     //Public Variables other people can manipulate from the Inspector
@@ -50,6 +50,8 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
     private GameObject rangedAttackPrefab;
     private bool receivingKnockback;
     private bool isDying;
+    private Animator animator;
+    private AnimationState currentState;
 
     //Primitive Variables can be assigned as soon as Game Object awakes without Issue
     private void Awake(){
@@ -82,10 +84,14 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
         if(isDying){return;}
         if(getTimeSinceLastPatrolPointReached() < patrolPauseTimeSeconds){
             movement = Vector2.zero;
+            setIdleAnimation();
         }
         else if(getTimeSinceLastMovementUpdate() > updateMovementTimerSeconds){
             lastUpdateMovementTime = Time.time;
-            if(!targetFound){processUnalertedMovement();}
+            if(!targetFound){
+                processUnalertedMovement();
+                setMovementAnimation();
+                }
             else {processAlertedMovement();}
         }
         if(patrolRoute != null && patrolRoute.Length > 0){checkPatrolPoints();}
@@ -110,17 +116,20 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
                 attackWithRangedAttack();
                 lastAttackTime = Time.fixedTime;
                 movement = Vector2.zero;
+                setRangedAttackAnimation();
             //Else is Player in range (but Attack not ready)? If yes, stand still and wait for attack.
             } else if(Vector2.Distance(target.position, transform.position) < attackRange){
                 movement = Vector2.zero;
             //Else Player must be out of range. Move in closer.
             } else {
                 setMoveTowardsPoint(target.position);
+                setMovementAnimation();
             }
         } else {
             float workingAngle = calculateWorkingAngle(anglesToCheck, target.position);
             Vector2 targetPoint = Vector3Extension.RotatePointAroundPivot(target.position, rb.position, new Vector3(0,0,workingAngle));
             setMoveTowardsPoint(targetPoint);
+            setMovementAnimation();
         }
     }
 
@@ -223,7 +232,50 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
     }
     
     #endregion
+    #region SetAnimations
+    private enum AnimationState{
+        EnemyWalkUp,
+        EnemyWalkDown,
+        EnemyWalkLeft,
+        EnemyWalkRight,
+        EnemyRangedAttack
+    }
 
+    private void changeAnimationState(AnimationState state){
+        //Only change state if a new state is given
+        if(currentState.Equals(state)){return;}
+
+        //Change state
+        animator.Play(state.ToString());
+
+        //Update currentState
+        currentState = state;
+    }
+
+    private void setIdleAnimation(){
+        animator.speed = 0;
+    }
+
+    private void setMovementAnimation(){
+        animator.speed = 1;
+        if(Vector2.Angle(Vector2.up, movement) <= 45){
+            changeAnimationState(AnimationState.EnemyWalkUp);
+        } else if(Vector2.Angle(Vector2.down, movement) <= 45 ){
+            changeAnimationState(AnimationState.EnemyWalkDown);
+        } else if(Vector2.Angle(Vector2.left, movement) < 45 ){
+            changeAnimationState(AnimationState.EnemyWalkLeft);
+        } else if(Vector2.Angle(Vector2.right, movement) < 45 ){
+            changeAnimationState(AnimationState.EnemyWalkRight);
+        }
+    }
+
+    private void setRangedAttackAnimation(){
+        animator.speed = 1;
+        changeAnimationState(AnimationState.EnemyRangedAttack);
+    }
+
+
+    #endregion
     private void FixedUpdate(){
         if(!receivingKnockback){rb.MovePosition(rb.position + movement * currentMoveSpeed * Time.fixedDeltaTime);}
     }

@@ -28,9 +28,10 @@ public class Player : MonoBehaviour
     //Basic Attributes needed for Movement and Movement Animation
     public float moveSpeed;
     public Rigidbody2D rb;
-    public Animator animator;
     public Vector2 movement;
     public Direction lastFacedDirection;
+    private Animator animator;
+    private AnimationState currentAnimationState;
     private float lastActionTime;
     private float currentActionDelaySeconds;
     private bool receivingKnockback;
@@ -109,6 +110,34 @@ public class Player : MonoBehaviour
     private int KettenblitzMPKost               = 5;
     #endregion
     
+    #region AnimatorStateChange
+    //All AnimationStates for the player that we previously agreed on
+    private enum AnimationState{
+        PlayerWalkUp,
+        PlayerWalkDown,
+        PlayerWalkLeft,
+        PlayerWalkRight,
+        PlayerStandUp,
+        PlayerStandDown,
+        PlayerStandLeft,
+        PlayerStandRight,
+        PayerAttackUp,
+        PlayerAttackDown,
+        PlayerAttackLeft,
+        PlayerAttackRight
+    }
+
+    private void changeAnimationState(AnimationState state){
+        //If current animation is already playing, do not start it again.
+        //Otherwise an animation would start every frame and never properly play out.
+        if(state.Equals(currentAnimationState)){
+            return;
+        }
+        animator.Play(state.ToString());
+        currentAnimationState = state;
+    }
+    #endregion
+
 
     //Levelsystem
     //Vorläufige Leveleinteilung, enthalten sind die nötige Menge an totalen EXP die man benötigt
@@ -122,7 +151,9 @@ public class Player : MonoBehaviour
                                                                 
 
     void Start()
-    {        	
+    {   
+        animator = gameObject.GetComponent<Animator>();
+
         equipment = Equipment.getInstance();
         equipment.onEquipmentChangedCallback += UpdateEquipment;
 
@@ -136,6 +167,7 @@ public class Player : MonoBehaviour
         lastActionTime = 0;
         currentActionDelaySeconds = 0;
         receivingKnockback = false;
+        currentAnimationState = AnimationState.PlayerStandDown;
 
     }
    
@@ -156,6 +188,7 @@ public class Player : MonoBehaviour
             processSkillInput();
         } else {
             standStill();
+            setAttackAnimation();
         }
     }
 
@@ -311,24 +344,38 @@ public class Player : MonoBehaviour
         movement.x = moveX;
         movement.y = moveY;
         movement.Normalize();   //Normalizes the vector to have a magnitude of 1. Heißt im Klartext, unser Spieler läuft Diagonal genauso schnell wie horizontal / vertikal
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
 
         //Movement sound
         //if(movement.magnitude > 0){AudioManager.getInstance().PlaySound("PlayerWalking");}
 
-        //Remember last faced direction - In edge cases this prioritizes Right over Left and Up over Down.  ¯\_(ツ)_/¯
-        if(moveX > 0){
-            lastFacedDirection = Direction.Right;
-        } else if(moveX < 0){
-            lastFacedDirection = Direction.Left;
-        }
-
-        if(moveY > 0){
-            lastFacedDirection = Direction.Up;
-        } else if(moveY < 0){
-            lastFacedDirection = Direction.Down;
+        //Wenn moveX und moveY == 0 dann liegt kein Movement vor und wir müssen die dazugehörige Steh-Animation spielen
+        if(moveX == 0 && moveY == 0){
+            switch(lastFacedDirection){
+                case Direction.Up:
+                    changeAnimationState(AnimationState.PlayerStandUp);
+                    break;
+                case Direction.Down:
+                    changeAnimationState(AnimationState.PlayerStandDown);
+                    break;
+                case Direction.Left:
+                    changeAnimationState(AnimationState.PlayerStandLeft);
+                    break;
+                case Direction.Right:
+                    changeAnimationState(AnimationState.PlayerStandRight);
+                    break;
+            }
+        //Ansonsten wenn der Winkel zwischen Movement und jeweiligen Richtungsvektor 
+        //(Vector2.up (0,1), Vector2.down (0,-1), Vector2.left(-1,0), Vector2.right(1,0) <= 45° ist, 
+        //spielen wir die jeweilige Lauf-Animation.
+        //Somit haben wir alle Winkel in 360° abgedeckt. (Notiz: In Edge-Cases wird oben/unten priorisiert)  
+        } else if(Vector2.Angle(Vector2.up, movement) <= 45){
+            changeAnimationState(AnimationState.PlayerWalkUp);
+        } else if(Vector2.Angle(Vector2.down, movement) <= 45 ){
+            changeAnimationState(AnimationState.PlayerWalkDown);
+        } else if(Vector2.Angle(Vector2.left, movement) < 45 ){
+            changeAnimationState(AnimationState.PlayerWalkLeft);
+        } else if(Vector2.Angle(Vector2.right, movement) < 45 ){
+            changeAnimationState(AnimationState.PlayerWalkRight);
         }
     }
     public void processUseConsumableInput(){
@@ -360,7 +407,23 @@ public class Player : MonoBehaviour
     public void standStill(){
         movement = Vector2.zero;
     }
-
+    public void setAttackAnimation(){
+        switch(lastFacedDirection){
+            case Direction.Up:
+                changeAnimationState(AnimationState.PayerAttackUp);
+                break;
+            case Direction.Down:
+                changeAnimationState(AnimationState.PlayerAttackDown);
+                break;
+            case Direction.Left:
+                changeAnimationState(AnimationState.PlayerAttackLeft);
+                break;
+            case Direction.Right:
+                changeAnimationState(AnimationState.PlayerAttackRight);
+                break;
+                
+            }
+    }
     #region UseSkills
     //Skills nutzen
     //Ein Skill wird benutzt indem zuerst geschaut wird welcher Skill ausgerüstet ist und ob die MP dafür reichen
@@ -432,6 +495,7 @@ public class Player : MonoBehaviour
 
             }
             updateUIStatusBar();
+            
         }
     }
     #endregion
