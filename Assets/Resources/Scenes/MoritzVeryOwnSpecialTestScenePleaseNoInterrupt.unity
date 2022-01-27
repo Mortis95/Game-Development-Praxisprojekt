@@ -1605,6 +1605,8 @@ GameObject:
   - component: {fileID: 478899439}
   - component: {fileID: 478899438}
   - component: {fileID: 478899437}
+  - component: {fileID: 478899436}
+  - component: {fileID: 478899441}
   m_Layer: 6
   m_Name: WalkingTestNPC (2)
   m_TagString: Untagged
@@ -1626,6 +1628,21 @@ Transform:
   m_Father: {fileID: 750343834}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &478899436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478899434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2328a1286fa359840b8ff74f7259c1b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  moveSpeed: 5
+  movement: {x: 0, y: 0}
 --- !u!114 &478899437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1661,11 +1678,80 @@ MonoBehaviour:
     textBoxen:
     - typeOfBox: 0
       name: Walking Guy
-      text: Hallo, ich laufe im Dreieck!
+      text: Hallo, ich laufe gern!
       choices: []
       toExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 478899436}
+            m_TargetAssemblyTypeName: NPCCutsceneController, Assembly-CSharp
+            m_MethodName: goHorizontalUnits
+            m_Mode: 4
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: -10
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 1
+    - typeOfBox: 0
+      name: Walking Guy
+      text: Und jetzt sogar hoch!
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 478899436}
+            m_TargetAssemblyTypeName: NPCCutsceneController, Assembly-CSharp
+            m_MethodName: goVerticalUnits
+            m_Mode: 4
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 10
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 1
+    - typeOfBox: 0
+      name: Walking Guy
+      text: Uuuuuund wieder rechts!
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 478899436}
+            m_TargetAssemblyTypeName: NPCCutsceneController, Assembly-CSharp
+            m_MethodName: goHorizontalUnits
+            m_Mode: 4
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 10
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 1
+    - typeOfBox: 0
+      name: Walking Guy
+      text: Naja, ich komm mal wieder zu dir.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 478899436}
+            m_TargetAssemblyTypeName: NPCCutsceneController, Assembly-CSharp
+            m_MethodName: goVerticalUnits
+            m_Mode: 4
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: -10
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 1
 --- !u!50 &478899438
 Rigidbody2D:
   serializedVersion: 4
@@ -1765,6 +1851,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &478899441
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478899434}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ebfcba192916d4540b105825e287c070, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &511033228
 PrefabInstance:
   m_ObjectHideFlags: 0

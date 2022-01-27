@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1268163283937602310}
   - component: {fileID: 1158638958757282954}
   - component: {fileID: 1158638958757282957}
+  - component: {fileID: 2992877626095644498}
   m_Layer: 6
   m_Name: RangedEnemyPrefab
   m_TagString: Enemy
@@ -127,6 +128,7 @@ MonoBehaviour:
   patrolPauseTimeSeconds: 0
   attackRange: 8
   shotSpeed: 6
+  projectileSprite: {fileID: 0}
 --- !u!114 &1268163283937602310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,3 +179,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -1}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!95 &2992877626095644498
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158638958757282998}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

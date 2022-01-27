@@ -6,12 +6,16 @@ using UnityEngine.Events;
 public class NPCCutsceneController : MonoBehaviour
 {
     private Vector2 goalPosition;
-    private Vector2[] walkPoints;   //Noch nicht implementiert, später vielleicht.
     public Rigidbody2D rb;
     public float moveSpeed;
     public Vector2 movement;
+    private Animator animator;
+    private AnimationState currentState;
     private void Awake(){
         rb = gameObject.GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
+        animator.speed = 0;
+        currentState = AnimationState.NPCWalkDown;
         goalPosition = transform.position;
     }
 
@@ -22,6 +26,9 @@ public class NPCCutsceneController : MonoBehaviour
         if(Vector2.Distance(transform.position, goalPosition) < 1f){
             movement = Vector2.zero;
             goalPosition = transform.position;
+            setIdleAnimation();
+        } else {
+            setMovementAnimation();
         }
         
         transform.position = (Vector2) transform.position + movement * moveSpeed * Time.unscaledDeltaTime;  //Unscaled, because during Cutscenes/Pauses we will set TimeScale to 0. We want our NPCs to be able to move during cutscenes.
@@ -61,6 +68,41 @@ public class NPCCutsceneController : MonoBehaviour
     }
     #endregion
 
+    #region SetAnimations
+    private enum AnimationState{
+        NPCWalkUp,
+        NPCWalkDown,
+        NPCWalkLeft,
+        NPCWalkRight
+    }
+    void setMovementAnimation(){
+        animator.speed = 1;
+        if(Vector2.Angle(Vector2.up, movement) <= 45){
+            changeAnimationState(AnimationState.NPCWalkUp);
+        } else if(Vector2.Angle(Vector2.down, movement) <= 45 ){
+            changeAnimationState(AnimationState.NPCWalkDown);
+        } else if(Vector2.Angle(Vector2.left, movement) < 45 ){
+            changeAnimationState(AnimationState.NPCWalkLeft);
+        } else if(Vector2.Angle(Vector2.right, movement) < 45 ){
+            changeAnimationState(AnimationState.NPCWalkRight);
+        }
+    }
+
+    void setIdleAnimation(){
+        animator.speed = 0;
+    }
+
+    private void changeAnimationState(AnimationState state){
+        //If current animation is already playing, do not start it again.
+        //Otherwise an animation would start every frame and never properly play out.
+        if(state.Equals(currentState)){
+            return;
+        }
+        animator.Play(state.ToString());
+        currentState = state;
+    }
+    
+    #endregion
     //Calling this method will disable this script.
     public void disableCutsceneController(){
         gameObject.GetComponent<NPCCutsceneController>().enabled = false;
