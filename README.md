@@ -8,10 +8,10 @@
 
 ## Skills debuggen
 -> JEDER schaut über seine eigenen Skills nochmal drüber und stellt sicher dass Sie:
-  -> einen Sound abspielen.
-  -> Richtig funktionieren.
-  -> Die richtigen Gegner mit dem "EnemyManager"-Skript treffen.
-  -> Eine Grafik haben. Irgendeine. Hauptsache sichtbar.
+- einen Sound abspielen.
+- Richtig funktionieren.
+- Die richtigen Gegner mit dem "EnemyManager"-Skript treffen.
+- Eine Grafik haben. Irgendeine. Hauptsache sichtbar.
 
 ## Animationen implementieren!			
 -> Teresa , Oscar
