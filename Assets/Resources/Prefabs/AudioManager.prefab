@@ -1,0 +1,262 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6479031458060696236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6479031458060696238}
+  - component: {fileID: 6479031458060696237}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6479031458060696238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6479031458060696236}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6479031458060696237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6479031458060696236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 898d5c0db8e1cbb4794575d36c07d09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffects:
+  - name: UIAuswahlAendern
+    clip: {fileID: 8300000, guid: 3ef193db1a383a04494f3f602892db5a, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: UIEingeloggt
+    clip: {fileID: 8300000, guid: f757654cd6010394489c120129fa790d, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: UIGameOver
+    clip: {fileID: 8300000, guid: a065d7674d2385043bd1949d4a604989, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: UISkillTreePunkteVerteilen
+    clip: {fileID: 8300000, guid: 5d69bdb22181225408ba04ebdeb99462, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: UISpeichern
+    clip: {fileID: 8300000, guid: 82a80c8f74ebcf94d90e686819c90f7a, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: MobExplosion
+    clip: {fileID: 8300000, guid: b6804a7a1185df840af30fc47bac91ed, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: MobLarveBesiegt
+    clip: {fileID: 8300000, guid: d68abda916ca2b84d89cd6043d5f7002, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: MobSteinGolem
+    clip: {fileID: 8300000, guid: 8ccbaa5ecff918d4096ef80af1cf12a1, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: MobWespeFluegel
+    clip: {fileID: 8300000, guid: cd97928635cb2994fb0b17fa9b4fb160, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: MobWildschwein
+    clip: {fileID: 8300000, guid: 48b225a16051b264b94c3fa07a7f0f50, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: MobWespeBesiegt
+    clip: {fileID: 8300000, guid: 1039a58ce4716224eba4693886d59d6f, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: NPCDialogKurz
+    clip: {fileID: 8300000, guid: 2718612cdf7ac7b41a1396981b25d20b, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: NPCDialogLang
+    clip: {fileID: 8300000, guid: 648f7cd66312f2e49b1d47486ac59e2b, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: NPCSchnurri
+    clip: {fileID: 8300000, guid: 991534e7c5562b44197a0dc623101a2b, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SkillBogenFeuerpfeil
+    clip: {fileID: 8300000, guid: 077301b1278a7ad4b830245942767592, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SkillBogenScharfschuss
+    clip: {fileID: 8300000, guid: 33fcc43595ed18049aa2046a1f8004ff, type: 3}
+    volume: 0.4
+    pitch: 0
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SkillBogenWasserpfeil
+    clip: {fileID: 8300000, guid: b26d884fba7a7804c91f73e01a5ad55c, type: 3}
+    volume: 0.4
+    pitch: 0
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SkillMagieFeuerball
+    clip: {fileID: 8300000, guid: 558b504ddfe5071409904566cd325180, type: 3}
+    volume: 0.4
+    pitch: 0
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SkillMagieKettenblitz
+    clip: {fileID: 8300000, guid: bf97c32144a480c4780d842573e941d0, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SkillMagieWasserregen
+    clip: {fileID: 8300000, guid: bea381c8c2e0a294b9011f7c7c5cccad, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SkillSchwertElektrowirbel
+    clip: {fileID: 8300000, guid: 808d26ef5d45bfa42a3b3581f7724171, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SkillSchwertRage
+    clip: {fileID: 8300000, guid: 83121b4b08775dd4bb9b598892545c6a, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SkillSchwertWasserhieb
+    clip: {fileID: 8300000, guid: 2d067995eb3b25e4fa184bee58d728f0, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SpielerGehenLangsam
+    clip: {fileID: 8300000, guid: fc4ed7dc8c5fc8e47bc03d89bf1aad13, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SpielerInteraktionEssen
+    clip: {fileID: 8300000, guid: aaacb3d769189fa43a0dffbe4be36a2a, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SpielerInteraktionRuestung
+    clip: {fileID: 8300000, guid: 2a2f919f1a226504a95be7301cb59e2b, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SpielerInteraktionTrinken
+    clip: {fileID: 8300000, guid: 11fad93748162b64faa2aeeb6c06471f, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SpielerInteraktionTruhe
+    clip: {fileID: 8300000, guid: ed78ca0ad7843ff4d968ea133ffd1d7d, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SpielerItemAblegen
+    clip: {fileID: 8300000, guid: cc18545637b9856409cf6eeacd66874d, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SpielerItemEinsammeln
+    clip: {fileID: 8300000, guid: be02ef3c45cdd7a48908f82d9c72f8bc, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SpielerLevelUp
+    clip: {fileID: 8300000, guid: ed99de27042cae443a51e9a3a6777040, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: SchluesselNutzen
+    clip: {fileID: 8300000, guid: 1b9b13724a89116468ac252b4355cc23, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: StoryPunchSound
+    clip: {fileID: 8300000, guid: 0336a0cd4dcb509449e93483d46d4ded, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  soundTrack:
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
+  currentlyPlaying:
+    name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    source: {fileID: 0}
