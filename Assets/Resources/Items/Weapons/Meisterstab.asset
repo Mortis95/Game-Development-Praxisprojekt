@@ -10,20 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd7c55381a1f90d49b8d50459df8fe7c, type: 3}
-  m_Name: Testbogen Endgame
+  m_Name: Meisterstab
   m_EditorClassIdentifier: 
   itemType: 1
-  itemSprite: {fileID: 74234015406980803, guid: d0356a16ac1832446ad28a46656698ff,
-    type: 3}
-  itemName: Blauer Endgame Testbogen
-  description: "M\xE4chtige Testwaffe f\xFCr die m\xE4chtigsten Testgegner."
+  itemSprite: {fileID: 21300000, guid: 53ab8b0b09c7c594db633c5662b8c075, type: 3}
+  itemName: Stab des Meisters
+  description: "Nur die Meister der arkanen Kr\xE4fte wissen was sie mit diesem Stab
+    f\xFCr eine immense Macht innehalten."
   isStackable: 0
   maxStackSize: 0
-  amount: 0
-  weaponType: 1
-  projectile: {fileID: -3835933595767899827, guid: d0356a16ac1832446ad28a46656698ff,
-    type: 3}
+  amount: 1
+  weaponType: 2
+  projectile: {fileID: 21300000, guid: e65860dcb19d9414ba5acf4d80d9e920, type: 3}
   bonusAttack: 0
   bonusStrength: 0
-  bonusDexterity: 5
-  bonusIntelligence: 0
+  bonusDexterity: 0
+  bonusIntelligence: 3
