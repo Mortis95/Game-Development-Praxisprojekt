@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9ce52d1acfefa459badcdee309a621, type: 3}
+  m_Name: "Kochendes Bl\xE4tterwasser"
+  m_EditorClassIdentifier: 
+  itemType: 0
+  itemSprite: {fileID: -5049507818068343603, guid: 18d04975992db734fa8d0e57b8b99baf,
+    type: 3}
+  itemName: "Kochendes Bl\xE4tterwasser"
+  description: "Dieses Gebr\xE4u erfrischt den Trinkenden und sorgt f\xFCr geistige
+    Klarheit."
+  isStackable: 1
+  maxStackSize: 9
+  amount: 1
+  healHealthPoints: 20
+  healMagicPoints: 15
+  healHealthPointsPercentage: 0
+  healMagicPointsPercentage: 0

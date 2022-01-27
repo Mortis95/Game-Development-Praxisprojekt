@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9ce52d1acfefa459badcdee309a621, type: 3}
+  m_Name: Starker Heiltrank
+  m_EditorClassIdentifier: 
+  itemType: 4
+  itemSprite: {fileID: 1176763413020476528, guid: b31f02415cd48784f9590e320b3466a2,
+    type: 3}
+  itemName: Starker Heiltrank
+  description: "Dieser Trank wurde extra f\xFCr die Starkverwundeten gebraut, besser
+    nicht zu viele davon trinken."
+  isStackable: 1
+  maxStackSize: 5
+  amount: 1
+  healHealthPoints: 60
+  healMagicPoints: 0
+  healHealthPointsPercentage: 0
+  healMagicPointsPercentage: 0

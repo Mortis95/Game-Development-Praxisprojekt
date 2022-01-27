@@ -7,7 +7,11 @@
 - Bei Rückfragen/Unklarheiten pingt die @Programmierer Rolle in Discord an! Wenn etwas geklärt werden muss ist es immer besser auf sich aufmerksam zu machen!
 
 ## Skills debuggen
--> Oscar
+-> JEDER schaut über seine eigenen Skills nochmal drüber und stellt sicher dass Sie:
+- einen Sound abspielen.
+- Richtig funktionieren.
+- Die richtigen Gegner mit dem "EnemyManager"-Skript treffen.
+- Eine Grafik haben. Irgendeine. Hauptsache sichtbar.
 
 ## Animationen implementieren!			
 -> Teresa , Oscar
