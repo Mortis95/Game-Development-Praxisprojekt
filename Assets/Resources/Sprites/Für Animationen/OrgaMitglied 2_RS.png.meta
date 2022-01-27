@@ -38,6 +38,54 @@ TextureImporter:
   - first:
       213: -8518166131940326315
     second: OrgaMitglied 2_RS_11
+  - first:
+      213: -8903702948922309404
+    second: OrgaMitglied 2_RS_12
+  - first:
+      213: 8169299281187849406
+    second: OrgaMitglied 2_RS_13
+  - first:
+      213: 8176696112456809813
+    second: OrgaMitglied 2_RS_14
+  - first:
+      213: 6376179104518416405
+    second: OrgaMitglied 2_RS_15
+  - first:
+      213: 1092816831781494368
+    second: OrgaMitglied 2_RS_16
+  - first:
+      213: -8533827900873012711
+    second: OrgaMitglied 2_RS_17
+  - first:
+      213: 8493966308487219602
+    second: OrgaMitglied 2_RS_18
+  - first:
+      213: 1771757637290863212
+    second: OrgaMitglied 2_RS_19
+  - first:
+      213: 237663965179187516
+    second: OrgaMitglied 2_RS_20
+  - first:
+      213: -8491001787637074770
+    second: OrgaMitglied 2_RS_21
+  - first:
+      213: -9157341971549426283
+    second: OrgaMitglied 2_RS_22
+  - first:
+      213: 8342054194062167182
+    second: OrgaMitglied 2_RS_23
+  - first:
+      213: -8258145873468671728
+    second: OrgaMitglied 2_RS_24
+  - first:
+      213: 5643074388877809770
+    second: OrgaMitglied 2_RS_25
+  - first:
+      213: -885522619065866033
+    second: OrgaMitglied 2_RS_26
+  - first:
+      213: 6034725175697129454
+    second: OrgaMitglied 2_RS_27
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -166,12 +214,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2640.75
-        width: 833.3333
-        height: 880.25
+        x: 402
+        y: 3467
+        width: 5
+        height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,12 +235,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_1
       rect:
         serializedVersion: 2
-        x: 833
-        y: 2640.75
-        width: 833.3333
-        height: 880.25
+        x: 404
+        y: 3454
+        width: 31
+        height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,12 +256,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_2
       rect:
         serializedVersion: 2
-        x: 1666
-        y: 2640.75
-        width: 833.3333
-        height: 880.25
+        x: 96
+        y: 2698
+        width: 601
+        height: 734
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,12 +277,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1760.75
-        width: 833.3333
-        height: 880.25
+        x: 973
+        y: 2697
+        width: 605
+        height: 735
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,12 +298,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_4
       rect:
         serializedVersion: 2
-        x: 833
-        y: 1760.75
-        width: 833.3333
-        height: 880.25
+        x: 1786
+        y: 2964
+        width: 11
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -271,12 +319,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_5
       rect:
         serializedVersion: 2
-        x: 1666
-        y: 1757
-        width: 833
-        height: 880
+        x: 1857
+        y: 2700
+        width: 607
+        height: 744
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -292,12 +340,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 880.75
-        width: 833.3333
-        height: 880.25
+        x: 2062
+        y: 2579
+        width: 34
+        height: 5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,12 +361,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_7
       rect:
         serializedVersion: 2
-        x: 833
-        y: 880.75
-        width: 833.3333
-        height: 880.25
+        x: 2168
+        y: 2560
+        width: 19
+        height: 5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -334,12 +382,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_8
       rect:
         serializedVersion: 2
-        x: 1666
-        y: 880.75
-        width: 833.3333
-        height: 880.25
+        x: 71
+        y: 1818
+        width: 599
+        height: 725
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -355,12 +403,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_9
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 833
-        height: 880
+        x: 681
+        y: 2354
+        width: 14
+        height: 34
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -376,12 +424,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_10
       rect:
         serializedVersion: 2
-        x: 833
-        y: 0
-        width: 833
-        height: 880
+        x: 947
+        y: 1825
+        width: 603
+        height: 716
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -397,12 +445,12 @@ TextureImporter:
       name: OrgaMitglied 2_RS_11
       rect:
         serializedVersion: 2
-        x: 1666
-        y: 0.75
-        width: 833.3333
-        height: 880.25
+        x: 1557
+        y: 2350
+        width: 15
+        height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,6 +458,342 @@ TextureImporter:
       bones: []
       spriteID: 5540fefb80569c980800000000000000
       internalID: -8518166131940326315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_12
+      rect:
+        serializedVersion: 2
+        x: 1828
+        y: 2359
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e443ef7751bf6480800000000000000
+      internalID: -8903702948922309404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_13
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 1819
+        width: 599
+        height: 725
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb44e07d96e2f5170800000000000000
+      internalID: 8169299281187849406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_14
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 2355
+        width: 13
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d3e43dac5797170800000000000000
+      internalID: 8176696112456809813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_15
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 1678
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518a615fc1dbc7850800000000000000
+      internalID: 6376179104518416405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_16
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 1673
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e57e65e177a2f00800000000000000
+      internalID: 1092816831781494368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 941
+        width: 666
+        height: 727
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a85220db0c19980800000000000000
+      internalID: -8533827900873012711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_18
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 938
+        width: 602
+        height: 735
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2994487ca51a0e570800000000000000
+      internalID: 8493966308487219602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_19
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 940
+        width: 607
+        height: 733
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6aaec61f2c869810800000000000000
+      internalID: 1771757637290863212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_20
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 1205
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c319a6cfd1a5c4300800000000000000
+      internalID: 237663965179187516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 64
+        width: 686
+        height: 769
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea47fa48cd6e92a80800000000000000
+      internalID: -8491001787637074770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_22
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 65
+        width: 685
+        height: 766
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d650b9ef59ae080800000000000000
+      internalID: -9157341971549426283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_23
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 504
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c0226671ee4c370800000000000000
+      internalID: 8342054194062167182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_24
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 64
+        width: 634
+        height: 769
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019ba84e41c256d80800000000000000
+      internalID: -8258145873468671728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_25
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 54
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a689a26224a305e40800000000000000
+      internalID: 5643074388877809770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_26
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 60
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc86102aeddf5b3f0800000000000000
+      internalID: -885522619065866033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrgaMitglied 2_RS_27
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 54
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefb88ee296afb350800000000000000
+      internalID: 6034725175697129454
       vertices: []
       indices: 
       edges: []

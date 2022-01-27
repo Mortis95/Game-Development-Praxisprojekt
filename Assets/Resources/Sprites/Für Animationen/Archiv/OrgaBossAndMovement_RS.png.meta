@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: aeddf80478502314e867431972457094
+guid: 2371c6ffe11530b40b7fbe4ac3b773cf
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -11,9 +11,6 @@ TextureImporter:
   - first:
       213: 7813090691386326944
     second: OrgaBossAndMovement_RS_2
-  - first:
-      213: 3841511587982280827
-    second: OrgaBossAndMovement_RS_3
   - first:
       213: -1995427029923428061
     second: OrgaBossAndMovement_RS_4
@@ -230,27 +227,6 @@ TextureImporter:
       bones: []
       spriteID: 0af3ef9969cad6c60800000000000000
       internalID: 7813090691386326944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OrgaBossAndMovement_RS_3
-      rect:
-        serializedVersion: 2
-        x: 2229
-        y: 4007
-        width: 5
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b780b32af6acf4530800000000000000
-      internalID: 3841511587982280827
       vertices: []
       indices: 
       edges: []
