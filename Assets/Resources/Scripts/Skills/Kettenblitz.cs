@@ -62,10 +62,6 @@ public class Kettenblitz : MonoBehaviour
 
         lr.material.SetTexture("_MainTex",textures[0]);
 
-        
-        //Soundeffekt abspielen
-        AudioManager.getInstance().PlaySound("Kettenblitz");
-
         //MainLoop starten
         StartCoroutine(mainLoop());
         StartCoroutine(animationLoop());
@@ -126,6 +122,7 @@ public class Kettenblitz : MonoBehaviour
         lr.SetPosition(numOfHits+1, target.transform.position);
     }
     void hitEnemy(int targetIndex){
+        AudioManager.getInstance().PlaySound("SkillMagieKettenblitz");
         GameObject enemy = targets[targetIndex];
         EnemyManager enemyScript = enemy.GetComponent<EnemyManager>();
         if(enemyScript == null){

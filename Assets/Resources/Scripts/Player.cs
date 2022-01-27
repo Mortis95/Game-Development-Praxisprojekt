@@ -148,6 +148,7 @@ public class Player : MonoBehaviour
     public StatusBar healthBar;
     public StatusBar manaBar;
     public Text UIcurrentLevel;
+    public bool isDead;
                                                                 
 
     void Start()
@@ -168,6 +169,7 @@ public class Player : MonoBehaviour
         currentActionDelaySeconds = 0;
         receivingKnockback = false;
         currentAnimationState = AnimationState.PlayerStandDown;
+        isDead = false;
 
     }
    
@@ -181,6 +183,7 @@ public class Player : MonoBehaviour
     }
 
     void Update(){
+        if(isDead){return;}
         if(isAllowedToTakeAction()){
             processMovement();
             processUseConsumableInput();
@@ -190,6 +193,7 @@ public class Player : MonoBehaviour
             standStill();
             setAttackAnimation();
         }
+        checkGameOver();
     }
 
     void FixedUpdate()
@@ -254,8 +258,14 @@ public class Player : MonoBehaviour
     void levelUp(){
         currentSkillpoints += skillPointsPerLevel;
         TextPopup.createPlayerNotificationPopup(transform, "Level Up!", Color.white);
-        //Play Level Up Sound
+        AudioManager.getInstance().PlaySound("SpielerLevelUp");
         SkillTree.getInstance().skillTreeChangedCallback(); //Let SkillTree know something changed
+    }
+    private void checkGameOver(){
+        if(currentHealthPoints <= 0){
+            isDead = true;
+            AudioManager.getInstance().PlaySound("UIGameOver");
+        }
     }
 
     public void updateUIStatusBar(){
@@ -424,6 +434,7 @@ public class Player : MonoBehaviour
                 
             }
     }
+    
     #region UseSkills
     //Skills nutzen
     //Ein Skill wird benutzt indem zuerst geschaut wird welcher Skill ausgerüstet ist und ob die MP dafür reichen
@@ -534,5 +545,6 @@ public class Player : MonoBehaviour
     public bool isAllowedToTakeAction(){
         return (Time.fixedTime - lastActionTime > currentActionDelaySeconds);
     }
+
     #endregion
 }

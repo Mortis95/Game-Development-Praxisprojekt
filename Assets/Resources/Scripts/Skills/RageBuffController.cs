@@ -21,6 +21,9 @@ public class RageBuffController : MonoBehaviour
     
     
     private void Awake(){
+        //Play Sound
+        AudioManager.getInstance().PlaySound("SkillSchwertRage");
+
         //Check if Singleton
         if(RageBuffController.instance != null){
             instance.refreshBuff();

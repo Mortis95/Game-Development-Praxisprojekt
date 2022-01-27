@@ -83,6 +83,7 @@ public class Equipment : MonoBehaviour
                 Armor oldArmor = equippedArmor;
                 equippedArmor = (Armor) item;
                 invokeCallback();
+                AudioManager.getInstance().PlaySound("SpielerInteraktionRuestung");
                 return oldArmor;
         }
         //Item can't be equipped, just return it to inventory.

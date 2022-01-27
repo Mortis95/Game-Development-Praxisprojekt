@@ -28,6 +28,9 @@ public class WasserHieb : MonoBehaviour
         //Set Damage
         damage = pl.getStrength() * 2 - (pl.currentLevel - 1);          //Damage = 2 * STR //Can be changed to whatever is your liking
         
+        //Play Sound
+        AudioManager.getInstance().PlaySound("SkillSchwertWasserhieb");
+
         //Pick correct image to display and correct offset to use for position
         Vector3 offset;
         switch(pl.lastFacedDirection){

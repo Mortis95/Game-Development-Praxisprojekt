@@ -12,6 +12,7 @@ public class ScharfSchussScript : MonoBehaviour
     {
         Player pl = Player.getInstance();
         Vector3 offset;
+        AudioManager.getInstance().PlaySound("SkillBogenScharfschuss");
         switch(pl.lastFacedDirection)
         {
             case Direction.Up:

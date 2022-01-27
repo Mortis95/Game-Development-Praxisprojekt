@@ -75,6 +75,7 @@ public class SkillTreeNode {
 
 
     public void levelNode(){
+        AudioManager.getInstance().PlaySound("UISkillTreePunkteVerteilen");
         currentLevel++;
         Debug.Log("Node: " + name + " is now Level: " + currentLevel);
         SkillTree.getInstance().addPlayerStats(bonusAttack,bonusDefense,bonusStrength,bonusDexterity,bonusIntelligence);

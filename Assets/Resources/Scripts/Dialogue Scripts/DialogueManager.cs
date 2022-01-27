@@ -163,17 +163,18 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence(string sentence){
         string totalText = "";
         dialogueText.SetText(totalText);
+        int count = 0;
         foreach (char letter in sentence.ToCharArray()){
             //Debug.Log("Code is executing here");
-            AudioManager.getInstance().PlaySound("NPCDialog");
+            if(count >= 3){AudioManager.getInstance().PlaySound("NPCDialogKurz"); count = 0;}
             totalText += letter;
             dialogueText.SetText(totalText);
             //Wait for waitTime many seconds
-            float waitTime = 0.02f;
+            float waitTime = 0.03f;
+            count += 1;
             yield return new WaitForSecondsRealtime(waitTime);
         }
-        //After Text has finished rendering
-        AudioManager.getInstance().StopSound("NPCDialog");
+        
         
     }
 

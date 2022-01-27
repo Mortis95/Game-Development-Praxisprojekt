@@ -29,6 +29,8 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
     public float shotSpeed;
     [Tooltip("The Sprite the projectile will use.")]
     public Sprite projectileSprite;
+    [Tooltip("The sound that will play when the enemy spots the Player.")]
+    public string enemySpottingSound;  
 
     //Protected Variables we should get and calculate ourselves
     private Vector2 movement;
@@ -189,7 +191,7 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
     public void findTarget(){
         targetFound = true;
         currentMoveSpeed = runSpeed;
-        //TODO: Maybe play some enemy sound? Gotta wait for someone to actually be Audio smart in that case... 
+        if(!enemySpottingSound.Equals("")){AudioManager.getInstance().PlaySound(enemySpottingSound);} 
 
     }
     private void checkForTarget(){

@@ -19,6 +19,7 @@ public class Elektrowirbel : MonoBehaviour
         damage = player.getStrength() * 2 - (player.currentLevel - 1);                //Provisorischer Wert = 2 * STR
         rotateFrameCount = rotateEveryNFrames;
         stuckToPlayer = player.transform;
+        AudioManager.getInstance().PlaySound("SkillSchwertElektrowirbel");
         Destroy(gameObject,disappearAfterSeconds);
     }
 

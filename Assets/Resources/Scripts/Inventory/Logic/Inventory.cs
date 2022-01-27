@@ -74,11 +74,11 @@ public class Inventory : MonoBehaviour
     #region PlayerSelectionInput
     void processItemSelectionInput(){
         bool changed = false;
-        if(Input.GetKeyDown(KeyCode.E)){items[selectedItemIndex] = equipment.equipItem(items[selectedItemIndex]);               changed=true; AudioManager.getInstance().PlaySound("UILockIn");}
-        if(Input.GetKeyDown(KeyCode.W)){selectedItemIndex = betterModulo(selectedItemIndex - itemSlotsPerRow, inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
-        if(Input.GetKeyDown(KeyCode.S)){selectedItemIndex = betterModulo(selectedItemIndex + itemSlotsPerRow, inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
-        if(Input.GetKeyDown(KeyCode.A)){selectedItemIndex = betterModulo(selectedItemIndex - 1,               inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
-        if(Input.GetKeyDown(KeyCode.D)){selectedItemIndex = betterModulo(selectedItemIndex + 1,               inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIChangeSelection");}
+        if(Input.GetKeyDown(KeyCode.E)){items[selectedItemIndex] = equipment.equipItem(items[selectedItemIndex]);               changed=true; AudioManager.getInstance().PlaySound("UIEingeloggt");}
+        if(Input.GetKeyDown(KeyCode.W)){selectedItemIndex = betterModulo(selectedItemIndex - itemSlotsPerRow, inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
+        if(Input.GetKeyDown(KeyCode.S)){selectedItemIndex = betterModulo(selectedItemIndex + itemSlotsPerRow, inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
+        if(Input.GetKeyDown(KeyCode.A)){selectedItemIndex = betterModulo(selectedItemIndex - 1,               inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
+        if(Input.GetKeyDown(KeyCode.D)){selectedItemIndex = betterModulo(selectedItemIndex + 1,               inventorySpace);  changed=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
         if(Input.GetKeyDown(KeyCode.C)){removeItem(selectedItemIndex);                                                          changed=true;}
         if(Input.GetKeyDown(KeyCode.X)){unequipAll();                                                                           changed=true;}
 
@@ -103,6 +103,7 @@ public class Inventory : MonoBehaviour
             if(j != -1){
                 items[j].amount += item.amount;
                 if(onInventoryChangedCallback != null){onInventoryChangedCallback.Invoke();}
+                AudioManager.getInstance().PlaySound("SpielerItemEinsammeln");
                 return true;
             }
         }
@@ -113,6 +114,7 @@ public class Inventory : MonoBehaviour
         } else {
             items[i] = item;
             if(onInventoryChangedCallback != null){onInventoryChangedCallback.Invoke();}
+            AudioManager.getInstance().PlaySound("SpielerItemEinsammeln");
             return true;
         }
     }
@@ -121,6 +123,7 @@ public class Inventory : MonoBehaviour
         ItemDropController.createItemDropWithOffset(transform, items[index], 5f);
         items[index] = null;
         if(onInventoryChangedCallback != null){onInventoryChangedCallback.Invoke();}
+        AudioManager.getInstance().PlaySound("SpielerItemAblegen");
     
     }
     

@@ -10,6 +10,7 @@ public class WasserflaecheScript : MonoBehaviour
     void Start()
     {
        Destroy(gameObject, 5.0f);
+       AudioManager.getInstance().PlaySound("SkillMagieWasserregen");
     }
 
     // Update is called once per frame

@@ -11,6 +11,7 @@ public class FeuerPfeilScript : MonoBehaviour
     {
         Player pl = Player.getInstance();
         Vector3 offset;
+        AudioManager.getInstance().PlaySound("SkillBogenFeuerpfeil");
         switch(pl.lastFacedDirection)
         {
             case Direction.Up:

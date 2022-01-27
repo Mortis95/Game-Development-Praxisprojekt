@@ -27,6 +27,7 @@ public class WasserPfeileScript : MonoBehaviour
     void Start()
     {
        Destroy(gameObject, 6.0f);
+       AudioManager.getInstance().PlaySound("SkillBogenWasserpfeil");
     }
    
 

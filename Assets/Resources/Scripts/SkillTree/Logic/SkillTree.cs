@@ -204,10 +204,10 @@ public class SkillTree : MonoBehaviour{
         bool selectionChanged = false;
         bool skillTreeChanged = false;
         if(Input.GetKeyDown(KeyCode.E)){skillTreeChanged = tryToSkill(selectedSkillTreeNodeIndex);}
-        if(Input.GetKeyDown(KeyCode.W)){selectedSkillTreeNodeIndex = betterModulo(selectedSkillTreeNodeIndex - skillTreeNodesPerRow, skillTreeCount);  selectionChanged=true;}
-        if(Input.GetKeyDown(KeyCode.S)){selectedSkillTreeNodeIndex = betterModulo(selectedSkillTreeNodeIndex + skillTreeNodesPerRow, skillTreeCount);  selectionChanged=true;}
-        if(Input.GetKeyDown(KeyCode.A)){selectedSkillTreeNodeIndex = betterModulo(selectedSkillTreeNodeIndex - 1,                    skillTreeCount);  selectionChanged=true;}
-        if(Input.GetKeyDown(KeyCode.D)){selectedSkillTreeNodeIndex = betterModulo(selectedSkillTreeNodeIndex + 1,                    skillTreeCount);  selectionChanged=true;}
+        if(Input.GetKeyDown(KeyCode.W)){selectedSkillTreeNodeIndex = betterModulo(selectedSkillTreeNodeIndex - skillTreeNodesPerRow, skillTreeCount);  selectionChanged=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
+        if(Input.GetKeyDown(KeyCode.S)){selectedSkillTreeNodeIndex = betterModulo(selectedSkillTreeNodeIndex + skillTreeNodesPerRow, skillTreeCount);  selectionChanged=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
+        if(Input.GetKeyDown(KeyCode.A)){selectedSkillTreeNodeIndex = betterModulo(selectedSkillTreeNodeIndex - 1,                    skillTreeCount);  selectionChanged=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
+        if(Input.GetKeyDown(KeyCode.D)){selectedSkillTreeNodeIndex = betterModulo(selectedSkillTreeNodeIndex + 1,                    skillTreeCount);  selectionChanged=true; AudioManager.getInstance().PlaySound("UIAuswahlAendern");}
 
         if(skillTreeChanged){skillTreeChangedCallback();selectionChangedCallback();}
         else if(selectionChanged){selectionChangedCallback();}

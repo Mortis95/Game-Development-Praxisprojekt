@@ -20,7 +20,9 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     [Tooltip("The time the enemy will pause walking when it reaches a point in its patrolRoute.")]
     public float patrolPauseTimeSeconds;
     [Tooltip("The force of Knockack the Player will receive. Set to 0 for no Knockback."), Range(0f, 20f)]
-    public float knockBackForce;    
+    public float knockBackForce;
+    [Tooltip("The sound that will play when the enemy spots the Player.")]
+    public string enemySpottingSound;    
 
     //Private Variables we should get and calculate ourselves
     private Vector2 movement;
@@ -162,7 +164,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     public void findTarget(){
         targetFound = true;
         currentMoveSpeed = runSpeed;
-        //TODO: Maybe play some enemy sound? Gotta wait for someone to actually be Audio smart in that case... 
+        if(!enemySpottingSound.Equals("")){AudioManager.getInstance().PlaySound(enemySpottingSound);} 
 
     }
     private void checkForTarget(){

@@ -13,6 +13,8 @@ public class EnemyManager : MonoBehaviour{
     public int enemyExpWorth;
     public List<DamageType> enemyWeaknesses;
     public List<DamageType> enemyResistances;
+    [Tooltip("The sound this enemy will play when it dies. Leave Blank for a generic Mob Explosion Sound.")]
+    public string deathSound;
     #endregion
 
     #region PrivateVariables
@@ -63,7 +65,9 @@ public class EnemyManager : MonoBehaviour{
             }
         }
 
-        //Play Death Sound maybe?
+        //Play Death Sound
+        if(!deathSound.Equals("")){AudioManager.getInstance().PlaySound(deathSound);}
+        else{AudioManager.getInstance().PlaySound("MobExplosion");}
 
         //Destroy GameObject after small delay
         Destroy(gameObject, 1f);
