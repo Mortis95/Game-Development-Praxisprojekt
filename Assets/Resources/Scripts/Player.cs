@@ -123,10 +123,19 @@ public class Player : MonoBehaviour
         PlayerStandDown,
         PlayerStandLeft,
         PlayerStandRight,
-        PayerAttackUp,
-        PlayerAttackDown,
-        PlayerAttackLeft,
-        PlayerAttackRight
+        PlayerMeleeAttackUp,
+        PlayerMeleeAttackDown,
+        PlayerMeleeAttackLeft,
+        PlayerMeleeAttackRight,
+        PlayerRangedAttackUp,
+        PlayerRangedAttackDown,
+        PlayerRangedAttackLeft,
+        PlayerRangedAttackRight,
+        PlayerMagicAttackUp,
+        PlayerMagicAttackDown,
+        PlayerMagicAttackLeft,
+        PlayerMagicAttackRight,
+        PlayerGameOver
     }
 
     private void changeAnimationState(AnimationState state){
@@ -138,6 +147,62 @@ public class Player : MonoBehaviour
         animator.Play(state.ToString());
         currentAnimationState = state;
     }
+
+    public void setMeleeAttackAnimation(){
+        switch(lastFacedDirection){
+            case Direction.Up:
+                changeAnimationState(AnimationState.PayerMeleeAttackUp);
+                break;
+            case Direction.Down:
+                changeAnimationState(AnimationState.PlayerMeleeAttackDown);
+                break;
+            case Direction.Left:
+                changeAnimationState(AnimationState.PlayerMeleeAttackLeft);
+                break;
+            case Direction.Right:
+                changeAnimationState(AnimationState.PlayerMeleeAttackRight);
+                break;
+                
+            }
+    }
+
+    public void setRangedAttackAnimation(){
+        switch(lastFacedDirection){
+            case Direction.Up:
+                changeAnimationState(AnimationState.PlayerRangedAttackUp);
+                break;
+            case Direction.Down:
+                changeAnimationState(AnimationState.PlayerRangedAttackDown);
+                break;
+            case Direction.Left:
+                changeAnimationState(AnimationState.PlayerRangedAttackLeft);
+                break;
+            case Direction.Right:
+                changeAnimationState(AnimationState.PlayerRangedAttackRight);
+                break;
+                
+            }
+    }
+
+    public void setMagicAttackAnimation(){
+        switch(lastFacedDirection){
+            case Direction.Up:
+                changeAnimationState(AnimationState.PlayerMagicAttackUp);
+                break;
+            case Direction.Down:
+                changeAnimationState(AnimationState.PlayerMagicAttackDown);
+                break;
+            case Direction.Left:
+                changeAnimationState(AnimationState.PlayerMagicAttackLeft);
+                break;
+            case Direction.Right:
+                changeAnimationState(AnimationState.PlayerMagicAttackRight);
+                break;
+                
+            }
+    }
+
+
     #endregion
 
 
@@ -201,7 +266,6 @@ public class Player : MonoBehaviour
             processSkillInput();
         } else {
             standStill();
-            setAttackAnimation();
         }
         checkGameOver();
     }
@@ -275,6 +339,7 @@ public class Player : MonoBehaviour
         if(currentHealthPoints <= 0){
             isDead = true;
             AudioManager.getInstance().PlaySound("UIGameOver");
+            changeAnimationState(AnimationState.PlayerGameOver);
         }
     }
 
@@ -419,37 +484,23 @@ public class Player : MonoBehaviour
                 case WeaponType.Melee:
                     Instantiate(meleeAttackPrefab, transform.position, transform.rotation);
                     setActionDelaySeconds(0.5f);
+                    setMeleeAttackAnimation();
                     break;
                 case WeaponType.Range:
                     Instantiate(rangedAttackPrefab, transform.position, transform.rotation);
                     setActionDelaySeconds(0.55f);
+                    setRangedAttackAnimation();
                     break;
                 case WeaponType.Magic:
                     Instantiate(magicAttackPrefab, transform.position, transform.rotation);
                     setActionDelaySeconds(0.55f);
+                    setMagicAttackAnimation();
                     break;
             }
         }
     }
     public void standStill(){
         movement = Vector2.zero;
-    }
-    public void setAttackAnimation(){
-        switch(lastFacedDirection){
-            case Direction.Up:
-                changeAnimationState(AnimationState.PayerAttackUp);
-                break;
-            case Direction.Down:
-                changeAnimationState(AnimationState.PlayerAttackDown);
-                break;
-            case Direction.Left:
-                changeAnimationState(AnimationState.PlayerAttackLeft);
-                break;
-            case Direction.Right:
-                changeAnimationState(AnimationState.PlayerAttackRight);
-                break;
-                
-            }
     }
     
     #region UseSkills
@@ -473,53 +524,60 @@ public class Player : MonoBehaviour
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<FeuerPfeil>();
                 setActionDelaySeconds(0.5f);
+                setRangedAttackAnimation();
 
             } else if (equippedAbility == Ability.Wasserpfeilhagel && currentMagicPoints >= WasserpfeilhagelMPKost){
                 currentMagicPoints -= WasserpfeilhagelMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<WasserPfeile>();
                 setActionDelaySeconds(0.5f);
+                setRangedAttackAnimation();
 
             } else if (equippedAbility == Ability.Scharfschuss && currentMagicPoints >= ScharfschussMPKost){
                 currentMagicPoints -= ScharfschussMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<ScharfSchuss>();
                 setActionDelaySeconds(0.5f);
+                setRangedAttackAnimation();
 
             } else if (equippedAbility == Ability.Wasserhieb && currentMagicPoints >= WasserhiebMPKost){
                 currentMagicPoints -=  WasserhiebMPKost;
                 GameObject skill = Instantiate(WasserHieb, transform.position, transform.rotation);
                 setActionDelaySeconds(0.5f);
+                setMeleeAttackAnimation();
 
             } else if (equippedAbility == Ability.Elektrowirbel && currentMagicPoints >= ElektrowirbelMPKost){
                 currentMagicPoints -= ElektrowirbelMPKost;
                 GameObject skill = Instantiate(ElektroWirbel, transform.position, transform.rotation);
                 setActionDelaySeconds(0.5f);
-                /*Start Wirbel Animation maybe?*/
+                setMeleeAttackAnimation();
 
             } else if (equippedAbility == Ability.Rage && currentMagicPoints >= RageMPKost){
                 currentMagicPoints -= RageMPKost;
                 GameObject skill = Instantiate(Rage, transform.position, transform.rotation);
                 setActionDelaySeconds(0.5f);
-                /*Insert Rage Animation*/
+                setMeleeAttackAnimation();
 
             } else if (equippedAbility == Ability.Feuerball && currentMagicPoints >= FeuerballMPKost){
                 currentMagicPoints -= FeuerballMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<FeuerBall>();
                 setActionDelaySeconds(0.5f);
+                setMagicAttackAnimation();
 
             } else if (equippedAbility == Ability.Wasserflaeche && currentMagicPoints >= WasserflaecheMPKost){
                 currentMagicPoints -= WasserflaecheMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<Wasserfläche>();
                 setActionDelaySeconds(0.5f);
+                setMagicAttackAnimation();
 
             } else if (equippedAbility == Ability.Kettenblitz && currentMagicPoints >= KettenblitzMPKost){
                 currentMagicPoints -= KettenblitzMPKost;
                 GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
                 skill.AddComponent<Kettenblitz>();
                 setActionDelaySeconds(0.5f);
+                setMagicAttackAnimation();
 
             }
             updateUIStatusBar();
