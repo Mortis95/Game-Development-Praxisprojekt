@@ -183,14 +183,14 @@ MonoBehaviour:
     isLooping: 0
     source: {fileID: 0}
   - name: SpielerGehenLangsam
-    clip: {fileID: 8300000, guid: fc4ed7dc8c5fc8e47bc03d89bf1aad13, type: 3}
-    volume: 0.4
+    clip: {fileID: 8300000, guid: cd8aa473171460948844f5c2efdb7771, type: 3}
+    volume: 0.05
     pitch: 1
     isLooping: 0
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0.4
+  - name: SpielerGehenSchnell
+    clip: {fileID: 8300000, guid: cd8aa473171460948844f5c2efdb7771, type: 3}
+    volume: 0.1
     pitch: 1
     isLooping: 0
     source: {fileID: 0}

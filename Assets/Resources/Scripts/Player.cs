@@ -35,6 +35,8 @@ public class Player : MonoBehaviour
     private float lastActionTime;
     private float currentActionDelaySeconds;
     private bool receivingKnockback;
+    private float walkingSoundTime;
+    private float walkingSoundDelay;
     #endregion
 
     #region Equipment
@@ -173,6 +175,9 @@ public class Player : MonoBehaviour
         receivingKnockback = false;
         currentAnimationState = AnimationState.PlayerStandDown;
         isDead = false;
+
+        walkingSoundTime = 0;
+        walkingSoundDelay = 0.65f;
 
         gm = GameManager.getInstance();
 
@@ -361,7 +366,10 @@ public class Player : MonoBehaviour
         movement.Normalize();   //Normalizes the vector to have a magnitude of 1. Heißt im Klartext, unser Spieler läuft Diagonal genauso schnell wie horizontal / vertikal
 
         //Movement sound
-        if(movement.magnitude > 0){AudioManager.getInstance().PlaySoundNotOverlapping("SpielerGehenLangsam");}
+        if(movement.magnitude > 0 && (Time.time - walkingSoundTime) >= walkingSoundDelay){
+            AudioManager.getInstance().PlaySoundNotOverlapping("SpielerGehenLangsam");
+            walkingSoundTime = Time.time;
+            }
 
         //Wenn moveX und moveY == 0 dann liegt kein Movement vor und wir müssen die dazugehörige Steh-Animation spielen
         if(moveX == 0 && moveY == 0){
@@ -384,12 +392,16 @@ public class Player : MonoBehaviour
         //spielen wir die jeweilige Lauf-Animation.
         //Somit haben wir alle Winkel in 360° abgedeckt. (Notiz: In Edge-Cases wird oben/unten priorisiert)  
         } else if(Vector2.Angle(Vector2.up, movement) <= 45){
+            lastFacedDirection = Direction.Up;
             changeAnimationState(AnimationState.PlayerWalkUp);
         } else if(Vector2.Angle(Vector2.down, movement) <= 45 ){
+            lastFacedDirection = Direction.Down;
             changeAnimationState(AnimationState.PlayerWalkDown);
         } else if(Vector2.Angle(Vector2.left, movement) < 45 ){
+            lastFacedDirection = Direction.Left;
             changeAnimationState(AnimationState.PlayerWalkLeft);
         } else if(Vector2.Angle(Vector2.right, movement) < 45 ){
+            lastFacedDirection = Direction.Right;
             changeAnimationState(AnimationState.PlayerWalkRight);
         }
     }
