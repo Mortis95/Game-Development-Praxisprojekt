@@ -151,7 +151,7 @@ public class Player : MonoBehaviour
     public void setMeleeAttackAnimation(){
         switch(lastFacedDirection){
             case Direction.Up:
-                changeAnimationState(AnimationState.PayerMeleeAttackUp);
+                changeAnimationState(AnimationState.PlayerMeleeAttackUp);
                 break;
             case Direction.Down:
                 changeAnimationState(AnimationState.PlayerMeleeAttackDown);
