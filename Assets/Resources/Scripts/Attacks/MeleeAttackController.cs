@@ -72,7 +72,13 @@ public class MeleeAttackController : MonoBehaviour
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
             //Need to check for enemyScript several times, in case the enemy dies in the meantime.
-            if(enemyScript != null){enemyScript.takeDamage(DamageType.Normal, damage);}
+            if(enemyScript != null){
+                if(!RageBuffController.rageBuffActive){
+                    enemyScript.takeDamage(DamageType.Normal, damage);
+                } else {
+                    enemyScript.takeDamage(DamageType.Feuer, damage);
+                    }
+                }
             if(enemyScript != null){enemyScript.getKnockback(transform.position, knockBackForce);}
 
         }

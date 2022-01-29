@@ -16,6 +16,7 @@ public class WasserHieb : MonoBehaviour
 
     [SerializeField]
     private int damage;
+    private int playerStrength;
     
 
     
@@ -29,7 +30,8 @@ public class WasserHieb : MonoBehaviour
         Player pl = Player.getInstance();
 
         //Set Damage
-        damage = (int)((float) pl.getStrength() * pl.getSkillDamageMultiplier());
+        playerStrength = pl.getStrength();
+        damage = (int)((float) playerStrength * pl.getSkillDamageMultiplier());
         
         //Play Sound
         AudioManager.getInstance().PlaySound("SkillSchwertWasserhieb");
@@ -95,6 +97,7 @@ public class WasserHieb : MonoBehaviour
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
             enemyScript.takeDamage(DamageType.Wasser, damage);
+            enemyScript.getKnockback(transform.position, playerStrength);
 
         }
     }

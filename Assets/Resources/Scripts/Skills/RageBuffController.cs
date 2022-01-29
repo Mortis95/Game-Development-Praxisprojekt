@@ -6,12 +6,14 @@ public class RageBuffController : MonoBehaviour
 {
 
     //Singleton-Pattern, do not let Rage stack.
-    public static RageBuffController instance;    
+    public static RageBuffController instance;
+    public static bool rageBuffActive = false; 
 
     //Public Stuff
     public float disappearAfterSeconds;
     public float rotationSpeed;
     public Sprite[] sprites;
+    public float rageBuffStrengthMultiplier;
     
     //Private Stuff, kann Skript sich schon selbst holen
     private float currentAngle;
@@ -31,6 +33,7 @@ public class RageBuffController : MonoBehaviour
             return;
         } else {
             RageBuffController.instance = this;
+            rageBuffActive = true;
         }
 
         //Get SpriteRenderer
@@ -38,7 +41,7 @@ public class RageBuffController : MonoBehaviour
 
         //Do the actual buff
         Player pl = Player.getInstance();
-        pl.setStrength((int)((float) pl.getStrength() * 1.4f));       //Konvert zu Float, multiply mit 1.4, konvert back zu int -> 40% STR Buff
+        pl.setStrength((int)((float) pl.getStrength() * rageBuffStrengthMultiplier));       //Konvert zu Float, multiply mit 1.4, konvert back zu int -> 40% STR Buff
 
         //Ein paar wichtige Sachen setzen
         currentAngle = 0;
@@ -66,6 +69,7 @@ public class RageBuffController : MonoBehaviour
     }
     private void endBuff(){
         instance = null;
+        rageBuffActive = false;
         Player.getInstance().recalculateStats();        //Make Player recalculate all stats at the end of the Buff, so no wrong Stats are left over.
         Destroy(gameObject);
     }
