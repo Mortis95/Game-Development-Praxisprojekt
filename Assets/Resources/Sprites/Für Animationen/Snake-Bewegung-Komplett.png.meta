@@ -1,0 +1,720 @@
+fileFormatVersion: 2
+guid: d68f407b6dccb674e8a667945672bdfd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2194232870906910952
+    second: Snake-Bewegung-Komplett_0
+  - first:
+      213: 311480267471451998
+    second: Snake-Bewegung-Komplett_1
+  - first:
+      213: -6472095308263939224
+    second: Snake-Bewegung-Komplett_2
+  - first:
+      213: 4495277954566428039
+    second: Snake-Bewegung-Komplett_3
+  - first:
+      213: 4445026014973926324
+    second: Snake-Bewegung-Komplett_4
+  - first:
+      213: 4057464374927412087
+    second: Snake-Bewegung-Komplett_5
+  - first:
+      213: -2669412828937684183
+    second: Snake-Bewegung-Komplett_6
+  - first:
+      213: 7140186225704686377
+    second: Snake-Bewegung-Komplett_7
+  - first:
+      213: -8054632868362137958
+    second: Snake-Bewegung-Komplett_8
+  - first:
+      213: -4636817297369237536
+    second: Snake-Bewegung-Komplett_9
+  - first:
+      213: 7092539264126426848
+    second: Snake-Bewegung-Komplett_10
+  - first:
+      213: 2622572041416721978
+    second: Snake-Bewegung-Komplett_11
+  - first:
+      213: 1940998286139740911
+    second: Snake-Bewegung-Komplett_12
+  - first:
+      213: -7055484407977489413
+    second: Snake-Bewegung-Komplett_13
+  - first:
+      213: -7935370474648312876
+    second: Snake-Bewegung-Komplett_14
+  - first:
+      213: -3974443475841179080
+    second: Snake-Bewegung-Komplett_15
+  - first:
+      213: -8232821488634637022
+    second: Snake-Bewegung-Komplett_16
+  - first:
+      213: 2993350265437857080
+    second: Snake-Bewegung-Komplett_17
+  - first:
+      213: 559732382099521942
+    second: Snake-Bewegung-Komplett_18
+  - first:
+      213: 6216165030383090685
+    second: Snake-Bewegung-Komplett_19
+  - first:
+      213: -8316430614014962055
+    second: Snake-Bewegung-Komplett_20
+  - first:
+      213: 4634905207046098857
+    second: Snake-Bewegung-Komplett_21
+  - first:
+      213: 1087296242948669000
+    second: Snake-Bewegung-Komplett_22
+  - first:
+      213: 8279404512488723176
+    second: Snake-Bewegung-Komplett_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2604
+        width: 493
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e854e8ab2b737e10800000000000000
+      internalID: 2194232870906910952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_1
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 2610
+        width: 572
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57fd2927a9925400800000000000000
+      internalID: 311480267471451998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_2
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 2643
+        width: 503
+        height: 485
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863a4769b9f7e26a0800000000000000
+      internalID: -6472095308263939224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_3
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 2596
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78593909b7f626e30800000000000000
+      internalID: 4495277954566428039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_4
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 2577
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb14ef1c97efad30800000000000000
+      internalID: 4445026014973926324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1891
+        width: 417
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bc9540a520f4830800000000000000
+      internalID: 4057464374927412087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_6
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1893
+        width: 294
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b7c4cdc2754fad0800000000000000
+      internalID: -2669412828937684183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_7
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 1901
+        width: 416
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923d34dba89071360800000000000000
+      internalID: 7140186225704686377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_8
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 2036
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ec61dd412383090800000000000000
+      internalID: -8054632868362137958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_9
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 2025
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e77be52c37b6afb0800000000000000
+      internalID: -4636817297369237536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_10
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 2020
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee14c102e2cd6260800000000000000
+      internalID: 7092539264126426848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_11
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1895
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36c38e606f356420800000000000000
+      internalID: 2622572041416721978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_12
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1206
+        width: 503
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2500b48afcfea10800000000000000
+      internalID: 1940998286139740911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_13
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1173
+        width: 572
+        height: 532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbc1300052e51e90800000000000000
+      internalID: -7055484407977489413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_14
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 1166
+        width: 490
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3e671c896efd190800000000000000
+      internalID: -7935370474648312876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_15
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1140
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8322e9a57b0f7d8c0800000000000000
+      internalID: -3974443475841179080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_16
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1158
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225dab6b9742fbd80800000000000000
+      internalID: -8232821488634637022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_17
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 374
+        width: 482
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835aebbf4348a8920800000000000000
+      internalID: 2993350265437857080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_18
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 398
+        width: 270
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691435cc2a194c700800000000000000
+      internalID: 559732382099521942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_19
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 527
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb70351921444650800000000000000
+      internalID: 6216165030383090685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_20
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 354
+        width: 424
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976547c3b6a169c80800000000000000
+      internalID: -8316430614014962055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_21
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 514
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af4791aabd725040800000000000000
+      internalID: 4634905207046098857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_22
+      rect:
+        serializedVersion: 2
+        x: 1907
+        y: 496
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e72961c2ad61f00800000000000000
+      internalID: 1087296242948669000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Bewegung-Komplett_23
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 393
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e218a6b98a56e270800000000000000
+      internalID: 8279404512488723176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

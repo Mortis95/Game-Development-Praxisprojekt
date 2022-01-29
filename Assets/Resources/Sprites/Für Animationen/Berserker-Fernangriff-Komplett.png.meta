@@ -1,0 +1,480 @@
+fileFormatVersion: 2
+guid: 09e516e26be998647a82398b586b95bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5882260089379620546
+    second: Berserker-Fernangriff-Komplett_0
+  - first:
+      213: -3461413959159153595
+    second: Berserker-Fernangriff-Komplett_1
+  - first:
+      213: 1863486556853658324
+    second: Berserker-Fernangriff-Komplett_2
+  - first:
+      213: 6780492361909621339
+    second: Berserker-Fernangriff-Komplett_3
+  - first:
+      213: 1735673931808243993
+    second: Berserker-Fernangriff-Komplett_4
+  - first:
+      213: 9166150796350745562
+    second: Berserker-Fernangriff-Komplett_5
+  - first:
+      213: 2174511210880852362
+    second: Berserker-Fernangriff-Komplett_6
+  - first:
+      213: 7553422640778846597
+    second: Berserker-Fernangriff-Komplett_7
+  - first:
+      213: 7815588893112829110
+    second: Berserker-Fernangriff-Komplett_8
+  - first:
+      213: 1661135666950697194
+    second: Berserker-Fernangriff-Komplett_9
+  - first:
+      213: -4446180356451246214
+    second: Berserker-Fernangriff-Komplett_10
+  - first:
+      213: -3995540307348108699
+    second: Berserker-Fernangriff-Komplett_11
+  - first:
+      213: 8406313133363685288
+    second: Berserker-Fernangriff-Komplett_12
+  - first:
+      213: 1291434470779224299
+    second: Berserker-Fernangriff-Komplett_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_0
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 2544
+        width: 464
+        height: 657
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39f1104d930e5ea0800000000000000
+      internalID: -5882260089379620546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_1
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 2536
+        width: 550
+        height: 651
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c7dbfe75696ffc0800000000000000
+      internalID: -3461413959159153595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_2
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 2537
+        width: 543
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d26af8762f6cd910800000000000000
+      internalID: 1863486556853658324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1712
+        width: 575
+        height: 675
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b525fd9e0e5291e50800000000000000
+      internalID: 6780492361909621339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_4
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1724
+        width: 533
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9110657be3a561810800000000000000
+      internalID: 1735673931808243993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_5
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 1722
+        width: 527
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb662eb595b43f70800000000000000
+      internalID: 9166150796350745562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_6
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 1723
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8168acdc6a6d2e10800000000000000
+      internalID: 2174511210880852362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_7
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 912
+        width: 542
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581240e3fd523d860800000000000000
+      internalID: 7553422640778846597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_8
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 911
+        width: 550
+        height: 653
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b48a7480bc867c60800000000000000
+      internalID: 7815588893112829110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_9
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 921
+        width: 465
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0f358861a8d0710800000000000000
+      internalID: 1661135666950697194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_10
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 77
+        width: 584
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f576ec58efb42c0800000000000000
+      internalID: -4446180356451246214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_11
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 84
+        width: 545
+        height: 669
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ac2ce724dfc88c0800000000000000
+      internalID: -3995540307348108699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_12
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 92
+        width: 586
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7e7d8914939a470800000000000000
+      internalID: 8406313133363685288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Fernangriff-Komplett_13
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 78
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be08d711fc81ce110800000000000000
+      internalID: 1291434470779224299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

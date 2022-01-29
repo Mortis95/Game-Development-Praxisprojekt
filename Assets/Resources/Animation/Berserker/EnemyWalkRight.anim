@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NPCWalkUp
+  m_Name: EnemyWalkRight
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -2488570721017882908, guid: 71d871221f5a8d342b5ec6d50818e591,
+      value: {fileID: -8209540395731910925, guid: aa7c3a13a39568940acc2d717e543a48,
         type: 3}
     - time: 0.125
-      value: {fileID: -7762659729825779941, guid: 71d871221f5a8d342b5ec6d50818e591,
+      value: {fileID: -4127865789503898973, guid: aa7c3a13a39568940acc2d717e543a48,
         type: 3}
     - time: 0.25
-      value: {fileID: 4189585291383586548, guid: 71d871221f5a8d342b5ec6d50818e591,
+      value: {fileID: -438474173593463315, guid: aa7c3a13a39568940acc2d717e543a48,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -47,9 +47,9 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -2488570721017882908, guid: 71d871221f5a8d342b5ec6d50818e591, type: 3}
-    - {fileID: -7762659729825779941, guid: 71d871221f5a8d342b5ec6d50818e591, type: 3}
-    - {fileID: 4189585291383586548, guid: 71d871221f5a8d342b5ec6d50818e591, type: 3}
+    - {fileID: -8209540395731910925, guid: aa7c3a13a39568940acc2d717e543a48, type: 3}
+    - {fileID: -4127865789503898973, guid: aa7c3a13a39568940acc2d717e543a48, type: 3}
+    - {fileID: -438474173593463315, guid: aa7c3a13a39568940acc2d717e543a48, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

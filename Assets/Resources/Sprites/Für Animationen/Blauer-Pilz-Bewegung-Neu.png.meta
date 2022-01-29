@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: f2311665e6e3a404c8453daa6726d4f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4816190484899823751
+    second: Blauer-Pilz-Bewegung-Neu_0
+  - first:
+      213: 760681108657411705
+    second: Blauer-Pilz-Bewegung-Neu_1
+  - first:
+      213: 5766716737769811707
+    second: Blauer-Pilz-Bewegung-Neu_2
+  - first:
+      213: 2924075121156822927
+    second: Blauer-Pilz-Bewegung-Neu_3
+  - first:
+      213: -9221274042533586476
+    second: Blauer-Pilz-Bewegung-Neu_4
+  - first:
+      213: 6079077576720210594
+    second: Blauer-Pilz-Bewegung-Neu_5
+  - first:
+      213: -1435812228032451927
+    second: Blauer-Pilz-Bewegung-Neu_6
+  - first:
+      213: 7657156998951752123
+    second: Blauer-Pilz-Bewegung-Neu_7
+  - first:
+      213: 6184026021062909257
+    second: Blauer-Pilz-Bewegung-Neu_8
+  - first:
+      213: -5115226150711288406
+    second: Blauer-Pilz-Bewegung-Neu_9
+  - first:
+      213: 3332186631904244162
+    second: Blauer-Pilz-Bewegung-Neu_10
+  - first:
+      213: -1393779458472545331
+    second: Blauer-Pilz-Bewegung-Neu_11
+  - first:
+      213: 5944795754099815730
+    second: Blauer-Pilz-Bewegung-Neu_12
+  - first:
+      213: 6556022575893775766
+    second: Blauer-Pilz-Bewegung-Neu_13
+  - first:
+      213: -264745282823529487
+    second: Blauer-Pilz-Bewegung-Neu_14
+  - first:
+      213: 5435859291416173936
+    second: Blauer-Pilz-Bewegung-Neu_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_0
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 3284
+        width: 89
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ffde07544792db0800000000000000
+      internalID: -4816190484899823751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2484
+        width: 599
+        height: 782
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97610e4207b7e8a00800000000000000
+      internalID: 760681108657411705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_2
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 2662
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfea113d15e770050800000000000000
+      internalID: 5766716737769811707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_3
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 2469
+        width: 597
+        height: 783
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f871c1d84d6649820800000000000000
+      internalID: 2924075121156822927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_4
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 2480
+        width: 598
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9514e5d14770080800000000000000
+      internalID: -9221274042533586476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1655
+        width: 571
+        height: 781
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa537209d83d5450800000000000000
+      internalID: 6079077576720210594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_6
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1642
+        width: 529
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aaa6f7c268f21ce0800000000000000
+      internalID: -1435812228032451927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_7
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 1648
+        width: 573
+        height: 782
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb15aef98bfa34a60800000000000000
+      internalID: 7657156998951752123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_8
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 839
+        width: 571
+        height: 783
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d1a3bd6e212d550800000000000000
+      internalID: 6184026021062909257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_9
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 828
+        width: 612
+        height: 781
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad9015eae01309b0800000000000000
+      internalID: -5115226150711288406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_10
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 807
+        width: 571
+        height: 783
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c135f7461e4e3e20800000000000000
+      internalID: 3332186631904244162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_11
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 825
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3f18297fc48ace0800000000000000
+      internalID: -1393779458472545331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 17
+        width: 596
+        height: 783
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235be51dd38208250800000000000000
+      internalID: 5944795754099815730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_13
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 6
+        width: 599
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69507972ccbabfa50800000000000000
+      internalID: 6556022575893775766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_14
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 199
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbd755619f635cf0800000000000000
+      internalID: -264745282823529487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blauer-Pilz-Bewegung-Neu_15
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 22
+        width: 597
+        height: 783
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d1ed1a93d007b40800000000000000
+      internalID: 5435859291416173936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

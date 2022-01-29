@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: 5faf59fe4c6c33042a97303a14015d42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3086794533735235657
+    second: Wespe-Bewegung-Neu_0
+  - first:
+      213: 488126207404041706
+    second: Wespe-Bewegung-Neu_1
+  - first:
+      213: -2394845411344030646
+    second: Wespe-Bewegung-Neu_2
+  - first:
+      213: 7080370863259533189
+    second: Wespe-Bewegung-Neu_3
+  - first:
+      213: 5055099733461406601
+    second: Wespe-Bewegung-Neu_4
+  - first:
+      213: -3916300187469618238
+    second: Wespe-Bewegung-Neu_5
+  - first:
+      213: 4881020894193844176
+    second: Wespe-Bewegung-Neu_6
+  - first:
+      213: 5078576382614938329
+    second: Wespe-Bewegung-Neu_7
+  - first:
+      213: -8353318180278845597
+    second: Wespe-Bewegung-Neu_8
+  - first:
+      213: -6538770481617088044
+    second: Wespe-Bewegung-Neu_9
+  - first:
+      213: 8903933727704176404
+    second: Wespe-Bewegung-Neu_10
+  - first:
+      213: -2274813032743854602
+    second: Wespe-Bewegung-Neu_11
+  - first:
+      213: -3652148516959944477
+    second: Wespe-Bewegung-Neu_12
+  - first:
+      213: 5242706597332528121
+    second: Wespe-Bewegung-Neu_13
+  - first:
+      213: 1982949889679532947
+    second: Wespe-Bewegung-Neu_14
+  - first:
+      213: -3609619828348923737
+    second: Wespe-Bewegung-Neu_15
+  - first:
+      213: 4154392628821266471
+    second: Wespe-Bewegung-Neu_16
+  - first:
+      213: -1885043080543751166
+    second: Wespe-Bewegung-Neu_17
+  - first:
+      213: 65038926660461416
+    second: Wespe-Bewegung-Neu_18
+  - first:
+      213: 926478030632719851
+    second: Wespe-Bewegung-Neu_19
+  - first:
+      213: 3161261939255636321
+    second: Wespe-Bewegung-Neu_20
+  - first:
+      213: -1126488783402040715
+    second: Wespe-Bewegung-Neu_21
+  - first:
+      213: -3924129253316929603
+    second: Wespe-Bewegung-Neu_22
+  - first:
+      213: 1248547659139423502
+    second: Wespe-Bewegung-Neu_23
+  - first:
+      213: 1708584477639319222
+    second: Wespe-Bewegung-Neu_24
+  - first:
+      213: -3175166326720494965
+    second: Wespe-Bewegung-Neu_25
+  - first:
+      213: -5952458118787078307
+    second: Wespe-Bewegung-Neu_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_0
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2130
+        width: 341
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bff712e9b08925d0800000000000000
+      internalID: -3086794533735235657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_1
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 2114
+        width: 341
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae560ed033c26c600800000000000000
+      internalID: 488126207404041706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_2
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 2614
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a446ddc69ccc3ced0800000000000000
+      internalID: -2394845411344030646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_3
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 2425
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f3c9669c7824260800000000000000
+      internalID: 7080370863259533189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_4
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 2122
+        width: 343
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983932dac62572640800000000000000
+      internalID: 5055099733461406601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_5
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 2417
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3e31c9ab186a9c0800000000000000
+      internalID: -3916300187469618238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_6
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 2410
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dffeab74aedcb340800000000000000
+      internalID: 4881020894193844176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_7
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2116
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2a372005aba7640800000000000000
+      internalID: 5078576382614938329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 2022
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fbaa07f5d031c80800000000000000
+      internalID: -8353318180278845597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_9
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1863
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1576f04ee9145a0800000000000000
+      internalID: -6538770481617088044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1492
+        width: 227
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4175d6fdc80219b70800000000000000
+      internalID: 8903933727704176404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_11
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 1493
+        width: 237
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd9fd4699d3e60e0800000000000000
+      internalID: -2274813032743854602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_12
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 1488
+        width: 233
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e002a31646f05dc0800000000000000
+      internalID: -3652148516959944477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_13
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1838
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb2a9b8fd5d1c840800000000000000
+      internalID: 5242706597332528121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_14
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1369
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393afb52b6ad48b10800000000000000
+      internalID: 1982949889679532947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_15
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 867
+        width: 342
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a05e0504ed08edc0800000000000000
+      internalID: -3609619828348923737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_16
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 882
+        width: 342
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7209462c51e57a930800000000000000
+      internalID: 4154392628821266471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_17
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 874
+        width: 343
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204b1ed3e4bf6d5e0800000000000000
+      internalID: -1885043080543751166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_18
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 1178
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8636b282f8017e000800000000000000
+      internalID: 65038926660461416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_19
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1170
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be511143cd28bdc00800000000000000
+      internalID: 926478030632719851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_20
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1089
+        width: 111
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1617b431cfe0fdb20800000000000000
+      internalID: 3161261939255636321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_21
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 1073
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5720cdd7b68ed50f0800000000000000
+      internalID: -1126488783402040715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_22
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 1018
+        width: 5
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7535b2c31ba89c0800000000000000
+      internalID: -3924129253316929603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_23
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 210
+        width: 292
+        height: 497
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d962c1b7bb35110800000000000000
+      internalID: 1248547659139423502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_24
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 192
+        width: 239
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be107aa78c16b710800000000000000
+      internalID: 1708584477639319222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_25
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 239
+        width: 44
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b820b017c0b8fe3d0800000000000000
+      internalID: -3175166326720494965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wespe-Bewegung-Neu_26
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 87
+        width: 326
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d576e41e0ee946da0800000000000000
+      internalID: -5952458118787078307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

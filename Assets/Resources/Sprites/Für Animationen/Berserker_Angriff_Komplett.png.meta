@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: ebfe83a970905bd45b8414cf92fc0f27
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8011917426602187523
+    second: Berserker_Angriff_Komplett_0
+  - first:
+      213: -2273697999630851584
+    second: Berserker_Angriff_Komplett_1
+  - first:
+      213: -5773685767638281110
+    second: Berserker_Angriff_Komplett_2
+  - first:
+      213: -5353371477231445420
+    second: Berserker_Angriff_Komplett_3
+  - first:
+      213: 4485127606445496838
+    second: Berserker_Angriff_Komplett_4
+  - first:
+      213: 7465588756434020995
+    second: Berserker_Angriff_Komplett_5
+  - first:
+      213: -6266084661682887244
+    second: Berserker_Angriff_Komplett_6
+  - first:
+      213: 2949458001515318235
+    second: Berserker_Angriff_Komplett_7
+  - first:
+      213: 1229665752706023312
+    second: Berserker_Angriff_Komplett_8
+  - first:
+      213: -6358146148821730228
+    second: Berserker_Angriff_Komplett_9
+  - first:
+      213: -4340732331444003840
+    second: Berserker_Angriff_Komplett_10
+  - first:
+      213: 4987199955191582325
+    second: Berserker_Angriff_Komplett_11
+  - first:
+      213: 3374927533881821662
+    second: Berserker_Angriff_Komplett_12
+  - first:
+      213: 2930115991731834562
+    second: Berserker_Angriff_Komplett_13
+  - first:
+      213: 1297174845839896051
+    second: Berserker_Angriff_Komplett_14
+  - first:
+      213: 5071083724687198360
+    second: Berserker_Angriff_Komplett_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_0
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 2550
+        width: 466
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b9266537c003f60800000000000000
+      internalID: 8011917426602187523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_1
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 2545
+        width: 731
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002ac7547b33270e0800000000000000
+      internalID: -2273697999630851584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_2
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 2555
+        width: 820
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a641137726fbfdfa0800000000000000
+      internalID: -5773685767638281110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 2491
+        width: 32
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a59ec310105b5b0800000000000000
+      internalID: -5353371477231445420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_4
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 2496
+        width: 33
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a5b7a7bcf5e3e30800000000000000
+      internalID: 4485127606445496838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1826
+        width: 697
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a666a6b691b9760800000000000000
+      internalID: 7465588756434020995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_6
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1585
+        width: 516
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b52ed703356a09a0800000000000000
+      internalID: -6266084661682887244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_7
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 1828
+        width: 712
+        height: 646
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb014cec649ee820800000000000000
+      internalID: 2949458001515318235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 945
+        width: 820
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f718eac76a01110800000000000000
+      internalID: 1229665752706023312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_9
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 935
+        width: 731
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c7679b3c353c7a0800000000000000
+      internalID: -6358146148821730228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_10
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 940
+        width: 466
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c1a3751fe92c3c0800000000000000
+      internalID: -4340732331444003840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_11
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 905
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ec9099fe7163540800000000000000
+      internalID: 4987199955191582325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_12
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 192
+        width: 748
+        height: 641
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed906bff5b626de20800000000000000
+      internalID: 3374927533881821662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_13
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 203
+        width: 546
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce0ed558fcd9a820800000000000000
+      internalID: 2930115991731834562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_14
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 205
+        width: 747
+        height: 641
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdebd946ad700210800000000000000
+      internalID: 1297174845839896051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker_Angriff_Komplett_15
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 197
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898ce34a7cb106640800000000000000
+      internalID: 5071083724687198360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

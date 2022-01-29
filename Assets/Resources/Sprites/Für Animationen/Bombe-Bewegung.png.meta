@@ -1,0 +1,1032 @@
+fileFormatVersion: 2
+guid: e9317eeb33310b648af16ad477ea5806
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3227042719222269811
+    second: Bombe-Bewegung_0
+  - first:
+      213: -4551079981349655104
+    second: Bombe-Bewegung_1
+  - first:
+      213: -1964331536262602196
+    second: Bombe-Bewegung_2
+  - first:
+      213: -8177680060321711274
+    second: Bombe-Bewegung_3
+  - first:
+      213: 2251822527353806451
+    second: Bombe-Bewegung_4
+  - first:
+      213: -7368670957978954604
+    second: Bombe-Bewegung_5
+  - first:
+      213: 4485259958451332420
+    second: Bombe-Bewegung_6
+  - first:
+      213: -5963781320444170421
+    second: Bombe-Bewegung_7
+  - first:
+      213: -3495404031379798727
+    second: Bombe-Bewegung_8
+  - first:
+      213: -5571366439910572520
+    second: Bombe-Bewegung_9
+  - first:
+      213: 2650048413019836215
+    second: Bombe-Bewegung_10
+  - first:
+      213: 1967336527675835590
+    second: Bombe-Bewegung_11
+  - first:
+      213: -3351959298126628709
+    second: Bombe-Bewegung_12
+  - first:
+      213: 1993127153424022908
+    second: Bombe-Bewegung_13
+  - first:
+      213: 2582734477872751414
+    second: Bombe-Bewegung_14
+  - first:
+      213: -3994862617516141877
+    second: Bombe-Bewegung_15
+  - first:
+      213: -4795903806423750222
+    second: Bombe-Bewegung_16
+  - first:
+      213: 635237388873593503
+    second: Bombe-Bewegung_17
+  - first:
+      213: -1524485764062618248
+    second: Bombe-Bewegung_18
+  - first:
+      213: 1214132718572964549
+    second: Bombe-Bewegung_19
+  - first:
+      213: 330679225017966924
+    second: Bombe-Bewegung_20
+  - first:
+      213: 4662814312934218167
+    second: Bombe-Bewegung_21
+  - first:
+      213: 4206866215596242896
+    second: Bombe-Bewegung_22
+  - first:
+      213: 7311057001679441752
+    second: Bombe-Bewegung_23
+  - first:
+      213: -1600136080343010370
+    second: Bombe-Bewegung_24
+  - first:
+      213: -1211677749508933712
+    second: Bombe-Bewegung_25
+  - first:
+      213: 2119480866217945044
+    second: Bombe-Bewegung_26
+  - first:
+      213: -6646112024426486966
+    second: Bombe-Bewegung_27
+  - first:
+      213: 4527945529375750836
+    second: Bombe-Bewegung_28
+  - first:
+      213: -548835249358145466
+    second: Bombe-Bewegung_29
+  - first:
+      213: 6654412135442583904
+    second: Bombe-Bewegung_30
+  - first:
+      213: -6529061860365889831
+    second: Bombe-Bewegung_31
+  - first:
+      213: 3356470880255562388
+    second: Bombe-Bewegung_32
+  - first:
+      213: 7828834514382458867
+    second: Bombe-Bewegung_33
+  - first:
+      213: 8853367603933960533
+    second: Bombe-Bewegung_34
+  - first:
+      213: -7984670875886015703
+    second: Bombe-Bewegung_35
+  - first:
+      213: -5541843660270280512
+    second: Bombe-Bewegung_36
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bombe-Bewegung_0
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 3295
+        width: 78
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88feb59ebd3733d0800000000000000
+      internalID: -3227042719222269811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_1
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 3287
+        width: 78
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd234f9ed057d0c0800000000000000
+      internalID: -4551079981349655104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_2
+      rect:
+        serializedVersion: 2
+        x: 2467
+        y: 3266
+        width: 69
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2268ff00ea4db4e0800000000000000
+      internalID: -1964331536262602196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_3
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 3297
+        width: 71
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65bbab5ff4b038e80800000000000000
+      internalID: -8177680060321711274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_4
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 2542
+        width: 504
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e552078a4104f10800000000000000
+      internalID: 2251822527353806451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_5
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 2521
+        width: 502
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4945deafdc83db990800000000000000
+      internalID: -7368670957978954604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_6
+      rect:
+        serializedVersion: 2
+        x: 2301
+        y: 2505
+        width: 501
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44566c41b28de3e30800000000000000
+      internalID: 4485259958451332420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_7
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 2450
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fa0dc8c746c3da0800000000000000
+      internalID: -5963781320444170421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_8
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 2447
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935832b8d84dd7fc0800000000000000
+      internalID: -3495404031379798727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_9
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1659
+        width: 540
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ef893cdb78ea2b0800000000000000
+      internalID: -5571366439910572520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_10
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 1659
+        width: 539
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f82a7bdfcd6c420800000000000000
+      internalID: 2650048413019836215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_11
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 2207
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4c4c506226d4b10800000000000000
+      internalID: 1967336527675835590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_12
+      rect:
+        serializedVersion: 2
+        x: 2331
+        y: 1668
+        width: 540
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98389d17c27b71d0800000000000000
+      internalID: -3351959298126628709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_13
+      rect:
+        serializedVersion: 2
+        x: 2283
+        y: 2143
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d3604069209ab10800000000000000
+      internalID: 1993127153424022908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_14
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 2050
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63362ced257b7d320800000000000000
+      internalID: 2582734477872751414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_15
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1589
+        width: 70
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc296747d956f88c0800000000000000
+      internalID: -3994862617516141877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_16
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 1530
+        width: 133
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b92b29d5e6817db0800000000000000
+      internalID: -4795903806423750222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_17
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 1566
+        width: 70
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f927bdf1a01d0d800800000000000000
+      internalID: 635237388873593503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_18
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 1597
+        width: 71
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d58ef4640f7dae0800000000000000
+      internalID: -1524485764062618248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_19
+      rect:
+        serializedVersion: 2
+        x: 2636
+        y: 1587
+        width: 71
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca88b8564779d010800000000000000
+      internalID: 1214132718572964549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_20
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1557
+        width: 70
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c412ccdc00fc69400800000000000000
+      internalID: 330679225017966924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_21
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 1540
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b91d08b9e4a5b040800000000000000
+      internalID: 4662814312934218167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_22
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1462
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7b43eb88ac16a30800000000000000
+      internalID: 4206866215596242896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_23
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 834
+        width: 554
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f4cbd7b97167560800000000000000
+      internalID: 7311057001679441752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_24
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 1446
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb37eda76bc2bc9e0800000000000000
+      internalID: -1600136080343010370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_25
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 813
+        width: 544
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7764ea1814f2fe0800000000000000
+      internalID: -1211677749508933712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1369
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7682b4e98e96d10800000000000000
+      internalID: 2119480866217945044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_27
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 797
+        width: 501
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a436b9e835444c3a0800000000000000
+      internalID: -6646112024426486966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_28
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 855
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba72c8087e76de30800000000000000
+      internalID: 4527945529375750836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_29
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 749
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6487bc1af352268f0800000000000000
+      internalID: -548835249358145466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_30
+      rect:
+        serializedVersion: 2
+        x: 2692
+        y: 742
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0619a12a498395c50800000000000000
+      internalID: 6654412135442583904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_31
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 738
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de075894dc1465a0800000000000000
+      internalID: -6529061860365889831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_32
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 76
+        width: 538
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49253947b74949e20800000000000000
+      internalID: 3356470880255562388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_33
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 677
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff851b038b95ac60800000000000000
+      internalID: 7828834514382458867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_34
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 41
+        width: 540
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5595f6abdea7dda70800000000000000
+      internalID: 8853367603933960533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_35
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 39
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b286a9420c03190800000000000000
+      internalID: -7984670875886015703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bombe-Bewegung_36
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 38
+        width: 539
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0e6dc8d8a6713b0800000000000000
+      internalID: -5541843660270280512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

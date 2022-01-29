@@ -1,0 +1,480 @@
+fileFormatVersion: 2
+guid: aa7c3a13a39568940acc2d717e543a48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6376988420800422747
+    second: Berserker-Bewegung-Komplett_0
+  - first:
+      213: -3612721377597133137
+    second: Berserker-Bewegung-Komplett_1
+  - first:
+      213: -5784016169817917700
+    second: Berserker-Bewegung-Komplett_2
+  - first:
+      213: -8209540395731910925
+    second: Berserker-Bewegung-Komplett_3
+  - first:
+      213: -4127865789503898973
+    second: Berserker-Bewegung-Komplett_4
+  - first:
+      213: -438474173593463315
+    second: Berserker-Bewegung-Komplett_5
+  - first:
+      213: -1226027161228832152
+    second: Berserker-Bewegung-Komplett_6
+  - first:
+      213: 230242374089088050
+    second: Berserker-Bewegung-Komplett_7
+  - first:
+      213: -3222139400235735604
+    second: Berserker-Bewegung-Komplett_8
+  - first:
+      213: -76463533454929179
+    second: Berserker-Bewegung-Komplett_9
+  - first:
+      213: 4111932079001072545
+    second: Berserker-Bewegung-Komplett_10
+  - first:
+      213: 5257292559500439261
+    second: Berserker-Bewegung-Komplett_11
+  - first:
+      213: 4794944385956374998
+    second: Berserker-Bewegung-Komplett_12
+  - first:
+      213: 3807842686401825960
+    second: Berserker-Bewegung-Komplett_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2547
+        width: 703
+        height: 661
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac596961d26087a0800000000000000
+      internalID: -6376988420800422747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_1
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 2539
+        width: 713
+        height: 674
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faeecdf4c090dddc0800000000000000
+      internalID: -3612721377597133137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_2
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 2549
+        width: 705
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf633e640fb0bbfa0800000000000000
+      internalID: -5784016169817917700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1691
+        width: 485
+        height: 661
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fefd2f818ad11e80800000000000000
+      internalID: -8209540395731910925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_4
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1717
+        width: 465
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aaf1205fefd6b6c0800000000000000
+      internalID: -4127865789503898973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_5
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 1691
+        width: 463
+        height: 657
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de557cfef0a3ae9f0800000000000000
+      internalID: -438474173593463315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_6
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 911
+        width: 462
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86299f9eac64cfee0800000000000000
+      internalID: -1226027161228832152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_7
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 937
+        width: 466
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c92d7283cf13300800000000000000
+      internalID: 230242374089088050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_8
+      rect:
+        serializedVersion: 2
+        x: 1808
+        y: 912
+        width: 486
+        height: 661
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5a8208949a843d0800000000000000
+      internalID: -3222139400235735604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 120
+        width: 714
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2d52a42d850fef0800000000000000
+      internalID: -76463533454929179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_10
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 115
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3746d9074801930800000000000000
+      internalID: 4111932079001072545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_11
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 99
+        width: 712
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddee3518ab7a5f840800000000000000
+      internalID: 5257292559500439261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_12
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 87
+        width: 724
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9eeaaa3801b8240800000000000000
+      internalID: 4794944385956374998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Berserker-Bewegung-Komplett_13
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 81
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8accc8b9fbc28d430800000000000000
+      internalID: 3807842686401825960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

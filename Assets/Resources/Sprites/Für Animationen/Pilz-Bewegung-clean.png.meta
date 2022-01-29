@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: 53f27e9cbf99b4349bbfcf30f5659daf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2818330258968688238
+    second: Pilz-Bewegung-clean_0
+  - first:
+      213: 1661237983030605258
+    second: Pilz-Bewegung-clean_1
+  - first:
+      213: 7086866873058742490
+    second: Pilz-Bewegung-clean_2
+  - first:
+      213: -5056287074277527944
+    second: Pilz-Bewegung-clean_3
+  - first:
+      213: -4770532338284994913
+    second: Pilz-Bewegung-clean_4
+  - first:
+      213: 3033081053884075807
+    second: Pilz-Bewegung-clean_5
+  - first:
+      213: 5668497522928921125
+    second: Pilz-Bewegung-clean_6
+  - first:
+      213: -1842684002139101853
+    second: Pilz-Bewegung-clean_7
+  - first:
+      213: -4291835274340145794
+    second: Pilz-Bewegung-clean_8
+  - first:
+      213: 4480158844518101713
+    second: Pilz-Bewegung-clean_9
+  - first:
+      213: 7316315412677844391
+    second: Pilz-Bewegung-clean_10
+  - first:
+      213: 6488337889248445706
+    second: Pilz-Bewegung-clean_11
+  - first:
+      213: 6825751396586435112
+    second: Pilz-Bewegung-clean_12
+  - first:
+      213: 3727500261376887375
+    second: Pilz-Bewegung-clean_13
+  - first:
+      213: -806965198970406955
+    second: Pilz-Bewegung-clean_14
+  - first:
+      213: -24924453159802917
+    second: Pilz-Bewegung-clean_15
+  - first:
+      213: -4563458354753423957
+    second: Pilz-Bewegung-clean_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_0
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 3295
+        width: 63
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299cf66cf8743e8d0800000000000000
+      internalID: -2818330258968688238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_1
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 3309
+        width: 67
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5fce9d427ed0710800000000000000
+      internalID: 1661237983030605258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2490
+        width: 603
+        height: 798
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0562b8fdb995260800000000000000
+      internalID: 7086866873058742490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_3
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2488
+        width: 601
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ee94ff1b574d9b0800000000000000
+      internalID: -5056287074277527944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_4
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 2513
+        width: 603
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e520b1d1aabcdb0800000000000000
+      internalID: -4770532338284994913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_5
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 2505
+        width: 25
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f4ab7062ba71a20800000000000000
+      internalID: 3033081053884075807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_6
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1663
+        width: 576
+        height: 794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a2c50d67c8aae40800000000000000
+      internalID: 5668497522928921125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_7
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1639
+        width: 652
+        height: 789
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365243bb9a87d66e0800000000000000
+      internalID: -1842684002139101853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_8
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1668
+        width: 576
+        height: 786
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75e67e9e865074c0800000000000000
+      internalID: -4291835274340145794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_9
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 1649
+        width: 63
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d273d07bb8bc2e30800000000000000
+      internalID: 4480158844518101713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 869
+        width: 603
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7add065ba16c88560800000000000000
+      internalID: 7316315412677844391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_11
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 842
+        width: 601
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a058c5ffee43b0a50800000000000000
+      internalID: 6488337889248445706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_12
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 845
+        width: 604
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82239a61bb0f9be50800000000000000
+      internalID: 6825751396586435112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_13
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 856
+        width: 81
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a8b831dbdbab330800000000000000
+      internalID: 3727500261376887375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_14
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 43
+        width: 574
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d734415d651dc4f0800000000000000
+      internalID: -806965198970406955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_15
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 30
+        width: 595
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd76037875377aff0800000000000000
+      internalID: -24924453159802917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pilz-Bewegung-clean_16
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 42
+        width: 575
+        height: 787
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba532a9fdc65ba0c0800000000000000
+      internalID: -4563458354753423957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

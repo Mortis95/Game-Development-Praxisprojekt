@@ -1,0 +1,717 @@
+fileFormatVersion: 2
+guid: e55e36ce8e78c5f4db0b6fd4e901de99
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2480122513064907832
+    second: Endboss-Bewegung-Komplett_0
+  - first:
+      213: -1432282283126817044
+    second: Endboss-Bewegung-Komplett_1
+  - first:
+      213: 7736560705444917306
+    second: Endboss-Bewegung-Komplett_2
+  - first:
+      213: 985546636455332337
+    second: Endboss-Bewegung-Komplett_3
+  - first:
+      213: 6431867002371737200
+    second: Endboss-Bewegung-Komplett_4
+  - first:
+      213: 6552130430545073838
+    second: Endboss-Bewegung-Komplett_5
+  - first:
+      213: -3653645997613802941
+    second: Endboss-Bewegung-Komplett_6
+  - first:
+      213: -29965296367236171
+    second: Endboss-Bewegung-Komplett_7
+  - first:
+      213: -3542731361400993270
+    second: Endboss-Bewegung-Komplett_8
+  - first:
+      213: -5965778073500197255
+    second: Endboss-Bewegung-Komplett_9
+  - first:
+      213: 6004663010581978785
+    second: Endboss-Bewegung-Komplett_10
+  - first:
+      213: 3951326531785673314
+    second: Endboss-Bewegung-Komplett_11
+  - first:
+      213: 2936043654622250576
+    second: Endboss-Bewegung-Komplett_12
+  - first:
+      213: -3089201800179766600
+    second: Endboss-Bewegung-Komplett_13
+  - first:
+      213: 5506565438330420860
+    second: Endboss-Bewegung-Komplett_14
+  - first:
+      213: 6769445496336588061
+    second: Endboss-Bewegung-Komplett_15
+  - first:
+      213: -8085207588446469625
+    second: Endboss-Bewegung-Komplett_16
+  - first:
+      213: 4567140082769382872
+    second: Endboss-Bewegung-Komplett_17
+  - first:
+      213: 3132488098064908039
+    second: Endboss-Bewegung-Komplett_18
+  - first:
+      213: -4139148365966194133
+    second: Endboss-Bewegung-Komplett_19
+  - first:
+      213: -7416888815279108349
+    second: Endboss-Bewegung-Komplett_20
+  - first:
+      213: -316931393299637575
+    second: Endboss-Bewegung-Komplett_21
+  - first:
+      213: -4369435360582066464
+    second: Endboss-Bewegung-Komplett_22
+  - first:
+      213: 6940979813150275203
+    second: Endboss-Bewegung-Komplett_23
+  - first:
+      213: -6221252165929712132
+    second: Endboss-Bewegung-Komplett_24
+  - first:
+      213: 2599242022266124193
+    second: Endboss-Bewegung-Komplett_25
+  - first:
+      213: -2804218800570243121
+    second: Endboss-Bewegung-Komplett_26
+  - first:
+      213: 5648219066019970412
+    second: Endboss-Bewegung-Komplett_27
+  - first:
+      213: 6849695372393416572
+    second: Endboss-Bewegung-Komplett_28
+  - first:
+      213: 7465820878860409050
+    second: Endboss-Bewegung-Komplett_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 2524
+        width: 529
+        height: 627
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834deae094a2b6220800000000000000
+      internalID: 2480122513064907832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_1
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 2735
+        width: 77
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceef3202ad28f1ce0800000000000000
+      internalID: -1432282283126817044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_2
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 2510
+        width: 510
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a303a47b8f8cd5b60800000000000000
+      internalID: 7736560705444917306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_3
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2719
+        width: 76
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f94087b17d5dad00800000000000000
+      internalID: 985546636455332337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_4
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 2482
+        width: 530
+        height: 620
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0768cee06f4924950800000000000000
+      internalID: 6431867002371737200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_5
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 2688
+        width: 76
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea69aa279e7ddea50800000000000000
+      internalID: 6552130430545073838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_6
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 2681
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a9331b254ab4dc0800000000000000
+      internalID: -3653645997613802941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_7
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 2367
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb0172c8ba859ff0800000000000000
+      internalID: -29965296367236171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_9
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1741
+        width: 701
+        height: 605
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ed430437c453da0800000000000000
+      internalID: -5965778073500197255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_11
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1730
+        width: 707
+        height: 613
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a49aeab8ee5d630800000000000000
+      internalID: 3951326531785673314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_13
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 1730
+        width: 702
+        height: 605
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8baa9cc7453f025d0800000000000000
+      internalID: -3089201800179766600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_15
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 1968
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d928710d6e1fd50800000000000000
+      internalID: 6769445496336588061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_16
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1174
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7020b5b19829bcf80800000000000000
+      internalID: -8085207588446469625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_17
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 968
+        width: 511
+        height: 622
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddcae025bdb16f30800000000000000
+      internalID: 4567140082769382872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_18
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1206
+        width: 75
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f3c4c1455d87b20800000000000000
+      internalID: 3132488098064908039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_19
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 997
+        width: 509
+        height: 625
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a42f5cd7ace86c0800000000000000
+      internalID: -4139148365966194133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_20
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 1198
+        width: 76
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f88ba3beae11990800000000000000
+      internalID: -7416888815279108349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_21
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 986
+        width: 530
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba9434b3980a9bf0800000000000000
+      internalID: -316931393299637575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_22
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 1169
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee997790b5ac53c0800000000000000
+      internalID: -4369435360582066464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_23
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1136
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386bafb7d50535060800000000000000
+      internalID: 6940979813150275203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_24
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 204
+        width: 737
+        height: 646
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf541afdd1ca9a9a0800000000000000
+      internalID: -6221252165929712132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_26
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 196
+        width: 737
+        height: 653
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7e987bbd96519d0800000000000000
+      internalID: -2804218800570243121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Endboss-Bewegung-Komplett_28
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 192
+        width: 737
+        height: 652
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77852366a10f0f50800000000000000
+      internalID: 6849695372393416572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

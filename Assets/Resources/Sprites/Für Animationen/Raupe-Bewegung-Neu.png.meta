@@ -1,0 +1,648 @@
+fileFormatVersion: 2
+guid: 49965d179065f5e4b897a8b807411f18
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5969960809336946204
+    second: Raupe-Bewegung-Neu_0
+  - first:
+      213: 7764706380787890390
+    second: Raupe-Bewegung-Neu_1
+  - first:
+      213: 3714161148234012461
+    second: Raupe-Bewegung-Neu_2
+  - first:
+      213: -2082070302898486030
+    second: Raupe-Bewegung-Neu_3
+  - first:
+      213: 1085655737014728830
+    second: Raupe-Bewegung-Neu_4
+  - first:
+      213: 128474895443082518
+    second: Raupe-Bewegung-Neu_5
+  - first:
+      213: -2024064532557756598
+    second: Raupe-Bewegung-Neu_6
+  - first:
+      213: -7133312348287817559
+    second: Raupe-Bewegung-Neu_7
+  - first:
+      213: -759114485864290392
+    second: Raupe-Bewegung-Neu_8
+  - first:
+      213: 5398127823804777087
+    second: Raupe-Bewegung-Neu_9
+  - first:
+      213: 4191303479462522279
+    second: Raupe-Bewegung-Neu_10
+  - first:
+      213: -8601004974428490147
+    second: Raupe-Bewegung-Neu_11
+  - first:
+      213: -476706206443675055
+    second: Raupe-Bewegung-Neu_12
+  - first:
+      213: 2967748572809854850
+    second: Raupe-Bewegung-Neu_13
+  - first:
+      213: -7341328976535701331
+    second: Raupe-Bewegung-Neu_14
+  - first:
+      213: -4028150166996280352
+    second: Raupe-Bewegung-Neu_15
+  - first:
+      213: -9110491080819365513
+    second: Raupe-Bewegung-Neu_16
+  - first:
+      213: -4741527363054705156
+    second: Raupe-Bewegung-Neu_17
+  - first:
+      213: -1996526772624916845
+    second: Raupe-Bewegung-Neu_18
+  - first:
+      213: 5511151931500878014
+    second: Raupe-Bewegung-Neu_19
+  - first:
+      213: 1389131797469732570
+    second: Raupe-Bewegung-Neu_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_0
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2575
+        width: 688
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e3883d9bf89d250800000000000000
+      internalID: 5969960809336946204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_1
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 2564
+        width: 687
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8321c6057c1cb60800000000000000
+      internalID: 7764706380787890390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_2
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 2571
+        width: 686
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d279b07c2e95b8330800000000000000
+      internalID: 3714161148234012461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1819
+        width: 402
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4885e37100b13e0800000000000000
+      internalID: -2082070302898486030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_4
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1800
+        width: 412
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78b0290426011f00800000000000000
+      internalID: 1085655737014728830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_5
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 1871
+        width: 399
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61db0799c3f68c100800000000000000
+      internalID: 128474895443082518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1141
+        width: 688
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a478d66180419e3e0800000000000000
+      internalID: -2024064532557756598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_7
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 1135
+        width: 688
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8a5609632610d90800000000000000
+      internalID: -7133312348287817559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_8
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 1146
+        width: 685
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7a436a5651775f0800000000000000
+      internalID: -759114485864290392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_9
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 437
+        width: 401
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72490eb7a00aea40800000000000000
+      internalID: 5398127823804777087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_10
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 439
+        width: 416
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ade83fde408a2a30800000000000000
+      internalID: 4191303479462522279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_11
+      rect:
+        serializedVersion: 2
+        x: 1876
+        y: 436
+        width: 395
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5672dbbb8713a880800000000000000
+      internalID: -8601004974428490147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_12
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 433
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15263be1b366269f0800000000000000
+      internalID: -476706206443675055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_13
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 433
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ff0096a9f8f2920800000000000000
+      internalID: 2967748572809854850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_14
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 429
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8be4e113c5e1a90800000000000000
+      internalID: -7341328976535701331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_15
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 433
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb9142e3c22918c0800000000000000
+      internalID: -4028150166996280352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_16
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 431
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779a566a1a8019180800000000000000
+      internalID: -9110491080819365513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_17
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 431
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf564582cf5b23eb0800000000000000
+      internalID: -4741527363054705156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_18
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 433
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e72257a79ea44e0800000000000000
+      internalID: -1996526772624916845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_19
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 427
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8515c7b7b8b7c40800000000000000
+      internalID: 5511151931500878014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raupe-Bewegung-Neu_20
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 428
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade12668200374310800000000000000
+      internalID: 1389131797469732570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
