@@ -13,10 +13,12 @@ public class Elektrowirbel : MonoBehaviour
     private int rotateFrameCount;
     private int damage;
     private Transform stuckToPlayer;
+    private int playerSTR;
 
     private void Awake(){
         Player player = Player.getInstance();
-        damage = player.getStrength() * 2 - (player.currentLevel - 1);                //Provisorischer Wert = 2 * STR
+        playerSTR = player.getStrength();
+        damage = (int)((float) playerSTR * player.getSkillDamageMultiplier());                //Provisorischer Wert = 2 * STR
         rotateFrameCount = rotateEveryNFrames;
         stuckToPlayer = player.transform;
         AudioManager.getInstance().PlaySound("SkillSchwertElektrowirbel");
@@ -41,6 +43,7 @@ public class Elektrowirbel : MonoBehaviour
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
             enemyScript.takeDamage(DamageType.Blitz, damage);
+            enemyScript.getKnockback(transform.position, playerSTR);
 
         }
     }

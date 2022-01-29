@@ -26871,6 +26871,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1582186260086901871, guid: aaecf7f652d99644ebeb3a6f8291421f,
+        type: 3}
+      propertyPath: equippedAbility
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1582186260408182012, guid: aaecf7f652d99644ebeb3a6f8291421f,
         type: 3}
       propertyPath: m_AnchorMax.x
