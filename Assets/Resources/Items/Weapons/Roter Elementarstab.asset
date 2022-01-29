@@ -10,20 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd7c55381a1f90d49b8d50459df8fe7c, type: 3}
-  m_Name: "K\xF6nigsblauer Bogen"
+  m_Name: Roter Elementarstab
   m_EditorClassIdentifier: 
   itemType: 1
-  itemSprite: {fileID: 74234015406980803, guid: d0356a16ac1832446ad28a46656698ff,
-    type: 3}
-  itemName: "K\xF6nigsblauer Bogen"
-  description: "Jagen wie ein K\xF6nig."
+  itemSprite: {fileID: 21300000, guid: 53ab8b0b09c7c594db633c5662b8c075, type: 3}
+  itemName: Roter Elementarstab
+  description: "Elementarmagier w\xE4ren nichts ohne ihren verl\xE4sslichen Alltagsstab.
+    Das Kanalisieren der Magie f\xE4llt hier deutlich einfacher."
   isStackable: 0
   maxStackSize: 0
   amount: 0
-  weaponType: 1
-  projectile: {fileID: -3835933595767899827, guid: d0356a16ac1832446ad28a46656698ff,
-    type: 3}
+  weaponType: 2
+  projectile: {fileID: 21300000, guid: e65860dcb19d9414ba5acf4d80d9e920, type: 3}
   bonusAttack: 0
   bonusStrength: 0
-  bonusDexterity: 3
-  bonusIntelligence: 0
+  bonusDexterity: 0
+  bonusIntelligence: 2

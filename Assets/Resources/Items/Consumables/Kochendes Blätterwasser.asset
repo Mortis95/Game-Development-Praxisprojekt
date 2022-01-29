@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c9ce52d1acfefa459badcdee309a621, type: 3}
   m_Name: "Kochendes Bl\xE4tterwasser"
   m_EditorClassIdentifier: 
-  itemType: 0
+  itemType: 4
   itemSprite: {fileID: -5049507818068343603, guid: 18d04975992db734fa8d0e57b8b99baf,
     type: 3}
   itemName: "Kochendes Bl\xE4tterwasser"
@@ -25,3 +25,4 @@ MonoBehaviour:
   healMagicPoints: 15
   healHealthPointsPercentage: 0
   healMagicPointsPercentage: 0
+  interactionSound: 
