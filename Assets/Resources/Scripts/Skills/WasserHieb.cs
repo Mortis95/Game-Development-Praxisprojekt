@@ -6,11 +6,9 @@ public class WasserHieb : MonoBehaviour
 {
 
     //Images
-    public SpriteRenderer spr;
-    public Sprite WasserHiebUpwards;
-    public Sprite WasserHiebLeft;
-    public Sprite WasserHiebRight;
-    public Sprite WasserHiebDownwards;
+    private SpriteRenderer spr;
+    public Sprite[] animationCycle;
+    private float secondsPerImage;
 
     //Settings
     public float disappearAfterSeconds;        
@@ -22,45 +20,72 @@ public class WasserHieb : MonoBehaviour
 
     
     private void Awake(){
+        //Get all important components
+        spr = gameObject.GetComponent<SpriteRenderer>();
+        secondsPerImage = disappearAfterSeconds / animationCycle.Length;
+        Debug.Log(secondsPerImage);
+
         //Get Player Instance
         Player pl = Player.getInstance();
 
         //Set Damage
-        damage = pl.getStrength() * 2 - (pl.currentLevel - 1);          //Damage = 2 * STR //Can be changed to whatever is your liking
+        damage = (int)((float) pl.getStrength() * pl.getSkillDamageMultiplier());
         
         //Play Sound
         AudioManager.getInstance().PlaySound("SkillSchwertWasserhieb");
 
-        //Pick correct image to display and correct offset to use for position
+        //Pick correct rotation to display and correct offset to use for position
         Vector3 offset;
         switch(pl.lastFacedDirection){
             case Direction.Up:
-                spr.sprite = WasserHiebUpwards;
                 offset = Vector3.up;
+                transform.Rotate(0,0,180);
                 break;
 
             case Direction.Left:
-                spr.sprite = WasserHiebLeft;
+                transform.Rotate(0,0,-90);
                 offset = Vector3.left;
                 break;
 
             case Direction.Right:
-                spr.sprite = WasserHiebRight;
+                transform.Rotate(0,0,90);
                 offset = Vector3.right;
                 break;
 
             default:
-                spr.sprite = WasserHiebDownwards;
+                //transform.Rotate(0,0,0);      //Sprite is default at rotation down
                 offset = Vector3.down;
                 break;
         }
 
         //Set Location of Object
-        transform.position = pl.transform.position + offset * 2;
+        transform.position = pl.transform.position + offset * 1.5f;
 
+
+        //Start Animation loop
+        StartCoroutine(animationLoop());
 
         //Destroy Sprite after seconds
         Destroy(gameObject, disappearAfterSeconds);
+    }
+
+    IEnumerator animationLoop(){
+        int sprIndex = 0;
+        spr.sprite = animationCycle[sprIndex];
+        float timeSinceLastSprite = Time.time;
+        while(true){
+            if(Time.time - timeSinceLastSprite >= secondsPerImage){
+                timeSinceLastSprite = Time.time;
+                sprIndex++;
+                if(sprIndex < animationCycle.Length){
+                    spr.sprite = animationCycle[sprIndex];
+                } else{
+                    yield break;    //Animation finished, stop updating and exit out of loop
+                }
+            }
+
+            yield return new WaitForFixedUpdate();
+        }
     }
 
 
