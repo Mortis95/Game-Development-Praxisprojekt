@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c9ce52d1acfefa459badcdee309a621, type: 3}
-  m_Name: "Kr\xE4fte Trank"
+  m_Name: Genesungstrank
   m_EditorClassIdentifier: 
   itemType: 4
-  itemSprite: {fileID: 4722162652760028455, guid: b31f02415cd48784f9590e320b3466a2,
+  itemSprite: {fileID: -6338178082454098179, guid: 18d04975992db734fa8d0e57b8b99baf,
     type: 3}
-  itemName: "Kr\xE4fte Trank"
-  description: "St\xE4rkt dich, wenn du es brauchst"
+  itemName: Genesungstrank
+  description: "Das Elixier mit der st\xE4rksten Wirkung und dem scheusslichsten
+    Geschmack."
   isStackable: 1
-  maxStackSize: 20
+  maxStackSize: 3
   amount: 1
-  healHealthPoints: 20
+  healHealthPoints: 0
   healMagicPoints: 0
-  healHealthPointsPercentage: 0
-  healMagicPointsPercentage: 0
+  healHealthPointsPercentage: 1
+  healMagicPointsPercentage: 1
   interactionSound: 
