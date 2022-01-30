@@ -31,7 +31,7 @@ public class SaveLoad : MonoBehaviour
             }*/
 
             PlayerData playerData = SaveSystem.LoadPlayer();
-
+            Player.getInstance().GetComponent<Transform>().position = new Vector3(playerData.position[0], playerData.position[1], playerData.position[2]);
             Player.getInstance().experiencePoints = playerData.exp;
             Player.getInstance().currentLevel = playerData.level;
             Player.getInstance().currentHealthPoints = playerData.currentHealthPoints;

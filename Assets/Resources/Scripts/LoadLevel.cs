@@ -35,10 +35,12 @@ public class LoadLevel : MonoBehaviour
     {
         transition.SetTrigger("Start");
 
+        SceneManager.LoadScene(name);
+        GameManager.getInstance().unpauseGame();
+
         yield return new WaitForSecondsRealtime(transitiontime);
 
-         SceneManager.LoadScene(name);
-         GameManager.getInstance().unpauseGame();
+         
 
     }
 }
