@@ -185,10 +185,10 @@ public class EnemyBehaviourBerserker : MonoBehaviour, EnemyBehaviour {
         BerserkerRangedAxeAttack.createAttack(transform, targetDirection, damage, rangedAxeAttackTimeToLiveSeconds);
     
         //Set necessary internal states
-        setLastKnifeAttackTime();
-        currentActionDelaySeconds = rangedKnifeAttackDelay;
+        setLastAxeAttackTime();
+        currentActionDelaySeconds = rangedAxeAttackDelay;
         setLastActionTime();
-        rangedKnifeAttackReady = false;
+        rangedAxeAttackReady = false;
     }
     
     #endregion
