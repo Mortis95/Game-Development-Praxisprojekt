@@ -173,7 +173,22 @@ public class EnemyBehaviourBerserker : MonoBehaviour, EnemyBehaviour {
     }
 
     void performRangedAxeAttack(){
+        //Prepare necessary info
+        Vector2 targetDirection = (Vector2) target.transform.position - rb.position;
+        targetDirection.Normalize();
+        int damage = (int)((float) enemyManager.enemyAttack * rangedAxeAttackDamageScale);
 
+        //Set the animation
+        changeAnimationState(AnimationState.EnemyRangedAttack);
+        
+        //Create the attack
+        BerserkerRangedAxeAttack.createAttack(transform, targetDirection, damage, rangedAxeAttackTimeToLiveSeconds);
+    
+        //Set necessary internal states
+        setLastKnifeAttackTime();
+        currentActionDelaySeconds = rangedKnifeAttackDelay;
+        setLastActionTime();
+        rangedKnifeAttackReady = false;
     }
     
     #endregion
