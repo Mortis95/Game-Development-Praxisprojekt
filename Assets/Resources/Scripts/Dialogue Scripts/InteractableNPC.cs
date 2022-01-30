@@ -23,6 +23,7 @@ public class InteractableNPC : MonoBehaviour
 
     void Start(){
         activeDialogue = dialogues[0];
+        busyWithInteraction = false;
     }
     void OnDrawGizmosSelected()
     {
@@ -39,6 +40,7 @@ public class InteractableNPC : MonoBehaviour
             {
                 Debug.Log("Key gedrueckt");
                 interactAction.Invoke();
+                busyWithInteraction = true;
             }
 
         }

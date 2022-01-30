@@ -73,7 +73,7 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
 
     //Some Unity-specific variables should only be assigned on Start() of script, to ensure other GameObjects finished loading.
     private void Start(){
-        layerMask = LayerMask.GetMask("Blocking","npcLayer");
+        layerMask = LayerMask.GetMask("Blocking","npcLayer","Blocking");
         enemyManager = gameObject.GetComponent<EnemyManager>();
         rb = gameObject.GetComponent<Rigidbody2D>();
         target = Player.getInstance().GetComponent<Rigidbody2D>();

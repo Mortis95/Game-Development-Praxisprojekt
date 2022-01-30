@@ -63,7 +63,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
 
     //Some Unity-specific variables should only be assigned on Start() of script, to ensure other GameObjects finished loading.
     private void Start(){
-        layerMask = LayerMask.GetMask("Blocking","npcLayer");
+        layerMask = LayerMask.GetMask("Blocking","npcLayer","Blocking");
         enemyManager = gameObject.GetComponent<EnemyManager>();
         rb = gameObject.GetComponent<Rigidbody2D>();
         target = Player.getInstance().GetComponent<Rigidbody2D>();
@@ -227,10 +227,18 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     }
 
     private void setIdleAnimation(){
+        if(animator == null){
+            Debug.LogWarning("GameObject: " + gameObject + "hat KEINEN Animator und kann daher keine Animation abspielen!" + "\r\n" + "Bitte diesem GameObject ein Animator-Component hinzufügen, und einen passenden Controller auswählen!");
+            return;
+        }
         animator.speed = 0;
     }
 
     private void setMovementAnimation(){
+        if(animator == null){
+            Debug.LogWarning("GameObject: " + gameObject + "hat KEINEN Animator und kann daher keine Animation abspielen!" + "\r\n" + "Bitte diesem GameObject ein Animator-Component hinzufügen, und einen passenden Controller auswählen!");
+            return;
+        }
         animator.speed = 1;
         if(Vector2.Angle(Vector2.up, movement) <= 45){
             changeAnimationState(AnimationState.EnemyWalkUp);
