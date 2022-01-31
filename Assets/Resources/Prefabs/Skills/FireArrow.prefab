@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1482971875407171168}
   - component: {fileID: 299198718511356528}
   - component: {fileID: 8327922389216738439}
+  - component: {fileID: 3430248169736678843}
   m_Layer: 6
   m_Name: FireArrow
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8510266999051162889}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.976597, y: 1.9037851, z: -163.69832}
-  m_LocalScale: {x: 0.13734955, y: 0.1422264, z: 1}
+  m_LocalScale: {x: 0.77364475, y: 0.739759, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,9 +73,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 929875741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 100
-  m_Sprite: {fileID: 21300000, guid: 45cd5dac91610b34c93cae6c65c1e890, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9af741773696cfd40af37a13eee453f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -136,4 +137,23 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 7.950001
+  m_Radius: 0.25
+--- !u!95 &3430248169736678843
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8510266999051162889}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b10aeb83bc7cb0d46a494f672a1d98a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

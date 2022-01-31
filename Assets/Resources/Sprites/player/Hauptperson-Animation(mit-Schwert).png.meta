@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 49df0f44d8bf76740bbd924b9504fe37
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1959392375642081888
+    second: Hauptperson-Animation(mit-Schwert)_0
+  - first:
+      213: -2969584241780844946
+    second: Hauptperson-Animation(mit-Schwert)_1
+  - first:
+      213: 1221628100252993957
+    second: Hauptperson-Animation(mit-Schwert)_2
+  - first:
+      213: 8862208215633640037
+    second: Hauptperson-Animation(mit-Schwert)_3
+  - first:
+      213: 4915957146833165045
+    second: Hauptperson-Animation(mit-Schwert)_4
+  - first:
+      213: -813317311447573930
+    second: Hauptperson-Animation(mit-Schwert)_5
+  - first:
+      213: 1313602463115362541
+    second: Hauptperson-Animation(mit-Schwert)_6
+  - first:
+      213: 568238091439481167
+    second: Hauptperson-Animation(mit-Schwert)_7
+  - first:
+      213: -3022690251817269773
+    second: Hauptperson-Animation(mit-Schwert)_8
+  - first:
+      213: 388468265902477326
+    second: Hauptperson-Animation(mit-Schwert)_9
+  - first:
+      213: -6918994443640960606
+    second: Hauptperson-Animation(mit-Schwert)_10
+  - first:
+      213: 2282349161234586616
+    second: Hauptperson-Animation(mit-Schwert)_11
+  - first:
+      213: 527800949576001344
+    second: Hauptperson-Animation(mit-Schwert)_12
+  - first:
+      213: -8527631310205927791
+    second: Hauptperson-Animation(mit-Schwert)_13
+  - first:
+      213: 327612150556971228
+    second: Hauptperson-Animation(mit-Schwert)_14
+  - first:
+      213: -2523752002528204019
+    second: Hauptperson-Animation(mit-Schwert)_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_0
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 2553
+        width: 529
+        height: 735
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a41cdfbf8213b10800000000000000
+      internalID: 1959392375642081888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_1
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 2519
+        width: 532
+        height: 769
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e661e0a9ddae9c6d0800000000000000
+      internalID: -2969584241780844946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_2
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 2807
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a90733e84814f010800000000000000
+      internalID: 1221628100252993957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_3
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 2545
+        width: 529
+        height: 743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a346a0b63ecfa70800000000000000
+      internalID: 8862208215633640037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_4
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1707
+        width: 543
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa980caafcf83440800000000000000
+      internalID: 4915957146833165045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_5
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 1717
+        width: 545
+        height: 734
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65add71e63486b4f0800000000000000
+      internalID: -813317311447573930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_6
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 1705
+        width: 545
+        height: 749
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0c11efa7ada3210800000000000000
+      internalID: 1313602463115362541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 877
+        width: 529
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f41a8149889c2e700800000000000000
+      internalID: 568238091439481167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_8
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 877
+        width: 532
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5456a1b3f3d06d0800000000000000
+      internalID: -3022690251817269773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_9
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 873
+        width: 528
+        height: 749
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0011a364dd146500800000000000000
+      internalID: 388468265902477326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_10
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 1141
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a901ef363bcaff90800000000000000
+      internalID: -6918994443640960606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 48
+        width: 629
+        height: 737
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb5cc048788caf10800000000000000
+      internalID: 2282349161234586616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_12
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 478
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047679fca20235700800000000000000
+      internalID: 527800949576001344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_13
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 39
+        width: 544
+        height: 746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e3da33184c7a980800000000000000
+      internalID: -8527631310205927791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_14
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 478
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0dc02e389eb8400800000000000000
+      internalID: 327612150556971228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hauptperson-Animation(mit-Schwert)_15
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 50
+        width: 545
+        height: 735
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b2024dce4d9fcd0800000000000000
+      internalID: -2523752002528204019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

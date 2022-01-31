@@ -23,6 +23,7 @@ public class ScharfSchussScript : MonoBehaviour
 
             case Direction.Left:
             myRigidbody.velocity = new Vector2(-1,0) * speed;
+            transform.Rotate(0, 0, 180);
             offset = Vector3.left;
             break;
 
