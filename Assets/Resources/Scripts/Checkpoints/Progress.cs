@@ -23,6 +23,8 @@ public class Progress : MonoBehaviour
     public static Progress getInstance(){
         return instance;
     }
+
+    
     private void Awake(){
         if(instance != null){
             Debug.LogWarning("Something went wrong, 2 progress instances!!!");

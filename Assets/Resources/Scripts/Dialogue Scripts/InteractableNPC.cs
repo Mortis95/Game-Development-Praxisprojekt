@@ -83,4 +83,24 @@ public class InteractableNPC : MonoBehaviour
             Debug.Log("Can't set active Dialogue of " + NPCName + " to Element " + index + "!\nPlease Check the correct index and amount of Dialogues on this NPC.");
         }
     }
+
+    public void setProgress(int id)
+    {
+        //id korrespondiert zu zahl hinter dem check boolean
+        if(id == 1)
+        {
+            Progress.getInstance().check1=true;
+        }
+        if(id == 2)
+        {
+            Progress.getInstance().check2=true;
+        }
+        if(id == 3)
+        {
+            Progress.getInstance().check2=true;
+        }else{
+            Debug.Log("Da ist deine id in den fritten");
+        }
+
+    }
 }
