@@ -979,6 +979,67 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &343641672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343641670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 343641672}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Angestellter
+      text: "Willkommen! M\xF6chtest du dich ausruhen?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 1
+      name: 
+      text: 
+      choices:
+      - option: Ja, danke
+        reactingName: Angestellter
+        reaction: "Bittesch\xF6n!"
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      - option: 'Nein, mir geht es super. '
+        reactingName: Angestellter
+        reaction: "Okay, komm jederzeit vorbei, wenn deine Reise dich zu sehr ersch\xF6pft."
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!1001 &371669877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1271,7 +1332,8 @@ PrefabInstance:
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InteractableNPC, Assembly-CSharp
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4796085716705528911, guid: 6ca3ef672602de84e9f4c9d36142c25e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ca3ef672602de84e9f4c9d36142c25e, type: 3}
 --- !u!1001 &526816634
 PrefabInstance:
@@ -30218,6 +30280,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 526816634}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1306947992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306947991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138869e6da1f511439e0696646ca11cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modus: 2
 --- !u!114 &1306947993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30446,6 +30521,49 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1392741612}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1374759134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374759133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1374759134}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Fey
+      text: Der Tempel befindet sich im Norden. Bevor du deine Umgebung erkundest,
+        solltest du mit der Priesterin sprechen.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!95 &1374759140
 Animator:
   serializedVersion: 3
@@ -30616,7 +30734,8 @@ PrefabInstance:
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: InteractableNPC, Assembly-CSharp
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4796085716705528911, guid: 6ca3ef672602de84e9f4c9d36142c25e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ca3ef672602de84e9f4c9d36142c25e, type: 3}
 --- !u!1001 &1433208608
 PrefabInstance:
@@ -33346,7 +33465,8 @@ PrefabInstance:
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4796085716705528911, guid: 6ca3ef672602de84e9f4c9d36142c25e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ca3ef672602de84e9f4c9d36142c25e, type: 3}
 --- !u!1001 &1622318899
 PrefabInstance:
@@ -33579,6 +33699,352 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1616449127}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1707432658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707432657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1707432658}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Priesterin
+      text: Willkommen, Held aus einer anderen Welt.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Priesterin
+      text: "Mein Name ist Lucie und ich habe dich in diese Welt heraufbeschworen,
+        da wir deine Hilfe ben\xF6tigen."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Ich entschuldige mich f\xFCr den ungew\xF6hnlichen Empfang, allerdings
+        sind unsere Kapazit\xE4ten zu diesen Zeiten limitiert und somit waren mir
+        die H\xE4nde gebunden. Ich hoffe, dass Fey dennoch eine gro\xDFe Hilfe f\xFCr
+        dich war?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 1
+      name: 
+      text: 
+      choices:
+      - option: Es ging.
+        reactingName: 
+        reaction: 
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      - option: Naja...
+        reactingName: 
+        reaction: 
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Ich verstehe. Es tut mir leid, dass nicht alles glatt lief, und ich
+        bitte um Verst\xE4ndnis. Fey ist noch jung in Feenjahren und ihr geschehen
+        noch manche Missgeschicke.  "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: Nichts desto trotz ist sie eine gute Seele und ich bin mir sicher, dass
+        sie ihr Bestes gegeben hat. Du kannst nun nach Hause, Fey, und bitte erhole
+        dich gut von deiner kleinen Reise.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Fey
+      text: "Ah, perfekte Zeit f\xFCr meinen Mittagsschlaf. Auf Wiedersehen!"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: 
+      text: "(Fey l\xF6st sich in Luft auf)"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Ich w\xFCnschte, die Umst\xE4nde unseres Treffens w\xE4ren anders, aber
+        leider kann ich deine Ankunft nicht sch\xF6ner gestalten. Unsere Welt ist
+        in gro\xDFer Gefahr und nur du, oh Held aus einer anderen Galaxie, kannst
+        uns retten."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Gott hat mir eine Prophezeiung geschickt, und ohne deine Hilfe ist unsere
+        Welt dem Ende nahe. Mir wurde aufgetragen, ein Beschw\xF6rungsritual am heutigen
+        Tage durchzuf\xFChren und auf deine Ankunft zu warten."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Warum ich? Ich bin lediglich Studierender, was so viel hei\xDFt wie:
+        Ich bin von Inkompetenz gepr\xE4gt in allen Bereichen. Ich bin nichts Besonderes. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Eure Welt hat Magie und Waffen, solltet ihr nicht in der Lage dazu sein,
+        euch selbst zu helfen? Jeder Magier hier hat mehr Kampferfahrung und F\xE4higkeiten
+        als ich in meinem gesamten Leben gesammelt habe."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Als blo\xDFer Sterblicher mag ich es mir nicht anma\xDFen, Gottes Willen
+        zu hinterfragen. Ich wei\xDF nicht, warum du ausgew\xE4hlt wurdest, aber
+        alles hat seine Gr\xFCnde. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Selbst wenn es in diesem Moment fraglich erscheint und wir es nicht
+        verstehen k\xF6nnen, eines Tages wird sich zeigen, warum nur du diesen Job
+        erf\xFCllen kannst. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Ich glaube an dich, und du solltest dies auch tun. Die gr\xF6\xDFte
+        Kraft ist die, welche du aus dir selbst sch\xF6pfen kannst, und die Bereitschaft
+        an dich selbst zu glauben."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Ich verstehe nicht ganz\u2026"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Was ich versuche zu sagen ist, dass Mut dich weit bringen wird. Habe
+        vertrauen in dich, und du kannst jedes Hindernis bew\xE4ltigen, egal wie
+        gro\xDF es auch sein mag. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Das ist etwas\u2026 zu optimistisch, aber danke."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Du wirst sehen, welche dir zuvor unbekannte St\xE4rken sich noch zeigen
+        werden. Nun, zu deinen Aufgaben\u2026"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 1
+      name: 
+      text: 
+      choices:
+      - option: Was muss ich tun?
+        reactingName: Lucie
+        reaction: "Die Menschheit ist von ihrem Aussterben bedroht, da eine m\xE4chtige,
+          wenn auch kleine, Organisation plant, die Schl\xFCssel der Weisheit, der
+          Macht und des Friedens an sich zu rei\xDFen."
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      - option: Warum braucht ihr mich?
+        reactingName: Lucie
+        reaction: "Die Menschheit ist von ihrem Aussterben bedroht, da eine m\xE4chtige,
+          wenn auch kleine, Organisation plant, die Schl\xFCssel der Weisheit, der
+          Macht und des Friedens an sich zu rei\xDFen."
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Wirf einen Blick auf die Wand hinter mir. Siehst du die drei Dellen
+        in Schl\xFCsselform? Vor tausenden von Jahren lebte die erste Priesterin
+        hier und bewachte das Tor zum Paradies."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Die erste Priesterin befand sich im engen Kontakt zu den G\xF6ttern
+        und heiligen Geistern. Ihre Seele war so rein wie keine andere, sodass sich
+        kein passender Nachfolger f\xFCr sie finden lie\xDF."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Als ihr Tod nahte, hat sie die drei Schl\xFCssel, welche ihr den Ein-
+        und Austritt zum Paradies gew\xE4hrten, tief versiegelt. Kein Sterblicher
+        dieser Welt wird es jemals schaffen, die Schl\xFCssel in seine oder ihre
+        H\xE4nde zu bekommen."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Die gef\xE4hrliche Organisation, vor welcher ich dich allerdings warnte,
+        hat einen Weg gefunden, diese Siegel zu brechen. Es ist ihr Ziel, die Schl\xFCssel
+        zu stehlen und f\xFCr ihre b\xF6sen Machenschaften zu verwenden."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Da du kein Sterblicher dieser Welt bist, kannst du die Schl\xFCssel
+        allerdings ebenfalls finden und einsammeln. Du musst dies unbedingt tun,
+        bevor die Organisation sie in ihre Finger bekommt."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Der Schl\xFCssel der Weisheit befindet sich in dem Wald, in welchem
+        du aufgewacht bist. Die heiligen Kr\xE4fte der Schl\xFCssel ziehen allerdings
+        starke Monster an, sodass du achtsam sein solltest. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 1
+      name: 
+      text: 
+      choices:
+      - option: "Ich habe nicht vor, die Welt zu retten\u2026"
+        reactingName: 
+        reaction: 
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      - option: 'Ich werde helfen. '
+        reactingName: Lucie
+        reaction: Danke.
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Sobald du den Schl\xFCssel erhalten hast, bringe ihn zu mir. Ich werde
+        dir dann weitere Anweisungen geben."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Ich danke dir von tiefstem Herzen. Ich werde hier auf deine R\xFCckkehr
+        warten."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  - textBoxen:
+    - typeOfBox: 0
+      name: Lucie
+      text: "Ich danke dir daf\xFCr, dass du mir den Schl\xFCssel \xFCbergeben hast.
+        Meine Seele f\xFChlt sich direkt leichter, denn mit deiner Hilfe werden wir
+        die Welt retten k\xF6nnen. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Dein n\xE4chstes Ziel wird sich im S\xFCden befinden. Du wirst eine
+        Stadt erreichen, dort wartet ein Magier auf dich und wird dich zum Schl\xFCssel
+        der Macht f\xFChren. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Ich w\xFCnsche dir beste Gesundheit und viel Erfolg. Solltest du dich
+        ausruhen m\xFCssen, gibt es in diesem Dorf sowie in der Stadt ein Gasthaus,
+        in welchem du \xFCbernachten kannst."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!95 &1707432664
 Animator:
   serializedVersion: 3
