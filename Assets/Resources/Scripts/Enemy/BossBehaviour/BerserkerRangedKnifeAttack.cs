@@ -10,7 +10,7 @@ public class BerserkerRangedKnifeAttack : MonoBehaviour{
     public bool hitOnce;
 
     public static void createAttack(Transform transform, Vector2 direction, int damage){
-        GameObject brkaPrefab = Resources.Load<GameObject>("Prefabs/Enemies/Bosses/Berserker/BerserkerRangedKnifeAttackPrefab");
+        GameObject brkaPrefab = Resources.Load<GameObject>("Prefabs/Enemies/Bosses/BerserkerAttackPrefabs/BerserkerRangedKnifeAttackPrefab");
         GameObject brka = Instantiate(brkaPrefab, transform.position, transform.rotation);
         BerserkerRangedKnifeAttack brkaScript = brka.GetComponent<BerserkerRangedKnifeAttack>();
         brkaScript.direction = direction;

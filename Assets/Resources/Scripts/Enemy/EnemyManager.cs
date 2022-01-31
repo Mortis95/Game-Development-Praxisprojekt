@@ -70,7 +70,7 @@ public class EnemyManager : MonoBehaviour{
         else{AudioManager.getInstance().PlaySound("MobExplosion");}
 
         //Destroy GameObject after small delay
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 3f);
     }
 
     public void takeDamage(DamageType dmgType, int amount){

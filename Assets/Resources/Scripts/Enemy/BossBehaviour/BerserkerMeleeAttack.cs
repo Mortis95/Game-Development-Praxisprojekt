@@ -8,7 +8,7 @@ public class BerserkerMeleeAttack : MonoBehaviour{
     private bool hitOnce;
 
     public static void createAttack(Transform transform, Direction direction, int damage){
-        GameObject berserkerMeleeAttackPrefab = Resources.Load<GameObject>("Prefabs/Enemies/Bosses/Berserker/BerserkerMeleeAttackPrefab");
+        GameObject berserkerMeleeAttackPrefab = Resources.Load<GameObject>("Prefabs/Enemies/Bosses/BerserkerAttackPrefabs/BerserkerMeleeAttackPrefab");
         GameObject berserkerMeleeAttack = Instantiate(berserkerMeleeAttackPrefab, transform.position, transform.rotation);
         Vector3 offset = Vector3.zero;
         switch(direction){

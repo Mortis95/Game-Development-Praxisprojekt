@@ -11,7 +11,7 @@ public class BerserkerRangedAxeAttack : MonoBehaviour{
     public LayerMask lm;
 
     public static void createAttack(Transform transform, Vector2 direction, int damage, float timeToLive){
-        GameObject braaPrefab = Resources.Load<GameObject>("Prefabs/Enemies/Bosses/Berserker/BerserkerRangedAxeAttack");
+        GameObject braaPrefab = Resources.Load<GameObject>("Prefabs/Enemies/Bosses/BerserkerAttackPrefabs/BerserkerRangedAxeAttackPrefab");
         GameObject braa = Instantiate(braaPrefab, transform.position, transform.rotation);
         BerserkerRangedAxeAttack braaScript = braa.GetComponent<BerserkerRangedAxeAttack>();
         braaScript.direction = direction;

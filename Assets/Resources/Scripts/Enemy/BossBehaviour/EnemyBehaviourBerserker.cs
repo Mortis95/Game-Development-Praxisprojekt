@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyBehaviourBerserker : MonoBehaviour, EnemyBehaviour {
 
@@ -17,6 +18,8 @@ public class EnemyBehaviourBerserker : MonoBehaviour, EnemyBehaviour {
     [Tooltip("The factor that EnemyAttack in EnemyManager gets multiplied with, to calculate how much damage the Player should take from a Ranged Axe Hit."), Range(0.01f,5f)]
     public float rangedAxeAttackDamageScale;
     public float rangedAxeAttackTimeToLiveSeconds;
+    [Tooltip("The Event that plays when this enemy dies. Please assign this in the inspector.")]
+    public UnityEvent onDeathEvent;
     #endregion
 
     #region PrivateVariables
@@ -252,7 +255,14 @@ public class EnemyBehaviourBerserker : MonoBehaviour, EnemyBehaviour {
 
     #region EnemyBehaviourInterface
     public void findTarget(){return;}
-    public void onDeath(){return;}
+    public void onDeath(){
+        busy = true;
+        currentActionDelaySeconds = 1000f; //For at least 100 seconds 
+        setLastActionTime();
+        changeAnimationState(AnimationState.EnemyDeath);
+        onDeathEvent.Invoke();
+        return;
+    }
     public void getKnockedBack(Vector2 origin, float knockBackForce){return;}
     #endregion
 

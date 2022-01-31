@@ -283,7 +283,7 @@ MonoBehaviour:
   magicAttackPrefab: {fileID: 913467029813440514, guid: b314cd29edcf8494faa00ef38710edfd,
     type: 3}
   emptySkill: {fileID: 1582186259794234141}
-  Wasserflaeche: {fileID: 8575629977640066971, guid: b127d0c2986a9334aadd1259c6036c13,
+  Wasserflaeche: {fileID: 2998166958085454758, guid: 76b9c8bc6aa5eb648ad7bb11b20d0bc0,
     type: 3}
   WasserPfeil: {fileID: 1951592523459642607, guid: ffb031e48b979eb4f9447c43fa678775,
     type: 3}
@@ -313,6 +313,7 @@ MonoBehaviour:
   healthBar: {fileID: 1582186258849246369}
   manaBar: {fileID: 1582186259981154517}
   UIcurrentLevel: {fileID: 1582186259408356008}
+  isDead: 0
 --- !u!95 &1582186260086901866
 Animator:
   serializedVersion: 3
@@ -569,6 +570,9 @@ MonoBehaviour:
   dungeon01Puzzle01: 0
   dungeon01Puzzle02: 0
   dungeon01Puzzle03: 0
+  check1: 0
+  check2: 0
+  check3: 0
 --- !u!1 &1582186260424122088
 GameObject:
   m_ObjectHideFlags: 0

@@ -528,7 +528,7 @@ public class Player : MonoBehaviour
 
             } else if (equippedAbility == Ability.Wasserpfeilhagel && currentMagicPoints >= WasserpfeilhagelMPKost){
                 currentMagicPoints -= WasserpfeilhagelMPKost;
-                GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
+                GameObject skill = Instantiate(WasserPfeil, transform.position, transform.rotation);
                 skill.AddComponent<WasserPfeile>();
                 setActionDelaySeconds(0.5f);
                 setRangedAttackAnimation();
@@ -567,7 +567,7 @@ public class Player : MonoBehaviour
 
             } else if (equippedAbility == Ability.Wasserflaeche && currentMagicPoints >= WasserflaecheMPKost){
                 currentMagicPoints -= WasserflaecheMPKost;
-                GameObject skill = Instantiate(emptySkill, transform.position, transform.rotation);
+                GameObject skill = Instantiate(Wasserflaeche, transform.position, transform.rotation);
                 skill.AddComponent<Wasserfläche>();
                 setActionDelaySeconds(0.5f);
                 setMagicAttackAnimation();
