@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 //A LOT of this class is copypasted from EnemyBehaviourMelee, with various Adjustments
 //This is due to Unity not properly allowing classes to derive their Update or Awake() Method from their parent-classes
@@ -31,6 +32,8 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
     public Sprite projectileSprite;
     [Tooltip("The sound that will play when the enemy spots the Player.")]
     public string enemySpottingSound;  
+    [Tooltip("Event bei Todestrigger")]
+    public UnityEvent onDeathEvent;
 
     //Protected Variables we should get and calculate ourselves
     private Vector2 movement;
@@ -315,7 +318,8 @@ public class EnemyBehaviourRanged : MonoBehaviour, EnemyBehaviour{
 
     public void onDeath(){
         isDying = true;
-        movement = Vector2.zero;       
+        movement = Vector2.zero;
+        onDeathEvent.Invoke();
     }
 
     #region GizmoDebugStuffForInternalUseOnly

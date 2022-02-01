@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
 
@@ -22,7 +23,9 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     [Tooltip("The force of Knockack the Player will receive. Set to 0 for no Knockback."), Range(0f, 20f)]
     public float knockBackForce;
     [Tooltip("The sound that will play when the enemy spots the Player.")]
-    public string enemySpottingSound;    
+    public string enemySpottingSound;
+    [Tooltip("Event bei Todestrigger")]
+    public UnityEvent onDeathEvent;
 
     //Private Variables we should get and calculate ourselves
     private Vector2 movement;
@@ -299,6 +302,7 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
     public void onDeath(){
         isDying = true;
         movement = Vector2.zero;
+        onDeathEvent.Invoke();
     }
 
     #region GizmoDebugStuffForInternalUseOnly
