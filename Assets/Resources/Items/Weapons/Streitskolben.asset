@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7c55381a1f90d49b8d50459df8fe7c, type: 3}
   m_Name: Streitskolben
   m_EditorClassIdentifier: 
-  itemType: 0
+  itemType: 1
   itemSprite: {fileID: 9187883020962582190, guid: 35cc5df75d29e5e4fa7b7e2a3171997e,
     type: 3}
   itemName: Streitkolben
