@@ -95,7 +95,7 @@ public class Player : MonoBehaviour
     public bool FeuerpfeilLearned               = false;
     private int FeuerpfeilMPKost                = 10;
     public bool WasserpfeilhagelLearned         = false;
-    private int WasserpfeilhagelMPKost          = 100;
+    private int WasserpfeilhagelMPKost          = 30;
     public bool ScharfschussLearned             = false;
     private int ScharfschussMPKost              = 5;
     public bool WasserhiebLearned               = false;
@@ -107,7 +107,7 @@ public class Player : MonoBehaviour
     public bool FeuerballLearned                = false;
     private int FeuerballMPKost                 = 20;
     public bool WasserflaecheLearned            = false;
-    private int WasserflaecheMPKost             = 100;
+    private int WasserflaecheMPKost             = 30;
     public bool KettenblitzLearned              = false;
     private int KettenblitzMPKost               = 5;
     #endregion
