@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8a8a649b6017be640a14b4e31ad83776, type: 3}
   - {fileID: 21300000, guid: 09c54dcd0d8d9a1479acba0fd700226b, type: 3}
   - {fileID: 21300000, guid: e34ddb315ba17ee46affee2c01eef1ea, type: 3}
-  rageBuffStrengthMultiplier: 1.5
+  rageBuffStrengthMultiplier: 1.33
 --- !u!212 &1503840621670785520
 SpriteRenderer:
   m_ObjectHideFlags: 0
