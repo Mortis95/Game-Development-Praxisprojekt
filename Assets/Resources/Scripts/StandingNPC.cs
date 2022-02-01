@@ -20,7 +20,6 @@ public class StandingNPC : MonoBehaviour{
         animator = gameObject.GetComponent<Animator>();
         currentState = AnimationState.NPCLookDown;
         toLookAt = Player.getInstance().transform;
-        isInRange = false;
     }
     #endregion
 
