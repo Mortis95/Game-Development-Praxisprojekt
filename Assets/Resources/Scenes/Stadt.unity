@@ -3051,6 +3051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 371660637}
   - component: {fileID: 371660638}
+  - component: {fileID: 371660639}
   m_Layer: 0
   m_Name: Magiermeister
   m_TagString: Untagged
@@ -3346,6 +3347,21 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
   activeDialogueIndex: 0
+--- !u!114 &371660639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371660636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd59703b49b4544f8602a1b166b48d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionKey: 101
+  id: 2
+  isInRange: 0
 --- !u!1001 &373901595
 PrefabInstance:
   m_ObjectHideFlags: 0
