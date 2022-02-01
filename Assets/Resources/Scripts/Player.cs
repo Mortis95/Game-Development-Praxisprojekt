@@ -602,14 +602,14 @@ public class Player : MonoBehaviour
         recalculateStats();
     }
     
-    //Skill-Damage Multiplier. This is calculated by: Lerp(1,2, currentLevel / maxLevel)
-    // -> In other words, the higher the player level, the closer the Skill-Damage Multiplier gets to 2.
+    //Skill-Damage Multiplier. This is calculated by: Lerp(1f,1.8f, currentLevel / maxLevel)
+    // -> In other words, the higher the player level, the closer the Skill-Damage Multiplier gets to 1.8f.
     // -> So at first Level, Skills do 1 * Attribute = Damage
-    // -> So at last  Level, Skills do 2 * Attribute = Damage
+    // -> So at last  Level, Skills do 1.8 * Attribute = Damage
     // --> Goal: Make Level-Ups feel like an Upgrade.
     public float getSkillDamageMultiplier(){
         float levelProgression = (float) currentLevel / (float) experiencePointThreshholds.Length;
-        return Mathf.Lerp(1f,2f, levelProgression);
+        return Mathf.Lerp(1f,1.8f, levelProgression);
     }
 
     public void setActionDelaySeconds(float seconds){
