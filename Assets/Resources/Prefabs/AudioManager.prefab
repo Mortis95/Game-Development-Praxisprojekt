@@ -249,10 +249,45 @@ MonoBehaviour:
     isLooping: 0
     source: {fileID: 0}
   soundTrack:
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: MainTheme
+    clip: {fileID: 8300000, guid: 77f0ae10e3fc5eb458504de6ce4ce9fd, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: Wald
+    clip: {fileID: 8300000, guid: 0b337daccebe9a74ebba2b70275cbd91, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: Dorf
+    clip: {fileID: 8300000, guid: 0dacbf07449ebf94db3154272f2b38ae, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: Stadt
+    clip: {fileID: 8300000, guid: f06e02753a9fd324e92ad20be4c74576, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: Gruselig
+    clip: {fileID: 8300000, guid: 7aec880c356a99143afd1527f39d020d, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: Duester
+    clip: {fileID: 8300000, guid: ef5f3f59f5e3cf44a9e79efbf34d5846, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: Raetsel
+    clip: {fileID: 8300000, guid: d0bfaf5592df27d499ada9a6a7583e3b, type: 3}
+    volume: 0.4
+    pitch: 1
+    source: {fileID: 0}
+  - name: Battle
+    clip: {fileID: 8300000, guid: 9c6350fb6f896bb41a58728c9e542ecb, type: 3}
+    volume: 0.4
+    pitch: 1
     source: {fileID: 0}
   currentlyPlaying:
     name: 
