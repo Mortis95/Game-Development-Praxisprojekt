@@ -17691,6 +17691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 876690505}
   - component: {fileID: 876690506}
+  - component: {fileID: 876690507}
   m_Layer: 0
   m_Name: Entering Scene
   m_TagString: Untagged
@@ -17763,6 +17764,21 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
   activeDialogueIndex: 0
+--- !u!114 &876690507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876690504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd59703b49b4544f8602a1b166b48d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionKey: 101
+  id: 3
+  isInRange: 0
 --- !u!1001 &880963536
 PrefabInstance:
   m_ObjectHideFlags: 0
