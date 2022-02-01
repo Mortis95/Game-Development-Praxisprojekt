@@ -94,8 +94,8 @@ public class EnemyManager : MonoBehaviour{
         //Calculate for Damage Multiplicator if Weakness or Resistance
         int damage = (int) ( ((float) amount) * dmgMultiplicator);
 
-        //If damage is normal then Defense is subtracted
-        if(dmgType.Equals(DamageType.Normal)){damage -= enemyDefense;}
+        //Subtract Defense from the damage 
+        damage -= enemyDefense;
 
         //Don't allow negativ damage. Pick 0 if damage is smaller than 0. Shouldn't happen though in normal gameplay.
         damage = Mathf.Max(0, damage);
