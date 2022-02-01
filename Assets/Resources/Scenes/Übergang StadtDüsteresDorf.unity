@@ -3630,6 +3630,12 @@ PrefabInstance:
       propertyPath: enemyWeaknesses.Array.data[1]
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257075, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5668497522928921125, guid: 53f27e9cbf99b4349bbfcf30f5659daf,
+        type: 3}
     - target: {fileID: 7451989002762257084, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
       propertyPath: m_RootOrder
@@ -124382,6 +124388,12 @@ PrefabInstance:
       propertyPath: enemyWeaknesses.Array.data[1]
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257075, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1842684002139101853, guid: 53f27e9cbf99b4349bbfcf30f5659daf,
+        type: 3}
     - target: {fileID: 7451989002762257084, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
       propertyPath: m_RootOrder
