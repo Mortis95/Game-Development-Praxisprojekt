@@ -6,7 +6,7 @@ public enum SkillTreeNodeType{
     Elektrowirbel,
     Wasserflaeche,
     Feuerpfeil,
-     Wasserhieb,
+    Wasserhieb,
     Feuerball,
     RangerStats,
     WarriorStats,

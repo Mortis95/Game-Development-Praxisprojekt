@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class SkillTree : MonoBehaviour{
 
@@ -18,6 +19,8 @@ public class SkillTree : MonoBehaviour{
     
     #endregion
     public Player pl;
+    public delegate void skillNodeDelegate();
+    public Dictionary<string, skillNodeDelegate> attackMapper;
     private int skillPointsSpent;
     //Hilfsklasse um das jeweilige Event abzufeuern, sowie um zu zählen wie oft ein Skill bereits gelernt wurde. Die UI benötigt diese Information.
     private SkillTreeNode[] skillTreeNodes;
@@ -235,6 +238,10 @@ public class SkillTree : MonoBehaviour{
         }
         return null;
     }
+
+
+
+
     #region Unlockables
     //Hardcoded Events, because Unity does not allow for variable assignment or methods with 5 parameters in its event system.
     //Probably not the optimal way to do it, but I can't rework every single system after it's been already implemented. :/
@@ -251,6 +258,7 @@ public class SkillTree : MonoBehaviour{
 
     private int betterModulo(int dividend, int divisor){
         return (dividend % divisor + divisor) % divisor;
+        
     }
 
     public SkillTreeNode[] getSkillTreeNodes(){

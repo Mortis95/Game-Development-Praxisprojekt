@@ -121,4 +121,10 @@ public static class SaveSystem
             return null;
         }
     }
+
+    public static void SaveSkillTree()
+    {
+        SkillTree skillTree = SkillTree.getInstance();
+        skillTree.getSkillTreeNodes();
+    }
 }
