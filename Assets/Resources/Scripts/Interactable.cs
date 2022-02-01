@@ -32,6 +32,7 @@ public class Interactable : MonoBehaviour
         {
             if(Input.GetKeyDown(interactionKey) && !busyWithInteraction)
             {
+                busyWithInteraction = true;
                 Debug.Log("Key gedrueckt");
                 interactAction.Invoke();
             }
