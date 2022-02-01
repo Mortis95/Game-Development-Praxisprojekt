@@ -827,13 +827,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &200914429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e7c2da28ca15b46bf97e38625559f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMaxHealthPoints: 500
+  enemyMaxHealthPoints: 400
   enemyAttack: 30
   enemyDefense: 17
   enemyExpWorth: 10000
@@ -949,6 +949,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54f975e3c4fc7c47b25cdf52ddc5b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 7
+  meleeAttackCooldownSeconds: 2
+  meleeAttackDamageScale: 1
+  teleportAttackCooldownSeconds: 9
+  teleportAttackDamageScale: 0
+  teleportAttackDashSpeed: 10
+  teleportDistance: 0
+  onDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &265365894
 GameObject:
   m_ObjectHideFlags: 0

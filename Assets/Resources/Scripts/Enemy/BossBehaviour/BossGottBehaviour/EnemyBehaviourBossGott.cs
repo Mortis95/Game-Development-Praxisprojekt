@@ -14,6 +14,10 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
     public float teleportAttackCooldownSeconds;
     [Tooltip("The factor that EnemyAttack in EnemyManager gets multiplied with, to calculate how much damage the Player should take from a Teleport Attack Hit."), Range(0.01f,5f)]
     public float teleportAttackDamageScale;
+    [Tooltip("The speed of the Teleport-Attack Dash")]
+    public float teleportAttackDashSpeed;
+    [Tooltip("How close should the Boss teleport behind the player?")]
+    public float teleportDistance;
     public UnityEvent onDeathEvent;
     #endregion
 
@@ -132,7 +136,7 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
         int damage = (int)((float) enemyManager.enemyAttack * meleeAttackDamageScale);
 
         //Create the attack
-        //BossGottMeleeAttack.createAttack(transform, attackDirection, damage);
+        BossGottMeleeAttack.createAttack(transform, attackDirection, damage);
 
         //Set necessary internal states
         setLastMeleeAttackTime();
@@ -142,8 +146,63 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
     }
 
     void performTeleportAttack(){
-        //TODO
+        //Set necessary internal states
+        setLastTeleportAttackTime();
+        currentActionDelaySeconds = teleportAttackDelay;
+        setLastActionTime();
+        teleportAttackReady = false;
+
+        //Perform the actual attack
+        StartCoroutine(teleportAttack());
+
     }
+
+     IEnumerator teleportAttack(){
+        Vector2 attackPoint = target.transform.position;
+        
+        //Shrink down
+        Vector3 baseScale = transform.localScale;
+        float growthRate = 0.1f;
+        bool minSizeReached = false;
+
+        while(!minSizeReached){
+            transform.localScale -= new Vector3(growthRate, 0, 0);
+            if(transform.localScale.x <= 0.1f){
+                minSizeReached = true;
+            }
+            yield return new WaitForFixedUpdate();
+        }
+
+        Vector2 targetDirection = attackPoint - rb.position;
+        Vector2 targetDirectionNormalized = targetDirection.normalized;
+        
+        //Actual teleport
+        rb.MovePosition(rb.position + targetDirection + targetDirectionNormalized * teleportDistance);
+
+        //Grow up
+        bool maxSizeReached = false;
+        while(!maxSizeReached){
+            transform.localScale += new Vector3(growthRate, 0, 0);
+            if(transform.localScale.x >= baseScale.x){
+                maxSizeReached = true;
+                transform.localScale = baseScale;
+            }
+            yield return new WaitForFixedUpdate();
+        }
+
+        //Dash into attackpoint
+        bool dashFinished = false;
+        float startDashTime = Time.fixedTime;
+        while(!dashFinished){
+            rb.MovePosition(rb.position + (-targetDirectionNormalized) * teleportAttackDashSpeed * Time.fixedDeltaTime);
+            if(Vector2.Distance(rb.position, attackPoint) <= 1f || (Time.fixedTime - startDashTime) >= 2f){
+                dashFinished = true;
+            }
+            yield return new WaitForFixedUpdate();
+        }
+
+        yield break;
+    } 
     
     #endregion
 
