@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Wundertrank
   m_EditorClassIdentifier: 
   itemType: 4
-  itemSprite: {fileID: -5049507818068343603, guid: 18d04975992db734fa8d0e57b8b99baf,
+  itemSprite: {fileID: -5097157957449789489, guid: 18d04975992db734fa8d0e57b8b99baf,
     type: 3}
   itemName: Wundertrank
-  description: "Wirkt Wunder gegen gro\xDFe Wehwehchen"
+  description: "Wirkt Wunder gegen gro\xDFe Wehwehchen."
   isStackable: 1
   maxStackSize: 5
   amount: 1

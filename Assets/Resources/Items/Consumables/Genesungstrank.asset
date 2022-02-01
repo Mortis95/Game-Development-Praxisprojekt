@@ -21,8 +21,8 @@ MonoBehaviour:
   isStackable: 1
   maxStackSize: 3
   amount: 1
-  healHealthPoints: 0
-  healMagicPoints: 0
+  healHealthPoints: 100
+  healMagicPoints: 100
   healHealthPointsPercentage: 1
   healMagicPointsPercentage: 1
   interactionSound: 

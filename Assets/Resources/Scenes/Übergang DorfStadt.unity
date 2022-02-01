@@ -844,12 +844,12 @@ PrefabInstance:
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
       propertyPath: enemyAttack
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
       propertyPath: enemyDefense
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -43425,12 +43425,12 @@ PrefabInstance:
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
       propertyPath: enemyAttack
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
       propertyPath: enemyDefense
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -51746,12 +51746,12 @@ PrefabInstance:
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
       propertyPath: enemyAttack
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
       propertyPath: enemyDefense
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
@@ -51761,7 +51761,7 @@ PrefabInstance:
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
       propertyPath: enemyMaxHealthPoints
-      value: 40
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282955, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
@@ -53576,12 +53576,12 @@ PrefabInstance:
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
       propertyPath: enemyAttack
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
       propertyPath: enemyDefense
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}

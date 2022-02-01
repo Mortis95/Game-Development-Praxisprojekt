@@ -21,7 +21,7 @@ MonoBehaviour:
   maxStackSize: 5
   amount: 1
   healHealthPoints: 70
-  healMagicPoints: 0
+  healMagicPoints: -40
   healHealthPointsPercentage: 0
-  healMagicPointsPercentage: -0.6
+  healMagicPointsPercentage: 0
   interactionSound: 
