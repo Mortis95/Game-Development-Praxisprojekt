@@ -10,6 +10,6 @@ public class WasserPfeile : MonoBehaviour
     {
 
         WasserPfeilePrefab = Resources.Load<GameObject>("Prefabs/WasserPfeil");        
-        Instantiate(WasserPfeilePrefab,  GameObject.FindGameObjectWithTag("Player").transform.position , Quaternion.identity);
+        Instantiate(WasserPfeilePrefab,  GameObject.FindGameObjectWithTag("Player").transform.position , Quaternion.identity);        
     }
 }

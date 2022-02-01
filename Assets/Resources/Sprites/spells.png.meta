@@ -11,6 +11,9 @@ TextureImporter:
   - first:
       213: -8376240874996393867
     second: spells_2
+  - first:
+      213: -972280630918111241
+    second: spells_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -150,7 +153,7 @@ TextureImporter:
         width: 135
         height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,6 +161,27 @@ TextureImporter:
       bones: []
       spriteID: 5789bbcad4d91cb80800000000000000
       internalID: -8376240874996393867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spells_3
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 537
+        width: 115
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff1224eae3c182f0800000000000000
+      internalID: -972280630918111241
       vertices: []
       indices: 
       edges: []
