@@ -60810,6 +60810,132 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1688135475}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1539121874
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1914147533}
+    m_Modifications:
+    - target: {fileID: 4796085716705528896, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528896, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: patrolPauseTimeSeconds
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528896, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: patrolRoute.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528896, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: patrolRoute.Array.data[1].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528896, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: patrolRoute.Array.data[2].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528896, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: patrolRoute.Array.data[2].y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528896, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: patrolRoute.Array.data[3].y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 118.45125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528898, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_Name
+      value: Organisationsboss_WalkingNPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528908, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.2633333
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528908, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.5900254
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796085716705528908, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1995427029923428061, guid: 2371c6ffe11530b40b7fbe4ac3b773cf,
+        type: 3}
+    - target: {fileID: 4796085716705528908, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4796085716705528911, guid: 6ca3ef672602de84e9f4c9d36142c25e, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 6ca3ef672602de84e9f4c9d36142c25e, type: 3}
 --- !u!4 &1544184049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5584339333462978153, guid: 4280e47e8b2c128469cc3c57f870750f,
@@ -65232,7 +65358,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.2, y: -96.2, z: -23.75277}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1960637713}
   m_Father: {fileID: 1837291862}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -65687,6 +65814,255 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33348eb104688884a95cce44c76dc91f, type: 3}
+--- !u!1 &1960637712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4796085716705528898, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1539121874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1960637713 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4796085716705528897, guid: 6ca3ef672602de84e9f4c9d36142c25e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1539121874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1960637714
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960637712}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ce72227029948c4291f2b99c7060ba2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1960637716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960637712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 101
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1960637716}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Boss
+      text: 'Hmm, du bist also die Person, welche uns neuerdings das Leben schwer
+        macht. '
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: 'Gern geschehen. '
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Boss
+      text: "Meine Tochter, welche du zuvor im Dungeon getroffen hast, hat mir bereits
+        alles erz\xE4hlt. Du denkst, dass du die Welt rettest, indem du die Schl\xFCssel
+        sammelst?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Meinen Informationen zufolge wollt ihr einen zornigen Gott oder was
+        auch immer damit heraufbeschw\xF6ren, also sollte ich die Schl\xFCssel zuerst
+        schnappen. Um ehrlich zu sein m\xF6chte ich einfach nur zur\xFCck nach Hause
+        und gar nichts hiermit zu tun haben."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Boss
+      text: "Verdammte Priesterin\u2026! Als sei es nicht bereits genug, unseren
+        MWHZ zu antagonisieren, jetzt behauptet sie auch noch solche irrsinnigen
+        Dinge! Und weil sie eine \u201Eheilige Frau\u201C ist, glaubt ihr auch noch
+        jeder ohne sie zu hinterfragen. "
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Boss
+      text: "H\xF6r mir gut zu: Lucie ist keine gute Person. Es gibt einen guten
+        Grund, warum alle drei Schl\xFCssel von starken Monstern bewacht werden,
+        denn die Macht der Schl\xFCssel sollte niemals in die H\xE4nde eines Menschen
+        geraten!"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 1
+      name: Boss
+      text: "Es sind nicht wir, welche einen zornigen Gott heraufbeschw\xF6ren wollen,
+        sondern Lucie. Sollte sie alle drei Schl\xFCssel besitzen, ist die Menschheit
+        vor dem Aussterben bedroht."
+      choices:
+      - option: "Gibt es eine Opt-Out Option, sodass ich zur\xFCck in meine Welt
+          kann, bevor diese Welt hier untergeht?"
+        reactingName: Boss
+        reaction: "Nein, du musst Verantwortung f\xFCr deine Fehler \xFCbernehmen
+          und Lucie stoppen"
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      - option: Ups...
+        reactingName: Boss
+        reaction: Das ist alles, was du dazu zu sagen hast?
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Warum m\xF6chte die Priesterin die Menschheit ausrotten?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Boss
+      text: "In gewisser Weise haben Lucie und wir das gleiche Ziel. Wir wollen beide
+        die Existenz von Magischen Wesen sch\xFCtzen und sie unterst\xFCtzen. W\xE4hrend
+        unser MWHZ allerdings auf ein friedliches Zusammenleben zwischen Magischen
+        Wesen und Menschen aus ist, m\xF6chte Lucie radikal die Menschheit ausrotten
+        und den Magischen Wesen die gesamte Welt zur Verf\xFCgung stellen."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Boss
+      text: "Meine Tochter war bis vor kurzem ebenfalls im Tempel angestellt. Als
+        sie zuf\xE4llig von Lucies Plan erfahren hat, hat sie mir sofort davon berichtet.
+        Lucie hat dies mitbekommen und seitdem ist sie dabei, unsere Organisation
+        als b\xF6se darzustellen, damit sie ihren eigenen Plan problemlos aus\xFCben
+        kann."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Boss
+      text: "Wir mussten unseren Hauptsitz hierher verlegen, da das Misstrauen uns
+        gegen\xFCber in der gesamten Bev\xF6lkerung stieg und wir nicht mehr unter
+        anderen Menschen leben konnten."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Boss
+      text: "Ich wei\xDF, dass es schwer ist, uns sofort zu glauben, aber du darfst
+        den Schl\xFCssel des Friedens auf keinen Fall Lucie \xFCberreichen! Solange
+        sie nicht alle drei Schl\xFCssel besitzt, kann sie keine G\xF6tter heraufbeschw\xF6ren."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Es steht Aussage gegen Aussage. Ich werde Lucie konfrontieren m\xFCssen,
+        um herauszufinden, welcher von euch die Wahrheit sagt."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  - textBoxen:
+    - typeOfBox: 1
+      name: Boss
+      text: Hast du weitere Fragen?
+      choices:
+      - option: "Wof\xFCr steht der Name eurer Organisation?"
+        reactingName: Boss
+        reaction: 
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 0}
+              m_TargetAssemblyTypeName: 
+              m_MethodName: 
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: 
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+      - option: "Wisst ihr, wie ich zur\xFCck in meine Welt komme?"
+        reactingName: 
+        reaction: 
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 0}
+              m_TargetAssemblyTypeName: 
+              m_MethodName: 
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: 
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+      - option: Was soll ich jetzt tun?
+        reactingName: Boss
+        reaction: "Halte Lucie auf, nat\xFCrlich! Hast du unsere komplette Konversation
+          bereits vergessen?!"
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
 --- !u!4 &1971147926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8039280157144499285, guid: baa93d4f1e1c8bb4aaadcb7eafd99a59,
