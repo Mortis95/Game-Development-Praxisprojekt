@@ -7,14 +7,15 @@ public class BossGottDashAttackHitbox : MonoBehaviour{
     public int damage;
     private bool hitOnce;
 
-    public static void createAttack(Transform transform, Direction direction, int damage){
+    public static GameObject createAttack(Transform transform, int damage){
         GameObject bgdaPrefab = Resources.Load<GameObject>("Prefabs/Enemies/Bosses/BossGottAttacks/BossGottDashAttackHitboxPrefab");
-        GameObject bgda = Instantiate(bgdaPrefab, transform.position, transform.rotation);
+        GameObject bgda = Instantiate(bgdaPrefab, transform);
 
-        BossGottMeleeAttack bgdaScript = bgda.GetComponent<BossGottMeleeAttack>();
+        BossGottDashAttackHitbox bgdaScript = bgda.GetComponent<BossGottDashAttackHitbox>();
         bgdaScript.damage = damage;
 
         bgda.SetActive(true);
+        return bgda;
     }
     // Start is called before the first frame update
     void Start(){

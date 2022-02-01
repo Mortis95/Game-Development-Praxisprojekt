@@ -28,7 +28,7 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
     private Vector2 movement;
     private Vector2 goalPosition;
     private float lastGoalPositionTime;
-    private const float newGoalPositionTime = 3f;
+    private const float newGoalPositionTime = 1.5f;
     private Animator animator;
     private AnimationState currentState;
     private GameObject target;
@@ -39,7 +39,7 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
     private bool busy;
     private float lastActionTime;
     private float currentActionDelaySeconds;
-    private const float meleeAttackDelay = 2f;
+    private const float meleeAttackDelay = 1.5f;
     private const float teleportAttackDelay = 4f;
     
     #endregion
@@ -169,15 +169,17 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
             transform.localScale -= new Vector3(growthRate, 0, 0);
             if(transform.localScale.x <= 0.1f){
                 minSizeReached = true;
+                transform.localScale = new Vector3(0.01f, 0.01f, 1);
             }
             yield return new WaitForFixedUpdate();
         }
+        yield return new WaitForSeconds(0.5f);
 
         Vector2 targetDirection = attackPoint - rb.position;
         Vector2 targetDirectionNormalized = targetDirection.normalized;
         
         //Actual teleport
-        rb.MovePosition(rb.position + targetDirection + targetDirectionNormalized * teleportDistance);
+        rb.position = rb.position + targetDirection + targetDirectionNormalized * teleportDistance;
 
         //Grow up
         bool maxSizeReached = false;
@@ -190,16 +192,27 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
             yield return new WaitForFixedUpdate();
         }
 
+        //Set Animation
+        setDashAttackAnimation();
+        
+
+        //Spawn the DashAttackHitBox
+        int damage = (int) (teleportAttackDamageScale * ((float)enemyManager.enemyAttack));
+        GameObject hitbox = BossGottDashAttackHitbox.createAttack(transform, damage);
+
         //Dash into attackpoint
+
         bool dashFinished = false;
         float startDashTime = Time.fixedTime;
         while(!dashFinished){
-            rb.MovePosition(rb.position + (-targetDirectionNormalized) * teleportAttackDashSpeed * Time.fixedDeltaTime);
-            if(Vector2.Distance(rb.position, attackPoint) <= 1f || (Time.fixedTime - startDashTime) >= 2f){
+            rb.position = rb.position + (-targetDirectionNormalized) * teleportAttackDashSpeed * Time.fixedDeltaTime;
+            if((Time.fixedTime - startDashTime) >= 1f){
                 dashFinished = true;
             }
             yield return new WaitForFixedUpdate();
         }
+
+        Destroy(hitbox);
 
         yield break;
     } 
@@ -310,6 +323,21 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
         } else if(Vector2.Angle(Vector2.right, movement) < 45 ){
             changeAnimationState(AnimationState.EnemyAttackRight);
         }    
+    }
+
+    private void setDashAttackAnimation(){
+        animator.speed = 2f;
+        Vector2 targetDirection = target.transform.position - transform.position;
+
+        if(Vector2.Angle(Vector2.up, targetDirection) <= 45){
+            changeAnimationState(AnimationState.EnemyAttackUp);
+        } else if(Vector2.Angle(Vector2.down, targetDirection) <= 45 ){
+            changeAnimationState(AnimationState.EnemyAttackDown);
+        } else if(Vector2.Angle(Vector2.left, targetDirection) < 45 ){
+            changeAnimationState(AnimationState.EnemyAttackLeft);
+        } else if(Vector2.Angle(Vector2.right, targetDirection) < 45 ){
+            changeAnimationState(AnimationState.EnemyAttackRight);
+        } 
     }
 
 
