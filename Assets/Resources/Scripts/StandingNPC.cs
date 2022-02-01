@@ -20,6 +20,7 @@ public class StandingNPC : MonoBehaviour{
         animator = gameObject.GetComponent<Animator>();
         currentState = AnimationState.NPCLookDown;
         toLookAt = Player.getInstance().transform;
+        isInRange = false;
     }
     #endregion
 
@@ -29,7 +30,10 @@ public class StandingNPC : MonoBehaviour{
         if(Vector2.Distance(toLookAt.position,transform.position) <= visionRange){
             setLookAnimation();
         } else {
-            setIdleAnimation();
+            //Only change into Idle State when NPC isn't yet in any idle state
+            if(!currentState.Equals(AnimationState.NPCIdle1) && !currentState.Equals(AnimationState.NPCIdle2)){
+                setIdleAnimation();
+            }
         }
     }
 
