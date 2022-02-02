@@ -169,7 +169,7 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
             transform.localScale -= new Vector3(growthRate, 0, 0);
             if(transform.localScale.x <= 0.1f){
                 minSizeReached = true;
-                transform.localScale = new Vector3(0.01f, 0.01f, 1);
+                transform.localScale = new Vector3(0.01f, 0.01f, 1);    //Make scale very small so enemy is "invisible"
             }
             yield return new WaitForFixedUpdate();
         }
@@ -179,9 +179,11 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
         Vector2 targetDirectionNormalized = targetDirection.normalized;
         
         //Actual teleport
-        rb.position = rb.position + targetDirection + targetDirectionNormalized * teleportDistance;
+        rb.position = getTeleportPosition(rb.position, attackPoint);
+        yield return new WaitForSeconds(0.5f);
 
         //Grow up
+        transform.localScale = new Vector3(0.1f, baseScale.y, 1);
         bool maxSizeReached = false;
         while(!maxSizeReached){
             transform.localScale += new Vector3(growthRate, 0, 0);
@@ -215,6 +217,15 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
         Destroy(hitbox);
 
         yield break;
+    }
+
+    private Vector2 getTeleportPosition(Vector2 selfPos, Vector2 targetPos){
+        LayerMask lm =  LayerMask.GetMask("Blocking");
+        RaycastHit2D hit = Physics2D.Raycast(targetPos, targetPos - selfPos, teleportDistance, lm);
+        if(hit){
+            return targetPos + (targetPos - selfPos).normalized * hit.distance;
+        }
+        return targetPos + (targetPos - selfPos).normalized * teleportDistance;
     } 
     
     #endregion
