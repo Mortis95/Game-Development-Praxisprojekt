@@ -41,6 +41,7 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
     private float currentActionDelaySeconds;
     private const float meleeAttackDelay = 1.5f;
     private const float teleportAttackDelay = 4f;
+    private bool receivingKnockback;
     
     #endregion
 
@@ -55,10 +56,11 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
         lastMeleeAttackTime    = Time.fixedTime;
         lastTeleportAttackTime = Time.fixedTime;
         meleeAttackReady       = true;
-        teleportAttackReady    = true;
+        teleportAttackReady    = false;
         busy                   = false;
         lastActionTime         = Time.fixedTime;
         currentActionDelaySeconds = 0f;
+        receivingKnockback = false;
     }
 
     #endregion
@@ -105,7 +107,7 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
         }
     }
 
-    void FixedUpdate(){rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);}
+    void FixedUpdate(){if(!receivingKnockback){rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);}}
 
     void standStill(){movement = Vector2.zero;}
 
@@ -283,12 +285,29 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
     public void findTarget(){return;}
     public void onDeath(){
         busy = true;
-        currentActionDelaySeconds = 1000f; //For at least 100 seconds 
+        currentActionDelaySeconds = 1000f;
         setLastActionTime();
         onDeathEvent.Invoke();
         return;
     }
-    public void getKnockedBack(Vector2 origin, float knockBackForce){return;}
+    public void getKnockedBack(Vector2 origin, float knockBackForce){
+        StartCoroutine(knockBackLoop(origin, knockBackForce));
+    }
+
+    IEnumerator knockBackLoop(Vector2 origin, float knockBackForce){
+        receivingKnockback = true;
+        float startTime = Time.time;
+        float knockBackTimeSeconds = 0.25f;
+        float actualKnockBackForce = Mathf.Max(knockBackForce - enemyManager.enemyDefense, 0f); //Reduce Knockback force by Enemy Defense. But don't allow negative Knockback
+        Vector2 direction = rb.position - origin;
+        direction.Normalize();
+        while (Time.time - startTime < knockBackTimeSeconds){
+            rb.MovePosition(rb.position + direction * knockBackForce * Time.fixedDeltaTime);
+            yield return new WaitForFixedUpdate();
+        }
+        receivingKnockback = false;
+
+    }
     #endregion
 
     #region SetAnimations

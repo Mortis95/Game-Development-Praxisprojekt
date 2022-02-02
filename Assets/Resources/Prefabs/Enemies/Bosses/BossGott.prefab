@@ -168,8 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyMaxHealthPoints: 400
-  enemyAttack: 30
-  enemyDefense: 17
+  enemyAttack: 35
+  enemyDefense: 20
   enemyExpWorth: 10000
   enemyWeaknesses: 
   enemyResistances: 
@@ -190,7 +190,7 @@ MonoBehaviour:
   meleeAttackCooldownSeconds: 2
   meleeAttackDamageScale: 1
   teleportAttackCooldownSeconds: 9
-  teleportAttackDamageScale: 1
+  teleportAttackDamageScale: 1.5
   teleportAttackDashSpeed: 15
   teleportDistance: 7
   onDeathEvent:
