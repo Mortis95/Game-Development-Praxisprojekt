@@ -12,7 +12,6 @@ public class ScharfSchussScript : MonoBehaviour
     private void Awake()
     {
         Player pl = Player.getInstance();
-        int damage = (int)((float) pl.getDexterity() * pl.getSkillDamageMultiplier());
         Vector3 offset;
         AudioManager.getInstance().PlaySound("SkillBogenScharfschuss");
         switch(pl.lastFacedDirection)
@@ -45,6 +44,8 @@ public class ScharfSchussScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col){
         Debug.Log("Collision with:" + col.name);
+        Player pl = Player.getInstance();
+        int damage = (int)((float) pl.getDexterity() * pl.getSkillDamageMultiplier());
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
