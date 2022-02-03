@@ -12,6 +12,7 @@ public class LoadLevel : MonoBehaviour
     public Animator transition;
     public float transitiontime=3f;
     public GameObject canvas;
+    public string musicToPlay;
 
     void Start()
     {
@@ -39,6 +40,7 @@ public class LoadLevel : MonoBehaviour
 
          SceneManager.LoadScene(name);
          GameManager.getInstance().unpauseGame();
+         AudioManager.getInstance().PlayMusic(musicToPlay);
 
     }
 }
