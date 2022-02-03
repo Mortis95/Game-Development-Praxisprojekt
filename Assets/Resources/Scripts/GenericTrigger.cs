@@ -20,4 +20,26 @@ public class GenericTrigger : MonoBehaviour{
             Destroy(gameObject);
         }
     }
+
+    #region UsefulTriggerFunctions
+    public void healPlayerHealth(int amount){
+        Player.getInstance().addHealthPoints(amount);
+    }
+
+    public void healPlayerMana(int amount){
+        Player.getInstance().addMagicPoints(amount);
+    }
+
+    public void playMusic(string musicName){
+        AudioManager.getInstance().PlayMusic(musicName);
+    }
+
+    public void stopMusic(){
+        AudioManager.getInstance().StopMusic();
+    }
+
+    public void playSoundEffect(string soundName){
+        AudioManager.getInstance().PlaySound(soundName);
+    }
+    #endregion
 }
