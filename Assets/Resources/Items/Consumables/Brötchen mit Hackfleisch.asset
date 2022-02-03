@@ -19,9 +19,10 @@ MonoBehaviour:
   description: "Ein Br\xF6tchen aus frischem Hack mit Zwiebeln, schmeckt definitiv
     nicht jedem."
   isStackable: 1
-  maxStackSize: 9
+  maxStackSize: 10
   amount: 1
   healHealthPoints: 10
   healMagicPoints: 0
   healHealthPointsPercentage: 0
   healMagicPointsPercentage: 0
+  interactionSound: 

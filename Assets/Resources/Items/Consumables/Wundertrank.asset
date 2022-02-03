@@ -18,10 +18,10 @@ MonoBehaviour:
   itemName: Wundertrank
   description: "Wirkt Wunder gegen gro\xDFe Wehwehchen."
   isStackable: 1
-  maxStackSize: 5
+  maxStackSize: 10
   amount: 1
   healHealthPoints: 70
-  healMagicPoints: 40
+  healMagicPoints: 50
   healHealthPointsPercentage: 0
   healMagicPointsPercentage: 0
   interactionSound: 
