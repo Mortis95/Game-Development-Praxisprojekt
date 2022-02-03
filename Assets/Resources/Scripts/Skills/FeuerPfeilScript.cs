@@ -11,7 +11,6 @@ public class FeuerPfeilScript : MonoBehaviour
     private void Awake()
     {
         Player pl = Player.getInstance();
-        int damage = (int)((float) pl.getDexterity() * pl.getSkillDamageMultiplier());
         Vector3 offset;
         AudioManager.getInstance().PlaySound("SkillBogenFeuerpfeil");
         switch(pl.lastFacedDirection)
@@ -51,7 +50,10 @@ public class FeuerPfeilScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col){
         Debug.Log("Collision with:" + col.name);
         GameObject other = col.gameObject;
+        Player pl = Player.getInstance();
+        int damage = (int)((float) pl.getDexterity() * pl.getSkillDamageMultiplier());
         if(other != null && other.tag == "Enemy"){
+            Debug.Log("FeuerPfeilSchaden: "+ damage);
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
             enemyScript.takeDamage(DamageType.Feuer, damage);
             Destroy(gameObject);
