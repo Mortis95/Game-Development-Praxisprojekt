@@ -23,4 +23,37 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Dungeon1/Dungeon1_03.unity
     guid: d271fbec378b40942a0f6aa49e75eb91
+  - enabled: 1
+    path: Assets/Resources/Scenes/Anfangsgebiet(Wald).unity
+    guid: a6a0aa2f69821574fa7ae221e60507e1
+  - enabled: 1
+    path: Assets/Resources/Scenes/Camp.unity
+    guid: 943456414bcc14241a992353db085178
+  - enabled: 1
+    path: Assets/Resources/Scenes/Dungeon1.unity
+    guid: 36ad84b87b8d2e545a448ad5b0ce6bcc
+  - enabled: 1
+    path: Assets/Resources/Scenes/Dungeon2.unity
+    guid: e3c3832b59dcdab4fb2efe41c32f49f7
+  - enabled: 1
+    path: Assets/Resources/Scenes/Endboss.unity
+    guid: 836ba1cc8c93d2a48ad6943ae143d51c
+  - enabled: 1
+    path: Assets/Resources/Scenes/Mine.unity
+    guid: ea31e1db8fec00442aedbb0824a9ba30
+  - enabled: 1
+    path: Assets/Resources/Scenes/Pfad zur Mine.unity
+    guid: 450f381039991e44fbaceb22b2ac02c0
+  - enabled: 1
+    path: Assets/Resources/Scenes/Tempel Innenraum.unity
+    guid: cf3123ca8a38bf442b723177f483b371
+  - enabled: 1
+    path: "Assets/Resources/Scenes/\xDCbergang DorfStadt.unity"
+    guid: ce0c4a4e0b9d74b4b93205dd262ef123
+  - enabled: 1
+    path: "Assets/Resources/Scenes/\xDCbergang StadtD\xFCsteresDorf.unity"
+    guid: e132d66d64c2c6045aed7b1f64b25c8a
+  - enabled: 1
+    path: "Assets/Resources/Scenes/\xDCbergang WaldDorf.unity"
+    guid: dc11e5d9559905245b758fcce5fe7021
   m_configObjects: {}
