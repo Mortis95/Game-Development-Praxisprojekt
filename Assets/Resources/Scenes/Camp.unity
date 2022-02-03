@@ -1930,11 +1930,11 @@ GameObject:
   m_Component:
   - component: {fileID: 193786540}
   - component: {fileID: 193786541}
-  - component: {fileID: 193786542}
   - component: {fileID: 193786543}
+  - component: {fileID: 193786542}
   m_Layer: 0
   m_Name: Skelett
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1996,8 +1996,8 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
   activeDialogueIndex: 0
---- !u!58 &193786542
-CircleCollider2D:
+--- !u!60 &193786542
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2006,12 +2006,60 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.53, y: 2.45}
+    newSize: {x: 3.53, y: 2.45}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.055, y: -0.345}
+      - {x: 0.095, y: -0.355}
+      - {x: 0.175, y: -0.325}
+      - {x: 0.315, y: -0.185}
+      - {x: 0.295, y: -0.24499999}
+      - {x: 0.295, y: -0.315}
+      - {x: 0.355, y: -0.385}
+      - {x: 0.49499997, y: -0.42499998}
+      - {x: 0.635, y: -0.385}
+      - {x: 0.685, y: -0.325}
+      - {x: 0.66499996, y: -0.265}
+      - {x: 0.555, y: -0.035}
+      - {x: 0.705, y: 0.024999999}
+      - {x: 0.72499996, y: 0.065}
+      - {x: 0.72499996, y: 0.155}
+      - {x: 0.545, y: 0.24499999}
+      - {x: 0.45499998, y: 0.24499999}
+      - {x: 0.315, y: 0.13499999}
+      - {x: 0.235, y: 0.315}
+      - {x: 0.024999999, y: 0.345}
+      - {x: -0.195, y: 0.525}
+      - {x: -0.275, y: 0.575}
+      - {x: -0.385, y: 0.575}
+      - {x: -0.48499998, y: 0.525}
+      - {x: -0.72499996, y: 0.33499998}
+      - {x: -0.805, y: 0.16499999}
+      - {x: -0.835, y: 0.044999998}
+      - {x: -0.815, y: -0.175}
+      - {x: -0.995, y: -0.315}
+      - {x: -0.965, y: -0.39499998}
+      - {x: -1.025, y: -0.445}
+      - {x: -1.0649999, y: -0.475}
+      - {x: -1.0649999, y: -0.66499996}
+      - {x: -1.035, y: -0.685}
+      - {x: -0.955, y: -0.685}
+      - {x: -0.73499995, y: -0.615}
+      - {x: -0.545, y: -0.615}
+      - {x: -0.39499998, y: -0.59499997}
+      - {x: -0.175, y: -0.49499997}
 --- !u!212 &193786543
 SpriteRenderer:
   m_ObjectHideFlags: 0
