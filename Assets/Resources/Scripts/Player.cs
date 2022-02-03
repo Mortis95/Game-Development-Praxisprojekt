@@ -37,6 +37,10 @@ public class Player : MonoBehaviour
     private bool receivingKnockback;
     private float walkingSoundTime;
     private float walkingSoundDelay;
+
+    public bool transitioned = false;
+    public float designatedx;
+    public float designatedy;
     #endregion
 
     #region Equipment
@@ -222,7 +226,9 @@ public class Player : MonoBehaviour
                                                                 
 
     void Start()
-    {   
+    {          
+        
+
         animator = gameObject.GetComponent<Animator>();
 
         equipment = Equipment.getInstance();
@@ -258,6 +264,13 @@ public class Player : MonoBehaviour
     }
 
     void Update(){
+        if(transitioned)
+        {
+            transform.position = new Vector3(designatedx,designatedy,0);
+            transitioned=false;
+            designatedx=0;
+            designatedy=0;  //bugs durch default wert vorbeugen
+        }
         if(isDead || gm.getGameIsPaused()){return;}
         if(isAllowedToTakeAction()){
             processMovement();
