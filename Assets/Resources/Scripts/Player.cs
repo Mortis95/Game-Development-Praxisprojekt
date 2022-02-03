@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
     public bool WasserflaecheLearned            = false;
     private int WasserflaecheMPKost             = 30;
     public bool KettenblitzLearned              = false;
-    private int KettenblitzMPKost               = 5;
+    private int KettenblitzMPKost               = 15;
     #endregion
     
     #region AnimatorStateChange
