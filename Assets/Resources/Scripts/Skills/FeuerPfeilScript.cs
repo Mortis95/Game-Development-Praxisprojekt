@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class FeuerPfeilScript : MonoBehaviour
 {
+    public int damage;
     public float End;
     public float speed = 15f;
     public Rigidbody2D myRigidbody;
     private void Awake()
     {
         Player pl = Player.getInstance();
+        int damage = (int)((float) pl.getDexterity() * pl.getSkillDamageMultiplier());
         Vector3 offset;
         AudioManager.getInstance().PlaySound("SkillBogenFeuerpfeil");
         switch(pl.lastFacedDirection)
@@ -51,7 +53,7 @@ public class FeuerPfeilScript : MonoBehaviour
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
-            enemyScript.takeDamage(DamageType.Feuer, 20);
+            enemyScript.takeDamage(DamageType.Feuer, damage);
             Destroy(gameObject);
 
         }

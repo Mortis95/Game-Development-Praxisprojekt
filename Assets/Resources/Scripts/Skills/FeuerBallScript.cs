@@ -13,7 +13,7 @@ public class FeuerBallScript : MonoBehaviour
     private void Awake()
     {
         Player pl = Player.getInstance();
-        /*Damage = (float) pl.getIntelligence() * pl.getSkillDamageMultiplier();*/ //<- So soll Schadensberechnung theoretisch aussehen, laut Formeln von Ideengruppe
+        Damage = (int)((float) pl.getIntelligence() * pl.getSkillDamageMultiplier()); //<- So soll Schadensberechnung theoretisch aussehen, laut Formeln von Ideengruppe
         Vector3 offset;
         AudioManager.getInstance().PlaySound("SkillMagieFeuerball");
         switch(pl.lastFacedDirection)

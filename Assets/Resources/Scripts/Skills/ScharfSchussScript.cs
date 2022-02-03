@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ScharfSchussScript : MonoBehaviour
 {
+    public int damage;
     public int EnemyHit = 0;
     public float End;
     public float speed = 50f;
@@ -11,6 +12,7 @@ public class ScharfSchussScript : MonoBehaviour
     private void Awake()
     {
         Player pl = Player.getInstance();
+        int damage = (int)((float) pl.getDexterity() * pl.getSkillDamageMultiplier());
         Vector3 offset;
         AudioManager.getInstance().PlaySound("SkillBogenScharfschuss");
         switch(pl.lastFacedDirection)
@@ -46,7 +48,7 @@ public class ScharfSchussScript : MonoBehaviour
         GameObject other = col.gameObject;
         if(other != null && other.tag == "Enemy"){
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
-            enemyScript.takeDamage(DamageType.Blitz, 5);
+            enemyScript.takeDamage(DamageType.Blitz, damage);
             EnemyHit = EnemyHit + 1;
             if(EnemyHit >= 3){
                 Destroy(gameObject);
