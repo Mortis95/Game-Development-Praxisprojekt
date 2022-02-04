@@ -42406,8 +42406,9 @@ MonoBehaviour:
           m_Calls: []
     - typeOfBox: 0
       name: Fey
-      text: "Hier ist ein Schwert, mit welchem du k\xE4mpfen kannst. Um anzugreifen,
-        dr\xFCcke die Pfeiltasten."
+      text: "Hier ist ein Schwert, mit welchem du k\xE4mpfen kannst. \xD6ffne dein
+        Inventar mit [I] und r\xFCste es mit [E] aus! Um anzugreifen, dr\xFCcke die
+        Leertaste."
       choices: []
       toExecute:
         m_PersistentCalls:
@@ -42457,9 +42458,9 @@ MonoBehaviour:
           m_Calls: []
     - typeOfBox: 0
       name: Fey
-      text: "Na los, kein Tr\xF6deln! Greife an mit Pfeiltasten, weiche aus mit WASD.
-        Sei vorsichtig, denn deine Gesundheit kann sich w\xE4hrend eines Kampfes
-        nicht regenerieren."
+      text: "Na los, kein Tr\xF6deln! \xD6ffne dein Inventar, r\xFCste das Schwert
+        aus und greife mit Leertaste an! Sei vorsichtig, denn deine Gesundheit kann
+        sich w\xE4hrend eines Kampfes nicht regenerieren."
       choices: []
       toExecute:
         m_PersistentCalls:
