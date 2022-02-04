@@ -35425,7 +35425,12 @@ MonoBehaviour:
             m_Calls: []
       - option: Naja...
         reactingName: 
-        reaction: 
+        reaction: "Du: Eine gro\xDFe Hilfe w\xFCrde ich es jetzt nicht unbedingt
+          nennen. Fey: Meisterin, unser Gast hier scherzt nur herum. Selbstverst\xE4ndlich
+          habe ich alles getan, damit unser Held bestens ausgestattet und vorbereitet
+          ist. Du: Auch, als du mich tiefer in den Wald schicken wolltest, anstatt
+          mich n\xE4her zum Ausgang zu f\xFChren? Fey: Aber du hast den Weg heraus
+          gefunden!"
         reactionEvent:
           m_PersistentCalls:
             m_Calls:
