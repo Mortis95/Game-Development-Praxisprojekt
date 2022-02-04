@@ -248,6 +248,30 @@ MonoBehaviour:
     pitch: 1
     isLooping: 0
     source: {fileID: 0}
+  - name: MobPilz
+    clip: {fileID: 8300000, guid: 6f99240100894cf44a70301116e0ceab, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: MobBerserker
+    clip: {fileID: 8300000, guid: 099f53fa905a7354b8ea6229fe31e18f, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: MobOrganisationsboss
+    clip: {fileID: 8300000, guid: f565b38b22e191747afc7ec94d8a9d98, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: UIKampfbeginn
+    clip: {fileID: 8300000, guid: d53a3233869a6264994ed8cdee21997e, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
   soundTrack:
   - name: MainTheme
     clip: {fileID: 8300000, guid: 77f0ae10e3fc5eb458504de6ce4ce9fd, type: 3}
