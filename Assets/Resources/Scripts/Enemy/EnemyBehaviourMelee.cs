@@ -73,6 +73,8 @@ public class EnemyBehaviourMelee : MonoBehaviour, EnemyBehaviour{
         startPos = rb.position;
         lastMovement = Vector2.up;
         anglesToCheck = new float[] {10f, -10f, 20f, -20f, 30f, -30.0f};    //Static angles, because a high ViewDetectionAngle might break the Raycast otherwise
+        animator = gameObject.GetComponent<Animator>();
+        currentState = AnimationState.EnemyWalkUp;
     }
 
     private void Update(){
