@@ -7,7 +7,7 @@
 - Sicherstellen dass das Spiel spielbar ist
 - In LoadLevel-Triggern feststellen, was für Musik gespielt werden soll
 
-## Player-Animationen fixen			
+~~## Player-Animationen fixen			
 -> Oscar
 
 ## Speichern / Laden finishen
