@@ -1207,6 +1207,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaecf7f652d99644ebeb3a6f8291421f, type: 3}
+--- !u!95 &81674 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1582186260086901866, guid: aaecf7f652d99644ebeb3a6f8291421f,
+    type: 3}
+  m_PrefabInstance: {fileID: 81673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7502830
 GameObject:
   m_ObjectHideFlags: 0
@@ -41976,7 +41982,31 @@ MonoBehaviour:
       choices: []
       toExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 1090402861}
+            m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+            m_MethodName: Play
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: NPCWalkRight
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 81674}
+            m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+            m_MethodName: Play
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: PlayerStandLeft
+              m_BoolArgument: 0
+            m_CallState: 2
     - typeOfBox: 0
       name: ???
       text: 'Na, endlich bist du wach! '
