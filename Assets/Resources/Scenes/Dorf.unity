@@ -2110,7 +2110,7 @@ MonoBehaviour:
         reactionEvent:
           m_PersistentCalls:
             m_Calls:
-            - m_Target: {fileID: 2800000, guid: f210cec74d315a042bb675686910d22d,
+            - m_Target: {fileID: 102900000, guid: 28dd22e1551040e47af172c416daf3c9,
                 type: 3}
               m_TargetAssemblyTypeName: 
               m_MethodName: 
@@ -35677,25 +35677,6 @@ MonoBehaviour:
       toExecute:
         m_PersistentCalls:
           m_Calls: []
-    - typeOfBox: 1
-      name: 
-      text: 
-      choices:
-      - option: "Ich habe nicht vor, die Welt zu retten\u2026"
-        reactingName: 
-        reaction: 
-        reactionEvent:
-          m_PersistentCalls:
-            m_Calls: []
-      - option: 'Ich werde helfen. '
-        reactingName: Lucie
-        reaction: Danke.
-        reactionEvent:
-          m_PersistentCalls:
-            m_Calls: []
-      toExecute:
-        m_PersistentCalls:
-          m_Calls: []
     - typeOfBox: 0
       name: Lucie
       text: "Sobald du den Schl\xFCssel erhalten hast, bringe ihn zu mir. Ich werde
@@ -35704,10 +35685,33 @@ MonoBehaviour:
       toExecute:
         m_PersistentCalls:
           m_Calls: []
+    - typeOfBox: 1
+      name: 
+      text: 
+      choices:
+      - option: "Ich habe nicht vor, die Welt zu retten\u2026"
+        reactingName: 
+        reaction: "Lucie: Ich flehe dich an, du bist unsere einzige Hoffnung. Meine
+          Kr\xE4fte sind nicht ann\xE4hernd so stark wie die der ersten Priesterin,
+          weshalb ich die Siegel nicht brechen kann\u2026 Du: \u2026 habe ich \xFCberhaupt
+          eine andere Wahl? Lucie: Ich m\xF6chte dich zu nichts zwingen, aber\u2026
+          Du: Nach den Regeln eines RPGs werde ich vom Spiel gezwungen, ja zu sagen.
+          Ugh, okay, ich mache es."
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      - option: Ich werde helfen.
+        reactingName: 
+        reaction: 
+        reactionEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
     - typeOfBox: 0
-      name: Lucie
-      text: "Ich danke dir von tiefstem Herzen. Ich werde hier auf deine R\xFCckkehr
-        warten."
+      name: 
+      text: 
       choices: []
       toExecute:
         m_PersistentCalls:
