@@ -2023,13 +2023,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
+      propertyPath: enemyAttack
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
       propertyPath: enemyExpWorth
       value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
       propertyPath: enemyMaxHealthPoints
-      value: 20
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyWeaknesses.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyResistances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyWeaknesses.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyResistances.Array.data[0]
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257084, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -3797,6 +3822,26 @@ PrefabInstance:
       propertyPath: enemyMaxHealthPoints
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemyWeaknesses.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemyResistances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemyWeaknesses.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemyResistances.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282955, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
       propertyPath: m_RootOrder
@@ -3901,6 +3946,26 @@ PrefabInstance:
         type: 3}
       propertyPath: enemyMaxHealthPoints
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyWeaknesses.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyResistances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyWeaknesses.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyResistances.Array.data[0]
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257084, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -4184,13 +4249,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
+      propertyPath: enemyAttack
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
       propertyPath: enemyExpWorth
       value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
       propertyPath: enemyMaxHealthPoints
-      value: 25
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -4209,8 +4279,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
+      propertyPath: enemyWeaknesses.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
       propertyPath: enemyResistances.Array.data[0]
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257084, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -82554,7 +82629,7 @@ PrefabInstance:
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
       propertyPath: enemyAttack
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
@@ -82564,7 +82639,27 @@ PrefabInstance:
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
       propertyPath: enemyMaxHealthPoints
-      value: 30
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemyWeaknesses.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemyResistances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemyWeaknesses.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemyResistances.Array.data[0]
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282955, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
@@ -85235,6 +85330,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
+      propertyPath: enemyAttack
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
       propertyPath: enemyExpWorth
       value: 300
       objectReference: {fileID: 0}
@@ -85242,6 +85342,26 @@ PrefabInstance:
         type: 3}
       propertyPath: enemyMaxHealthPoints
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyWeaknesses.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyResistances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyWeaknesses.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemyResistances.Array.data[0]
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257084, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -89385,7 +89505,7 @@ PrefabInstance:
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
       propertyPath: enemyAttack
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
@@ -89404,8 +89524,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
+      propertyPath: enemyResistances.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
       propertyPath: enemyWeaknesses.Array.data[0]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemyResistances.Array.data[0]
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282955, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
