@@ -8,12 +8,10 @@ public class FeuerBallScript : MonoBehaviour
     public float speed = 12f;
     public float Damage;
     public float SplashRange = 10;
-
     public Rigidbody2D myRigidbody;
     private void Awake()
     {
         Player pl = Player.getInstance();
-        /*Damage = (float) pl.getIntelligence() * pl.getSkillDamageMultiplier();*/ //<- So soll Schadensberechnung theoretisch aussehen, laut Formeln von Ideengruppe
         Vector3 offset;
         AudioManager.getInstance().PlaySound("SkillMagieFeuerball");
         switch(pl.lastFacedDirection)
@@ -47,6 +45,8 @@ public class FeuerBallScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {   
+        Player pl = Player.getInstance();
+        Damage =(float) pl.getIntelligence() * pl.getSkillDamageMultiplier() + 1;
         var TestEnemy = col.gameObject;
         if(TestEnemy.tag == "Enemy")
         {

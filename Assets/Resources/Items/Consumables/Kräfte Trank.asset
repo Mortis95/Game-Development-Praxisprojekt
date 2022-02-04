@@ -16,9 +16,9 @@ MonoBehaviour:
   itemSprite: {fileID: 4722162652760028455, guid: b31f02415cd48784f9590e320b3466a2,
     type: 3}
   itemName: "Kr\xE4fte Trank"
-  description: "St\xE4rkt dich, wenn du es brauchst"
+  description: "St\xE4rkt dich, wenn du es brauchst."
   isStackable: 1
-  maxStackSize: 20
+  maxStackSize: 10
   amount: 1
   healHealthPoints: 20
   healMagicPoints: 0

@@ -19,9 +19,10 @@ MonoBehaviour:
   description: "Ein einfacher Heiltrank aus Zutaten der Natur, ein Schluck und man
     f\xFChlt sich direkt fitter."
   isStackable: 1
-  maxStackSize: 9
+  maxStackSize: 10
   amount: 1
   healHealthPoints: 20
   healMagicPoints: 0
   healHealthPointsPercentage: 0
   healMagicPointsPercentage: 0
+  interactionSound: 

@@ -19,10 +19,10 @@ MonoBehaviour:
   description: "Dieses Gebr\xE4u erfrischt den Trinkenden und sorgt f\xFCr geistige
     Klarheit."
   isStackable: 1
-  maxStackSize: 9
+  maxStackSize: 10
   amount: 1
   healHealthPoints: 20
-  healMagicPoints: 15
+  healMagicPoints: 20
   healHealthPointsPercentage: 0
   healMagicPointsPercentage: 0
   interactionSound: 

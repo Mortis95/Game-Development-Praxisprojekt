@@ -18,10 +18,10 @@ MonoBehaviour:
   itemName: ' Bluttrank'
   description: "Dickfl\xFCssiger roter Trank. Vampire schw\xF6ren auf ihn."
   isStackable: 1
-  maxStackSize: 5
+  maxStackSize: 10
   amount: 1
-  healHealthPoints: 70
-  healMagicPoints: -40
+  healHealthPoints: 60
+  healMagicPoints: -20
   healHealthPointsPercentage: 0
   healMagicPointsPercentage: 0
   interactionSound: 

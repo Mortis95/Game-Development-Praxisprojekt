@@ -12,6 +12,8 @@ public class LoadLevel : MonoBehaviour
     public Animator transition;
     public float transitiontime=3f;
     public GameObject canvas;
+    public string musicToPlay;
+    private Player player;
 
     void Start()
     {
@@ -20,12 +22,18 @@ public class LoadLevel : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject collisionObject = collision.gameObject;
-
-        if(collisionObject.tag =="Player")  //nur wenn en spieler und kein mob hereinläuft funzt es
-        {
-                GameManager.getInstance().pauseGame();
+        GameObject collisionObject = collision.gameObject;        
+        if(collisionObject.tag =="Player")  //nur wenn en spieler und kein mob hereinläuft funzt es    
+            {
+                player = collisionObject.GetComponent<Player>();
+                player.designatedx=x;
+                player.designatedy=y;
+                GameManager.getInstance().pauseGame();   
+                                              
+                               
                 StartCoroutine(Load(lvToLoad, collisionObject));
+                
+                
                 
         }
     }
@@ -33,12 +41,18 @@ public class LoadLevel : MonoBehaviour
 
     IEnumerator Load(string name, GameObject go)
     {
+        
+        //
         transition.SetTrigger("Start");
-
-        yield return new WaitForSecondsRealtime(transitiontime);
-
+        
+        
+        yield return new WaitForSecondsRealtime(transitiontime);   
+        player.transitioned=true; 
+         
          SceneManager.LoadScene(name);
          GameManager.getInstance().unpauseGame();
-
+         AudioManager.getInstance().PlayMusic(musicToPlay);
+         
+      
     }
 }

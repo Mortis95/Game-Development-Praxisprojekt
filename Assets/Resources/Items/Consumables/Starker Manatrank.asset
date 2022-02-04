@@ -19,10 +19,10 @@ MonoBehaviour:
   description: "Gef\xE4hrlich aber effektiv: Tausche ein bisschen deiner Lebenszeit
     gegen sofortige magische Kraft!"
   isStackable: 1
-  maxStackSize: 5
+  maxStackSize: 10
   amount: 1
-  healHealthPoints: -30
-  healMagicPoints: 80
+  healHealthPoints: -25
+  healMagicPoints: 60
   healHealthPointsPercentage: 0
   healMagicPointsPercentage: 0
   interactionSound: 

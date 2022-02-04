@@ -19,7 +19,7 @@ MonoBehaviour:
   description: "Das Elixier mit der st\xE4rksten Wirkung und dem scheusslichsten
     Geschmack."
   isStackable: 1
-  maxStackSize: 3
+  maxStackSize: 10
   amount: 1
   healHealthPoints: 100
   healMagicPoints: 100

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FeuerPfeilScript : MonoBehaviour
 {
+    public int damage;
     public float End;
     public float speed = 15f;
     public Rigidbody2D myRigidbody;
@@ -49,9 +50,12 @@ public class FeuerPfeilScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col){
         Debug.Log("Collision with:" + col.name);
         GameObject other = col.gameObject;
+        Player pl = Player.getInstance();
+        int damage = (int)((float) pl.getDexterity() * pl.getSkillDamageMultiplier());
         if(other != null && other.tag == "Enemy"){
+            Debug.Log("FeuerPfeilSchaden: "+ damage);
             EnemyManager enemyScript = other.GetComponent<EnemyManager>();
-            enemyScript.takeDamage(DamageType.Feuer, 20);
+            enemyScript.takeDamage(DamageType.Feuer, damage);
             Destroy(gameObject);
 
         }

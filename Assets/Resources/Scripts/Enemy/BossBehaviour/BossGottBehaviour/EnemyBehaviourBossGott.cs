@@ -41,6 +41,7 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
     private float currentActionDelaySeconds;
     private const float meleeAttackDelay = 1.5f;
     private const float teleportAttackDelay = 4f;
+    private bool receivingKnockback;
     
     #endregion
 
@@ -55,10 +56,11 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
         lastMeleeAttackTime    = Time.fixedTime;
         lastTeleportAttackTime = Time.fixedTime;
         meleeAttackReady       = true;
-        teleportAttackReady    = true;
+        teleportAttackReady    = false;
         busy                   = false;
         lastActionTime         = Time.fixedTime;
         currentActionDelaySeconds = 0f;
+        receivingKnockback = false;
     }
 
     #endregion
@@ -105,7 +107,7 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
         }
     }
 
-    void FixedUpdate(){rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);}
+    void FixedUpdate(){if(!receivingKnockback){rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);}}
 
     void standStill(){movement = Vector2.zero;}
 
@@ -169,7 +171,7 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
             transform.localScale -= new Vector3(growthRate, 0, 0);
             if(transform.localScale.x <= 0.1f){
                 minSizeReached = true;
-                transform.localScale = new Vector3(0.01f, 0.01f, 1);
+                transform.localScale = new Vector3(0.01f, 0.01f, 1);    //Make scale very small so enemy is "invisible"
             }
             yield return new WaitForFixedUpdate();
         }
@@ -179,9 +181,11 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
         Vector2 targetDirectionNormalized = targetDirection.normalized;
         
         //Actual teleport
-        rb.position = rb.position + targetDirection + targetDirectionNormalized * teleportDistance;
+        rb.position = getTeleportPosition(rb.position, attackPoint);
+        yield return new WaitForSeconds(0.5f);
 
         //Grow up
+        transform.localScale = new Vector3(0.1f, baseScale.y, 1);
         bool maxSizeReached = false;
         while(!maxSizeReached){
             transform.localScale += new Vector3(growthRate, 0, 0);
@@ -215,6 +219,15 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
         Destroy(hitbox);
 
         yield break;
+    }
+
+    private Vector2 getTeleportPosition(Vector2 selfPos, Vector2 targetPos){
+        LayerMask lm =  LayerMask.GetMask("Blocking");
+        RaycastHit2D hit = Physics2D.Raycast(targetPos, targetPos - selfPos, teleportDistance, lm);
+        if(hit){
+            return targetPos + (targetPos - selfPos).normalized * hit.distance;
+        }
+        return targetPos + (targetPos - selfPos).normalized * teleportDistance;
     } 
     
     #endregion
@@ -272,12 +285,29 @@ public class EnemyBehaviourBossGott : MonoBehaviour, EnemyBehaviour {
     public void findTarget(){return;}
     public void onDeath(){
         busy = true;
-        currentActionDelaySeconds = 1000f; //For at least 100 seconds 
+        currentActionDelaySeconds = 1000f;
         setLastActionTime();
         onDeathEvent.Invoke();
         return;
     }
-    public void getKnockedBack(Vector2 origin, float knockBackForce){return;}
+    public void getKnockedBack(Vector2 origin, float knockBackForce){
+        StartCoroutine(knockBackLoop(origin, knockBackForce));
+    }
+
+    IEnumerator knockBackLoop(Vector2 origin, float knockBackForce){
+        receivingKnockback = true;
+        float startTime = Time.time;
+        float knockBackTimeSeconds = 0.25f;
+        float actualKnockBackForce = Mathf.Max(knockBackForce - enemyManager.enemyDefense, 0f); //Reduce Knockback force by Enemy Defense. But don't allow negative Knockback
+        Vector2 direction = rb.position - origin;
+        direction.Normalize();
+        while (Time.time - startTime < knockBackTimeSeconds){
+            rb.MovePosition(rb.position + direction * knockBackForce * Time.fixedDeltaTime);
+            yield return new WaitForFixedUpdate();
+        }
+        receivingKnockback = false;
+
+    }
     #endregion
 
     #region SetAnimations
