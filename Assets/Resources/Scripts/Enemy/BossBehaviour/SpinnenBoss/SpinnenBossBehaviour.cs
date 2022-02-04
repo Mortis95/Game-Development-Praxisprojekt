@@ -38,6 +38,7 @@ public class SpinnenBossBehaviour : MonoBehaviour, EnemyBehaviour
     private const float meleeAttackDelay = 1f;
     private const float rangedKnifeAttackDelay = 0.5f;
     private const float rangedAxeAttackDelay = 2f;
+    private float rangedWebAttack = 3f;
     #endregion
 
     #region SetAnimations
@@ -82,7 +83,12 @@ public class SpinnenBossBehaviour : MonoBehaviour, EnemyBehaviour
     public void findTarget() { return; }
 
     public void onDeath() {
-
+        busy = true;
+        currentActionDelaySeconds = 1000f; //For at least 100 seconds 
+        setLastActionTime();
+        changeAnimationState(AnimationState.EnemyDeath);
+        onDeathEvent.Invoke();
+        return;
     }
 
     void standStill() { movement = Vector2.zero; }
@@ -153,6 +159,39 @@ public class SpinnenBossBehaviour : MonoBehaviour, EnemyBehaviour
         currentState = newState;
     }
 
+    void Update()
+    {
+        if (busy) { standStill(); }
+        else { decideAction(); }
+        checkCooldowns();
+        checkBusy();
+    }
+
+    #region Cooldowns
+    private void checkCooldowns()
+    {
+        if (getTimeSinceLastMeleeAttack() > meleeAttackCooldownSeconds)
+        {
+            meleeAttackReady = true;
+        }
+        if (getTimeSinceLastAxeAttack() > rangedWebAttack)
+        {
+            rangedAxeAttackReady = true;
+        }
+    }
+
+    #endregion
+
+    void decideAction()
+    {
+        decideMovement();
+        //decideAttack();
+    }
+
+    void FixedUpdate() { rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime); }
+
+   
+
     private void setMovementAnimation()
     {
         animator.speed = 1f;
@@ -195,6 +234,20 @@ public class SpinnenBossBehaviour : MonoBehaviour, EnemyBehaviour
         }
     }
 
+    #region Busy
+    private void checkBusy()
+    {
+        if (getTimeSinceLastAction() > currentActionDelaySeconds)
+        {
+            busy = false;
+        }
+        else
+        {
+            busy = true;
+        }
+    }
+
+    #endregion
 
     private void setStandStillAnimation()
     {
