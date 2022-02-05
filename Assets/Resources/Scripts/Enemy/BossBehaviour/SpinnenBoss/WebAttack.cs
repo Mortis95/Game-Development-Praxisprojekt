@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class WebAttack : MonoBehaviour
 {
-    public int speed = 5;
-    private void Start()
+    public int speed = 4;
+    public int removeAfterUnits = 500;
+
+
+
+    private void FixedUpdate()
     {
-        Vector3 toPlayer = (Player.getInstance().GetComponent<Transform>().transform.position).normalized;
-        Vector2 toV2 = new Vector2(toPlayer.x, toPlayer.y);
-        GetComponent<Rigidbody2D>().velocity = toPlayer * speed;
+        transform.position = Vector3.MoveTowards(transform.position, Player.getInstance().transform.position, speed * Time.deltaTime);
+        if (removeAfterUnits == 0)
+        {
+            Debug.Log("müsste kaputt gehen");
+            Destroy(gameObject);
+        }
+        Debug.Log(removeAfterUnits);
+        removeAfterUnits -= 1;
     }
 
     public int dmg = 15;

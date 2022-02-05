@@ -6,8 +6,7 @@ public class WebLoader : MonoBehaviour
 {
 
     public GameObject web;
-    public float interval = 1; // in seconds
-
+    public float interval = 7; 
     void Start()
     {
         InvokeRepeating("ShootWeb", interval, interval);
