@@ -51,7 +51,7 @@ public class LoadLevel : MonoBehaviour
          
          SceneManager.LoadScene(name);
          GameManager.getInstance().unpauseGame();
-         AudioManager.getInstance().PlayMusic(musicToPlay);
+         if(!musicToPlay.Equals("")){AudioManager.getInstance().PlayMusic(musicToPlay);}
          
       
     }
