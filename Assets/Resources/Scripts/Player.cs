@@ -98,11 +98,11 @@ public class Player : MonoBehaviour
     #region AbilityCostAndVariables
     //Ability Kram - Bools sehen zwar doof aus, sind aber praktisch und peformancetechnisch gesehen das Beste. 
     public bool FeuerpfeilLearned               = false;
-    private int FeuerpfeilMPKost                = 10;
+    private int FeuerpfeilMPKost                = 8;
     public bool WasserpfeilhagelLearned         = false;
     private int WasserpfeilhagelMPKost          = 30;
     public bool ScharfschussLearned             = false;
-    private int ScharfschussMPKost              = 5;
+    private int ScharfschussMPKost              = 12;
     public bool WasserhiebLearned               = false;
     private int WasserhiebMPKost                = 20;
     public bool ElektrowirbelLearned            = false;
@@ -110,7 +110,7 @@ public class Player : MonoBehaviour
     public bool RageLearned                     = false;
     private int RageMPKost                      = 10;
     public bool FeuerballLearned                = false;
-    private int FeuerballMPKost                 = 20;
+    private int FeuerballMPKost                 = 10;
     public bool WasserflaecheLearned            = false;
     private int WasserflaecheMPKost             = 30;
     public bool KettenblitzLearned              = false;
