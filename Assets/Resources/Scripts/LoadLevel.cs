@@ -22,9 +22,9 @@ public class LoadLevel : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject collisionObject = collision.gameObject;        
-        if(collisionObject.tag =="Player")  //nur wenn en spieler und kein mob hereinläuft funzt es    
-            {
+        GameObject collisionObject = collision.gameObject;
+        if (collisionObject.tag == "Player" && !collisionObject.name.Equals("LayerSorter"))  //nur wenn en spieler und kein mob hereinläuft funzt es    
+        {
                 player = collisionObject.GetComponent<Player>();
                 player.designatedx=x;
                 player.designatedy=y;

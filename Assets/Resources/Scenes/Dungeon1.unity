@@ -4241,6 +4241,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Ersch\xF6pfter Kerl"
       objectReference: {fileID: 0}
+    - target: {fileID: 4902766930793506854, guid: 84cd140e8606dc74c982433ae09b9c58,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.016922
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902766930793506854, guid: 84cd140e8606dc74c982433ae09b9c58,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.9603338
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902766930793506854, guid: 84cd140e8606dc74c982433ae09b9c58,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.12864685
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902766930793506854, guid: 84cd140e8606dc74c982433ae09b9c58,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.00000047683716
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84cd140e8606dc74c982433ae09b9c58, type: 3}
 --- !u!1001 &722201007
@@ -89923,6 +89943,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1632517720}
     m_Modifications:
+    - target: {fileID: 7763288749124932036, guid: 0ff9c5956a984e4488880c0c62b3d378,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.221035
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763288749124932036, guid: 0ff9c5956a984e4488880c0c62b3d378,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.2937536
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763288749124932036, guid: 0ff9c5956a984e4488880c0c62b3d378,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00409317
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763288749124932036, guid: 0ff9c5956a984e4488880c0c62b3d378,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.00014257431
+      objectReference: {fileID: 0}
     - target: {fileID: 7763288749124932040, guid: 0ff9c5956a984e4488880c0c62b3d378,
         type: 3}
       propertyPath: m_Name
@@ -92054,12 +92094,12 @@ PrefabInstance:
     - target: {fileID: 1582186260086901865, guid: aaecf7f652d99644ebeb3a6f8291421f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 81.3
+      value: 85.54
       objectReference: {fileID: 0}
     - target: {fileID: 1582186260086901865, guid: aaecf7f652d99644ebeb3a6f8291421f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.2
+      value: -13.88
       objectReference: {fileID: 0}
     - target: {fileID: 1582186260086901865, guid: aaecf7f652d99644ebeb3a6f8291421f,
         type: 3}
