@@ -49536,6 +49536,11 @@ PrefabInstance:
       propertyPath: lvToLoad
       value: "\xDCbergang WaldDorf"
       objectReference: {fileID: 0}
+    - target: {fileID: 2575120621741186580, guid: 30a56b8a335903b4c8cb5e92e162ce52,
+        type: 3}
+      propertyPath: musicToPlay
+      value: Wald
+      objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186581, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
       propertyPath: m_FlipX
