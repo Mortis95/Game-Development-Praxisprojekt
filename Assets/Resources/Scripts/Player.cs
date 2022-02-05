@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -142,6 +143,7 @@ public class Player : MonoBehaviour
         PlayerGameOver
     }
 
+
     private void changeAnimationState(AnimationState state){
         //If current animation is already playing, do not start it again.
         //Otherwise an animation would start every frame and never properly play out.
@@ -264,6 +266,10 @@ public class Player : MonoBehaviour
     }
 
     void Update(){
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
         if(transitioned)
         {
             transform.position = new Vector3(designatedx,designatedy,0);
