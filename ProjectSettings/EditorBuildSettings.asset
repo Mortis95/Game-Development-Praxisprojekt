@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Resources/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Resources/Scenes/Anfangsgebiet(Wald).unity
+    guid: a6a0aa2f69821574fa7ae221e60507e1
   - enabled: 1
     path: Assets/Resources/Scenes/Dorf.unity
     guid: 4800f3f0109f2074e9d7efe26bad348c
+  - enabled: 1
+    path: Assets/Resources/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Resources/Scenes/Stadt.unity
     guid: 2beb926af66c9804faf19b1a2a1ffc61
@@ -23,9 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Dungeon1/Dungeon1_03.unity
     guid: d271fbec378b40942a0f6aa49e75eb91
-  - enabled: 1
-    path: Assets/Resources/Scenes/Anfangsgebiet(Wald).unity
-    guid: a6a0aa2f69821574fa7ae221e60507e1
   - enabled: 1
     path: Assets/Resources/Scenes/Camp.unity
     guid: 943456414bcc14241a992353db085178

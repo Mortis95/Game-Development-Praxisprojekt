@@ -42559,9 +42559,9 @@ MonoBehaviour:
           m_Calls: []
     - typeOfBox: 0
       name: Fey
-      text: "Dr\xFCcke \u201CT\u201D, um den Skilltree aufzurufen. Von dort aus kannst
-        du nach jedem Level-Up ausw\xE4hlen, ob du deine Geschicklichkeit (DEX),
-        St\xE4rke (STR) oder Intelligenz (INT) erh\xF6hen m\xF6chtest."
+      text: "Dr\xFCcke [T], um den Skilltree aufzurufen. Von dort aus kannst du nach
+        jedem Level-Up ausw\xE4hlen, ob du deine Geschicklichkeit (DEX), St\xE4rke
+        (STR) oder Intelligenz (INT) erh\xF6hen m\xF6chtest."
       choices: []
       toExecute:
         m_PersistentCalls:
