@@ -28855,6 +28855,11 @@ PrefabInstance:
       propertyPath: lvToLoad
       value: Mine
       objectReference: {fileID: 0}
+    - target: {fileID: 2575120621741186580, guid: 30a56b8a335903b4c8cb5e92e162ce52,
+        type: 3}
+      propertyPath: musicToPlay
+      value: Gruselig
+      objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186582, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
       propertyPath: m_RootOrder
@@ -33473,6 +33478,11 @@ PrefabInstance:
       propertyPath: lvToLoad
       value: Endboss
       objectReference: {fileID: 0}
+    - target: {fileID: 2575120621741186580, guid: 30a56b8a335903b4c8cb5e92e162ce52,
+        type: 3}
+      propertyPath: musicToPlay
+      value: Battle
+      objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186581, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
       propertyPath: m_SortingLayer
@@ -33721,6 +33731,11 @@ PrefabInstance:
         type: 3}
       propertyPath: lvToLoad
       value: "\xDCbergang WaldDorf"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2575120621741186580, guid: 30a56b8a335903b4c8cb5e92e162ce52,
+        type: 3}
+      propertyPath: musicToPlay
+      value: Wald
       objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186582, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
@@ -35013,6 +35028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: lvToLoad
       value: "\xDCbergang DorfStadt"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2575120621741186580, guid: 30a56b8a335903b4c8cb5e92e162ce52,
+        type: 3}
+      propertyPath: musicToPlay
+      value: Dorf
       objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186582, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
