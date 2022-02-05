@@ -27,6 +27,8 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
+        currentlyPlaying = null;
+
         foreach (Sound sound in soundEffects){
             sound.source = gameObject.AddComponent<AudioSource>();
             sound.source.clip = sound.clip;
