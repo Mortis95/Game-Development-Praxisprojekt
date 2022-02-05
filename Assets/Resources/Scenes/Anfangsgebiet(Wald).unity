@@ -198,7 +198,7 @@ PrefabInstance:
     - target: {fileID: 1582186260086901871, guid: aaecf7f652d99644ebeb3a6f8291421f,
         type: 3}
       propertyPath: equippedAbility
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1582186260408182012, guid: aaecf7f652d99644ebeb3a6f8291421f,
         type: 3}

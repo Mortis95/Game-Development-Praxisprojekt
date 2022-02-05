@@ -269,13 +269,16 @@ MonoBehaviour:
   rb: {fileID: 1582186260086901870}
   movement: {x: 0, y: 0}
   lastFacedDirection: 0
+  transitioned: 0
+  designatedx: 0
+  designatedy: 0
   inventory: {fileID: 1582186260402966042}
   equipment: {fileID: 0}
   equippedWeapon: {fileID: 0}
   equippedShield: {fileID: 0}
   equippedConsumable: {fileID: 0}
   equippedArmor: {fileID: 0}
-  equippedAbility: 8
+  equippedAbility: 9
   meleeAttackPrefab: {fileID: 8721719308573900007, guid: 9c3ed258b8814644d8ad363a9e06615e,
     type: 3}
   rangedAttackPrefab: {fileID: 1788278415932951469, guid: 11d2dac5a329df44da5e30446065e376,
