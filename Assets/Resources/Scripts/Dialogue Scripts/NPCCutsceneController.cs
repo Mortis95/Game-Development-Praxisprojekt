@@ -7,16 +7,35 @@ public class NPCCutsceneController : MonoBehaviour
 {
     private Vector2 goalPosition;
     public Rigidbody2D rb;
+    public Direction facingDirection;
     public float moveSpeed;
     public Vector2 movement;
     private Animator animator;
     private AnimationState currentState;
     private void Awake(){
         rb = gameObject.GetComponent<Rigidbody2D>();
-        animator = gameObject.GetComponent<Animator>();
-        animator.speed = 0;
         currentState = AnimationState.NPCWalkDown;
         goalPosition = transform.position;
+    }
+
+    void Start(){
+        animator = gameObject.GetComponent<Animator>();
+        switch(facingDirection){
+            case Direction.Up:
+                animator.Play(AnimationState.NPCWalkUp.ToString());
+                break;
+            case Direction.Down:
+                animator.Play(AnimationState.NPCWalkDown.ToString());
+                break;
+            case Direction.Left:
+                animator.Play(AnimationState.NPCWalkLeft.ToString());
+                break;
+            case Direction.Right:
+                animator.Play(AnimationState.NPCWalkRight.ToString());
+                break;
+        }
+        animator.speed = 0;
+        
     }
 
     void Update(){
