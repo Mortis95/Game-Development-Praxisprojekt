@@ -29370,7 +29370,19 @@ MonoBehaviour:
       choices: []
       toExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 953386435}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 1
     - typeOfBox: 0
       name: Lucie
       text: "Ich w\xFCnschte, die Umst\xE4nde unseres Treffens w\xE4ren anders, aber
@@ -30912,7 +30924,7 @@ PrefabInstance:
     - target: {fileID: 4796085716705528896, guid: 6ca3ef672602de84e9f4c9d36142c25e,
         type: 3}
       propertyPath: moveSpeed
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4796085716705528896, guid: 6ca3ef672602de84e9f4c9d36142c25e,
         type: 3}
@@ -35026,7 +35038,17 @@ PrefabInstance:
     - target: {fileID: 2575120621741186578, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
       propertyPath: m_Name
-      value: Leveltrigger
+      value: Leveltrigger unten
+      objectReference: {fileID: 0}
+    - target: {fileID: 2575120621741186580, guid: 30a56b8a335903b4c8cb5e92e162ce52,
+        type: 3}
+      propertyPath: x
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2575120621741186580, guid: 30a56b8a335903b4c8cb5e92e162ce52,
+        type: 3}
+      propertyPath: y
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 2575120621741186580, guid: 30a56b8a335903b4c8cb5e92e162ce52,
         type: 3}
