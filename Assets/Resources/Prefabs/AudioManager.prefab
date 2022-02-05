@@ -137,19 +137,19 @@ MonoBehaviour:
   - name: SkillBogenScharfschuss
     clip: {fileID: 8300000, guid: 33fcc43595ed18049aa2046a1f8004ff, type: 3}
     volume: 0.4
-    pitch: 0
+    pitch: 1
     isLooping: 0
     source: {fileID: 0}
   - name: SkillBogenWasserpfeil
     clip: {fileID: 8300000, guid: b26d884fba7a7804c91f73e01a5ad55c, type: 3}
     volume: 0.4
-    pitch: 0
+    pitch: 1
     isLooping: 0
     source: {fileID: 0}
   - name: SkillMagieFeuerball
     clip: {fileID: 8300000, guid: 558b504ddfe5071409904566cd325180, type: 3}
     volume: 0.4
-    pitch: 0
+    pitch: 1
     isLooping: 0
     source: {fileID: 0}
   - name: SkillMagieKettenblitz
