@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
     public bool transitioned = false;
     public float designatedx;
     public float designatedy;
+    private Vector2 respawnPosition;
     #endregion
 
     #region Equipment
@@ -273,11 +274,13 @@ public class Player : MonoBehaviour
         if(transitioned)
         {
             transform.position = new Vector3(designatedx,designatedy,0);
+            respawnPosition = transform.position;
             transitioned=false;
             designatedx=0;
             designatedy=0;  //bugs durch default wert vorbeugen
         }
-        if(isDead || gm.getGameIsPaused()){return;}
+        if(isDead){processRespawnInput(); return;}
+        if(gm.getGameIsPaused()){return;}
         if(isAllowedToTakeAction()){
             processMovement();
             processUseConsumableInput();
@@ -518,6 +521,22 @@ public class Player : MonoBehaviour
             }
         }
     }
+    
+    private void processRespawnInput(){
+        if(Input.GetKeyDown(KeyCode.R)){
+            respawn();
+        }
+    }
+
+    private void respawn(){
+        currentHealthPoints = maxHealthPoints;
+        currentMagicPoints = maxMagicPoints;
+        transform.position = respawnPosition;
+        isDead = false;
+        changeAnimationState(AnimationState.PlayerStandDown);
+        updateUIStatusBar();
+    }
+
     public void standStill(){
         movement = Vector2.zero;
     }
