@@ -42534,9 +42534,8 @@ MonoBehaviour:
       name: Fey
       text: "Auch ein paar Waffen und R\xFCstungen f\xFCr deine Angriffs- und deine
         Verteidigungsst\xE4rke w\xE4ren nett, denn\u2026 naja, du bist nicht wirklich
-        gut ausgestattet. Sehr schlecht sogar. \xD6ffne das Inventar mit \u201CI\u201D
-        und r\xFCste dich aus, indem du die Gegenst\xE4nde anklickst. Du kannst dort
-        auch immer jeweils eine aktuelle Attacke ausw\xE4hlen, mit welcher du k\xE4mpfst."
+        gut ausgestattet. Sehr schlecht sogar. \xD6ffne das Inventar mit [I] und
+        r\xFCste dich aus, indem du [E] dr\xFCckst."
       choices: []
       toExecute:
         m_PersistentCalls:
@@ -42816,6 +42815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  facingDirection: 0
   moveSpeed: 5
   movement: {x: 0, y: 0}
 --- !u!61 &1090402865

@@ -168,11 +168,11 @@ public class DialogueManager : MonoBehaviour
 
             if(!activeDialogue){yield break;}
             
-            if(count >= 3){AudioManager.getInstance().PlaySound("NPCDialogKurz"); count = 0;}
+            if(count >= 4){AudioManager.getInstance().PlaySound("NPCDialogKurz"); count = 0;}
             totalText += letter;
             dialogueText.SetText(totalText);
             //Wait for waitTime many seconds
-            float waitTime = 0.03f;
+            float waitTime = 0.02f;
             count += 1;
             yield return new WaitForSecondsRealtime(waitTime);
         }
