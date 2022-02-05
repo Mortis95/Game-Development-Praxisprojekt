@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LayerSorter : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class LayerSorter : MonoBehaviour
     void Start()
     {
         parentRenderer = transform.parent.GetComponent<SpriteRenderer>();
+        SceneManager.activeSceneChanged += onSceneChanged;
     }
 
     // Update is called once per frame
@@ -52,5 +54,9 @@ public class LayerSorter : MonoBehaviour
                 parentRenderer.sortingOrder = obstacles[0].MySpriteRenderer.sortingOrder - 1;
             }
         }
+    }
+
+    private void onSceneChanged(Scene current, Scene next){
+        obstacles.Clear();
     }
 }
