@@ -172,7 +172,7 @@ public class DialogueManager : MonoBehaviour
             totalText += letter;
             dialogueText.SetText(totalText);
             //Wait for waitTime many seconds
-            float waitTime = 0.02f;
+            float waitTime = 0.0125f;
             count += 1;
             yield return new WaitForSecondsRealtime(waitTime);
         }
