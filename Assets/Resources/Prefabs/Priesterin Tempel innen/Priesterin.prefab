@@ -1,0 +1,235 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8801572895919890182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8801572895919890177}
+  - component: {fileID: 8801572895919890176}
+  m_Layer: 0
+  m_Name: Priesterin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8801572895919890177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8801572895919890182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8801572895919890176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8801572895919890182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990835ac33d066441b63bdbec936753c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  NPCName: 
+  isInRange: 0
+  busyWithInteraction: 0
+  interactionKey: 0
+  interactAction:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8801572895919890176}
+        m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dialogues:
+  - textBoxen:
+    - typeOfBox: 0
+      name: Lucie
+      text: Du hast gute Arbeit geleistet. Dank dir werde ich mein Ziel erreichen.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Also stimmt es, dass du von Anfang an die Macht der Schl\xFCssel selbst
+        nutzen wolltest?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Wohl wahr. Und du wirst nichts daran \xE4ndern k\xF6nnen, da die Prophezeiung
+        es so vorgesehen hat, dass du mir die Schl\xFCssel bringen wirst, allerdings
+        im finalen Kampf gegen mich verlierst."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Anstatt deine Zeit mit einem sinnlosen Widerstand zu vergeuden solltest
+        du dich einfach zur\xFCcklehnen und zusehen, wie die Menschheit ausgerottet
+        wird."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: Kommt jetzt ein obligatorischer Antagonisten Monolog?
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Die Entwickler geben mir nur Zeit bis Weihnachten, um die Welt zu zerst\xF6ren.
+        Ich habe demnach keine Zeit, um dir alles zu offenbaren. Du solltest allerdings
+        wissen, dass\u2026"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: Ah, hier kommt der obligatorische Antagonisten Monolog.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "\u2026 es von Anfang an mein Plan war, die Welt von ihrer Unreinheit
+        zu befreien. Gott, und ich als sein direkter Diener, k\xF6nnen S\xFCnden
+        verzeihen \u2014 bis zu einem gewissen Grad."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Die Welt ist verdorben. Gier nach Macht, Geld, Status, Territorium,
+        all dies hat die Seelen der Menschen verf\xFChrt und zum verrotten gebracht.
+        Das Blut, welches vergossen wurde, um Menschen zu dem zu bringen, was sie
+        heutzutage sind, was sie heutzutage haben, kann nicht mehr abgewaschen werden."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Du hast das Ausma\xDF der menschlichen S\xFCnden selbst gesehen. Der
+        Schl\xFCssel der Macht befand sich auf Kriegsgrund, all das Blut und die
+        vergeblichen Hoffnungen der magischen Einwohner l\xE4ngst im Boden versickert,
+        allein Verzweiflung \xFCbrigbleibend."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Auch wenn die Jagd auf magische Wesen heutzutage verboten wurde, die
+        Fehler der Vergangenheit sind nicht zu verzeihen. Heute mag ein Scheinfrieden
+        bestehen, aber morgen? Wer versichert uns, dass die Gier im Menschen nie
+        wieder zu Untaten f\xFChren wird?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Ich beseitige das Problem an der Wurzel. Wenn Menschen nicht l\xE4nger
+        existieren, dann kann auch keine andere Spezies mehr unter ihnen leiden."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Bist du fertig? Ich wei\xDF, dass diese Background Story dich weniger
+        als einen eindimensionalen Charakter wirken lassen soll, welcher einfach
+        nur b\xF6se Taten aus\xFCbt, aber sympathischer wirst du dadurch auch nicht."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: 'Um einen Antagonisten sympathisch zu machen, braucht es mehr Tiefe und
+        Character Development. Einfach einmal eine kurze Sob Story reinzuwerfen reicht
+        da nicht aus. '
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: Es ist mir egal, was andere Menschen von mir denken. Ihr werdet sowieso
+        kein morgen erleben.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Sch\xE4tze, es ist jetzt mein Signal, um irgendetwas \xFCber Liebe und
+        Freundschaft und das Gute in Menschen zu labern. Menschen sind schei\xDFe,
+        ja, aber die ganze Menschheit auszurotten ist jetzt auch nicht so nice."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: "Du wirst mich nicht von meinem Plan abbringen k\xF6nnen."
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Du
+      text: "Dann kann ich mir meinen Helden Monolog auch sparen. Also, k\xE4mpfen?"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: Lucie
+      text: So sei es.
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+    - typeOfBox: 0
+      name: "Lucie steckt die drei Schl\xFCssel in die Wand hinter ihr. Ein Mechanismus
+        wird aktiviert und eine T\xFCr entsteht."
+      text: "Ich sehe dich auf der anderen Seite, \u201EHeld\u201C"
+      choices: []
+      toExecute:
+        m_PersistentCalls:
+          m_Calls: []
+  activeDialogueIndex: 0
