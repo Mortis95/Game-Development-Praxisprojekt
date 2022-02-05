@@ -165,7 +165,9 @@ public class DialogueManager : MonoBehaviour
         dialogueText.SetText(totalText);
         int count = 0;
         foreach (char letter in sentence.ToCharArray()){
-            //Debug.Log("Code is executing here");
+
+            if(!activeDialogue){yield break;}
+            
             if(count >= 3){AudioManager.getInstance().PlaySound("NPCDialogKurz"); count = 0;}
             totalText += letter;
             dialogueText.SetText(totalText);
