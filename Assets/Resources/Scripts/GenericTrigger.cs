@@ -26,6 +26,10 @@ public class GenericTrigger : MonoBehaviour{
         Player.getInstance().addHealthPoints(amount);
     }
 
+    public void damagePlayer(int amount){
+        Player.getInstance().takeDamage(amount);
+    }
+
     public void healPlayerMana(int amount){
         Player.getInstance().addMagicPoints(amount);
     }
