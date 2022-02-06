@@ -97,7 +97,7 @@ public class InteractableNPC : MonoBehaviour
         }
         if(id == 3)
         {
-            Progress.getInstance().schluesselMacht=true;
+            Progress.getInstance().schluesselFrieden=true;
         }else{
             Debug.Log("Da ist deine id in den fritten");
         }
