@@ -69,6 +69,7 @@ public class InteractableNPC : MonoBehaviour
 
     //Sollte als Unity Event invoked werdan damit Dialogue beginnt
     public void TriggerDialogue(){
+        setActiveDialogue(activeDialogueIndex);
         busyWithInteraction = true;
         Debug.Log(activeDialogue.textBoxen.Length);
         DialogueManager.getInstance().StartDialogue(activeDialogue);
