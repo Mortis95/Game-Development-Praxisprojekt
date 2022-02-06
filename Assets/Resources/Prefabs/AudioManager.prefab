@@ -272,6 +272,18 @@ MonoBehaviour:
     pitch: 1
     isLooping: 0
     source: {fileID: 0}
+  - name: MobSchleimBesiegt
+    clip: {fileID: 8300000, guid: 20219cecd5c366c429ab8f185ff1b0b0, type: 3}
+    volume: 0.4
+    pitch: 1
+    isLooping: 0
+    source: {fileID: 0}
+  - name: MobSchleimBossBesiegt
+    clip: {fileID: 8300000, guid: 20219cecd5c366c429ab8f185ff1b0b0, type: 3}
+    volume: 0.4
+    pitch: 0.3
+    isLooping: 0
+    source: {fileID: 0}
   soundTrack:
   - name: MainTheme
     clip: {fileID: 8300000, guid: 77f0ae10e3fc5eb458504de6ce4ce9fd, type: 3}

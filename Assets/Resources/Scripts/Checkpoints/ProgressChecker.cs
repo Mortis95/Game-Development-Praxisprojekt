@@ -11,7 +11,7 @@ public class ProgressChecker : MonoBehaviour
     {
         if(modus == Typ.check1)
         {
-            if(Progress.getInstance().check1 == true)
+            if(Progress.getInstance().schluesselWeisheit == true)
             {
                 Destroy(gameObject);
             }
@@ -19,7 +19,7 @@ public class ProgressChecker : MonoBehaviour
         }
         if(modus == ProgressChecker.Typ.check2)
         {
-            if(Progress.getInstance().check2  == true)
+            if(Progress.getInstance().schluesselMacht  == true)
             {
                 GameObject tombstone = Resources.Load("Prefabs/Tombstone") as GameObject;
                 GameObject test = Instantiate(tombstone);
@@ -31,7 +31,7 @@ public class ProgressChecker : MonoBehaviour
         }
         if(modus == Typ.check3)
         {
-            if(Progress.getInstance().check3  == true)
+            if(Progress.getInstance().schluesselFrieden  == true)
             {
                 Destroy(gameObject);
             }

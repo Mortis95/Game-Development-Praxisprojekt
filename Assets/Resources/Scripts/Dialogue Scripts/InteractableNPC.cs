@@ -89,15 +89,15 @@ public class InteractableNPC : MonoBehaviour
         //id korrespondiert zu zahl hinter dem check boolean
         if(id == 1)
         {
-            Progress.getInstance().check1=true;
+            Progress.getInstance().schluesselWeisheit=true;
         }
         if(id == 2)
         {
-            Progress.getInstance().check2=true;
+            Progress.getInstance().schluesselMacht=true;
         }
         if(id == 3)
         {
-            Progress.getInstance().check2=true;
+            Progress.getInstance().schluesselMacht=true;
         }else{
             Debug.Log("Da ist deine id in den fritten");
         }

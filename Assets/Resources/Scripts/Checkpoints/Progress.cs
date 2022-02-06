@@ -14,9 +14,9 @@ public class Progress : MonoBehaviour
     public bool dungeon01Puzzle02;
     public bool dungeon01Puzzle03;
 
-    public bool check1;
-    public bool check2;
-    public bool check3;
+    public bool schluesselWeisheit;
+    public bool schluesselMacht;
+    public bool schluesselFrieden;
 
     #region Singleton
     private static Progress instance;
