@@ -4,6 +4,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using System.Linq;
+using UnityEditor;
 
 public static class SaveSystem
 {
@@ -172,6 +173,214 @@ public static class SaveSystem
         {
             Debug.LogError("No map saved!");
         }
+    }
+
+    public static void SaveEquipment()
+    {
+        Weapon w = Equipment.getInstance().equippedWeapon;
+        Armor a = Equipment.getInstance().equippedArmor;
+        Consumable c = Equipment.getInstance().consumableInHand;
+        Shield s = Equipment.getInstance().shieldInHand;
+        Ability ab = Equipment.getInstance().equippedAbility;
+
+        if (w != null)
+        {
+            ItemData itemWeapon = new ItemData(w);
+            BinaryFormatter formatterW = new BinaryFormatter();
+            string pathW = Application.persistentDataPath + "/WeaponItem.b";
+            FileStream streamW = new FileStream(pathW, FileMode.Create);
+
+            formatterW.Serialize(streamW, itemWeapon);
+        }
+
+        if (a != null)
+        {
+            ItemData itemArmor = new ItemData(a);
+            BinaryFormatter formatterA = new BinaryFormatter();
+            string pathA = Application.persistentDataPath + "/ArmorItem.b";
+            FileStream streamA = new FileStream(pathA, FileMode.Create);
+
+            formatterA.Serialize(streamA, itemArmor);
+        }
+
+
+        if (c != null)
+        {
+            ItemData itemConsumable = new ItemData(c);
+            BinaryFormatter formatterC = new BinaryFormatter();
+            string pathC = Application.persistentDataPath + "/ConsumableItem.b";
+            FileStream streamC = new FileStream(pathC, FileMode.Create);
+
+            formatterC.Serialize(streamC, itemConsumable);
+        }
+
+        if (s != null)
+        {
+            ItemData itemShield = new ItemData(s);
+            BinaryFormatter formatterS = new BinaryFormatter();
+            string pathS = Application.persistentDataPath + "/ShildItem.b";
+            FileStream streamS = new FileStream(pathS, FileMode.Create);
+
+            formatterS.Serialize(streamS, itemShield);
+        }
+
+        BinaryFormatter formatterAB = new BinaryFormatter();
+        string pathAB = Application.persistentDataPath + "/AbItem.b";
+        FileStream streamAB = new FileStream(pathAB, FileMode.Create);
+
+        formatterAB.Serialize(streamAB, ab.ToString());
+        
+    }
+
+    public static void LoadEquipment()
+    {
+        Equipment.getInstance().equippedWeapon = null;
+        Equipment.getInstance().equippedArmor = null;
+        Equipment.getInstance().consumableInHand = null;
+        Equipment.getInstance().shieldInHand = null;
+        Equipment.getInstance().equippedAbility = Ability.NoAbilityEquipped;
+
+        Weapon w = Equipment.getInstance().equippedWeapon;
+        Armor a = Equipment.getInstance().equippedArmor;
+        Consumable c = Equipment.getInstance().consumableInHand;
+        Shield s = Equipment.getInstance().shieldInHand;
+        Ability ab = Equipment.getInstance().equippedAbility;
+
+        if (File.Exists(Application.persistentDataPath + "/WeaponItem.b"))
+        {
+            BinaryFormatter formatterW = new BinaryFormatter();
+            string pathW = Application.persistentDataPath + "/WeaponItem.b";
+            FileStream streamW = new FileStream(pathW, FileMode.Open);
+            ItemData weaponItemData = formatterW.Deserialize(streamW) as ItemData;
+
+
+            Weapon weapon = new Weapon();
+
+
+            weapon.amount = weaponItemData.amount;
+            weapon.description = weaponItemData.description;
+            weapon.isStackable = weaponItemData.isStackable;
+            weapon.itemName = weaponItemData.itemName;
+            var sprite2d = AssetDatabase.LoadAssetAtPath<Texture2D>(weaponItemData.spritePath);
+            Sprite sprite = Sprite.Create(sprite2d, new Rect(0, 0, sprite2d.width, sprite2d.height), new Vector2(0.5f, 0.5f));
+            weapon.itemSprite = sprite;
+            weapon.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), weaponItemData.itemType);
+
+            weapon.maxStackSize = weaponItemData.maxStackSize;
+
+            weapon.weaponType = (WeaponType)System.Enum.Parse(typeof(WeaponType), weaponItemData.weaponType);
+            weapon.projectile = Resources.Load<Sprite>(weaponItemData.projectile); // TODO: no image
+            weapon.bonusAttack = weaponItemData.bonusAttack;
+            weapon.bonusStrength = weaponItemData.bonusStrength;
+            weapon.bonusDexterity = weaponItemData.bonusDexterity;
+            weapon.bonusIntelligence = weaponItemData.bonusIntelligence;
+
+            Equipment.getInstance().equippedWeapon = weapon;
+        }
+
+        if (File.Exists(Application.persistentDataPath + "/ArmorItem.b"))
+        {
+            BinaryFormatter formatterA = new BinaryFormatter();
+            string pathA = Application.persistentDataPath + "/ArmorItem.b";
+            FileStream streamA = new FileStream(pathA, FileMode.Open);
+            ItemData armorItemData = formatterA.Deserialize(streamA) as ItemData;
+
+            Armor armor = new Armor();
+
+            armor.amount = armorItemData.amount;
+            armor.description = armorItemData.description;
+            armor.isStackable = armorItemData.isStackable;
+            armor.itemName = armorItemData.itemName;
+
+            var sprite2dA = AssetDatabase.LoadAssetAtPath<Texture2D>(armorItemData.spritePath);
+            Sprite spriteA = Sprite.Create(sprite2dA, new Rect(0, 0, sprite2dA.width, sprite2dA.height), new Vector2(0.5f, 0.5f));
+            armor.itemSprite = spriteA;
+
+            armor.itemSprite = Resources.Load<Sprite>(armorItemData.spritePath);
+            armor.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), armorItemData.itemType);
+            armor.maxStackSize = armorItemData.maxStackSize;
+
+            armor.bonusDefense = armorItemData.bonusDefenseA;
+            armor.bonusStrength = armorItemData.bonusStrengthA;
+            armor.bonusDexterity = armorItemData.bonusDexterityA;
+            armor.bonusIntelligence = armorItemData.bonusIntelligenceA;
+
+            Equipment.getInstance().equippedArmor = armor;
+        }
+
+        if (File.Exists(Application.persistentDataPath + "/ConsumableItem.b"))
+        {
+            BinaryFormatter formatterC = new BinaryFormatter();
+            string pathC = Application.persistentDataPath + "/ConsumableItem.b";
+            FileStream streamC = new FileStream(pathC, FileMode.Open);
+            ItemData consumableItemData = formatterC.Deserialize(streamC) as ItemData;
+
+            Consumable consumable = new Consumable();
+
+            consumable.amount = consumableItemData.amount;
+            consumable.description = consumableItemData.description;
+            consumable.isStackable = consumableItemData.isStackable;
+            consumable.itemName = consumableItemData.itemName;
+
+            var sprite2dC = AssetDatabase.LoadAssetAtPath<Texture2D>(consumableItemData.spritePath);
+            Sprite spriteC = Sprite.Create(sprite2dC, new Rect(0, 0, sprite2dC.width, sprite2dC.height), new Vector2(0.5f, 0.5f));
+            consumable.itemSprite = spriteC;
+            consumable.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), consumableItemData.itemType);
+            consumable.maxStackSize = consumableItemData.maxStackSize;
+
+            consumable.healHealthPoints = consumableItemData.healHealthPoints;
+            consumable.healMagicPoints = consumableItemData.healMagicPoints;
+            consumable.healHealthPointsPercentage = consumableItemData.healHealthPointsPercentage;
+            consumable.healMagicPointsPercentage = consumableItemData.healMagicPointsPercentage;
+
+            Equipment.getInstance().consumableInHand = consumable;
+        }
+
+        if (File.Exists(Application.persistentDataPath + "/ShildItem.b"))
+        {
+            BinaryFormatter formatterS = new BinaryFormatter();
+            string pathS = Application.persistentDataPath + "/ShildItem.b";
+            FileStream streamS = new FileStream(pathS, FileMode.Open);
+            ItemData shieldItemData = formatterS.Deserialize(streamS) as ItemData;
+
+            Shield shield = new Shield();
+
+            shield.amount = shieldItemData.amount;
+            shield.description = shieldItemData.description;
+            shield.isStackable = shieldItemData.isStackable;
+            shield.itemName = shieldItemData.itemName;
+
+            var sprite2dS = AssetDatabase.LoadAssetAtPath<Texture2D>(shieldItemData.spritePath);
+            Sprite spriteS = Sprite.Create(sprite2dS, new Rect(0, 0, sprite2dS.width, sprite2dS.height), new Vector2(0.5f, 0.5f));
+            shield.itemSprite = spriteS;
+
+            shield.itemSprite = Resources.Load<Sprite>(shieldItemData.spritePath);
+            shield.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), shieldItemData.itemType);
+            shield.maxStackSize = shieldItemData.maxStackSize;
+
+            shield.bonusDefense = shieldItemData.bonusDefenseS;
+            shield.bonusStrength = shieldItemData.bonusStrengthS;
+            shield.bonusDexterity = shieldItemData.bonusDexterityS;
+            shield.bonusIntelligence = shieldItemData.bonusIntelligenceS;
+
+            Equipment.getInstance().shieldInHand = shield;
+        }
+
+
+        BinaryFormatter formatterAB = new BinaryFormatter();
+        string pathAB = Application.persistentDataPath + "/AbItem.b";
+        FileStream streamAB = new FileStream(pathAB, FileMode.Open);
+
+        
+        
+        
+        string abItemData = formatterAB.Deserialize(streamAB) as string;
+
+
+        Equipment.getInstance().equippedAbility = (Ability)System.Enum.Parse(typeof(Ability), abItemData);
+
+        Player.getInstance().UpdateEquipment();
+
     }
 
 }

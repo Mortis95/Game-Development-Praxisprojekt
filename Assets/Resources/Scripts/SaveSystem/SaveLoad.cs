@@ -40,7 +40,7 @@ public class SaveLoad : MonoBehaviour
                         weapon.maxStackSize = itemData[i].maxStackSize;
 
                         weapon.weaponType = (WeaponType)System.Enum.Parse(typeof(WeaponType), itemData[i].weaponType);
-                        weapon.projectile = Resources.Load<Sprite>(itemData[i].projectile); // TODO: no image
+                        weapon.projectile = Resources.Load<Sprite>(itemData[i].projectile); 
                         weapon.bonusAttack = itemData[i].bonusAttack;
                         weapon.bonusStrength = itemData[i].bonusStrength;
                         weapon.bonusDexterity = itemData[i].bonusDexterity;
@@ -79,7 +79,7 @@ public class SaveLoad : MonoBehaviour
                         Sprite spriteA = Sprite.Create(sprite2dA, new Rect(0, 0, sprite2dA.width, sprite2dA.height), new Vector2(0.5f, 0.5f));
                         armor.itemSprite = spriteA;
 
-                        armor.itemSprite = Resources.Load<Sprite>(itemData[i].spritePath); // TODO: no image
+                        armor.itemSprite = Resources.Load<Sprite>(itemData[i].spritePath); 
                         armor.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), itemData[i].itemType);
                         armor.maxStackSize = itemData[i].maxStackSize;
 
@@ -101,7 +101,7 @@ public class SaveLoad : MonoBehaviour
                         Sprite spriteS = Sprite.Create(sprite2dS, new Rect(0, 0, sprite2dS.width, sprite2dS.height), new Vector2(0.5f, 0.5f));
                         shield.itemSprite = spriteS;
 
-                        shield.itemSprite = Resources.Load<Sprite>(itemData[i].spritePath); // TODO: no image
+                        shield.itemSprite = Resources.Load<Sprite>(itemData[i].spritePath);
                         shield.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), itemData[i].itemType);
                         shield.maxStackSize = itemData[i].maxStackSize;
 
@@ -119,7 +119,7 @@ public class SaveLoad : MonoBehaviour
                         item.isStackable = itemData[i].isStackable;
                         item.itemName = itemData[i].itemName;
 
-                        item.itemSprite = Resources.Load<Sprite>(itemData[i].spritePath); // TODO: no image
+                        item.itemSprite = Resources.Load<Sprite>(itemData[i].spritePath);
                         item.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), itemData[i].itemType);
                         item.maxStackSize = itemData[i].maxStackSize;
 
@@ -183,6 +183,8 @@ public class SaveLoad : MonoBehaviour
                 nodes[8].levelNode();
             }
 
+            SaveSystem.LoadEquipment();
+
         }
     }
 
@@ -191,6 +193,7 @@ public class SaveLoad : MonoBehaviour
         SaveSystem.SavePlayer(Player.getInstance());
         SaveSystem.SavePlayerItems(Player.getInstance().inventory.getItems());
         SaveSystem.SaveMap(SceneManager.GetActiveScene().name);
+        SaveSystem.SaveEquipment();
         SaveSystem.SaveSkillTree();
     }
 }
