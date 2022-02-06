@@ -14,7 +14,7 @@ public class WebAttack : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, Player.getInstance().transform.position, speed * Time.deltaTime);
         if (removeAfterUnits == 0)
         {
-            Debug.Log("müsste kaputt gehen");
+            Debug.Log("mï¿½sste kaputt gehen");
             Destroy(gameObject);
         }
         Debug.Log(removeAfterUnits);
