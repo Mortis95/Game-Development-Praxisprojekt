@@ -663,6 +663,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
+      propertyPath: deathSound
+      value: MobPilz
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
       propertyPath: enemyAttack
       value: 40
       objectReference: {fileID: 0}
@@ -763,8 +768,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
+      propertyPath: projectileSprite
+      value: 
+      objectReference: {fileID: 5227164207757965081, guid: 7932a80c6d4708947a61f25701f8bfeb,
+        type: 3}
+    - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
       propertyPath: detectionViewAngle
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemySpottingSound
+      value: MobPilz
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
@@ -941,6 +957,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MeleeEnemyPrefab (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: deathSound
+      value: MobSchleimBesiegt
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -1414,6 +1435,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
+      propertyPath: deathSound
+      value: MobPilz
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
       propertyPath: enemyAttack
       value: 40
       objectReference: {fileID: 0}
@@ -1529,6 +1555,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257087, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
+      propertyPath: enemySpottingSound
+      value: MobPilz
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257087, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
       propertyPath: patrolRoute.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -1592,6 +1623,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MeleeEnemyPrefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: deathSound
+      value: MobSchleimBesiegt
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -4376,6 +4412,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
+      propertyPath: deathSound
+      value: MobPilz
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
       propertyPath: enemyAttack
       value: 40
       objectReference: {fileID: 0}
@@ -4476,8 +4517,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
+      propertyPath: projectileSprite
+      value: 
+      objectReference: {fileID: 1705858214571055046, guid: 7932a80c6d4708947a61f25701f8bfeb,
+        type: 3}
+    - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
       propertyPath: detectionViewAngle
       value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemySpottingSound
+      value: MobPilz
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
@@ -4720,6 +4772,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MeleeEnemyPrefab (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: deathSound
+      value: MobSchleimBesiegt
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -5095,7 +5152,7 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 1
-    - typeOfBox: 0
+    - typeOfBox: 2
       name: 
       text: 
       choices: []
@@ -5104,7 +5161,7 @@ MonoBehaviour:
           m_Calls:
           - m_Target: {fileID: 887003688}
             m_TargetAssemblyTypeName: NPCCutsceneController, Assembly-CSharp
-            m_MethodName: goHorizontalUnits
+            m_MethodName: goVerticalUnits
             m_Mode: 4
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
@@ -57924,6 +57981,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
+      propertyPath: deathSound
+      value: MobPilz
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
       propertyPath: enemyAttack
       value: 40
       objectReference: {fileID: 0}
@@ -58031,6 +58093,11 @@ PrefabInstance:
         type: 3}
       propertyPath: detectionViewAngle
       value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257087, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemySpottingSound
+      value: MobPilz
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257087, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -61821,6 +61888,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
+      propertyPath: deathSound
+      value: MobPilz
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
       propertyPath: enemyAttack
       value: 40
       objectReference: {fileID: 0}
@@ -61933,6 +62005,11 @@ PrefabInstance:
         type: 3}
       propertyPath: detectionViewAngle
       value: 245
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257087, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemySpottingSound
+      value: MobPilz
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257087, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -62052,6 +62129,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
+      propertyPath: deathSound
+      value: MobPilz
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
       propertyPath: enemyAttack
       value: 40
       objectReference: {fileID: 0}
@@ -62152,8 +62234,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
+      propertyPath: projectileSprite
+      value: 
+      objectReference: {fileID: 5227164207757965081, guid: 7932a80c6d4708947a61f25701f8bfeb,
+        type: 3}
+    - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
       propertyPath: detectionViewAngle
       value: 164
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemySpottingSound
+      value: MobPilz
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
@@ -62541,6 +62634,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
+      propertyPath: deathSound
+      value: MobSchleimBesiegt
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
       propertyPath: enemyAttack
       value: 40
       objectReference: {fileID: 0}
@@ -62812,6 +62910,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
+      propertyPath: deathSound
+      value: MobSchleimBesiegt
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
       propertyPath: enemyAttack
       value: 40
       objectReference: {fileID: 0}
@@ -62992,6 +63095,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MeleeEnemyPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: deathSound
+      value: MobSchleimBesiegt
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -63472,6 +63580,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
+      propertyPath: deathSound
+      value: MobPilz
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257074, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
       propertyPath: enemyAttack
       value: 40
       objectReference: {fileID: 0}
@@ -63584,6 +63697,11 @@ PrefabInstance:
         type: 3}
       propertyPath: detectionViewAngle
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451989002762257087, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
+        type: 3}
+      propertyPath: enemySpottingSound
+      value: MobPilz
       objectReference: {fileID: 0}
     - target: {fileID: 7451989002762257087, guid: d562fae3779595e42b0e0fa5b4ab1a3d,
         type: 3}
@@ -69130,6 +69248,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
+      propertyPath: deathSound
+      value: MobPilz
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282953, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
       propertyPath: enemyAttack
       value: 40
       objectReference: {fileID: 0}
@@ -69230,8 +69353,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}
+      propertyPath: projectileSprite
+      value: 
+      objectReference: {fileID: 5227164207757965081, guid: 7932a80c6d4708947a61f25701f8bfeb,
+        type: 3}
+    - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
       propertyPath: detectionViewAngle
       value: 234
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
+        type: 3}
+      propertyPath: enemySpottingSound
+      value: MobPilz
       objectReference: {fileID: 0}
     - target: {fileID: 1158638958757282956, guid: 9be381547ec80704abcf284736288b6b,
         type: 3}

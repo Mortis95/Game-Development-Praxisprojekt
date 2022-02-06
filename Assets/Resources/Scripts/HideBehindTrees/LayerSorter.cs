@@ -28,6 +28,7 @@ public class LayerSorter : MonoBehaviour
         if (collision.tag == "Obstacle")
         {
             Obstacle o = collision.GetComponent<Obstacle>();
+            if(o == null){return;}
 
             if (obstacles.Count == 0 || o.MySpriteRenderer.sortingOrder -1 < parentRenderer.sortingOrder)
             {
