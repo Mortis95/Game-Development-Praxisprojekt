@@ -17,13 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Stadt.unity
     guid: 2beb926af66c9804faf19b1a2a1ffc61
-  - enabled: 1
+  - enabled: 0
     path: Assets/Resources/Scenes/Dungeon1/Dungeon1_01.unity
     guid: dd3d85690dcf7da42a50ce79b66440d1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Resources/Scenes/Dungeon1/Dungeon1_02.unity
     guid: 7f259885c07db144a917ba14b564a0d2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Resources/Scenes/Dungeon1/Dungeon1_03.unity
     guid: d271fbec378b40942a0f6aa49e75eb91
   - enabled: 1

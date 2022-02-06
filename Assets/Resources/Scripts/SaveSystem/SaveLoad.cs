@@ -1,4 +1,4 @@
-using System.Collections;
+/* using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -47,6 +47,7 @@ public class SaveLoad : MonoBehaviour
                         weapon.bonusIntelligence = itemData[i].bonusIntelligence;
                         Player.getInstance().inventory.addItem(weapon);
                         break;
+                        //test
                     case "Consumable":
                         Consumable consumable = new Consumable();
 
@@ -197,3 +198,4 @@ public class SaveLoad : MonoBehaviour
         SaveSystem.SaveSkillTree();
     }
 }
+ */

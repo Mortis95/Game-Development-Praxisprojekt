@@ -29349,7 +29349,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851430123}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dbd59703b49b4544f8602a1b166b48d0, type: 3}
   m_Name: 
@@ -34362,7 +34362,7 @@ MonoBehaviour:
   interactAction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1707432658}
+      - m_Target: {fileID: 851430125}
         m_TargetAssemblyTypeName: InteractableNPC, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
