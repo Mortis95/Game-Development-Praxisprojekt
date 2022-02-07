@@ -1,10 +1,9 @@
-/* using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using System.Linq;
-using UnityEditor;
 
 public static class SaveSystem
 {
@@ -261,15 +260,14 @@ public static class SaveSystem
             weapon.description = weaponItemData.description;
             weapon.isStackable = weaponItemData.isStackable;
             weapon.itemName = weaponItemData.itemName;
-            var sprite2d = AssetDatabase.LoadAssetAtPath<Texture2D>(weaponItemData.spritePath);
-            Sprite sprite = Sprite.Create(sprite2d, new Rect(0, 0, sprite2d.width, sprite2d.height), new Vector2(0.5f, 0.5f));
+            var sprite = Resources.Load(weaponItemData.spritePath) as Sprite;
             weapon.itemSprite = sprite;
             weapon.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), weaponItemData.itemType);
 
             weapon.maxStackSize = weaponItemData.maxStackSize;
 
             weapon.weaponType = (WeaponType)System.Enum.Parse(typeof(WeaponType), weaponItemData.weaponType);
-            weapon.projectile = Resources.Load<Sprite>(weaponItemData.projectile); // TODO: no image
+            weapon.projectile = Resources.Load(weaponItemData.projectile) as Sprite;
             weapon.bonusAttack = weaponItemData.bonusAttack;
             weapon.bonusStrength = weaponItemData.bonusStrength;
             weapon.bonusDexterity = weaponItemData.bonusDexterity;
@@ -292,8 +290,7 @@ public static class SaveSystem
             armor.isStackable = armorItemData.isStackable;
             armor.itemName = armorItemData.itemName;
 
-            var sprite2dA = AssetDatabase.LoadAssetAtPath<Texture2D>(armorItemData.spritePath);
-            Sprite spriteA = Sprite.Create(sprite2dA, new Rect(0, 0, sprite2dA.width, sprite2dA.height), new Vector2(0.5f, 0.5f));
+            var spriteA = Resources.Load(armorItemData.spritePath) as Sprite;
             armor.itemSprite = spriteA;
 
             armor.itemSprite = Resources.Load<Sprite>(armorItemData.spritePath);
@@ -322,8 +319,7 @@ public static class SaveSystem
             consumable.isStackable = consumableItemData.isStackable;
             consumable.itemName = consumableItemData.itemName;
 
-            var sprite2dC = AssetDatabase.LoadAssetAtPath<Texture2D>(consumableItemData.spritePath);
-            Sprite spriteC = Sprite.Create(sprite2dC, new Rect(0, 0, sprite2dC.width, sprite2dC.height), new Vector2(0.5f, 0.5f));
+            var spriteC = Resources.Load(consumableItemData.spritePath) as Sprite;
             consumable.itemSprite = spriteC;
             consumable.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), consumableItemData.itemType);
             consumable.maxStackSize = consumableItemData.maxStackSize;
@@ -350,8 +346,7 @@ public static class SaveSystem
             shield.isStackable = shieldItemData.isStackable;
             shield.itemName = shieldItemData.itemName;
 
-            var sprite2dS = AssetDatabase.LoadAssetAtPath<Texture2D>(shieldItemData.spritePath);
-            Sprite spriteS = Sprite.Create(sprite2dS, new Rect(0, 0, sprite2dS.width, sprite2dS.height), new Vector2(0.5f, 0.5f));
+            var spriteS = Resources.Load(shieldItemData.spritePath) as Sprite;
             shield.itemSprite = spriteS;
 
             shield.itemSprite = Resources.Load<Sprite>(shieldItemData.spritePath);
@@ -384,4 +379,3 @@ public static class SaveSystem
     }
 
 }
- */

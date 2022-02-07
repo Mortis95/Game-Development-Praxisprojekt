@@ -1,8 +1,7 @@
-/* using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor;
 
 public class SaveLoad : MonoBehaviour
 {
@@ -32,15 +31,23 @@ public class SaveLoad : MonoBehaviour
                         weapon.description = itemData[i].description;
                         weapon.isStackable = itemData[i].isStackable;
                         weapon.itemName = itemData[i].itemName;
-                        var sprite2d = AssetDatabase.LoadAssetAtPath<Texture2D>(itemData[i].spritePath);
-                        Sprite sprite = Sprite.Create(sprite2d, new Rect(0,0, sprite2d.width, sprite2d.height), new Vector2(0.5f,0.5f));
+                        var texture = Resources.Load<Texture2D>("Sprites/" + itemData[i].spritePath);
+                        var sprite = Sprite.Create(
+                           texture,
+                           new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
                         weapon.itemSprite = sprite;
                         weapon.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), itemData[i].itemType);
                         
                         weapon.maxStackSize = itemData[i].maxStackSize;
 
                         weapon.weaponType = (WeaponType)System.Enum.Parse(typeof(WeaponType), itemData[i].weaponType);
-                        weapon.projectile = Resources.Load<Sprite>(itemData[i].projectile); 
+
+                        var texture2 = Resources.Load<Texture2D>("Sprites/" + itemData[i].projectile);
+                        var sprite2 = Sprite.Create(
+                           texture,
+                           new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+
+                        weapon.projectile = sprite2;
                         weapon.bonusAttack = itemData[i].bonusAttack;
                         weapon.bonusStrength = itemData[i].bonusStrength;
                         weapon.bonusDexterity = itemData[i].bonusDexterity;
@@ -56,8 +63,12 @@ public class SaveLoad : MonoBehaviour
                         consumable.isStackable = itemData[i].isStackable;
                         consumable.itemName = itemData[i].itemName;
 
-                        var sprite2dC = AssetDatabase.LoadAssetAtPath<Texture2D>(itemData[i].spritePath);
-                        Sprite spriteC = Sprite.Create(sprite2dC, new Rect(0, 0, sprite2dC.width, sprite2dC.height), new Vector2(0.5f, 0.5f));
+
+                        var textureC = Resources.Load<Texture2D>("Sprites/" + itemData[i].spritePath);
+                        var spriteC = Sprite.Create(
+                           textureC,
+                           new Rect(0, 0, textureC.width, textureC.height), new Vector2(0.5f, 0.5f));
+
                         consumable.itemSprite = spriteC;
                         consumable.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), itemData[i].itemType);
                         consumable.maxStackSize = itemData[i].maxStackSize;
@@ -76,11 +87,13 @@ public class SaveLoad : MonoBehaviour
                         armor.isStackable = itemData[i].isStackable;
                         armor.itemName = itemData[i].itemName;
 
-                        var sprite2dA = AssetDatabase.LoadAssetAtPath<Texture2D>(itemData[i].spritePath);
-                        Sprite spriteA = Sprite.Create(sprite2dA, new Rect(0, 0, sprite2dA.width, sprite2dA.height), new Vector2(0.5f, 0.5f));
+                        var textureA = Resources.Load<Texture2D>("Sprites/" + itemData[i].spritePath);
+                        var spriteA = Sprite.Create(
+                           textureA,
+                           new Rect(0, 0, textureA.width, textureA.height), new Vector2(0.5f, 0.5f));
+
                         armor.itemSprite = spriteA;
 
-                        armor.itemSprite = Resources.Load<Sprite>(itemData[i].spritePath); 
                         armor.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), itemData[i].itemType);
                         armor.maxStackSize = itemData[i].maxStackSize;
 
@@ -98,11 +111,12 @@ public class SaveLoad : MonoBehaviour
                         shield.isStackable = itemData[i].isStackable;
                         shield.itemName = itemData[i].itemName;
 
-                        var sprite2dS = AssetDatabase.LoadAssetAtPath<Texture2D>(itemData[i].spritePath);
-                        Sprite spriteS = Sprite.Create(sprite2dS, new Rect(0, 0, sprite2dS.width, sprite2dS.height), new Vector2(0.5f, 0.5f));
+                        var textureS = Resources.Load<Texture2D>("Sprites/" + itemData[i].spritePath);
+                        var spriteS = Sprite.Create(
+                           textureS,
+                           new Rect(0, 0, textureS.width, textureS.height), new Vector2(0.5f, 0.5f));
                         shield.itemSprite = spriteS;
 
-                        shield.itemSprite = Resources.Load<Sprite>(itemData[i].spritePath);
                         shield.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), itemData[i].itemType);
                         shield.maxStackSize = itemData[i].maxStackSize;
 
@@ -120,12 +134,16 @@ public class SaveLoad : MonoBehaviour
                         item.isStackable = itemData[i].isStackable;
                         item.itemName = itemData[i].itemName;
 
-                        item.itemSprite = Resources.Load<Sprite>(itemData[i].spritePath);
+                        var textureI = Resources.Load<Texture2D>("Sprites/" + itemData[i].spritePath);
+                        var spriteI = Sprite.Create(
+                           textureI,
+                           new Rect(0, 0, textureI.width, textureI.height), new Vector2(0.5f, 0.5f));
+
+                        item.itemSprite = spriteI;
                         item.itemType = (ItemType)System.Enum.Parse(typeof(ItemType), itemData[i].itemType);
                         item.maxStackSize = itemData[i].maxStackSize;
 
-                        var sprite2dI = AssetDatabase.LoadAssetAtPath<Texture2D>(itemData[i].spritePath);
-                        Sprite spriteSI = Sprite.Create(sprite2dI, new Rect(0, 0, sprite2dI.width, sprite2dI.height), new Vector2(0.5f, 0.5f));
+                        var spriteSI = Resources.Load(itemData[i].spritePath) as Sprite;
                         item.itemSprite = spriteSI;
 
                         Player.getInstance().inventory.addItem(item);
@@ -198,4 +216,3 @@ public class SaveLoad : MonoBehaviour
         SaveSystem.SaveSkillTree();
     }
 }
- */
