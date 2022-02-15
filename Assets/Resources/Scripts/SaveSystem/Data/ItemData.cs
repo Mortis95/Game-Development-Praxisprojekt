@@ -1,6 +1,7 @@
-using System.Collections;
+/* using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 [System.Serializable]
 public class ItemData
@@ -49,12 +50,12 @@ public class ItemData
         isStackable = item.isStackable;
         maxStackSize = item.maxStackSize;
         amount = item.amount;
-        spritePath = Application.dataPath + "/Resources/Sprites/" + item.itemSprite.name;
+        spritePath = AssetDatabase.GetAssetPath(item.itemSprite);
         switch (item.itemType)
         {
             case ItemType.Weapon:
                 weaponType = ((Weapon)item).weaponType.ToString();
-                projectile = Application.dataPath + ((Weapon)item).projectile.name;
+                projectile = AssetDatabase.GetAssetPath(((Weapon)item).projectile);
                 bonusAttack = ((Weapon)item).bonusAttack;
                 bonusStrength = ((Weapon)item).bonusStrength;
                 bonusDexterity = ((Weapon)item).bonusDexterity;
@@ -84,3 +85,4 @@ public class ItemData
         }
     }
 }
+ */
