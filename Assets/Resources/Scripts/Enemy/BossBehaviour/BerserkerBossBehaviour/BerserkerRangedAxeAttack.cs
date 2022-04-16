@@ -43,7 +43,7 @@ public class BerserkerRangedAxeAttack : MonoBehaviour{
         if(other != null && other.tag == "Player"){
             Player playerScript = Player.getInstance();
             playerScript.takeDamage(damage);
-            playerScript.getKnockedBack(transform.position,damage);
+            playerScript.getKnockedBack(transform.position,((float)damage) / 2);
         }
         if(other != null && other.tag == "Enemy"){
             return; //Ignore hits on other enemies, or on !yourself!

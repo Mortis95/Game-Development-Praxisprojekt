@@ -106,6 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4754089661396575603}
   - component: {fileID: 4754089661396575604}
+  - component: {fileID: 796856376}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -147,6 +148,25 @@ MonoBehaviour:
   dialogueDelay: 0
   activeDialogue: 0
   currentBoxType: 0
+--- !u!95 &796856376
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4754089661396575605}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aebfa2eb58535c84cbe32a7d4a5cf90c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4754089661524459950
 GameObject:
   m_ObjectHideFlags: 0
